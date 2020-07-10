@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AttachedToTargetEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.target</a>&nbsp;/&nbsp;<a href="./index.html">AttachedToTargetEvent</a><br/>
+<br/>
+<h1>AttachedToTargetEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AttachedToTargetEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/target/Operations.kt#L621">(source)</a>
+<p>Issued when attached to target because of auto-attach or <code>attachToTarget</code> command.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#event-attachedToTarget">Target#attachedToTarget</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Issued when attached to target because of auto-attach or <code>attachToTarget</code> command.</p>
+<code><span class="identifier">AttachedToTargetEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.AttachedToTargetEvent$<init>(kotlin.String, pl.wendigo.chrome.api.target.TargetInfo, kotlin.Boolean)/sessionId">sessionId</span><span class="symbol">:</span>&nbsp;<a href="../-session-i-d.html"><span class="identifier">SessionID</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.target.AttachedToTargetEvent$<init>(kotlin.String, pl.wendigo.chrome.api.target.TargetInfo, kotlin.Boolean)/targetInfo">targetInfo</span><span class="symbol">:</span>&nbsp;<a href="../-target-info/index.html"><span class="identifier">TargetInfo</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.target.AttachedToTargetEvent$<init>(kotlin.String, pl.wendigo.chrome.api.target.TargetInfo, kotlin.Boolean)/waitingForDebugger">waitingForDebugger</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="session-id.html">sessionId</a></h4>
+</td>
+<td>
+<p>Identifier assigned to the session used to send/receive messages.</p>
+<code><span class="keyword">val </span><span class="identifier">sessionId</span><span class="symbol">: </span><a href="../-session-i-d.html"><span class="identifier">SessionID</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target-info.html">targetInfo</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">targetInfo</span><span class="symbol">: </span><a href="../-target-info/index.html"><span class="identifier">TargetInfo</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="waiting-for-debugger.html">waitingForDebugger</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">waitingForDebugger</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

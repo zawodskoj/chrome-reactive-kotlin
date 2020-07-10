@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MediaOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.media</a>&nbsp;/&nbsp;<a href="./index.html">MediaOperations</a><br/>
+<br/>
+<h1>MediaOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">MediaOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/media/Operations.kt#L10">(source)</a>
+<p>This domain allows detailed inspection of media elements</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Media">Media</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables the Media domain.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables the Media domain</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Media domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="player-errors-raised.html">playerErrorsRaised</a></h4>
+</td>
+<td>
+<p>Send a list of any errors that need to be delivered.</p>
+<code><span class="keyword">fun </span><span class="identifier">playerErrorsRaised</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-player-errors-raised-event/index.html"><span class="identifier">PlayerErrorsRaisedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="player-events-added.html">playerEventsAdded</a></h4>
+</td>
+<td>
+<p>Send events as a list, allowing them to be batched on the browser for less
+congestion. If batched, events must ALWAYS be in chronological order.</p>
+<code><span class="keyword">fun </span><span class="identifier">playerEventsAdded</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-player-events-added-event/index.html"><span class="identifier">PlayerEventsAddedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="player-messages-logged.html">playerMessagesLogged</a></h4>
+</td>
+<td>
+<p>Send a list of any messages that need to be delivered.</p>
+<code><span class="keyword">fun </span><span class="identifier">playerMessagesLogged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-player-messages-logged-event/index.html"><span class="identifier">PlayerMessagesLoggedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="player-properties-changed.html">playerPropertiesChanged</a></h4>
+</td>
+<td>
+<p>This can be called multiple times, and can be used to set / override /
+remove player properties. A null propValue indicates removal.</p>
+<code><span class="keyword">fun </span><span class="identifier">playerPropertiesChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-player-properties-changed-event/index.html"><span class="identifier">PlayerPropertiesChangedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="players-created.html">playersCreated</a></h4>
+</td>
+<td>
+<p>Called whenever a player is created, or when a new agent joins and recieves
+a list of active players. If an agent is restored, it will recieve the full
+list of player ids and all events again.</p>
+<code><span class="keyword">fun </span><span class="identifier">playersCreated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-players-created-event/index.html"><span class="identifier">PlayersCreatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PropertyDescriptor - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="./index.html">PropertyDescriptor</a><br/>
+<br/>
+<h1>PropertyDescriptor</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PropertyDescriptor</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Types.kt#L198">(source)</a>
+<p>Object property descriptor.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#type-PropertyDescriptor">Runtime#PropertyDescriptor</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Object property descriptor.</p>
+<code><span class="identifier">PropertyDescriptor</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.PropertyDescriptor$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.PropertyDescriptor$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.PropertyDescriptor$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject)/writable">writable</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.PropertyDescriptor$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject)/get">get</span><span class="symbol">:</span>&nbsp;<a href="../-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.PropertyDescriptor$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject)/set">set</span><span class="symbol">:</span>&nbsp;<a href="../-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.PropertyDescriptor$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject)/configurable">configurable</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.PropertyDescriptor$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject)/enumerable">enumerable</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.PropertyDescriptor$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject)/wasThrown">wasThrown</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.PropertyDescriptor$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject)/isOwn">isOwn</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.PropertyDescriptor$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.runtime.RemoteObject)/symbol">symbol</span><span class="symbol">:</span>&nbsp;<a href="../-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="configurable.html">configurable</a></h4>
+</td>
+<td>
+<p>True if the type of this property descriptor may be changed and if the property may be
+deleted from the corresponding object.</p>
+<code><span class="keyword">val </span><span class="identifier">configurable</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enumerable.html">enumerable</a></h4>
+</td>
+<td>
+<p>True if this property shows up during enumeration of the properties on the corresponding
+object.</p>
+<code><span class="keyword">val </span><span class="identifier">enumerable</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get.html">get</a></h4>
+</td>
+<td>
+<p>A function which serves as a getter for the property, or <code>undefined</code> if there is no getter
+(accessor descriptors only).</p>
+<code><span class="keyword">val </span><span class="identifier">get</span><span class="symbol">: </span><a href="../-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-own.html">isOwn</a></h4>
+</td>
+<td>
+<p>True if the property is owned for the object.</p>
+<code><span class="keyword">val </span><span class="identifier">isOwn</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="name.html">name</a></h4>
+</td>
+<td>
+<p>Property name or symbol description.</p>
+<code><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set.html">set</a></h4>
+</td>
+<td>
+<p>A function which serves as a setter for the property, or <code>undefined</code> if there is no setter
+(accessor descriptors only).</p>
+<code><span class="keyword">val </span><span class="identifier">set</span><span class="symbol">: </span><a href="../-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="symbol.html">symbol</a></h4>
+</td>
+<td>
+<p>Property symbol object, if the property is of the <code>symbol</code> type.</p>
+<code><span class="keyword">val </span><span class="identifier">symbol</span><span class="symbol">: </span><a href="../-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="value.html">value</a></h4>
+</td>
+<td>
+<p>The value associated with the property.</p>
+<code><span class="keyword">val </span><span class="identifier">value</span><span class="symbol">: </span><a href="../-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="was-thrown.html">wasThrown</a></h4>
+</td>
+<td>
+<p>True if the result was thrown during the evaluation.</p>
+<code><span class="keyword">val </span><span class="identifier">wasThrown</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="writable.html">writable</a></h4>
+</td>
+<td>
+<p>True if the value associated with the property may be changed (data descriptors only).</p>
+<code><span class="keyword">val </span><span class="identifier">writable</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

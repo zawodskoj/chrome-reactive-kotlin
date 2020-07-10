@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BackgroundServiceEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.backgroundservice</a>&nbsp;/&nbsp;<a href="./index.html">BackgroundServiceEvent</a><br/>
+<br/>
+<h1>BackgroundServiceEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BackgroundServiceEvent</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/backgroundservice/Types.kt#L49">(source)</a>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/BackgroundService#type-BackgroundServiceEvent">BackgroundService#BackgroundServiceEvent</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">BackgroundServiceEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.backgroundservice.BackgroundServiceEvent$<init>(kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.backgroundservice.ServiceName, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.backgroundservice.EventMetadata)))/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.network/-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.backgroundservice.BackgroundServiceEvent$<init>(kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.backgroundservice.ServiceName, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.backgroundservice.EventMetadata)))/origin">origin</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.backgroundservice.BackgroundServiceEvent$<init>(kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.backgroundservice.ServiceName, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.backgroundservice.EventMetadata)))/serviceWorkerRegistrationId">serviceWorkerRegistrationId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.serviceworker/-registration-i-d.html"><span class="identifier">RegistrationID</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.backgroundservice.BackgroundServiceEvent$<init>(kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.backgroundservice.ServiceName, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.backgroundservice.EventMetadata)))/service">service</span><span class="symbol">:</span>&nbsp;<a href="../-service-name/index.html"><span class="identifier">ServiceName</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.backgroundservice.BackgroundServiceEvent$<init>(kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.backgroundservice.ServiceName, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.backgroundservice.EventMetadata)))/eventName">eventName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.backgroundservice.BackgroundServiceEvent$<init>(kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.backgroundservice.ServiceName, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.backgroundservice.EventMetadata)))/instanceId">instanceId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.backgroundservice.BackgroundServiceEvent$<init>(kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.backgroundservice.ServiceName, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.backgroundservice.EventMetadata)))/eventMetadata">eventMetadata</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-event-metadata/index.html"><span class="identifier">EventMetadata</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="event-metadata.html">eventMetadata</a></h4>
+</td>
+<td>
+<p>A list of event-specific information.</p>
+<code><span class="keyword">val </span><span class="identifier">eventMetadata</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-event-metadata/index.html"><span class="identifier">EventMetadata</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="event-name.html">eventName</a></h4>
+</td>
+<td>
+<p>A description of the event.</p>
+<code><span class="keyword">val </span><span class="identifier">eventName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="instance-id.html">instanceId</a></h4>
+</td>
+<td>
+<p>An identifier that groups related events together.</p>
+<code><span class="keyword">val </span><span class="identifier">instanceId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="origin.html">origin</a></h4>
+</td>
+<td>
+<p>The origin this event belongs to.</p>
+<code><span class="keyword">val </span><span class="identifier">origin</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="service.html">service</a></h4>
+</td>
+<td>
+<p>The Background Service this event belongs to.</p>
+<code><span class="keyword">val </span><span class="identifier">service</span><span class="symbol">: </span><a href="../-service-name/index.html"><span class="identifier">ServiceName</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="service-worker-registration-id.html">serviceWorkerRegistrationId</a></h4>
+</td>
+<td>
+<p>The Service Worker ID that initiated the event.</p>
+<code><span class="keyword">val </span><span class="identifier">serviceWorkerRegistrationId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.serviceworker/-registration-i-d.html"><span class="identifier">RegistrationID</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timestamp.html">timestamp</a></h4>
+</td>
+<td>
+<p>Timestamp of the event (in seconds).</p>
+<code><span class="keyword">val </span><span class="identifier">timestamp</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

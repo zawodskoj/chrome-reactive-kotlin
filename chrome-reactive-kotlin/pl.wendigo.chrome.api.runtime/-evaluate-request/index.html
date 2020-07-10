@@ -1,0 +1,159 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EvaluateRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="./index.html">EvaluateRequest</a><br/>
+<br/>
+<h1>EvaluateRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EvaluateRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Operations.kt#L436">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-evaluate">Runtime#evaluate</a> operation call.</p>
+<p>Evaluates expression on global object.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-evaluate">Runtime#evaluate</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-runtime-operations/evaluate.html">RuntimeOperations.evaluate</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-evaluate">Runtime#evaluate</a> operation call.</p>
+<code><span class="identifier">EvaluateRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/expression">expression</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/objectGroup">objectGroup</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/includeCommandLineAPI">includeCommandLineAPI</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/silent">silent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/contextId">contextId</span><span class="symbol">:</span>&nbsp;<a href="../-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/returnByValue">returnByValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/generatePreview">generatePreview</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/userGesture">userGesture</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/awaitPromise">awaitPromise</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/throwOnSideEffect">throwOnSideEffect</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/timeout">timeout</span><span class="symbol">:</span>&nbsp;<a href="../-time-delta.html"><span class="identifier">TimeDelta</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/disableBreaks">disableBreaks</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/replMode">replMode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.EvaluateRequest$<init>(kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/allowUnsafeEvalBlockedByCSP">allowUnsafeEvalBlockedByCSP</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="allow-unsafe-eval-blocked-by-c-s-p.html">allowUnsafeEvalBlockedByCSP</a></h4>
+</td>
+<td>
+<p>The Content Security Policy (CSP) for the target might block 'unsafe-eval'
+which includes eval(), Function(), setTimeout() and setInterval()
+when called with non-callable arguments. This flag bypasses CSP for this
+evaluation and allows unsafe-eval. Defaults to true.</p>
+<code><span class="keyword">val </span><span class="identifier">allowUnsafeEvalBlockedByCSP</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="await-promise.html">awaitPromise</a></h4>
+</td>
+<td>
+<p>Whether execution should <code>await</code> for resulting value and return once awaited promise is
+resolved.</p>
+<code><span class="keyword">val </span><span class="identifier">awaitPromise</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="context-id.html">contextId</a></h4>
+</td>
+<td>
+<p>Specifies in which execution context to perform evaluation. If the parameter is omitted the
+evaluation will be performed in the context of the inspected page.</p>
+<code><span class="keyword">val </span><span class="identifier">contextId</span><span class="symbol">: </span><a href="../-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable-breaks.html">disableBreaks</a></h4>
+</td>
+<td>
+<p>Disable breakpoints during execution.</p>
+<code><span class="keyword">val </span><span class="identifier">disableBreaks</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="expression.html">expression</a></h4>
+</td>
+<td>
+<p>Expression to evaluate.</p>
+<code><span class="keyword">val </span><span class="identifier">expression</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="generate-preview.html">generatePreview</a></h4>
+</td>
+<td>
+<p>Whether preview should be generated for the result.</p>
+<code><span class="keyword">val </span><span class="identifier">generatePreview</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="include-command-line-a-p-i.html">includeCommandLineAPI</a></h4>
+</td>
+<td>
+<p>Determines whether Command Line API should be available during the evaluation.</p>
+<code><span class="keyword">val </span><span class="identifier">includeCommandLineAPI</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="object-group.html">objectGroup</a></h4>
+</td>
+<td>
+<p>Symbolic group name that can be used to release multiple objects.</p>
+<code><span class="keyword">val </span><span class="identifier">objectGroup</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="repl-mode.html">replMode</a></h4>
+</td>
+<td>
+<p>Setting this flag to true enables <code>let</code> re-declaration and top-level <code>await</code>.
+Note that <code>let</code> variables can only be re-declared if they originate from
+<code>replMode</code> themselves.</p>
+<code><span class="keyword">val </span><span class="identifier">replMode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="return-by-value.html">returnByValue</a></h4>
+</td>
+<td>
+<p>Whether the result is expected to be a JSON object that should be sent by value.</p>
+<code><span class="keyword">val </span><span class="identifier">returnByValue</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="silent.html">silent</a></h4>
+</td>
+<td>
+<p>In silent mode exceptions thrown during evaluation are not reported and do not pause
+execution. Overrides <code>setPauseOnException</code> state.</p>
+<code><span class="keyword">val </span><span class="identifier">silent</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="throw-on-side-effect.html">throwOnSideEffect</a></h4>
+</td>
+<td>
+<p>Whether to throw an exception if side effect cannot be ruled out during evaluation.
+This implies <code>disableBreaks</code> below.</p>
+<code><span class="keyword">val </span><span class="identifier">throwOnSideEffect</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timeout.html">timeout</a></h4>
+</td>
+<td>
+<p>Terminate execution after timing out (number of milliseconds).</p>
+<code><span class="keyword">val </span><span class="identifier">timeout</span><span class="symbol">: </span><a href="../-time-delta.html"><span class="identifier">TimeDelta</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="user-gesture.html">userGesture</a></h4>
+</td>
+<td>
+<p>Whether execution should be treated as initiated by user in the UI.</p>
+<code><span class="keyword">val </span><span class="identifier">userGesture</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

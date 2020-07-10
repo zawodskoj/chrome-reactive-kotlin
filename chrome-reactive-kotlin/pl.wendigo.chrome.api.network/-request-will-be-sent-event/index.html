@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RequestWillBeSentEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">RequestWillBeSentEvent</a><br/>
+<br/>
+<h1>RequestWillBeSentEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestWillBeSentEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L1273">(source)</a>
+<p>Fired when page is about to send HTTP request.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#event-requestWillBeSent">Network#requestWillBeSent</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when page is about to send HTTP request.</p>
+<code><span class="identifier">RequestWillBeSentEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentEvent$<init>(kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.Initiator, pl.wendigo.chrome.api.network.Response, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean)/requestId">requestId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentEvent$<init>(kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.Initiator, pl.wendigo.chrome.api.network.Response, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean)/loaderId">loaderId</span><span class="symbol">:</span>&nbsp;<a href="../-loader-id.html"><span class="identifier">LoaderId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentEvent$<init>(kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.Initiator, pl.wendigo.chrome.api.network.Response, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean)/documentURL">documentURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentEvent$<init>(kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.Initiator, pl.wendigo.chrome.api.network.Response, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean)/request">request</span><span class="symbol">:</span>&nbsp;<a href="../-request/index.html"><span class="identifier">Request</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentEvent$<init>(kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.Initiator, pl.wendigo.chrome.api.network.Response, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean)/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="../-monotonic-time.html"><span class="identifier">MonotonicTime</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentEvent$<init>(kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.Initiator, pl.wendigo.chrome.api.network.Response, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean)/wallTime">wallTime</span><span class="symbol">:</span>&nbsp;<a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentEvent$<init>(kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.Initiator, pl.wendigo.chrome.api.network.Response, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean)/initiator">initiator</span><span class="symbol">:</span>&nbsp;<a href="../-initiator/index.html"><span class="identifier">Initiator</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentEvent$<init>(kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.Initiator, pl.wendigo.chrome.api.network.Response, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean)/redirectResponse">redirectResponse</span><span class="symbol">:</span>&nbsp;<a href="../-response/index.html"><span class="identifier">Response</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentEvent$<init>(kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.Initiator, pl.wendigo.chrome.api.network.Response, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../-resource-type/index.html"><span class="identifier">ResourceType</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentEvent$<init>(kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.Initiator, pl.wendigo.chrome.api.network.Response, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean)/frameId">frameId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.page/-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentEvent$<init>(kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.Initiator, pl.wendigo.chrome.api.network.Response, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean)/hasUserGesture">hasUserGesture</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="document-u-r-l.html">documentURL</a></h4>
+</td>
+<td>
+<p>URL of the document this request is loaded for.</p>
+<code><span class="keyword">val </span><span class="identifier">documentURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-id.html">frameId</a></h4>
+</td>
+<td>
+<p>Frame identifier.</p>
+<code><span class="keyword">val </span><span class="identifier">frameId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.page/-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-user-gesture.html">hasUserGesture</a></h4>
+</td>
+<td>
+<p>Whether the request is initiated by a user gesture. Defaults to false.</p>
+<code><span class="keyword">val </span><span class="identifier">hasUserGesture</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="initiator.html">initiator</a></h4>
+</td>
+<td>
+<p>Request initiator.</p>
+<code><span class="keyword">val </span><span class="identifier">initiator</span><span class="symbol">: </span><a href="../-initiator/index.html"><span class="identifier">Initiator</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="loader-id.html">loaderId</a></h4>
+</td>
+<td>
+<p>Loader identifier. Empty string if the request is fetched from worker.</p>
+<code><span class="keyword">val </span><span class="identifier">loaderId</span><span class="symbol">: </span><a href="../-loader-id.html"><span class="identifier">LoaderId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="redirect-response.html">redirectResponse</a></h4>
+</td>
+<td>
+<p>Redirect response data.</p>
+<code><span class="keyword">val </span><span class="identifier">redirectResponse</span><span class="symbol">: </span><a href="../-response/index.html"><span class="identifier">Response</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request.html">request</a></h4>
+</td>
+<td>
+<p>Request data.</p>
+<code><span class="keyword">val </span><span class="identifier">request</span><span class="symbol">: </span><a href="../-request/index.html"><span class="identifier">Request</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<p>Request identifier.</p>
+<code><span class="keyword">val </span><span class="identifier">requestId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timestamp.html">timestamp</a></h4>
+</td>
+<td>
+<p>Timestamp.</p>
+<code><span class="keyword">val </span><span class="identifier">timestamp</span><span class="symbol">: </span><a href="../-monotonic-time.html"><span class="identifier">MonotonicTime</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<p>Type of this resource.</p>
+<code><span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="../-resource-type/index.html"><span class="identifier">ResourceType</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="wall-time.html">wallTime</a></h4>
+</td>
+<td>
+<p>Timestamp.</p>
+<code><span class="keyword">val </span><span class="identifier">wallTime</span><span class="symbol">: </span><a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

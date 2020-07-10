@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ConsoleOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.console</a>&nbsp;/&nbsp;<a href="./index.html">ConsoleOperations</a><br/>
+<br/>
+<h1>ConsoleOperations</h1>
+<code><span class="keyword">class </span><s><span class="identifier">ConsoleOperations</span></s></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/console/Operations.kt#L9">(source)</a><br/>
+<strong>Deprecated:</strong> DeprecationLevel.WARNING<br/>
+<br/>
+<p>This domain is deprecated - use Runtime or Log instead.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Console">Console</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="clear-messages.html">clearMessages</a></h4>
+</td>
+<td>
+<p>Does nothing.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearMessages</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables console domain, prevents further console messages from being reported to the client.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables console domain, sends the messages collected so far to the client by means of the
+<code>messageAdded</code> notification.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Console domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="message-added.html">messageAdded</a></h4>
+</td>
+<td>
+<p>Issued when new console message is added.</p>
+<code><span class="keyword">fun </span><span class="identifier">messageAdded</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-message-added-event/index.html"><span class="identifier">MessageAddedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

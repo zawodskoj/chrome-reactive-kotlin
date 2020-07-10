@@ -1,0 +1,252 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.webaudio - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.webaudio</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.webaudio</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/WebAudio">WebAudio</a> domain implementation accessible via <a href="-web-audio-operations/index.html">WebAudioOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-audio-listener/index.html">AudioListener</a></h4>
+</td>
+<td>
+<p>Protocol object for AudioListner</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-audio-listener-created-event/index.html">AudioListenerCreatedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that the construction of an AudioListener has finished.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioListenerCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-audio-listener-will-be-destroyed-event/index.html">AudioListenerWillBeDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that a new AudioListener has been created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioListenerWillBeDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-audio-node/index.html">AudioNode</a></h4>
+</td>
+<td>
+<p>Protocol object for AudioNode</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioNode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-audio-node-created-event/index.html">AudioNodeCreatedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that a new AudioNode has been created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioNodeCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-audio-node-will-be-destroyed-event/index.html">AudioNodeWillBeDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that an existing AudioNode has been destroyed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioNodeWillBeDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-audio-param/index.html">AudioParam</a></h4>
+</td>
+<td>
+<p>Protocol object for AudioParam</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioParam</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-audio-param-created-event/index.html">AudioParamCreatedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that a new AudioParam has been created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioParamCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-audio-param-will-be-destroyed-event/index.html">AudioParamWillBeDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that an existing AudioParam has been destroyed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioParamWillBeDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-automation-rate/index.html">AutomationRate</a></h4>
+</td>
+<td>
+<p>Enum of AudioParam::AutomationRate from the spec</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">AutomationRate</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-base-audio-context/index.html">BaseAudioContext</a></h4>
+</td>
+<td>
+<p>Protocol object for BaseAudioContext</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BaseAudioContext</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-channel-count-mode/index.html">ChannelCountMode</a></h4>
+</td>
+<td>
+<p>Enum of AudioNode::ChannelCountMode from the spec</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ChannelCountMode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-channel-interpretation/index.html">ChannelInterpretation</a></h4>
+</td>
+<td>
+<p>Enum of AudioNode::ChannelInterpretation from the spec</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ChannelInterpretation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-context-changed-event/index.html">ContextChangedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that existing BaseAudioContext has changed some properties (id stays the same)..</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContextChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-context-created-event/index.html">ContextCreatedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that a new BaseAudioContext has been created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContextCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-context-realtime-data/index.html">ContextRealtimeData</a></h4>
+</td>
+<td>
+<p>Fields in AudioContext that change in real-time.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContextRealtimeData</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-context-state/index.html">ContextState</a></h4>
+</td>
+<td>
+<p>Enum of AudioContextState from the spec</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ContextState</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-context-type/index.html">ContextType</a></h4>
+</td>
+<td>
+<p>Enum of BaseAudioContext types</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ContextType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-context-will-be-destroyed-event/index.html">ContextWillBeDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that an existing BaseAudioContext will be destroyed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContextWillBeDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-realtime-data-request/index.html">GetRealtimeDataRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/WebAudio#method-getRealtimeData">WebAudio#getRealtimeData</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetRealtimeDataRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-realtime-data-response/index.html">GetRealtimeDataResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/WebAudio#method-getRealtimeData">WebAudio#getRealtimeData</a> operation call.
+Fetch the realtime data from the registered contexts.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetRealtimeDataResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-graph-object-id.html">GraphObjectId</a></h4>
+</td>
+<td>
+<p>An unique ID for a graph object (AudioContext, AudioNode, AudioParam) in Web Audio API</p>
+<code><span class="keyword">typealias </span><span class="identifier">GraphObjectId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-node-param-connected-event/index.html">NodeParamConnectedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that an AudioNode is connected to an AudioParam.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NodeParamConnectedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-node-param-disconnected-event/index.html">NodeParamDisconnectedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that an AudioNode is disconnected to an AudioParam.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NodeParamDisconnectedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-nodes-connected-event/index.html">NodesConnectedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that two AudioNodes are connected.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NodesConnectedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-nodes-disconnected-event/index.html">NodesDisconnectedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that AudioNodes are disconnected. The destination can be null, and it means all the outgoing connections from the source are disconnected.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NodesDisconnectedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-node-type.html">NodeType</a></h4>
+</td>
+<td>
+<p>Enum of AudioNode types</p>
+<code><span class="keyword">typealias </span><span class="identifier">NodeType</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-param-type.html">ParamType</a></h4>
+</td>
+<td>
+<p>Enum of AudioParam types</p>
+<code><span class="keyword">typealias </span><span class="identifier">ParamType</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-audio-operations/index.html">WebAudioOperations</a></h4>
+</td>
+<td>
+<p>This domain allows inspection of Web Audio API.
+https://webaudio.github.io/web-audio-api/</p>
+<code><span class="keyword">class </span><span class="identifier">WebAudioOperations</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RequestDataResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.indexeddb</a>&nbsp;/&nbsp;<a href="./index.html">RequestDataResponse</a><br/>
+<br/>
+<h1>RequestDataResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestDataResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/indexeddb/Operations.kt#L210">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-requestData">IndexedDB#requestData</a> operation call.
+Requests data from object store or index.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-requestData">IndexedDB#requestData</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-indexed-d-b-operations/request-data.html">IndexedDBOperations.requestData</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-requestData">IndexedDB#requestData</a> operation call.
+Requests data from object store or index.</p>
+<code><span class="identifier">RequestDataResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.indexeddb.RequestDataResponse$<init>(kotlin.collections.List((pl.wendigo.chrome.api.indexeddb.DataEntry)), kotlin.Boolean)/objectStoreDataEntries">objectStoreDataEntries</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-data-entry/index.html"><span class="identifier">DataEntry</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.indexeddb.RequestDataResponse$<init>(kotlin.collections.List((pl.wendigo.chrome.api.indexeddb.DataEntry)), kotlin.Boolean)/hasMore">hasMore</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="has-more.html">hasMore</a></h4>
+</td>
+<td>
+<p>If true, there are more entries to fetch in the given range.</p>
+<code><span class="keyword">val </span><span class="identifier">hasMore</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="object-store-data-entries.html">objectStoreDataEntries</a></h4>
+</td>
+<td>
+<p>Array of object store data entries.</p>
+<code><span class="keyword">val </span><span class="identifier">objectStoreDataEntries</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-data-entry/index.html"><span class="identifier">DataEntry</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

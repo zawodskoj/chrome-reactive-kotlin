@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GetFrameOwnerResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.dom</a>&nbsp;/&nbsp;<a href="./index.html">GetFrameOwnerResponse</a><br/>
+<br/>
+<h1>GetFrameOwnerResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetFrameOwnerResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/dom/Operations.kt#L1647">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getFrameOwner">DOM#getFrameOwner</a> operation call.
+Returns iframe node that owns iframe with the given domain.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getFrameOwner">DOM#getFrameOwner</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-d-o-m-operations/get-frame-owner.html">DOMOperations.getFrameOwner</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getFrameOwner">DOM#getFrameOwner</a> operation call.
+Returns iframe node that owns iframe with the given domain.</p>
+<code><span class="identifier">GetFrameOwnerResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.GetFrameOwnerResponse$<init>(kotlin.Int, kotlin.Int)/backendNodeId">backendNodeId</span><span class="symbol">:</span>&nbsp;<a href="../-backend-node-id.html"><span class="identifier">BackendNodeId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.dom.GetFrameOwnerResponse$<init>(kotlin.Int, kotlin.Int)/nodeId">nodeId</span><span class="symbol">:</span>&nbsp;<a href="../-node-id.html"><span class="identifier">NodeId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="backend-node-id.html">backendNodeId</a></h4>
+</td>
+<td>
+<p>Resulting node.</p>
+<code><span class="keyword">val </span><span class="identifier">backendNodeId</span><span class="symbol">: </span><a href="../-backend-node-id.html"><span class="identifier">BackendNodeId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="node-id.html">nodeId</a></h4>
+</td>
+<td>
+<p>Id of the node at given coordinates, only when enabled and requested document.</p>
+<code><span class="keyword">val </span><span class="identifier">nodeId</span><span class="symbol">: </span><a href="../-node-id.html"><span class="identifier">NodeId</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

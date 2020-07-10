@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Profile - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.profiler</a>&nbsp;/&nbsp;<a href="./index.html">Profile</a><br/>
+<br/>
+<h1>Profile</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Profile</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/profiler/Types.kt#L48">(source)</a>
+<p>Profile.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#type-Profile">Profiler#Profile</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Profile.</p>
+<code><span class="identifier">Profile</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.profiler.Profile$<init>(kotlin.collections.List((pl.wendigo.chrome.api.profiler.ProfileNode)), kotlin.Double, kotlin.Double, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((kotlin.Int)))/nodes">nodes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-profile-node/index.html"><span class="identifier">ProfileNode</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.Profile$<init>(kotlin.collections.List((pl.wendigo.chrome.api.profiler.ProfileNode)), kotlin.Double, kotlin.Double, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((kotlin.Int)))/startTime">startTime</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.Profile$<init>(kotlin.collections.List((pl.wendigo.chrome.api.profiler.ProfileNode)), kotlin.Double, kotlin.Double, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((kotlin.Int)))/endTime">endTime</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.Profile$<init>(kotlin.collections.List((pl.wendigo.chrome.api.profiler.ProfileNode)), kotlin.Double, kotlin.Double, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((kotlin.Int)))/samples">samples</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.Profile$<init>(kotlin.collections.List((pl.wendigo.chrome.api.profiler.ProfileNode)), kotlin.Double, kotlin.Double, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((kotlin.Int)))/timeDeltas">timeDeltas</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="end-time.html">endTime</a></h4>
+</td>
+<td>
+<p>Profiling end timestamp in microseconds.</p>
+<code><span class="keyword">val </span><span class="identifier">endTime</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="nodes.html">nodes</a></h4>
+</td>
+<td>
+<p>The list of profile nodes. First item is the root node.</p>
+<code><span class="keyword">val </span><span class="identifier">nodes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-profile-node/index.html"><span class="identifier">ProfileNode</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="samples.html">samples</a></h4>
+</td>
+<td>
+<p>Ids of samples top nodes.</p>
+<code><span class="keyword">val </span><span class="identifier">samples</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-time.html">startTime</a></h4>
+</td>
+<td>
+<p>Profiling start timestamp in microseconds.</p>
+<code><span class="keyword">val </span><span class="identifier">startTime</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="time-deltas.html">timeDeltas</a></h4>
+</td>
+<td>
+<p>Time intervals between adjacent samples in microseconds. The first delta is relative to the
+profile startTime.</p>
+<code><span class="keyword">val </span><span class="identifier">timeDeltas</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

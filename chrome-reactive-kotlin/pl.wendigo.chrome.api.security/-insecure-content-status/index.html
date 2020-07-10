@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>InsecureContentStatus - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.security</a>&nbsp;/&nbsp;<a href="./index.html">InsecureContentStatus</a><br/>
+<br/>
+<h1>InsecureContentStatus</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InsecureContentStatus</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/security/Types.kt#L251">(source)</a>
+<p>Information about insecure content on the page.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Security#type-InsecureContentStatus">Security#InsecureContentStatus</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Information about insecure content on the page.</p>
+<code><span class="identifier">InsecureContentStatus</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.security.InsecureContentStatus$<init>(kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.security.SecurityState)/ranMixedContent">ranMixedContent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.InsecureContentStatus$<init>(kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.security.SecurityState)/displayedMixedContent">displayedMixedContent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.InsecureContentStatus$<init>(kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.security.SecurityState)/containedMixedForm">containedMixedForm</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.InsecureContentStatus$<init>(kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.security.SecurityState)/ranContentWithCertErrors">ranContentWithCertErrors</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.InsecureContentStatus$<init>(kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.security.SecurityState)/displayedContentWithCertErrors">displayedContentWithCertErrors</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.InsecureContentStatus$<init>(kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.security.SecurityState)/ranInsecureContentStyle">ranInsecureContentStyle</span><span class="symbol">:</span>&nbsp;<a href="../-security-state/index.html"><span class="identifier">SecurityState</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.InsecureContentStatus$<init>(kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.security.SecurityState)/displayedInsecureContentStyle">displayedInsecureContentStyle</span><span class="symbol">:</span>&nbsp;<a href="../-security-state/index.html"><span class="identifier">SecurityState</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="contained-mixed-form.html">containedMixedForm</a></h4>
+</td>
+<td>
+<p>Always false.</p>
+<code><span class="keyword">val </span><span class="identifier">containedMixedForm</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="displayed-content-with-cert-errors.html">displayedContentWithCertErrors</a></h4>
+</td>
+<td>
+<p>Always false.</p>
+<code><span class="keyword">val </span><span class="identifier">displayedContentWithCertErrors</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="displayed-insecure-content-style.html">displayedInsecureContentStyle</a></h4>
+</td>
+<td>
+<p>Always set to unknown.</p>
+<code><span class="keyword">val </span><span class="identifier">displayedInsecureContentStyle</span><span class="symbol">: </span><a href="../-security-state/index.html"><span class="identifier">SecurityState</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="displayed-mixed-content.html">displayedMixedContent</a></h4>
+</td>
+<td>
+<p>Always false.</p>
+<code><span class="keyword">val </span><span class="identifier">displayedMixedContent</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="ran-content-with-cert-errors.html">ranContentWithCertErrors</a></h4>
+</td>
+<td>
+<p>Always false.</p>
+<code><span class="keyword">val </span><span class="identifier">ranContentWithCertErrors</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="ran-insecure-content-style.html">ranInsecureContentStyle</a></h4>
+</td>
+<td>
+<p>Always set to unknown.</p>
+<code><span class="keyword">val </span><span class="identifier">ranInsecureContentStyle</span><span class="symbol">: </span><a href="../-security-state/index.html"><span class="identifier">SecurityState</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="ran-mixed-content.html">ranMixedContent</a></h4>
+</td>
+<td>
+<p>Always false.</p>
+<code><span class="keyword">val </span><span class="identifier">ranMixedContent</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

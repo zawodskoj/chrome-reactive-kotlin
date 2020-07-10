@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IndexedDBOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.indexeddb</a>&nbsp;/&nbsp;<a href="./index.html">IndexedDBOperations</a><br/>
+<br/>
+<h1>IndexedDBOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">IndexedDBOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/indexeddb/Operations.kt#L10">(source)</a>
+<p>IndexedDBOperations represents IndexedDB protocol domain request/response operations and events that can be captured.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB">IndexedDB</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="clear-object-store.html">clearObjectStore</a></h4>
+</td>
+<td>
+<p>Clears all entries from an object store.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearObjectStore</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.indexeddb.IndexedDBOperations$clearObjectStore(pl.wendigo.chrome.api.indexeddb.ClearObjectStoreRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-clear-object-store-request/index.html"><span class="identifier">ClearObjectStoreRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="delete-database.html">deleteDatabase</a></h4>
+</td>
+<td>
+<p>Deletes a database.</p>
+<code><span class="keyword">fun </span><span class="identifier">deleteDatabase</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.indexeddb.IndexedDBOperations$deleteDatabase(pl.wendigo.chrome.api.indexeddb.DeleteDatabaseRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-delete-database-request/index.html"><span class="identifier">DeleteDatabaseRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="delete-object-store-entries.html">deleteObjectStoreEntries</a></h4>
+</td>
+<td>
+<p>Delete a range of entries from an object store</p>
+<code><span class="keyword">fun </span><span class="identifier">deleteObjectStoreEntries</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.indexeddb.IndexedDBOperations$deleteObjectStoreEntries(pl.wendigo.chrome.api.indexeddb.DeleteObjectStoreEntriesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-delete-object-store-entries-request/index.html"><span class="identifier">DeleteObjectStoreEntriesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables events from backend.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables events from backend.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all IndexedDB domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-metadata.html">getMetadata</a></h4>
+</td>
+<td>
+<p>Gets metadata of an object store</p>
+<code><span class="keyword">fun </span><span class="identifier">getMetadata</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.indexeddb.IndexedDBOperations$getMetadata(pl.wendigo.chrome.api.indexeddb.GetMetadataRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-metadata-request/index.html"><span class="identifier">GetMetadataRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-metadata-response/index.html"><span class="identifier">GetMetadataResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-data.html">requestData</a></h4>
+</td>
+<td>
+<p>Requests data from object store or index.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestData</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.indexeddb.IndexedDBOperations$requestData(pl.wendigo.chrome.api.indexeddb.RequestDataRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-request-data-request/index.html"><span class="identifier">RequestDataRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-request-data-response/index.html"><span class="identifier">RequestDataResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-database.html">requestDatabase</a></h4>
+</td>
+<td>
+<p>Requests database with given name in given frame.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestDatabase</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.indexeddb.IndexedDBOperations$requestDatabase(pl.wendigo.chrome.api.indexeddb.RequestDatabaseRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-request-database-request/index.html"><span class="identifier">RequestDatabaseRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-request-database-response/index.html"><span class="identifier">RequestDatabaseResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-database-names.html">requestDatabaseNames</a></h4>
+</td>
+<td>
+<p>Requests database names for given security origin.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestDatabaseNames</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.indexeddb.IndexedDBOperations$requestDatabaseNames(pl.wendigo.chrome.api.indexeddb.RequestDatabaseNamesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-request-database-names-request/index.html"><span class="identifier">RequestDatabaseNamesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-request-database-names-response/index.html"><span class="identifier">RequestDatabaseNamesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

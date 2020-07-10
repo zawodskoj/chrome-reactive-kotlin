@@ -1,0 +1,108 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.applicationcache - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.applicationcache</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.applicationcache</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache">ApplicationCache</a> domain implementation accessible via <a href="-application-cache-operations/index.html">ApplicationCacheOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-application-cache/index.html">ApplicationCache</a></h4>
+</td>
+<td>
+<p>Detailed application cache information.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ApplicationCache</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-application-cache-operations/index.html">ApplicationCacheOperations</a></h4>
+</td>
+<td>
+<p>ApplicationCacheOperations represents ApplicationCache protocol domain request/response operations and events that can be captured.</p>
+<code><span class="keyword">class </span><span class="identifier">ApplicationCacheOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-application-cache-resource/index.html">ApplicationCacheResource</a></h4>
+</td>
+<td>
+<p>Detailed application cache resource information.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ApplicationCacheResource</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-application-cache-status-updated-event/index.html">ApplicationCacheStatusUpdatedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ApplicationCacheStatusUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-with-manifest/index.html">FrameWithManifest</a></h4>
+</td>
+<td>
+<p>Frame identifier - manifest URL pair.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameWithManifest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-application-cache-for-frame-request/index.html">GetApplicationCacheForFrameRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache#method-getApplicationCacheForFrame">ApplicationCache#getApplicationCacheForFrame</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetApplicationCacheForFrameRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-application-cache-for-frame-response/index.html">GetApplicationCacheForFrameResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache#method-getApplicationCacheForFrame">ApplicationCache#getApplicationCacheForFrame</a> operation call.
+Returns relevant application cache data for the document in given frame.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetApplicationCacheForFrameResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-frames-with-manifests-response/index.html">GetFramesWithManifestsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache#method-getFramesWithManifests">ApplicationCache#getFramesWithManifests</a> operation call.
+Returns array of frame identifiers with manifest urls for each frame containing a document
+associated with some application cache.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetFramesWithManifestsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-manifest-for-frame-request/index.html">GetManifestForFrameRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache#method-getManifestForFrame">ApplicationCache#getManifestForFrame</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetManifestForFrameRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-manifest-for-frame-response/index.html">GetManifestForFrameResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache#method-getManifestForFrame">ApplicationCache#getManifestForFrame</a> operation call.
+Returns manifest URL for document in the given frame.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetManifestForFrameResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-network-state-updated-event/index.html">NetworkStateUpdatedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NetworkStateUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

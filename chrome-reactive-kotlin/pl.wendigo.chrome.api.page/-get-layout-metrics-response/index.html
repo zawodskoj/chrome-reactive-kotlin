@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GetLayoutMetricsResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.page</a>&nbsp;/&nbsp;<a href="./index.html">GetLayoutMetricsResponse</a><br/>
+<br/>
+<h1>GetLayoutMetricsResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetLayoutMetricsResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/page/Operations.kt#L918">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getLayoutMetrics">Page#getLayoutMetrics</a> operation call.
+Returns metrics relating to the layouting of the page, such as viewport bounds/scale.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getLayoutMetrics">Page#getLayoutMetrics</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-page-operations/get-layout-metrics.html">PageOperations.getLayoutMetrics</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getLayoutMetrics">Page#getLayoutMetrics</a> operation call.
+Returns metrics relating to the layouting of the page, such as viewport bounds/scale.</p>
+<code><span class="identifier">GetLayoutMetricsResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.GetLayoutMetricsResponse$<init>(pl.wendigo.chrome.api.page.LayoutViewport, pl.wendigo.chrome.api.page.VisualViewport, pl.wendigo.chrome.api.dom.Rect)/layoutViewport">layoutViewport</span><span class="symbol">:</span>&nbsp;<a href="../-layout-viewport/index.html"><span class="identifier">LayoutViewport</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.GetLayoutMetricsResponse$<init>(pl.wendigo.chrome.api.page.LayoutViewport, pl.wendigo.chrome.api.page.VisualViewport, pl.wendigo.chrome.api.dom.Rect)/visualViewport">visualViewport</span><span class="symbol">:</span>&nbsp;<a href="../-visual-viewport/index.html"><span class="identifier">VisualViewport</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.GetLayoutMetricsResponse$<init>(pl.wendigo.chrome.api.page.LayoutViewport, pl.wendigo.chrome.api.page.VisualViewport, pl.wendigo.chrome.api.dom.Rect)/contentSize">contentSize</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.dom/-rect/index.html"><span class="identifier">Rect</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="content-size.html">contentSize</a></h4>
+</td>
+<td>
+<p>Size of scrollable area.</p>
+<code><span class="keyword">val </span><span class="identifier">contentSize</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.dom/-rect/index.html"><span class="identifier">Rect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="layout-viewport.html">layoutViewport</a></h4>
+</td>
+<td>
+<p>Metrics relating to the layout viewport.</p>
+<code><span class="keyword">val </span><span class="identifier">layoutViewport</span><span class="symbol">: </span><a href="../-layout-viewport/index.html"><span class="identifier">LayoutViewport</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="visual-viewport.html">visualViewport</a></h4>
+</td>
+<td>
+<p>Metrics relating to the visual viewport.</p>
+<code><span class="keyword">val </span><span class="identifier">visualViewport</span><span class="symbol">: </span><a href="../-visual-viewport/index.html"><span class="identifier">VisualViewport</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

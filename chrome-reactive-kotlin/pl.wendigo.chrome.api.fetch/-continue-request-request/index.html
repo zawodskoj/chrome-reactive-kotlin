@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ContinueRequestRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.fetch</a>&nbsp;/&nbsp;<a href="./index.html">ContinueRequestRequest</a><br/>
+<br/>
+<h1>ContinueRequestRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContinueRequestRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/fetch/Operations.kt#L203">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-continueRequest">Fetch#continueRequest</a> operation call.</p>
+<p>Continues the request, optionally modifying some of its parameters.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-continueRequest">Fetch#continueRequest</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-fetch-operations/continue-request.html">FetchOperations.continueRequest</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-continueRequest">Fetch#continueRequest</a> operation call.</p>
+<code><span class="identifier">ContinueRequestRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.fetch.ContinueRequestRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)))/requestId">requestId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.ContinueRequestRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)))/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.ContinueRequestRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)))/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.ContinueRequestRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)))/postData">postData</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.ContinueRequestRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)))/headers">headers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-header-entry/index.html"><span class="identifier">HeaderEntry</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="headers.html">headers</a></h4>
+</td>
+<td>
+<p>If set, overrides the request headers.</p>
+<code><span class="keyword">val </span><span class="identifier">headers</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-header-entry/index.html"><span class="identifier">HeaderEntry</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="method.html">method</a></h4>
+</td>
+<td>
+<p>If set, the request method is overridden.</p>
+<code><span class="keyword">val </span><span class="identifier">method</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post-data.html">postData</a></h4>
+</td>
+<td>
+<p>If set, overrides the post data in the request.</p>
+<code><span class="keyword">val </span><span class="identifier">postData</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<p>An id the client received in requestPaused event.</p>
+<code><span class="keyword">val </span><span class="identifier">requestId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>If set, the request url will be modified in a way that's not observable by page.</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

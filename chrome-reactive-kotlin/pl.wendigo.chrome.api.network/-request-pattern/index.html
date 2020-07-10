@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RequestPattern - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">RequestPattern</a><br/>
+<br/>
+<h1>RequestPattern</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestPattern</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Types.kt#L1097">(source)</a>
+<p>Request pattern for interception.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#type-RequestPattern">Network#RequestPattern</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Request pattern for interception.</p>
+<code><span class="identifier">RequestPattern</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestPattern$<init>(kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.InterceptionStage)/urlPattern">urlPattern</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestPattern$<init>(kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.InterceptionStage)/resourceType">resourceType</span><span class="symbol">:</span>&nbsp;<a href="../-resource-type/index.html"><span class="identifier">ResourceType</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestPattern$<init>(kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.InterceptionStage)/interceptionStage">interceptionStage</span><span class="symbol">:</span>&nbsp;<a href="../-interception-stage/index.html"><span class="identifier">InterceptionStage</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="interception-stage.html">interceptionStage</a></h4>
+</td>
+<td>
+<p>Stage at wich to begin intercepting requests. Default is Request.</p>
+<code><span class="keyword">val </span><span class="identifier">interceptionStage</span><span class="symbol">: </span><a href="../-interception-stage/index.html"><span class="identifier">InterceptionStage</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resource-type.html">resourceType</a></h4>
+</td>
+<td>
+<p>If set, only requests for matching resource types will be intercepted.</p>
+<code><span class="keyword">val </span><span class="identifier">resourceType</span><span class="symbol">: </span><a href="../-resource-type/index.html"><span class="identifier">ResourceType</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url-pattern.html">urlPattern</a></h4>
+</td>
+<td>
+<p>Wildcards ('<em>' -&gt; zero or more, '?' -&gt; exactly one) are allowed. Escape character isbackslash. Omitting is equivalent to "</em>".</p>
+<code><span class="keyword">val </span><span class="identifier">urlPattern</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

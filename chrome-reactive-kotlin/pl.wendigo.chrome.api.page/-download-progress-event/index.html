@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DownloadProgressEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.page</a>&nbsp;/&nbsp;<a href="./index.html">DownloadProgressEvent</a><br/>
+<br/>
+<h1>DownloadProgressEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DownloadProgressEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/page/Operations.kt#L1946">(source)</a>
+<p>Fired when download makes progress. Last call has |done| == true.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#event-downloadProgress">Page#downloadProgress</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when download makes progress. Last call has |done| == true.</p>
+<code><span class="identifier">DownloadProgressEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.DownloadProgressEvent$<init>(kotlin.String, kotlin.Double, kotlin.Double, kotlin.String)/guid">guid</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.DownloadProgressEvent$<init>(kotlin.String, kotlin.Double, kotlin.Double, kotlin.String)/totalBytes">totalBytes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.DownloadProgressEvent$<init>(kotlin.String, kotlin.Double, kotlin.Double, kotlin.String)/receivedBytes">receivedBytes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.DownloadProgressEvent$<init>(kotlin.String, kotlin.Double, kotlin.Double, kotlin.String)/state">state</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="guid.html">guid</a></h4>
+</td>
+<td>
+<p>Global unique identifier of the download.</p>
+<code><span class="keyword">val </span><span class="identifier">guid</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="received-bytes.html">receivedBytes</a></h4>
+</td>
+<td>
+<p>Total bytes received.</p>
+<code><span class="keyword">val </span><span class="identifier">receivedBytes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="state.html">state</a></h4>
+</td>
+<td>
+<p>Download status.</p>
+<code><span class="keyword">val </span><span class="identifier">state</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="total-bytes.html">totalBytes</a></h4>
+</td>
+<td>
+<p>Total expected bytes to download.</p>
+<code><span class="keyword">val </span><span class="identifier">totalBytes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

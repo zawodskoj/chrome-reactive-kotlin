@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CacheStorageOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.cachestorage</a>&nbsp;/&nbsp;<a href="./index.html">CacheStorageOperations</a><br/>
+<br/>
+<h1>CacheStorageOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">CacheStorageOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/cachestorage/Operations.kt#L10">(source)</a>
+<p>CacheStorageOperations represents CacheStorage protocol domain request/response operations and events that can be captured.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage">CacheStorage</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="delete-cache.html">deleteCache</a></h4>
+</td>
+<td>
+<p>Deletes a cache.</p>
+<code><span class="keyword">fun </span><span class="identifier">deleteCache</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.cachestorage.CacheStorageOperations$deleteCache(pl.wendigo.chrome.api.cachestorage.DeleteCacheRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-delete-cache-request/index.html"><span class="identifier">DeleteCacheRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="delete-entry.html">deleteEntry</a></h4>
+</td>
+<td>
+<p>Deletes a cache entry.</p>
+<code><span class="keyword">fun </span><span class="identifier">deleteEntry</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.cachestorage.CacheStorageOperations$deleteEntry(pl.wendigo.chrome.api.cachestorage.DeleteEntryRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-delete-entry-request/index.html"><span class="identifier">DeleteEntryRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all CacheStorage domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-cached-response.html">requestCachedResponse</a></h4>
+</td>
+<td>
+<p>Fetches cache entry.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestCachedResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.cachestorage.CacheStorageOperations$requestCachedResponse(pl.wendigo.chrome.api.cachestorage.RequestCachedResponseRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-request-cached-response-request/index.html"><span class="identifier">RequestCachedResponseRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-request-cached-response-response/index.html"><span class="identifier">RequestCachedResponseResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-cache-names.html">requestCacheNames</a></h4>
+</td>
+<td>
+<p>Requests cache names.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestCacheNames</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.cachestorage.CacheStorageOperations$requestCacheNames(pl.wendigo.chrome.api.cachestorage.RequestCacheNamesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-request-cache-names-request/index.html"><span class="identifier">RequestCacheNamesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-request-cache-names-response/index.html"><span class="identifier">RequestCacheNamesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-entries.html">requestEntries</a></h4>
+</td>
+<td>
+<p>Requests data from cache.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestEntries</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.cachestorage.CacheStorageOperations$requestEntries(pl.wendigo.chrome.api.cachestorage.RequestEntriesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-request-entries-request/index.html"><span class="identifier">RequestEntriesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-request-entries-response/index.html"><span class="identifier">RequestEntriesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

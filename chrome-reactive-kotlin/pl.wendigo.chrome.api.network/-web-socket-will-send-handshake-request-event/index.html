@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>WebSocketWillSendHandshakeRequestEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">WebSocketWillSendHandshakeRequestEvent</a><br/>
+<br/>
+<h1>WebSocketWillSendHandshakeRequestEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketWillSendHandshakeRequestEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L1548">(source)</a>
+<p>Fired when WebSocket is about to initiate handshake.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#event-webSocketWillSendHandshakeRequest">Network#webSocketWillSendHandshakeRequest</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket is about to initiate handshake.</p>
+<code><span class="identifier">WebSocketWillSendHandshakeRequestEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.WebSocketWillSendHandshakeRequestEvent$<init>(kotlin.String, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.WebSocketRequest)/requestId">requestId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.WebSocketWillSendHandshakeRequestEvent$<init>(kotlin.String, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.WebSocketRequest)/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="../-monotonic-time.html"><span class="identifier">MonotonicTime</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.WebSocketWillSendHandshakeRequestEvent$<init>(kotlin.String, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.WebSocketRequest)/wallTime">wallTime</span><span class="symbol">:</span>&nbsp;<a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.WebSocketWillSendHandshakeRequestEvent$<init>(kotlin.String, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.WebSocketRequest)/request">request</span><span class="symbol">:</span>&nbsp;<a href="../-web-socket-request/index.html"><span class="identifier">WebSocketRequest</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="request.html">request</a></h4>
+</td>
+<td>
+<p>WebSocket request data.</p>
+<code><span class="keyword">val </span><span class="identifier">request</span><span class="symbol">: </span><a href="../-web-socket-request/index.html"><span class="identifier">WebSocketRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<p>Request identifier.</p>
+<code><span class="keyword">val </span><span class="identifier">requestId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timestamp.html">timestamp</a></h4>
+</td>
+<td>
+<p>Timestamp.</p>
+<code><span class="keyword">val </span><span class="identifier">timestamp</span><span class="symbol">: </span><a href="../-monotonic-time.html"><span class="identifier">MonotonicTime</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="wall-time.html">wallTime</a></h4>
+</td>
+<td>
+<p>UTC Timestamp.</p>
+<code><span class="keyword">val </span><span class="identifier">wallTime</span><span class="symbol">: </span><a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

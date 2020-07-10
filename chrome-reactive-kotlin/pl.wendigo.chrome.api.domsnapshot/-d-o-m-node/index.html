@@ -1,0 +1,263 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DOMNode - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.domsnapshot</a>&nbsp;/&nbsp;<a href="./index.html">DOMNode</a><br/>
+<br/>
+<h1>DOMNode</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DOMNode</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/domsnapshot/Types.kt#L9">(source)</a>
+<p>A Node in the DOM tree.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot#type-DOMNode">DOMSnapshot#DOMNode</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>A Node in the DOM tree.</p>
+<code><span class="identifier">DOMNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/nodeType">nodeType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/nodeName">nodeName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/nodeValue">nodeValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/textValue">textValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/inputValue">inputValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/inputChecked">inputChecked</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/optionSelected">optionSelected</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/backendNodeId">backendNodeId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.dom/-backend-node-id.html"><span class="identifier">BackendNodeId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/childNodeIndexes">childNodeIndexes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/attributes">attributes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-name-value/index.html"><span class="identifier">NameValue</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/pseudoElementIndexes">pseudoElementIndexes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/layoutNodeIndex">layoutNodeIndex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/documentURL">documentURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/baseURL">baseURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/contentLanguage">contentLanguage</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/documentEncoding">documentEncoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/publicId">publicId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/systemId">systemId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/frameId">frameId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.page/-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/contentDocumentIndex">contentDocumentIndex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/pseudoType">pseudoType</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.dom/-pseudo-type/index.html"><span class="identifier">PseudoType</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/shadowRootType">shadowRootType</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.dom/-shadow-root-type/index.html"><span class="identifier">ShadowRootType</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/isClickable">isClickable</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/eventListeners">eventListeners</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.api.domdebugger/-event-listener/index.html"><span class="identifier">EventListener</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/currentSourceURL">currentSourceURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/originURL">originURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/scrollOffsetX">scrollOffsetX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.DOMNode$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.NameValue)), kotlin.collections.List((kotlin.Int)), kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, pl.wendigo.chrome.api.dom.PseudoType, pl.wendigo.chrome.api.dom.ShadowRootType, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.domdebugger.EventListener)), kotlin.String, kotlin.String, kotlin.Double, kotlin.Double)/scrollOffsetY">scrollOffsetY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="attributes.html">attributes</a></h4>
+</td>
+<td>
+<p>Attributes of an <code>Element</code> node.</p>
+<code><span class="keyword">val </span><span class="identifier">attributes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-name-value/index.html"><span class="identifier">NameValue</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="backend-node-id.html">backendNodeId</a></h4>
+</td>
+<td>
+<p><code>Node</code>'s id, corresponds to DOM.Node.backendNodeId.</p>
+<code><span class="keyword">val </span><span class="identifier">backendNodeId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.dom/-backend-node-id.html"><span class="identifier">BackendNodeId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="base-u-r-l.html">baseURL</a></h4>
+</td>
+<td>
+<p>Base URL that <code>Document</code> or <code>FrameOwner</code> node uses for URL completion.</p>
+<code><span class="keyword">val </span><span class="identifier">baseURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="child-node-indexes.html">childNodeIndexes</a></h4>
+</td>
+<td>
+<p>The indexes of the node's child nodes in the <code>domNodes</code> array returned by <code>getSnapshot</code>, if
+any.</p>
+<code><span class="keyword">val </span><span class="identifier">childNodeIndexes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="content-document-index.html">contentDocumentIndex</a></h4>
+</td>
+<td>
+<p>The index of a frame owner element's content document in the <code>domNodes</code> array returned by
+<code>getSnapshot</code>, if any.</p>
+<code><span class="keyword">val </span><span class="identifier">contentDocumentIndex</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="content-language.html">contentLanguage</a></h4>
+</td>
+<td>
+<p>Only set for documents, contains the document's content language.</p>
+<code><span class="keyword">val </span><span class="identifier">contentLanguage</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="current-source-u-r-l.html">currentSourceURL</a></h4>
+</td>
+<td>
+<p>The selected url for nodes with a srcset attribute.</p>
+<code><span class="keyword">val </span><span class="identifier">currentSourceURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="document-encoding.html">documentEncoding</a></h4>
+</td>
+<td>
+<p>Only set for documents, contains the document's character set encoding.</p>
+<code><span class="keyword">val </span><span class="identifier">documentEncoding</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="document-u-r-l.html">documentURL</a></h4>
+</td>
+<td>
+<p>Document URL that <code>Document</code> or <code>FrameOwner</code> node points to.</p>
+<code><span class="keyword">val </span><span class="identifier">documentURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="event-listeners.html">eventListeners</a></h4>
+</td>
+<td>
+<p>Details of the node's event listeners, if any.</p>
+<code><span class="keyword">val </span><span class="identifier">eventListeners</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.api.domdebugger/-event-listener/index.html"><span class="identifier">EventListener</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-id.html">frameId</a></h4>
+</td>
+<td>
+<p>Frame ID for frame owner elements and also for the document node.</p>
+<code><span class="keyword">val </span><span class="identifier">frameId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.page/-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="input-checked.html">inputChecked</a></h4>
+</td>
+<td>
+<p>Only set for radio and checkbox input elements, indicates if the element has been checked</p>
+<code><span class="keyword">val </span><span class="identifier">inputChecked</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="input-value.html">inputValue</a></h4>
+</td>
+<td>
+<p>Only set for input elements, contains the input's associated text value.</p>
+<code><span class="keyword">val </span><span class="identifier">inputValue</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-clickable.html">isClickable</a></h4>
+</td>
+<td>
+<p>Whether this DOM node responds to mouse clicks. This includes nodes that have had click
+event listeners attached via JavaScript as well as anchor tags that naturally navigate when
+clicked.</p>
+<code><span class="keyword">val </span><span class="identifier">isClickable</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="layout-node-index.html">layoutNodeIndex</a></h4>
+</td>
+<td>
+<p>The index of the node's related layout tree node in the <code>layoutTreeNodes</code> array returned by
+<code>getSnapshot</code>, if any.</p>
+<code><span class="keyword">val </span><span class="identifier">layoutNodeIndex</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="node-name.html">nodeName</a></h4>
+</td>
+<td>
+<p><code>Node</code>'s nodeName.</p>
+<code><span class="keyword">val </span><span class="identifier">nodeName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="node-type.html">nodeType</a></h4>
+</td>
+<td>
+<p><code>Node</code>'s nodeType.</p>
+<code><span class="keyword">val </span><span class="identifier">nodeType</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="node-value.html">nodeValue</a></h4>
+</td>
+<td>
+<p><code>Node</code>'s nodeValue.</p>
+<code><span class="keyword">val </span><span class="identifier">nodeValue</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="option-selected.html">optionSelected</a></h4>
+</td>
+<td>
+<p>Only set for option elements, indicates if the element has been selected</p>
+<code><span class="keyword">val </span><span class="identifier">optionSelected</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="origin-u-r-l.html">originURL</a></h4>
+</td>
+<td>
+<p>The url of the script (if any) that generates this node.</p>
+<code><span class="keyword">val </span><span class="identifier">originURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pseudo-element-indexes.html">pseudoElementIndexes</a></h4>
+</td>
+<td>
+<p>Indexes of pseudo elements associated with this node in the <code>domNodes</code> array returned by
+<code>getSnapshot</code>, if any.</p>
+<code><span class="keyword">val </span><span class="identifier">pseudoElementIndexes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pseudo-type.html">pseudoType</a></h4>
+</td>
+<td>
+<p>Type of a pseudo element node.</p>
+<code><span class="keyword">val </span><span class="identifier">pseudoType</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.dom/-pseudo-type/index.html"><span class="identifier">PseudoType</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="public-id.html">publicId</a></h4>
+</td>
+<td>
+<p><code>DocumentType</code> node's publicId.</p>
+<code><span class="keyword">val </span><span class="identifier">publicId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scroll-offset-x.html">scrollOffsetX</a></h4>
+</td>
+<td>
+<p>Scroll offsets, set when this node is a Document.</p>
+<code><span class="keyword">val </span><span class="identifier">scrollOffsetX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scroll-offset-y.html">scrollOffsetY</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">scrollOffsetY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shadow-root-type.html">shadowRootType</a></h4>
+</td>
+<td>
+<p>Shadow root type.</p>
+<code><span class="keyword">val </span><span class="identifier">shadowRootType</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.dom/-shadow-root-type/index.html"><span class="identifier">ShadowRootType</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="system-id.html">systemId</a></h4>
+</td>
+<td>
+<p><code>DocumentType</code> node's systemId.</p>
+<code><span class="keyword">val </span><span class="identifier">systemId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="text-value.html">textValue</a></h4>
+</td>
+<td>
+<p>Only set for textarea elements, contains the text value.</p>
+<code><span class="keyword">val </span><span class="identifier">textValue</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

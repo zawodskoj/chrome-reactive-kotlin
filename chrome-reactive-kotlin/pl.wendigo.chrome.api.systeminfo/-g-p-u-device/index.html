@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GPUDevice - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.systeminfo</a>&nbsp;/&nbsp;<a href="./index.html">GPUDevice</a><br/>
+<br/>
+<h1>GPUDevice</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GPUDevice</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/systeminfo/Types.kt#L9">(source)</a>
+<p>Describes a single graphics processor (GPU).</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/SystemInfo#type-GPUDevice">SystemInfo#GPUDevice</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Describes a single graphics processor (GPU).</p>
+<code><span class="identifier">GPUDevice</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GPUDevice$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/vendorId">vendorId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GPUDevice$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/deviceId">deviceId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GPUDevice$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/subSysId">subSysId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GPUDevice$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/revision">revision</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GPUDevice$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/vendorString">vendorString</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GPUDevice$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/deviceString">deviceString</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GPUDevice$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/driverVendor">driverVendor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GPUDevice$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/driverVersion">driverVersion</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="device-id.html">deviceId</a></h4>
+</td>
+<td>
+<p>PCI ID of the GPU device, if available; 0 otherwise.</p>
+<code><span class="keyword">val </span><span class="identifier">deviceId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="device-string.html">deviceString</a></h4>
+</td>
+<td>
+<p>String description of the GPU device, if the PCI ID is not available.</p>
+<code><span class="keyword">val </span><span class="identifier">deviceString</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="driver-vendor.html">driverVendor</a></h4>
+</td>
+<td>
+<p>String description of the GPU driver vendor.</p>
+<code><span class="keyword">val </span><span class="identifier">driverVendor</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="driver-version.html">driverVersion</a></h4>
+</td>
+<td>
+<p>String description of the GPU driver version.</p>
+<code><span class="keyword">val </span><span class="identifier">driverVersion</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="revision.html">revision</a></h4>
+</td>
+<td>
+<p>Revision of the GPU, only available on Windows.</p>
+<code><span class="keyword">val </span><span class="identifier">revision</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sub-sys-id.html">subSysId</a></h4>
+</td>
+<td>
+<p>Sub sys ID of the GPU, only available on Windows.</p>
+<code><span class="keyword">val </span><span class="identifier">subSysId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="vendor-id.html">vendorId</a></h4>
+</td>
+<td>
+<p>PCI ID of the GPU vendor, if available; 0 otherwise.</p>
+<code><span class="keyword">val </span><span class="identifier">vendorId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="vendor-string.html">vendorString</a></h4>
+</td>
+<td>
+<p>String description of the GPU vendor, if the PCI ID is not available.</p>
+<code><span class="keyword">val </span><span class="identifier">vendorString</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

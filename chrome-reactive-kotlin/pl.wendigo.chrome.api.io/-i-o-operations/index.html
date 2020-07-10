@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IOOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.io</a>&nbsp;/&nbsp;<a href="./index.html">IOOperations</a><br/>
+<br/>
+<h1>IOOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">IOOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/io/Operations.kt#L8">(source)</a>
+<p>Input/Output operations for streams produced by DevTools.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/IO">IO</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="close.html">close</a></h4>
+</td>
+<td>
+<p>Close the stream, discard any temporary backing storage.</p>
+<code><span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.io.IOOperations$close(pl.wendigo.chrome.api.io.CloseRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-close-request/index.html"><span class="identifier">CloseRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all IO domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read.html">read</a></h4>
+</td>
+<td>
+<p>Read a chunk of the stream</p>
+<code><span class="keyword">fun </span><span class="identifier">read</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.io.IOOperations$read(pl.wendigo.chrome.api.io.ReadRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-read-request/index.html"><span class="identifier">ReadRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-read-response/index.html"><span class="identifier">ReadResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resolve-blob.html">resolveBlob</a></h4>
+</td>
+<td>
+<p>Return UUID of Blob object specified by a remote object id.</p>
+<code><span class="keyword">fun </span><span class="identifier">resolveBlob</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.io.IOOperations$resolveBlob(pl.wendigo.chrome.api.io.ResolveBlobRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-resolve-blob-request/index.html"><span class="identifier">ResolveBlobRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-resolve-blob-response/index.html"><span class="identifier">ResolveBlobResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

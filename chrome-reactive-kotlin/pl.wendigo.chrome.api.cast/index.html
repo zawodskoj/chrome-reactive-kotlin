@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.cast - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.cast</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.cast</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Cast">Cast</a> domain implementation accessible via <a href="-cast-operations/index.html">CastOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-cast-operations/index.html">CastOperations</a></h4>
+</td>
+<td>
+<p>A domain for interacting with Cast, Presentation API, and Remote Playback API
+functionalities.</p>
+<code><span class="keyword">class </span><span class="identifier">CastOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-enable-request/index.html">EnableRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Cast#method-enable">Cast#enable</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EnableRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-issue-updated-event/index.html">IssueUpdatedEvent</a></h4>
+</td>
+<td>
+<p>This is fired whenever the outstanding issue/error message changes.
+|issueMessage| is empty if there is no issue.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">IssueUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-sink-to-use-request/index.html">SetSinkToUseRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Cast#method-setSinkToUse">Cast#setSinkToUse</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetSinkToUseRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-sink/index.html">Sink</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Sink</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-sinks-updated-event/index.html">SinksUpdatedEvent</a></h4>
+</td>
+<td>
+<p>This is fired whenever the list of available sinks changes. A sink is a
+device or a software surface that you can cast to.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SinksUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-start-tab-mirroring-request/index.html">StartTabMirroringRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Cast#method-startTabMirroring">Cast#startTabMirroring</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StartTabMirroringRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-stop-casting-request/index.html">StopCastingRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Cast#method-stopCasting">Cast#stopCasting</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StopCastingRequest</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,226 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.overlay - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.overlay</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.overlay</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay">Overlay</a> domain implementation accessible via <a href="-overlay-operations/index.html">OverlayOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-color-format/index.html">ColorFormat</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ColorFormat</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-highlight-object-for-test-request/index.html">GetHighlightObjectForTestRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-getHighlightObjectForTest">Overlay#getHighlightObjectForTest</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetHighlightObjectForTestRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-highlight-object-for-test-response/index.html">GetHighlightObjectForTestResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-getHighlightObjectForTest">Overlay#getHighlightObjectForTest</a> operation call.
+For testing.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetHighlightObjectForTestResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-grid-highlight-config/index.html">GridHighlightConfig</a></h4>
+</td>
+<td>
+<p>Configuration data for the highlighting of Grid elements.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GridHighlightConfig</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-highlight-config/index.html">HighlightConfig</a></h4>
+</td>
+<td>
+<p>Configuration data for the highlighting of page elements.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HighlightConfig</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-highlight-frame-request/index.html">HighlightFrameRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-highlightFrame">Overlay#highlightFrame</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HighlightFrameRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-highlight-node-request/index.html">HighlightNodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-highlightNode">Overlay#highlightNode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HighlightNodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-highlight-quad-request/index.html">HighlightQuadRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-highlightQuad">Overlay#highlightQuad</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HighlightQuadRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-highlight-rect-request/index.html">HighlightRectRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-highlightRect">Overlay#highlightRect</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HighlightRectRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-hinge-config/index.html">HingeConfig</a></h4>
+</td>
+<td>
+<p>Configuration for dual screen hinge</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HingeConfig</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-inspect-mode/index.html">InspectMode</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">InspectMode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-inspect-node-requested-event/index.html">InspectNodeRequestedEvent</a></h4>
+</td>
+<td>
+<p>Fired when the node should be inspected. This happens after call to <code>setInspectMode</code> or when
+user manually inspects an element.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InspectNodeRequestedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-node-highlight-requested-event/index.html">NodeHighlightRequestedEvent</a></h4>
+</td>
+<td>
+<p>Fired when the node should be highlighted. This happens after call to <code>setInspectMode</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NodeHighlightRequestedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-overlay-operations/index.html">OverlayOperations</a></h4>
+</td>
+<td>
+<p>This domain provides various functionality related to drawing atop the inspected page.</p>
+<code><span class="keyword">class </span><span class="identifier">OverlayOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-screenshot-requested-event/index.html">ScreenshotRequestedEvent</a></h4>
+</td>
+<td>
+<p>Fired when user asks to capture screenshot of some area on the page.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScreenshotRequestedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-inspect-mode-request/index.html">SetInspectModeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setInspectMode">Overlay#setInspectMode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetInspectModeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-paused-in-debugger-message-request/index.html">SetPausedInDebuggerMessageRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setPausedInDebuggerMessage">Overlay#setPausedInDebuggerMessage</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetPausedInDebuggerMessageRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-show-ad-highlights-request/index.html">SetShowAdHighlightsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowAdHighlights">Overlay#setShowAdHighlights</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetShowAdHighlightsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-show-debug-borders-request/index.html">SetShowDebugBordersRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowDebugBorders">Overlay#setShowDebugBorders</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetShowDebugBordersRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-show-f-p-s-counter-request/index.html">SetShowFPSCounterRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowFPSCounter">Overlay#setShowFPSCounter</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetShowFPSCounterRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-show-hinge-request/index.html">SetShowHingeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowHinge">Overlay#setShowHinge</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetShowHingeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-show-hit-test-borders-request/index.html">SetShowHitTestBordersRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowHitTestBorders">Overlay#setShowHitTestBorders</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetShowHitTestBordersRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-show-layout-shift-regions-request/index.html">SetShowLayoutShiftRegionsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowLayoutShiftRegions">Overlay#setShowLayoutShiftRegions</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetShowLayoutShiftRegionsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-show-paint-rects-request/index.html">SetShowPaintRectsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowPaintRects">Overlay#setShowPaintRects</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetShowPaintRectsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-show-scroll-bottleneck-rects-request/index.html">SetShowScrollBottleneckRectsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowScrollBottleneckRects">Overlay#setShowScrollBottleneckRects</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetShowScrollBottleneckRectsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-show-viewport-size-on-resize-request/index.html">SetShowViewportSizeOnResizeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowViewportSizeOnResize">Overlay#setShowViewportSizeOnResize</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetShowViewportSizeOnResizeRequest</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,225 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EmulationOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.emulation</a>&nbsp;/&nbsp;<a href="./index.html">EmulationOperations</a><br/>
+<br/>
+<h1>EmulationOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">EmulationOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/emulation/Operations.kt#L8">(source)</a>
+<p>This domain emulates different environments for the page.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Emulation">Emulation</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="can-emulate.html">canEmulate</a></h4>
+</td>
+<td>
+<p>Tells whether emulation is supported.</p>
+<code><span class="keyword">fun </span><span class="identifier">canEmulate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-can-emulate-response/index.html"><span class="identifier">CanEmulateResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-device-metrics-override.html">clearDeviceMetricsOverride</a></h4>
+</td>
+<td>
+<p>Clears the overriden device metrics.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearDeviceMetricsOverride</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-geolocation-override.html">clearGeolocationOverride</a></h4>
+</td>
+<td>
+<p>Clears the overriden Geolocation Position and Error.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearGeolocationOverride</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Emulation domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reset-page-scale-factor.html">resetPageScaleFactor</a></h4>
+</td>
+<td>
+<p>Requests that page scale factor is reset to initial values.</p>
+<code><span class="keyword">fun </span><span class="identifier">resetPageScaleFactor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-c-p-u-throttling-rate.html">setCPUThrottlingRate</a></h4>
+</td>
+<td>
+<p>Enables CPU throttling to emulate slow CPUs.</p>
+<code><span class="keyword">fun </span><span class="identifier">setCPUThrottlingRate</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setCPUThrottlingRate(pl.wendigo.chrome.api.emulation.SetCPUThrottlingRateRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-c-p-u-throttling-rate-request/index.html"><span class="identifier">SetCPUThrottlingRateRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-default-background-color-override.html">setDefaultBackgroundColorOverride</a></h4>
+</td>
+<td>
+<p>Sets or clears an override of the default background color of the frame. This override is used
+if the content does not specify one.</p>
+<code><span class="keyword">fun </span><span class="identifier">setDefaultBackgroundColorOverride</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setDefaultBackgroundColorOverride(pl.wendigo.chrome.api.emulation.SetDefaultBackgroundColorOverrideRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-default-background-color-override-request/index.html"><span class="identifier">SetDefaultBackgroundColorOverrideRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-device-metrics-override.html">setDeviceMetricsOverride</a></h4>
+</td>
+<td>
+<p>Overrides the values of device screen dimensions (window.screen.width, window.screen.height,
+window.innerWidth, window.innerHeight, and "device-width"/"device-height"-related CSS media
+query results).</p>
+<code><span class="keyword">fun </span><span class="identifier">setDeviceMetricsOverride</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setDeviceMetricsOverride(pl.wendigo.chrome.api.emulation.SetDeviceMetricsOverrideRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-device-metrics-override-request/index.html"><span class="identifier">SetDeviceMetricsOverrideRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-document-cookie-disabled.html">setDocumentCookieDisabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDocumentCookieDisabled</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setDocumentCookieDisabled(pl.wendigo.chrome.api.emulation.SetDocumentCookieDisabledRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-document-cookie-disabled-request/index.html"><span class="identifier">SetDocumentCookieDisabledRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-emit-touch-events-for-mouse.html">setEmitTouchEventsForMouse</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setEmitTouchEventsForMouse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setEmitTouchEventsForMouse(pl.wendigo.chrome.api.emulation.SetEmitTouchEventsForMouseRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-emit-touch-events-for-mouse-request/index.html"><span class="identifier">SetEmitTouchEventsForMouseRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-emulated-media.html">setEmulatedMedia</a></h4>
+</td>
+<td>
+<p>Emulates the given media type or media feature for CSS media queries.</p>
+<code><span class="keyword">fun </span><span class="identifier">setEmulatedMedia</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setEmulatedMedia(pl.wendigo.chrome.api.emulation.SetEmulatedMediaRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-emulated-media-request/index.html"><span class="identifier">SetEmulatedMediaRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-emulated-vision-deficiency.html">setEmulatedVisionDeficiency</a></h4>
+</td>
+<td>
+<p>Emulates the given vision deficiency.</p>
+<code><span class="keyword">fun </span><span class="identifier">setEmulatedVisionDeficiency</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setEmulatedVisionDeficiency(pl.wendigo.chrome.api.emulation.SetEmulatedVisionDeficiencyRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-emulated-vision-deficiency-request/index.html"><span class="identifier">SetEmulatedVisionDeficiencyRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-focus-emulation-enabled.html">setFocusEmulationEnabled</a></h4>
+</td>
+<td>
+<p>Enables or disables simulating a focused and active page.</p>
+<code><span class="keyword">fun </span><span class="identifier">setFocusEmulationEnabled</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setFocusEmulationEnabled(pl.wendigo.chrome.api.emulation.SetFocusEmulationEnabledRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-focus-emulation-enabled-request/index.html"><span class="identifier">SetFocusEmulationEnabledRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-geolocation-override.html">setGeolocationOverride</a></h4>
+</td>
+<td>
+<p>Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position
+unavailable.</p>
+<code><span class="keyword">fun </span><span class="identifier">setGeolocationOverride</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setGeolocationOverride(pl.wendigo.chrome.api.emulation.SetGeolocationOverrideRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-geolocation-override-request/index.html"><span class="identifier">SetGeolocationOverrideRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-locale-override.html">setLocaleOverride</a></h4>
+</td>
+<td>
+<p>Overrides default host system locale with the specified one.</p>
+<code><span class="keyword">fun </span><span class="identifier">setLocaleOverride</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setLocaleOverride(pl.wendigo.chrome.api.emulation.SetLocaleOverrideRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-locale-override-request/index.html"><span class="identifier">SetLocaleOverrideRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-navigator-overrides.html">setNavigatorOverrides</a></h4>
+</td>
+<td>
+<p>Overrides value returned by the javascript navigator object.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">setNavigatorOverrides</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setNavigatorOverrides(pl.wendigo.chrome.api.emulation.SetNavigatorOverridesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-navigator-overrides-request/index.html"><span class="identifier">SetNavigatorOverridesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-page-scale-factor.html">setPageScaleFactor</a></h4>
+</td>
+<td>
+<p>Sets a specified page scale factor.</p>
+<code><span class="keyword">fun </span><span class="identifier">setPageScaleFactor</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setPageScaleFactor(pl.wendigo.chrome.api.emulation.SetPageScaleFactorRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-page-scale-factor-request/index.html"><span class="identifier">SetPageScaleFactorRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-script-execution-disabled.html">setScriptExecutionDisabled</a></h4>
+</td>
+<td>
+<p>Switches script execution in the page.</p>
+<code><span class="keyword">fun </span><span class="identifier">setScriptExecutionDisabled</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setScriptExecutionDisabled(pl.wendigo.chrome.api.emulation.SetScriptExecutionDisabledRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-script-execution-disabled-request/index.html"><span class="identifier">SetScriptExecutionDisabledRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-scrollbars-hidden.html">setScrollbarsHidden</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setScrollbarsHidden</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setScrollbarsHidden(pl.wendigo.chrome.api.emulation.SetScrollbarsHiddenRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-scrollbars-hidden-request/index.html"><span class="identifier">SetScrollbarsHiddenRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-timezone-override.html">setTimezoneOverride</a></h4>
+</td>
+<td>
+<p>Overrides default host system timezone with the specified one.</p>
+<code><span class="keyword">fun </span><span class="identifier">setTimezoneOverride</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setTimezoneOverride(pl.wendigo.chrome.api.emulation.SetTimezoneOverrideRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-timezone-override-request/index.html"><span class="identifier">SetTimezoneOverrideRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-touch-emulation-enabled.html">setTouchEmulationEnabled</a></h4>
+</td>
+<td>
+<p>Enables touch on platforms which do not support them.</p>
+<code><span class="keyword">fun </span><span class="identifier">setTouchEmulationEnabled</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setTouchEmulationEnabled(pl.wendigo.chrome.api.emulation.SetTouchEmulationEnabledRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-touch-emulation-enabled-request/index.html"><span class="identifier">SetTouchEmulationEnabledRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-user-agent-override.html">setUserAgentOverride</a></h4>
+</td>
+<td>
+<p>Allows overriding user agent with the given string.</p>
+<code><span class="keyword">fun </span><span class="identifier">setUserAgentOverride</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setUserAgentOverride(pl.wendigo.chrome.api.emulation.SetUserAgentOverrideRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-user-agent-override-request/index.html"><span class="identifier">SetUserAgentOverrideRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-virtual-time-policy.html">setVirtualTimePolicy</a></h4>
+</td>
+<td>
+<p>Turns on virtual time for all frames (replacing real-time with a synthetic time source) and sets
+the current virtual time policy.  Note this supersedes any previous time budget.</p>
+<code><span class="keyword">fun </span><span class="identifier">setVirtualTimePolicy</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setVirtualTimePolicy(pl.wendigo.chrome.api.emulation.SetVirtualTimePolicyRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-virtual-time-policy-request/index.html"><span class="identifier">SetVirtualTimePolicyRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-virtual-time-policy-response/index.html"><span class="identifier">SetVirtualTimePolicyResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-visible-size.html">setVisibleSize</a></h4>
+</td>
+<td>
+<p>Resizes the frame/viewport of the page. Note that this does not affect the frame's container
+(e.g. browser window). Can be used to produce screenshots of the specified size. Not supported
+on Android.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">setVisibleSize</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.emulation.EmulationOperations$setVisibleSize(pl.wendigo.chrome.api.emulation.SetVisibleSizeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-visible-size-request/index.html"><span class="identifier">SetVisibleSizeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="virtual-time-budget-expired.html">virtualTimeBudgetExpired</a></h4>
+</td>
+<td>
+<p>Notification sent after the virtual time budget for the current VirtualTimePolicy has run out.</p>
+<code><span class="keyword">fun </span><span class="identifier">virtualTimeBudgetExpired</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

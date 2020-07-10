@@ -1,0 +1,291 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.target - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.target</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.target</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target">Target</a> domain implementation accessible via <a href="-target-operations/index.html">TargetOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-activate-target-request/index.html">ActivateTargetRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-activateTarget">Target#activateTarget</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ActivateTargetRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-attached-to-target-event/index.html">AttachedToTargetEvent</a></h4>
+</td>
+<td>
+<p>Issued when attached to target because of auto-attach or <code>attachToTarget</code> command.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AttachedToTargetEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-attach-to-browser-target-response/index.html">AttachToBrowserTargetResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-attachToBrowserTarget">Target#attachToBrowserTarget</a> operation call.
+Attaches to the browser target, only uses flat sessionId mode.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AttachToBrowserTargetResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-attach-to-target-request/index.html">AttachToTargetRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-attachToTarget">Target#attachToTarget</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AttachToTargetRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-attach-to-target-response/index.html">AttachToTargetResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-attachToTarget">Target#attachToTarget</a> operation call.
+Attaches to the target with given id.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AttachToTargetResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-close-target-request/index.html">CloseTargetRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-closeTarget">Target#closeTarget</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CloseTargetRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-close-target-response/index.html">CloseTargetResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-closeTarget">Target#closeTarget</a> operation call.
+Closes the target. If the target is a page that gets closed too.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CloseTargetResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-create-browser-context-request/index.html">CreateBrowserContextRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-createBrowserContext">Target#createBrowserContext</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CreateBrowserContextRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-create-browser-context-response/index.html">CreateBrowserContextResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-createBrowserContext">Target#createBrowserContext</a> operation call.
+Creates a new empty BrowserContext. Similar to an incognito profile but you can have more than
+one.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CreateBrowserContextResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-create-target-request/index.html">CreateTargetRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-createTarget">Target#createTarget</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CreateTargetRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-create-target-response/index.html">CreateTargetResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-createTarget">Target#createTarget</a> operation call.
+Creates a new page.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CreateTargetResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-detached-from-target-event/index.html">DetachedFromTargetEvent</a></h4>
+</td>
+<td>
+<p>Issued when detached from target for any reason (including <code>detachFromTarget</code> command). Can be
+issued multiple times per target if multiple sessions have been attached to it.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DetachedFromTargetEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-detach-from-target-request/index.html">DetachFromTargetRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-detachFromTarget">Target#detachFromTarget</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DetachFromTargetRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-dispose-browser-context-request/index.html">DisposeBrowserContextRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-disposeBrowserContext">Target#disposeBrowserContext</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DisposeBrowserContextRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-expose-dev-tools-protocol-request/index.html">ExposeDevToolsProtocolRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-exposeDevToolsProtocol">Target#exposeDevToolsProtocol</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExposeDevToolsProtocolRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-browser-contexts-response/index.html">GetBrowserContextsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-getBrowserContexts">Target#getBrowserContexts</a> operation call.
+Returns all browser contexts created with <code>Target.createBrowserContext</code> method.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetBrowserContextsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-target-info-request/index.html">GetTargetInfoRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-getTargetInfo">Target#getTargetInfo</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetTargetInfoRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-target-info-response/index.html">GetTargetInfoResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-getTargetInfo">Target#getTargetInfo</a> operation call.
+Returns information about a target.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetTargetInfoResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-targets-response/index.html">GetTargetsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-getTargets">Target#getTargets</a> operation call.
+Retrieves a list of available targets.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetTargetsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-received-message-from-target-event/index.html">ReceivedMessageFromTargetEvent</a></h4>
+</td>
+<td>
+<p>Notifies about a new protocol message received from the session (as reported in
+<code>attachedToTarget</code> event).</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReceivedMessageFromTargetEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remote-location/index.html">RemoteLocation</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoteLocation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-send-message-to-target-request/index.html">SendMessageToTargetRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-sendMessageToTarget">Target#sendMessageToTarget</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SendMessageToTargetRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-session-i-d.html">SessionID</a></h4>
+</td>
+<td>
+<p>Unique identifier of attached debugging session.</p>
+<code><span class="keyword">typealias </span><span class="identifier">SessionID</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-auto-attach-request/index.html">SetAutoAttachRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-setAutoAttach">Target#setAutoAttach</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetAutoAttachRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-discover-targets-request/index.html">SetDiscoverTargetsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-setDiscoverTargets">Target#setDiscoverTargets</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetDiscoverTargetsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-remote-locations-request/index.html">SetRemoteLocationsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-setRemoteLocations">Target#setRemoteLocations</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetRemoteLocationsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-target-crashed-event/index.html">TargetCrashedEvent</a></h4>
+</td>
+<td>
+<p>Issued when a target has crashed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TargetCrashedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-target-created-event/index.html">TargetCreatedEvent</a></h4>
+</td>
+<td>
+<p>Issued when a possible inspection target is created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TargetCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-target-destroyed-event/index.html">TargetDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Issued when a target is destroyed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TargetDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-target-i-d.html">TargetID</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">TargetID</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-target-info/index.html">TargetInfo</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TargetInfo</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-target-info-changed-event/index.html">TargetInfoChangedEvent</a></h4>
+</td>
+<td>
+<p>Issued when some information about a target has changed. This only happens between
+<code>targetCreated</code> and <code>targetDestroyed</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TargetInfoChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-target-operations/index.html">TargetOperations</a></h4>
+</td>
+<td>
+<p>Supports additional targets discovery and allows to attach to them.</p>
+<code><span class="keyword">class </span><span class="identifier">TargetOperations</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,19 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DebuggerOperations.setBlackboxPatterns - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="index.html">DebuggerOperations</a>&nbsp;/&nbsp;<a href="./set-blackbox-patterns.html">setBlackboxPatterns</a><br/>
+<br/>
+<h1>setBlackboxPatterns</h1>
+<a name="pl.wendigo.chrome.api.debugger.DebuggerOperations$setBlackboxPatterns(pl.wendigo.chrome.api.debugger.SetBlackboxPatternsRequest)"></a>
+<code><span class="keyword">fun </span><span class="identifier">setBlackboxPatterns</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setBlackboxPatterns(pl.wendigo.chrome.api.debugger.SetBlackboxPatternsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-blackbox-patterns-request/index.html"><span class="identifier">SetBlackboxPatternsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L141">(source)</a>
+<p>Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in
+scripts with url matching one of the patterns. VM will try to leave blackboxed script by
+performing 'step in' several times, finally resorting to 'step out' if unsuccessful.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBlackboxPatterns">Debugger#setBlackboxPatterns</a> method documentation.</p>
+</BODY>
+</HTML>

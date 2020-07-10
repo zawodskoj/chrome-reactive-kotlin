@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetVariableValueRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">SetVariableValueRequest</a><br/>
+<br/>
+<h1>SetVariableValueRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetVariableValueRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L1105">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setVariableValue">Debugger#setVariableValue</a> operation call.</p>
+<p>Changes value of variable in a callframe. Object-based scopes are not supported and must be
+mutated manually.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setVariableValue">Debugger#setVariableValue</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-debugger-operations/set-variable-value.html">DebuggerOperations.setVariableValue</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setVariableValue">Debugger#setVariableValue</a> operation call.</p>
+<code><span class="identifier">SetVariableValueRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetVariableValueRequest$<init>(kotlin.Int, kotlin.String, pl.wendigo.chrome.api.runtime.CallArgument, kotlin.String)/scopeNumber">scopeNumber</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetVariableValueRequest$<init>(kotlin.Int, kotlin.String, pl.wendigo.chrome.api.runtime.CallArgument, kotlin.String)/variableName">variableName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetVariableValueRequest$<init>(kotlin.Int, kotlin.String, pl.wendigo.chrome.api.runtime.CallArgument, kotlin.String)/newValue">newValue</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-call-argument/index.html"><span class="identifier">CallArgument</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetVariableValueRequest$<init>(kotlin.Int, kotlin.String, pl.wendigo.chrome.api.runtime.CallArgument, kotlin.String)/callFrameId">callFrameId</span><span class="symbol">:</span>&nbsp;<a href="../-call-frame-id.html"><span class="identifier">CallFrameId</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="call-frame-id.html">callFrameId</a></h4>
+</td>
+<td>
+<p>Id of callframe that holds variable.</p>
+<code><span class="keyword">val </span><span class="identifier">callFrameId</span><span class="symbol">: </span><a href="../-call-frame-id.html"><span class="identifier">CallFrameId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="new-value.html">newValue</a></h4>
+</td>
+<td>
+<p>New variable value.</p>
+<code><span class="keyword">val </span><span class="identifier">newValue</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-call-argument/index.html"><span class="identifier">CallArgument</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scope-number.html">scopeNumber</a></h4>
+</td>
+<td>
+<p>0-based number of scope as was listed in scope chain. Only 'local', 'closure' and 'catch'
+scope types are allowed. Other scopes could be manipulated manually.</p>
+<code><span class="keyword">val </span><span class="identifier">scopeNumber</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="variable-name.html">variableName</a></h4>
+</td>
+<td>
+<p>Variable name.</p>
+<code><span class="keyword">val </span><span class="identifier">variableName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

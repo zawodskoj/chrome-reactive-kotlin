@@ -1,0 +1,792 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.network - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.network</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.network</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network">Network</a> domain implementation accessible via <a href="-network-operations/index.html">NetworkOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-auth-challenge/index.html">AuthChallenge</a></h4>
+</td>
+<td>
+<p>Authorization challenge for HTTP status code 401 or 407.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AuthChallenge</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-auth-challenge-response/index.html">AuthChallengeResponse</a></h4>
+</td>
+<td>
+<p>Response to an AuthChallenge.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AuthChallengeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-blocked-cookie-with-reason/index.html">BlockedCookieWithReason</a></h4>
+</td>
+<td>
+<p>A cookie with was not sent with a request with the corresponding reason.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BlockedCookieWithReason</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-blocked-reason/index.html">BlockedReason</a></h4>
+</td>
+<td>
+<p>The reason why request was blocked.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">BlockedReason</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-blocked-set-cookie-with-reason/index.html">BlockedSetCookieWithReason</a></h4>
+</td>
+<td>
+<p>A cookie which was not stored from a response with the corresponding reason.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BlockedSetCookieWithReason</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cached-resource/index.html">CachedResource</a></h4>
+</td>
+<td>
+<p>Information about the cached resource.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CachedResource</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-can-clear-browser-cache-response/index.html">CanClearBrowserCacheResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-canClearBrowserCache">Network#canClearBrowserCache</a> operation call.
+Tells whether clearing browser cache is supported.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CanClearBrowserCacheResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-can-clear-browser-cookies-response/index.html">CanClearBrowserCookiesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-canClearBrowserCookies">Network#canClearBrowserCookies</a> operation call.
+Tells whether clearing browser cookies is supported.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CanClearBrowserCookiesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-can-emulate-network-conditions-response/index.html">CanEmulateNetworkConditionsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-canEmulateNetworkConditions">Network#canEmulateNetworkConditions</a> operation call.
+Tells whether emulation of network conditions is supported.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CanEmulateNetworkConditionsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-certificate-transparency-compliance/index.html">CertificateTransparencyCompliance</a></h4>
+</td>
+<td>
+<p>Whether the request complied with Certificate Transparency policy.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">CertificateTransparencyCompliance</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-connection-type/index.html">ConnectionType</a></h4>
+</td>
+<td>
+<p>The underlying connection technology that the browser is supposedly using.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ConnectionType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-continue-intercepted-request-request/index.html">ContinueInterceptedRequestRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-continueInterceptedRequest">Network#continueInterceptedRequest</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContinueInterceptedRequestRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cookie/index.html">Cookie</a></h4>
+</td>
+<td>
+<p>Cookie object</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Cookie</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cookie-blocked-reason/index.html">CookieBlockedReason</a></h4>
+</td>
+<td>
+<p>Types of reasons why a cookie may not be sent with a request.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">CookieBlockedReason</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cookie-param/index.html">CookieParam</a></h4>
+</td>
+<td>
+<p>Cookie parameter object</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CookieParam</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cookie-priority/index.html">CookiePriority</a></h4>
+</td>
+<td>
+<p>Represents the cookie&apos;s &apos;Priority&apos; status:
+https://tools.ietf.org/html/draft-west-cookie-priority-00</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">CookiePriority</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cookie-same-site/index.html">CookieSameSite</a></h4>
+</td>
+<td>
+<p>Represents the cookie&apos;s &apos;SameSite&apos; status:
+https://tools.ietf.org/html/draft-west-first-party-cookies</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">CookieSameSite</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-data-received-event/index.html">DataReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when data chunk was received over the network.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DataReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-delete-cookies-request/index.html">DeleteCookiesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-deleteCookies">Network#deleteCookies</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DeleteCookiesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-emulate-network-conditions-request/index.html">EmulateNetworkConditionsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-emulateNetworkConditions">Network#emulateNetworkConditions</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EmulateNetworkConditionsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-enable-request/index.html">EnableRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-enable">Network#enable</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EnableRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-error-reason/index.html">ErrorReason</a></h4>
+</td>
+<td>
+<p>Network level fetch failure reason.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ErrorReason</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-event-source-message-received-event/index.html">EventSourceMessageReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when EventSource message is received.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EventSourceMessageReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-all-cookies-response/index.html">GetAllCookiesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getAllCookies">Network#getAllCookies</a> operation call.
+Returns all browser cookies. Depending on the backend support, will return detailed cookie
+information in the <code>cookies</code> field.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetAllCookiesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-certificate-request/index.html">GetCertificateRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getCertificate">Network#getCertificate</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetCertificateRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-certificate-response/index.html">GetCertificateResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getCertificate">Network#getCertificate</a> operation call.
+Returns the DER-encoded certificate.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetCertificateResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-cookies-request/index.html">GetCookiesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getCookies">Network#getCookies</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetCookiesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-cookies-response/index.html">GetCookiesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getCookies">Network#getCookies</a> operation call.
+Returns all browser cookies for the current URL. Depending on the backend support, will return
+detailed cookie information in the <code>cookies</code> field.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetCookiesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-request-post-data-request/index.html">GetRequestPostDataRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getRequestPostData">Network#getRequestPostData</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetRequestPostDataRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-request-post-data-response/index.html">GetRequestPostDataResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getRequestPostData">Network#getRequestPostData</a> operation call.
+Returns post data sent with the request. Returns an error when no data was sent with the request.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetRequestPostDataResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-response-body-for-interception-request/index.html">GetResponseBodyForInterceptionRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getResponseBodyForInterception">Network#getResponseBodyForInterception</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetResponseBodyForInterceptionRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-response-body-for-interception-response/index.html">GetResponseBodyForInterceptionResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getResponseBodyForInterception">Network#getResponseBodyForInterception</a> operation call.
+Returns content served for the given currently intercepted request.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetResponseBodyForInterceptionResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-response-body-request/index.html">GetResponseBodyRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getResponseBody">Network#getResponseBody</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetResponseBodyRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-response-body-response/index.html">GetResponseBodyResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getResponseBody">Network#getResponseBody</a> operation call.
+Returns content served for the given request.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetResponseBodyResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-headers.html">Headers</a></h4>
+</td>
+<td>
+<p>Request / response headers as keys / values of JSON object.</p>
+<code><span class="keyword">typealias </span><span class="identifier">Headers</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-initiator/index.html">Initiator</a></h4>
+</td>
+<td>
+<p>Information about the request initiator.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Initiator</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-interception-id.html">InterceptionId</a></h4>
+</td>
+<td>
+<p>Unique intercepted request identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">InterceptionId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-interception-stage/index.html">InterceptionStage</a></h4>
+</td>
+<td>
+<p>Stages of the interception to begin intercepting. Request will intercept before the request is
+sent. Response will intercept after the response is received.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">InterceptionStage</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-loader-id.html">LoaderId</a></h4>
+</td>
+<td>
+<p>Unique loader identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">LoaderId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-loading-failed-event/index.html">LoadingFailedEvent</a></h4>
+</td>
+<td>
+<p>Fired when HTTP request has failed to load.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LoadingFailedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-loading-finished-event/index.html">LoadingFinishedEvent</a></h4>
+</td>
+<td>
+<p>Fired when HTTP request has finished loading.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LoadingFinishedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-monotonic-time.html">MonotonicTime</a></h4>
+</td>
+<td>
+<p>Monotonically increasing time in seconds since an arbitrary point in the past.</p>
+<code><span class="keyword">typealias </span><span class="identifier">MonotonicTime</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-network-operations/index.html">NetworkOperations</a></h4>
+</td>
+<td>
+<p>Network domain allows tracking network activities of the page. It exposes information about http,
+file, data and other requests and responses, their headers, bodies, timing, etc.</p>
+<code><span class="keyword">class </span><span class="identifier">NetworkOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-replay-x-h-r-request/index.html">ReplayXHRRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-replayXHR">Network#replayXHR</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReplayXHRRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request/index.html">Request</a></h4>
+</td>
+<td>
+<p>HTTP request data.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Request</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-id.html">RequestId</a></h4>
+</td>
+<td>
+<p>Unique request identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">RequestId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-intercepted-event/index.html">RequestInterceptedEvent</a></h4>
+</td>
+<td>
+<p>Details of an intercepted HTTP request, which must be either allowed, blocked, modified or
+mocked.
+Deprecated, use Fetch.requestPaused instead.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestInterceptedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-pattern/index.html">RequestPattern</a></h4>
+</td>
+<td>
+<p>Request pattern for interception.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestPattern</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-served-from-cache-event/index.html">RequestServedFromCacheEvent</a></h4>
+</td>
+<td>
+<p>Fired if request ended up loading from cache.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestServedFromCacheEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-will-be-sent-event/index.html">RequestWillBeSentEvent</a></h4>
+</td>
+<td>
+<p>Fired when page is about to send HTTP request.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestWillBeSentEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-will-be-sent-extra-info-event/index.html">RequestWillBeSentExtraInfoEvent</a></h4>
+</td>
+<td>
+<p>Fired when additional information about a requestWillBeSent event is available from the
+network stack. Not every requestWillBeSent event will have an additional
+requestWillBeSentExtraInfo fired for it, and there is no guarantee whether requestWillBeSent
+or requestWillBeSentExtraInfo will be fired first for the same request.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestWillBeSentExtraInfoEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-resource-changed-priority-event/index.html">ResourceChangedPriorityEvent</a></h4>
+</td>
+<td>
+<p>Fired when resource loading priority is changed</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResourceChangedPriorityEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-resource-priority/index.html">ResourcePriority</a></h4>
+</td>
+<td>
+<p>Loading priority of a resource request.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ResourcePriority</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-resource-timing/index.html">ResourceTiming</a></h4>
+</td>
+<td>
+<p>Timing information for the request.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResourceTiming</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-resource-type/index.html">ResourceType</a></h4>
+</td>
+<td>
+<p>Resource type as it was perceived by the rendering engine.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ResourceType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-response/index.html">Response</a></h4>
+</td>
+<td>
+<p>HTTP response data.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Response</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-response-received-event/index.html">ResponseReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when HTTP response is available.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResponseReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-response-received-extra-info-event/index.html">ResponseReceivedExtraInfoEvent</a></h4>
+</td>
+<td>
+<p>Fired when additional information about a responseReceived event is available from the network
+stack. Not every responseReceived event will have an additional responseReceivedExtraInfo for
+it, and responseReceivedExtraInfo may be fired before or after responseReceived.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResponseReceivedExtraInfoEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-search-in-response-body-request/index.html">SearchInResponseBodyRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-searchInResponseBody">Network#searchInResponseBody</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SearchInResponseBodyRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-search-in-response-body-response/index.html">SearchInResponseBodyResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-searchInResponseBody">Network#searchInResponseBody</a> operation call.
+Searches for given string in response content.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SearchInResponseBodyResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-security-details/index.html">SecurityDetails</a></h4>
+</td>
+<td>
+<p>Security details about a request.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SecurityDetails</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-service-worker-response-source/index.html">ServiceWorkerResponseSource</a></h4>
+</td>
+<td>
+<p>Source of serviceworker response.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ServiceWorkerResponseSource</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-blocked-u-r-ls-request/index.html">SetBlockedURLsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setBlockedURLs">Network#setBlockedURLs</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBlockedURLsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-bypass-service-worker-request/index.html">SetBypassServiceWorkerRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setBypassServiceWorker">Network#setBypassServiceWorker</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBypassServiceWorkerRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-cache-disabled-request/index.html">SetCacheDisabledRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setCacheDisabled">Network#setCacheDisabled</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetCacheDisabledRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-cookie-blocked-reason/index.html">SetCookieBlockedReason</a></h4>
+</td>
+<td>
+<p>Types of reasons why a cookie may not be stored from a response.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">SetCookieBlockedReason</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-cookie-request/index.html">SetCookieRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setCookie">Network#setCookie</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetCookieRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-cookie-response/index.html">SetCookieResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setCookie">Network#setCookie</a> operation call.
+Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetCookieResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-cookies-request/index.html">SetCookiesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setCookies">Network#setCookies</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetCookiesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-data-size-limits-for-test-request/index.html">SetDataSizeLimitsForTestRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setDataSizeLimitsForTest">Network#setDataSizeLimitsForTest</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetDataSizeLimitsForTestRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-extra-h-t-t-p-headers-request/index.html">SetExtraHTTPHeadersRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setExtraHTTPHeaders">Network#setExtraHTTPHeaders</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetExtraHTTPHeadersRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-request-interception-request/index.html">SetRequestInterceptionRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setRequestInterception">Network#setRequestInterception</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetRequestInterceptionRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-user-agent-override-request/index.html">SetUserAgentOverrideRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setUserAgentOverride">Network#setUserAgentOverride</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetUserAgentOverrideRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-signed-certificate-timestamp/index.html">SignedCertificateTimestamp</a></h4>
+</td>
+<td>
+<p>Details of a signed certificate timestamp (SCT).</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SignedCertificateTimestamp</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-signed-exchange-error/index.html">SignedExchangeError</a></h4>
+</td>
+<td>
+<p>Information about a signed exchange response.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SignedExchangeError</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-signed-exchange-error-field/index.html">SignedExchangeErrorField</a></h4>
+</td>
+<td>
+<p>Field type for a signed exchange related error.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">SignedExchangeErrorField</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-signed-exchange-header/index.html">SignedExchangeHeader</a></h4>
+</td>
+<td>
+<p>Information about a signed exchange header.
+https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.html#cbor-representation</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SignedExchangeHeader</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-signed-exchange-info/index.html">SignedExchangeInfo</a></h4>
+</td>
+<td>
+<p>Information about a signed exchange response.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SignedExchangeInfo</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-signed-exchange-received-event/index.html">SignedExchangeReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when a signed exchange was received over the network</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SignedExchangeReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-signed-exchange-signature/index.html">SignedExchangeSignature</a></h4>
+</td>
+<td>
+<p>Information about a signed exchange signature.
+https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.html#rfc.section.3.1</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SignedExchangeSignature</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-take-response-body-for-interception-as-stream-request/index.html">TakeResponseBodyForInterceptionAsStreamRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-takeResponseBodyForInterceptionAsStream">Network#takeResponseBodyForInterceptionAsStream</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TakeResponseBodyForInterceptionAsStreamRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-take-response-body-for-interception-as-stream-response/index.html">TakeResponseBodyForInterceptionAsStreamResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-takeResponseBodyForInterceptionAsStream">Network#takeResponseBodyForInterceptionAsStream</a> operation call.
+Returns a handle to the stream representing the response body. Note that after this command,
+the intercepted request can't be continued as is -- you either need to cancel it or to provide
+the response body. The stream only supports sequential read, IO.read will fail if the position
+is specified.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TakeResponseBodyForInterceptionAsStreamResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-time-since-epoch.html">TimeSinceEpoch</a></h4>
+</td>
+<td>
+<p>UTC time in seconds, counted from January 1, 1970.</p>
+<code><span class="keyword">typealias </span><span class="identifier">TimeSinceEpoch</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-socket-closed-event/index.html">WebSocketClosedEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket is closed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketClosedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-socket-created-event/index.html">WebSocketCreatedEvent</a></h4>
+</td>
+<td>
+<p>Fired upon WebSocket creation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-socket-frame/index.html">WebSocketFrame</a></h4>
+</td>
+<td>
+<p>WebSocket message data. This represents an entire WebSocket message, not just a fragmented frame as the name suggests.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketFrame</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-socket-frame-error-event/index.html">WebSocketFrameErrorEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket message error occurs.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketFrameErrorEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-socket-frame-received-event/index.html">WebSocketFrameReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket message is received.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketFrameReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-socket-frame-sent-event/index.html">WebSocketFrameSentEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket message is sent.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketFrameSentEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-socket-handshake-response-received-event/index.html">WebSocketHandshakeResponseReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket handshake response becomes available.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketHandshakeResponseReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-socket-request/index.html">WebSocketRequest</a></h4>
+</td>
+<td>
+<p>WebSocket request data.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-socket-response/index.html">WebSocketResponse</a></h4>
+</td>
+<td>
+<p>WebSocket response data.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-socket-will-send-handshake-request-event/index.html">WebSocketWillSendHandshakeRequestEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket is about to initiate handshake.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketWillSendHandshakeRequestEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

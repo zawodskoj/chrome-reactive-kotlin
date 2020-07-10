@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>InspectNodeRequestedEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.overlay</a>&nbsp;/&nbsp;<a href="./index.html">InspectNodeRequestedEvent</a><br/>
+<br/>
+<h1>InspectNodeRequestedEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InspectNodeRequestedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/overlay/Operations.kt#L531">(source)</a>
+<p>Fired when the node should be inspected. This happens after call to <code>setInspectMode</code> or when
+user manually inspects an element.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#event-inspectNodeRequested">Overlay#inspectNodeRequested</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when the node should be inspected. This happens after call to <code>setInspectMode</code> or when
+user manually inspects an element.</p>
+<code><span class="identifier">InspectNodeRequestedEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.InspectNodeRequestedEvent$<init>(kotlin.Int)/backendNodeId">backendNodeId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.dom/-backend-node-id.html"><span class="identifier">BackendNodeId</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="backend-node-id.html">backendNodeId</a></h4>
+</td>
+<td>
+<p>Id of the node to inspect.</p>
+<code><span class="keyword">val </span><span class="identifier">backendNodeId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.dom/-backend-node-id.html"><span class="identifier">BackendNodeId</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

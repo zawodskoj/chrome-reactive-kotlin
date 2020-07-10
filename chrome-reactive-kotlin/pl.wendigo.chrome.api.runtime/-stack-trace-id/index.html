@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>StackTraceId - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="./index.html">StackTraceId</a><br/>
+<br/>
+<h1>StackTraceId</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StackTraceId</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Types.kt#L510">(source)</a>
+<p>If <code>debuggerId</code> is set stack trace comes from another debugger and can be resolved there. This
+allows to track cross-debugger calls. See <code>Runtime.StackTrace</code> and <code>Debugger.paused</code> for usages.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#type-StackTraceId">Runtime#StackTraceId</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>If <code>debuggerId</code> is set stack trace comes from another debugger and can be resolved there. This
+allows to track cross-debugger calls. See <code>Runtime.StackTrace</code> and <code>Debugger.paused</code> for usages.</p>
+<code><span class="identifier">StackTraceId</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.StackTraceId$<init>(kotlin.String, kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.StackTraceId$<init>(kotlin.String, kotlin.String)/debuggerId">debuggerId</span><span class="symbol">:</span>&nbsp;<a href="../-unique-debugger-id.html"><span class="identifier">UniqueDebuggerId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="debugger-id.html">debuggerId</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">debuggerId</span><span class="symbol">: </span><a href="../-unique-debugger-id.html"><span class="identifier">UniqueDebuggerId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="id.html">id</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ProfilerOperations.preciseCoverageDeltaUpdate - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.profiler</a>&nbsp;/&nbsp;<a href="index.html">ProfilerOperations</a>&nbsp;/&nbsp;<a href="./precise-coverage-delta-update.html">preciseCoverageDeltaUpdate</a><br/>
+<br/>
+<h1>preciseCoverageDeltaUpdate</h1>
+<a name="pl.wendigo.chrome.api.profiler.ProfilerOperations$preciseCoverageDeltaUpdate()"></a>
+<code><span class="keyword">fun </span><span class="identifier">preciseCoverageDeltaUpdate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-precise-coverage-delta-update-event/index.html"><span class="identifier">PreciseCoverageDeltaUpdateEvent</span></a><span class="symbol">&gt;</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/profiler/Operations.kt#L147">(source)</a>
+<p>Reports coverage delta since the last poll (either from an event like this, or from
+<code>takePreciseCoverage</code> for the current isolate. May only be sent if precise code
+coverage has been started. This event can be trigged by the embedder to, for example,
+trigger collection of coverage data immediatelly at a certain point in time.</p>
+</BODY>
+</HTML>

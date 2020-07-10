@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Credential - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.webauthn</a>&nbsp;/&nbsp;<a href="./index.html">Credential</a><br/>
+<br/>
+<h1>Credential</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Credential</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/webauthn/Types.kt#L87">(source)</a>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/WebAuthn#type-Credential">WebAuthn#Credential</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Credential</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.Credential$<init>(kotlin.String, kotlin.Boolean, kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/credentialId">credentialId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.Credential$<init>(kotlin.String, kotlin.Boolean, kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/isResidentCredential">isResidentCredential</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.Credential$<init>(kotlin.String, kotlin.Boolean, kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/rpId">rpId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.Credential$<init>(kotlin.String, kotlin.Boolean, kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/privateKey">privateKey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.Credential$<init>(kotlin.String, kotlin.Boolean, kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/userHandle">userHandle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.Credential$<init>(kotlin.String, kotlin.Boolean, kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/signCount">signCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="credential-id.html">credentialId</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">credentialId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-resident-credential.html">isResidentCredential</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">isResidentCredential</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="private-key.html">privateKey</a></h4>
+</td>
+<td>
+<p>The ECDSA P-256 private key in PKCS#8 format.</p>
+<code><span class="keyword">val </span><span class="identifier">privateKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="rp-id.html">rpId</a></h4>
+</td>
+<td>
+<p>Relying Party ID the credential is scoped to. Must be set when adding a
+credential.</p>
+<code><span class="keyword">val </span><span class="identifier">rpId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sign-count.html">signCount</a></h4>
+</td>
+<td>
+<p>Signature counter. This is incremented by one for each successful
+assertion.
+See https://w3c.github.io/webauthn/#signature-counter</p>
+<code><span class="keyword">val </span><span class="identifier">signCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="user-handle.html">userHandle</a></h4>
+</td>
+<td>
+<p>An opaque byte sequence with a maximum size of 64 bytes mapping the
+credential to a specific user.</p>
+<code><span class="keyword">val </span><span class="identifier">userHandle</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

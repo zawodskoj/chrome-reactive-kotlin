@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetScriptSourceResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">SetScriptSourceResponse</a><br/>
+<br/>
+<h1>SetScriptSourceResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetScriptSourceResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L1054">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setScriptSource">Debugger#setScriptSource</a> operation call.
+Edits JavaScript source live.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setScriptSource">Debugger#setScriptSource</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-debugger-operations/set-script-source.html">DebuggerOperations.setScriptSource</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setScriptSource">Debugger#setScriptSource</a> operation call.
+Edits JavaScript source live.</p>
+<code><span class="identifier">SetScriptSourceResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetScriptSourceResponse$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.Boolean, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.ExceptionDetails)/callFrames">callFrames</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-call-frame/index.html"><span class="identifier">CallFrame</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetScriptSourceResponse$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.Boolean, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.ExceptionDetails)/stackChanged">stackChanged</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetScriptSourceResponse$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.Boolean, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.ExceptionDetails)/asyncStackTrace">asyncStackTrace</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-stack-trace/index.html"><span class="identifier">StackTrace</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetScriptSourceResponse$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.Boolean, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.ExceptionDetails)/asyncStackTraceId">asyncStackTraceId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-stack-trace-id/index.html"><span class="identifier">StackTraceId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetScriptSourceResponse$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.Boolean, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.ExceptionDetails)/exceptionDetails">exceptionDetails</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-exception-details/index.html"><span class="identifier">ExceptionDetails</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="async-stack-trace.html">asyncStackTrace</a></h4>
+</td>
+<td>
+<p>Async stack trace, if any.</p>
+<code><span class="keyword">val </span><span class="identifier">asyncStackTrace</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-stack-trace/index.html"><span class="identifier">StackTrace</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="async-stack-trace-id.html">asyncStackTraceId</a></h4>
+</td>
+<td>
+<p>Async stack trace, if any.</p>
+<code><span class="keyword">val </span><span class="identifier">asyncStackTraceId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-stack-trace-id/index.html"><span class="identifier">StackTraceId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="call-frames.html">callFrames</a></h4>
+</td>
+<td>
+<p>New stack trace in case editing has happened while VM was stopped.</p>
+<code><span class="keyword">val </span><span class="identifier">callFrames</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-call-frame/index.html"><span class="identifier">CallFrame</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="exception-details.html">exceptionDetails</a></h4>
+</td>
+<td>
+<p>Exception details if any.</p>
+<code><span class="keyword">val </span><span class="identifier">exceptionDetails</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-exception-details/index.html"><span class="identifier">ExceptionDetails</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stack-changed.html">stackChanged</a></h4>
+</td>
+<td>
+<p>Whether current call stack  was modified after applying the changes.</p>
+<code><span class="keyword">val </span><span class="identifier">stackChanged</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

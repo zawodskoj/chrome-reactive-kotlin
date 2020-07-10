@@ -1,0 +1,209 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.audits - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.audits</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.audits</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Audits">Audits</a> domain implementation accessible via <a href="-audits-operations/index.html">AuditsOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-affected-cookie/index.html">AffectedCookie</a></h4>
+</td>
+<td>
+<p>Information about a cookie that is affected by an inspector issue.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AffectedCookie</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-affected-frame/index.html">AffectedFrame</a></h4>
+</td>
+<td>
+<p>Information about the frame affected by an inspector issue.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AffectedFrame</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-affected-request/index.html">AffectedRequest</a></h4>
+</td>
+<td>
+<p>Information about a request that is affected by an inspector issue.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AffectedRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-audits-operations/index.html">AuditsOperations</a></h4>
+</td>
+<td>
+<p>Audits domain allows investigation of page violations and possible improvements.</p>
+<code><span class="keyword">class </span><span class="identifier">AuditsOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-blocked-by-response-issue-details/index.html">BlockedByResponseIssueDetails</a></h4>
+</td>
+<td>
+<p>Details for a request that has been blocked with the BLOCKED_BY_RESPONSE
+code. Currently only used for COEP/COOP, but may be extended to include
+some CSP errors in the future.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BlockedByResponseIssueDetails</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-blocked-by-response-reason/index.html">BlockedByResponseReason</a></h4>
+</td>
+<td>
+<p>Enum indicating the reason a response has been blocked. These reasons are
+refinements of the net error BLOCKED_BY_RESPONSE.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">BlockedByResponseReason</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-content-security-policy-issue-details/index.html">ContentSecurityPolicyIssueDetails</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContentSecurityPolicyIssueDetails</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-content-security-policy-violation-type/index.html">ContentSecurityPolicyViolationType</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ContentSecurityPolicyViolationType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-encoded-response-request/index.html">GetEncodedResponseRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Audits#method-getEncodedResponse">Audits#getEncodedResponse</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetEncodedResponseRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-encoded-response-response/index.html">GetEncodedResponseResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Audits#method-getEncodedResponse">Audits#getEncodedResponse</a> operation call.
+Returns the response body and size if it were re-encoded with the specified settings. Only
+applies to images.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetEncodedResponseResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-heavy-ad-issue-details/index.html">HeavyAdIssueDetails</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HeavyAdIssueDetails</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-heavy-ad-reason/index.html">HeavyAdReason</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">HeavyAdReason</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-heavy-ad-resolution-status/index.html">HeavyAdResolutionStatus</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">HeavyAdResolutionStatus</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-inspector-issue/index.html">InspectorIssue</a></h4>
+</td>
+<td>
+<p>An inspector issue reported from the back-end.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InspectorIssue</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-inspector-issue-code/index.html">InspectorIssueCode</a></h4>
+</td>
+<td>
+<p>A unique identifier for the type of issue. Each type may use one of the
+optional fields in InspectorIssueDetails to convey more specific
+information about the kind of issue.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">InspectorIssueCode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-inspector-issue-details/index.html">InspectorIssueDetails</a></h4>
+</td>
+<td>
+<p>This struct holds a list of optional fields with additional information
+specific to the kind of issue. When adding a new issue code, please also
+add a new optional field to this type.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InspectorIssueDetails</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-issue-added-event/index.html">IssueAddedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">IssueAddedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-mixed-content-issue-details/index.html">MixedContentIssueDetails</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MixedContentIssueDetails</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-mixed-content-resolution-status/index.html">MixedContentResolutionStatus</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">MixedContentResolutionStatus</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-mixed-content-resource-type/index.html">MixedContentResourceType</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">MixedContentResourceType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-same-site-cookie-exclusion-reason/index.html">SameSiteCookieExclusionReason</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">SameSiteCookieExclusionReason</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-same-site-cookie-issue-details/index.html">SameSiteCookieIssueDetails</a></h4>
+</td>
+<td>
+<p>This information is currently necessary, as the front-end has a difficult
+time finding a specific cookie. With this, we can convey specific error
+information without the cookie.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SameSiteCookieIssueDetails</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-same-site-cookie-operation/index.html">SameSiteCookieOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">SameSiteCookieOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-same-site-cookie-warning-reason/index.html">SameSiteCookieWarningReason</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">SameSiteCookieWarningReason</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

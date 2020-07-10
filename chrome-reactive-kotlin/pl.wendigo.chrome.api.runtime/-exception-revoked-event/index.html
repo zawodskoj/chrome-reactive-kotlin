@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ExceptionRevokedEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="./index.html">ExceptionRevokedEvent</a><br/>
+<br/>
+<h1>ExceptionRevokedEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExceptionRevokedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Operations.kt#L967">(source)</a>
+<p>Issued when unhandled exception was revoked.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#event-exceptionRevoked">Runtime#exceptionRevoked</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Issued when unhandled exception was revoked.</p>
+<code><span class="identifier">ExceptionRevokedEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ExceptionRevokedEvent$<init>(kotlin.String, kotlin.Int)/reason">reason</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ExceptionRevokedEvent$<init>(kotlin.String, kotlin.Int)/exceptionId">exceptionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="exception-id.html">exceptionId</a></h4>
+</td>
+<td>
+<p>The id of revoked exception, as reported in <code>exceptionThrown</code>.</p>
+<code><span class="keyword">val </span><span class="identifier">exceptionId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reason.html">reason</a></h4>
+</td>
+<td>
+<p>Reason describing why exception was revoked.</p>
+<code><span class="keyword">val </span><span class="identifier">reason</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

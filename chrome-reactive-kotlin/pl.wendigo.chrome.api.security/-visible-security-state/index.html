@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>VisibleSecurityState - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.security</a>&nbsp;/&nbsp;<a href="./index.html">VisibleSecurityState</a><br/>
+<br/>
+<h1>VisibleSecurityState</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">VisibleSecurityState</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/security/Types.kt#L180">(source)</a>
+<p>Security state information about the page.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Security#type-VisibleSecurityState">Security#VisibleSecurityState</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Security state information about the page.</p>
+<code><span class="identifier">VisibleSecurityState</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.security.VisibleSecurityState$<init>(pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.security.CertificateSecurityState, pl.wendigo.chrome.api.security.SafetyTipInfo, kotlin.collections.List((kotlin.String)))/securityState">securityState</span><span class="symbol">:</span>&nbsp;<a href="../-security-state/index.html"><span class="identifier">SecurityState</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.VisibleSecurityState$<init>(pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.security.CertificateSecurityState, pl.wendigo.chrome.api.security.SafetyTipInfo, kotlin.collections.List((kotlin.String)))/certificateSecurityState">certificateSecurityState</span><span class="symbol">:</span>&nbsp;<a href="../-certificate-security-state/index.html"><span class="identifier">CertificateSecurityState</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.VisibleSecurityState$<init>(pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.security.CertificateSecurityState, pl.wendigo.chrome.api.security.SafetyTipInfo, kotlin.collections.List((kotlin.String)))/safetyTipInfo">safetyTipInfo</span><span class="symbol">:</span>&nbsp;<a href="../-safety-tip-info/index.html"><span class="identifier">SafetyTipInfo</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.VisibleSecurityState$<init>(pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.security.CertificateSecurityState, pl.wendigo.chrome.api.security.SafetyTipInfo, kotlin.collections.List((kotlin.String)))/securityStateIssueIds">securityStateIssueIds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="certificate-security-state.html">certificateSecurityState</a></h4>
+</td>
+<td>
+<p>Security state details about the page certificate.</p>
+<code><span class="keyword">val </span><span class="identifier">certificateSecurityState</span><span class="symbol">: </span><a href="../-certificate-security-state/index.html"><span class="identifier">CertificateSecurityState</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="safety-tip-info.html">safetyTipInfo</a></h4>
+</td>
+<td>
+<p>The type of Safety Tip triggered on the page. Note that this field will be set even if the Safety Tip UI was not actually shown.</p>
+<code><span class="keyword">val </span><span class="identifier">safetyTipInfo</span><span class="symbol">: </span><a href="../-safety-tip-info/index.html"><span class="identifier">SafetyTipInfo</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="security-state.html">securityState</a></h4>
+</td>
+<td>
+<p>The security level of the page.</p>
+<code><span class="keyword">val </span><span class="identifier">securityState</span><span class="symbol">: </span><a href="../-security-state/index.html"><span class="identifier">SecurityState</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="security-state-issue-ids.html">securityStateIssueIds</a></h4>
+</td>
+<td>
+<p>Array of security state issues ids.</p>
+<code><span class="keyword">val </span><span class="identifier">securityStateIssueIds</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

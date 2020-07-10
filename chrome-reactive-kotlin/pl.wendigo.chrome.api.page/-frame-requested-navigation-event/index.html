@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FrameRequestedNavigationEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.page</a>&nbsp;/&nbsp;<a href="./index.html">FrameRequestedNavigationEvent</a><br/>
+<br/>
+<h1>FrameRequestedNavigationEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameRequestedNavigationEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/page/Operations.kt#L1835">(source)</a>
+<p>Fired when a renderer-initiated navigation is requested.
+Navigation may still be cancelled after the event is issued.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#event-frameRequestedNavigation">Page#frameRequestedNavigation</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when a renderer-initiated navigation is requested.
+Navigation may still be cancelled after the event is issued.</p>
+<code><span class="identifier">FrameRequestedNavigationEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.FrameRequestedNavigationEvent$<init>(kotlin.String, pl.wendigo.chrome.api.page.ClientNavigationReason, kotlin.String, pl.wendigo.chrome.api.page.ClientNavigationDisposition)/frameId">frameId</span><span class="symbol">:</span>&nbsp;<a href="../-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.FrameRequestedNavigationEvent$<init>(kotlin.String, pl.wendigo.chrome.api.page.ClientNavigationReason, kotlin.String, pl.wendigo.chrome.api.page.ClientNavigationDisposition)/reason">reason</span><span class="symbol">:</span>&nbsp;<a href="../-client-navigation-reason/index.html"><span class="identifier">ClientNavigationReason</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.FrameRequestedNavigationEvent$<init>(kotlin.String, pl.wendigo.chrome.api.page.ClientNavigationReason, kotlin.String, pl.wendigo.chrome.api.page.ClientNavigationDisposition)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.FrameRequestedNavigationEvent$<init>(kotlin.String, pl.wendigo.chrome.api.page.ClientNavigationReason, kotlin.String, pl.wendigo.chrome.api.page.ClientNavigationDisposition)/disposition">disposition</span><span class="symbol">:</span>&nbsp;<a href="../-client-navigation-disposition/index.html"><span class="identifier">ClientNavigationDisposition</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="disposition.html">disposition</a></h4>
+</td>
+<td>
+<p>The disposition for the navigation.</p>
+<code><span class="keyword">val </span><span class="identifier">disposition</span><span class="symbol">: </span><a href="../-client-navigation-disposition/index.html"><span class="identifier">ClientNavigationDisposition</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-id.html">frameId</a></h4>
+</td>
+<td>
+<p>Id of the frame that is being navigated.</p>
+<code><span class="keyword">val </span><span class="identifier">frameId</span><span class="symbol">: </span><a href="../-frame-id.html"><span class="identifier">FrameId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reason.html">reason</a></h4>
+</td>
+<td>
+<p>The reason for the navigation.</p>
+<code><span class="keyword">val </span><span class="identifier">reason</span><span class="symbol">: </span><a href="../-client-navigation-reason/index.html"><span class="identifier">ClientNavigationReason</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>The destination URL for the requested navigation.</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

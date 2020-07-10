@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CertificateErrorEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.security</a>&nbsp;/&nbsp;<a href="./index.html">CertificateErrorEvent</a><br/>
+<br/>
+<h1>CertificateErrorEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CertificateErrorEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/security/Operations.kt#L136">(source)</a>
+<p>There is a certificate error. If overriding certificate errors is enabled, then it should be
+handled with the <code>handleCertificateError</code> command. Note: this event does not fire if the
+certificate error has been allowed internally. Only one client per target should override
+certificate errors at the same time.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Security#event-certificateError">Security#certificateError</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>There is a certificate error. If overriding certificate errors is enabled, then it should be
+handled with the <code>handleCertificateError</code> command. Note: this event does not fire if the
+certificate error has been allowed internally. Only one client per target should override
+certificate errors at the same time.</p>
+<code><span class="identifier">CertificateErrorEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.security.CertificateErrorEvent$<init>(kotlin.Int, kotlin.String, kotlin.String)/eventId">eventId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.CertificateErrorEvent$<init>(kotlin.Int, kotlin.String, kotlin.String)/errorType">errorType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.CertificateErrorEvent$<init>(kotlin.Int, kotlin.String, kotlin.String)/requestURL">requestURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="error-type.html">errorType</a></h4>
+</td>
+<td>
+<p>The type of the error.</p>
+<code><span class="keyword">val </span><span class="identifier">errorType</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="event-id.html">eventId</a></h4>
+</td>
+<td>
+<p>The ID of the event.</p>
+<code><span class="keyword">val </span><span class="identifier">eventId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-u-r-l.html">requestURL</a></h4>
+</td>
+<td>
+<p>The url that was requested.</p>
+<code><span class="keyword">val </span><span class="identifier">requestURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

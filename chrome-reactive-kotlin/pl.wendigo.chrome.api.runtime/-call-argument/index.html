@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CallArgument - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="./index.html">CallArgument</a><br/>
+<br/>
+<h1>CallArgument</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CallArgument</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Types.kt#L309">(source)</a>
+<p>Represents function call argument. Either remote object id <code>objectId</code>, primitive <code>value</code>,
+unserializable primitive value or neither of (for undefined) them should be specified.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#type-CallArgument">Runtime#CallArgument</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents function call argument. Either remote object id <code>objectId</code>, primitive <code>value</code>,
+unserializable primitive value or neither of (for undefined) them should be specified.</p>
+<code><span class="identifier">CallArgument</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.CallArgument$<init>(kotlin.Any, kotlin.String, kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.CallArgument$<init>(kotlin.Any, kotlin.String, kotlin.String)/unserializableValue">unserializableValue</span><span class="symbol">:</span>&nbsp;<a href="../-unserializable-value.html"><span class="identifier">UnserializableValue</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.CallArgument$<init>(kotlin.Any, kotlin.String, kotlin.String)/objectId">objectId</span><span class="symbol">:</span>&nbsp;<a href="../-remote-object-id.html"><span class="identifier">RemoteObjectId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="object-id.html">objectId</a></h4>
+</td>
+<td>
+<p>Remote object handle.</p>
+<code><span class="keyword">val </span><span class="identifier">objectId</span><span class="symbol">: </span><a href="../-remote-object-id.html"><span class="identifier">RemoteObjectId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unserializable-value.html">unserializableValue</a></h4>
+</td>
+<td>
+<p>Primitive value which can not be JSON-stringified.</p>
+<code><span class="keyword">val </span><span class="identifier">unserializableValue</span><span class="symbol">: </span><a href="../-unserializable-value.html"><span class="identifier">UnserializableValue</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="value.html">value</a></h4>
+</td>
+<td>
+<p>Primitive value or serializable javascript object.</p>
+<code><span class="keyword">val </span><span class="identifier">value</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

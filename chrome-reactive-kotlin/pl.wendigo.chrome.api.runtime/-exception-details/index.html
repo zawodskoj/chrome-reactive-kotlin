@@ -1,0 +1,108 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ExceptionDetails - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="./index.html">ExceptionDetails</a><br/>
+<br/>
+<h1>ExceptionDetails</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExceptionDetails</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Types.kt#L370">(source)</a>
+<p>Detailed information about exception (or error) that was thrown during script compilation or
+execution.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#type-ExceptionDetails">Runtime#ExceptionDetails</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Detailed information about exception (or error) that was thrown during script compilation or
+execution.</p>
+<code><span class="identifier">ExceptionDetails</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ExceptionDetails$<init>(kotlin.Int, kotlin.String, kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/exceptionId">exceptionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ExceptionDetails$<init>(kotlin.Int, kotlin.String, kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/text">text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ExceptionDetails$<init>(kotlin.Int, kotlin.String, kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/lineNumber">lineNumber</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ExceptionDetails$<init>(kotlin.Int, kotlin.String, kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/columnNumber">columnNumber</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ExceptionDetails$<init>(kotlin.Int, kotlin.String, kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/scriptId">scriptId</span><span class="symbol">:</span>&nbsp;<a href="../-script-id.html"><span class="identifier">ScriptId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ExceptionDetails$<init>(kotlin.Int, kotlin.String, kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ExceptionDetails$<init>(kotlin.Int, kotlin.String, kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/stackTrace">stackTrace</span><span class="symbol">:</span>&nbsp;<a href="../-stack-trace/index.html"><span class="identifier">StackTrace</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ExceptionDetails$<init>(kotlin.Int, kotlin.String, kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/exception">exception</span><span class="symbol">:</span>&nbsp;<a href="../-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ExceptionDetails$<init>(kotlin.Int, kotlin.String, kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/executionContextId">executionContextId</span><span class="symbol">:</span>&nbsp;<a href="../-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="column-number.html">columnNumber</a></h4>
+</td>
+<td>
+<p>Column number of the exception location (0-based).</p>
+<code><span class="keyword">val </span><span class="identifier">columnNumber</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="exception.html">exception</a></h4>
+</td>
+<td>
+<p>Exception object if available.</p>
+<code><span class="keyword">val </span><span class="identifier">exception</span><span class="symbol">: </span><a href="../-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="exception-id.html">exceptionId</a></h4>
+</td>
+<td>
+<p>Exception id.</p>
+<code><span class="keyword">val </span><span class="identifier">exceptionId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="execution-context-id.html">executionContextId</a></h4>
+</td>
+<td>
+<p>Identifier of the context where exception happened.</p>
+<code><span class="keyword">val </span><span class="identifier">executionContextId</span><span class="symbol">: </span><a href="../-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="line-number.html">lineNumber</a></h4>
+</td>
+<td>
+<p>Line number of the exception location (0-based).</p>
+<code><span class="keyword">val </span><span class="identifier">lineNumber</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="script-id.html">scriptId</a></h4>
+</td>
+<td>
+<p>Script ID of the exception location.</p>
+<code><span class="keyword">val </span><span class="identifier">scriptId</span><span class="symbol">: </span><a href="../-script-id.html"><span class="identifier">ScriptId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stack-trace.html">stackTrace</a></h4>
+</td>
+<td>
+<p>JavaScript stack trace if available.</p>
+<code><span class="keyword">val </span><span class="identifier">stackTrace</span><span class="symbol">: </span><a href="../-stack-trace/index.html"><span class="identifier">StackTrace</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="text.html">text</a></h4>
+</td>
+<td>
+<p>Exception text, which should be used together with exception object when available.</p>
+<code><span class="keyword">val </span><span class="identifier">text</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>URL of the exception location, to be used when the script was not reported.</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

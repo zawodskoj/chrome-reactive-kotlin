@@ -1,0 +1,748 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.dom - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.dom</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.dom</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM">DOM</a> domain implementation accessible via <a href="-d-o-m-operations/index.html">DOMOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-attribute-modified-event/index.html">AttributeModifiedEvent</a></h4>
+</td>
+<td>
+<p>Fired when <code>Element</code>'s attribute is modified.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AttributeModifiedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-attribute-removed-event/index.html">AttributeRemovedEvent</a></h4>
+</td>
+<td>
+<p>Fired when <code>Element</code>'s attribute is removed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AttributeRemovedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-backend-node/index.html">BackendNode</a></h4>
+</td>
+<td>
+<p>Backend node with a friendly name.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BackendNode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-backend-node-id.html">BackendNodeId</a></h4>
+</td>
+<td>
+<p>Unique DOM node identifier used to reference a node that may not have been pushed to the
+front-end.</p>
+<code><span class="keyword">typealias </span><span class="identifier">BackendNodeId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-box-model/index.html">BoxModel</a></h4>
+</td>
+<td>
+<p>Box model.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BoxModel</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-character-data-modified-event/index.html">CharacterDataModifiedEvent</a></h4>
+</td>
+<td>
+<p>Mirrors <code>DOMCharacterDataModified</code> event.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CharacterDataModifiedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-child-node-count-updated-event/index.html">ChildNodeCountUpdatedEvent</a></h4>
+</td>
+<td>
+<p>Fired when <code>Container</code>'s child node count has changed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChildNodeCountUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-child-node-inserted-event/index.html">ChildNodeInsertedEvent</a></h4>
+</td>
+<td>
+<p>Mirrors <code>DOMNodeInserted</code> event.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChildNodeInsertedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-child-node-removed-event/index.html">ChildNodeRemovedEvent</a></h4>
+</td>
+<td>
+<p>Mirrors <code>DOMNodeRemoved</code> event.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChildNodeRemovedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-collect-class-names-from-subtree-request/index.html">CollectClassNamesFromSubtreeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-collectClassNamesFromSubtree">DOM#collectClassNamesFromSubtree</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CollectClassNamesFromSubtreeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-collect-class-names-from-subtree-response/index.html">CollectClassNamesFromSubtreeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-collectClassNamesFromSubtree">DOM#collectClassNamesFromSubtree</a> operation call.
+Collects class names for the node with given id and all of it's child nodes.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CollectClassNamesFromSubtreeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-copy-to-request/index.html">CopyToRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-copyTo">DOM#copyTo</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CopyToRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-copy-to-response/index.html">CopyToResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-copyTo">DOM#copyTo</a> operation call.
+Creates a deep copy of the specified node and places it into the target container before the
+given anchor.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CopyToResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-describe-node-request/index.html">DescribeNodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-describeNode">DOM#describeNode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DescribeNodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-describe-node-response/index.html">DescribeNodeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-describeNode">DOM#describeNode</a> operation call.
+Describes node given its id, does not require domain to be enabled. Does not start tracking any
+objects, can be used for automation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DescribeNodeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-discard-search-results-request/index.html">DiscardSearchResultsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-discardSearchResults">DOM#discardSearchResults</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DiscardSearchResultsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-distributed-nodes-updated-event/index.html">DistributedNodesUpdatedEvent</a></h4>
+</td>
+<td>
+<p>Called when distrubution is changed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DistributedNodesUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-d-o-m-operations/index.html">DOMOperations</a></h4>
+</td>
+<td>
+<p>This domain exposes DOM read/write operations. Each DOM Node is represented with its mirror object
+that has an <code>id</code>. This <code>id</code> can be used to get additional information on the Node, resolve it into
+the JavaScript object wrapper, etc. It is important that client receives DOM events only for the
+nodes that are known to the client. Backend keeps track of the nodes that were sent to the client
+and never sends the same node twice. It is client's responsibility to collect information about
+the nodes that were sent to the client.Note that <code>iframe</code> owner elements will return
+corresponding document elements as their child nodes.</p>
+<code><span class="keyword">class </span><span class="identifier">DOMOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-focus-request/index.html">FocusRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-focus">DOM#focus</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FocusRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-attributes-request/index.html">GetAttributesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getAttributes">DOM#getAttributes</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetAttributesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-attributes-response/index.html">GetAttributesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getAttributes">DOM#getAttributes</a> operation call.
+Returns attributes for the specified node.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetAttributesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-box-model-request/index.html">GetBoxModelRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getBoxModel">DOM#getBoxModel</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetBoxModelRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-box-model-response/index.html">GetBoxModelResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getBoxModel">DOM#getBoxModel</a> operation call.
+Returns boxes for the given node.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetBoxModelResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-content-quads-request/index.html">GetContentQuadsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getContentQuads">DOM#getContentQuads</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetContentQuadsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-content-quads-response/index.html">GetContentQuadsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getContentQuads">DOM#getContentQuads</a> operation call.
+Returns quads that describe node position on the page. This method
+might return multiple quads for inline nodes.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetContentQuadsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-document-request/index.html">GetDocumentRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getDocument">DOM#getDocument</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetDocumentRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-document-response/index.html">GetDocumentResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getDocument">DOM#getDocument</a> operation call.
+Returns the root DOM node (and optionally the subtree) to the caller.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetDocumentResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-file-info-request/index.html">GetFileInfoRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getFileInfo">DOM#getFileInfo</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetFileInfoRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-file-info-response/index.html">GetFileInfoResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getFileInfo">DOM#getFileInfo</a> operation call.
+Returns file information for the given
+File wrapper.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetFileInfoResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-flattened-document-request/index.html">GetFlattenedDocumentRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getFlattenedDocument">DOM#getFlattenedDocument</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetFlattenedDocumentRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-flattened-document-response/index.html">GetFlattenedDocumentResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getFlattenedDocument">DOM#getFlattenedDocument</a> operation call.
+Returns the root DOM node (and optionally the subtree) to the caller.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetFlattenedDocumentResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-frame-owner-request/index.html">GetFrameOwnerRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getFrameOwner">DOM#getFrameOwner</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetFrameOwnerRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-frame-owner-response/index.html">GetFrameOwnerResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getFrameOwner">DOM#getFrameOwner</a> operation call.
+Returns iframe node that owns iframe with the given domain.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetFrameOwnerResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-node-for-location-request/index.html">GetNodeForLocationRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getNodeForLocation">DOM#getNodeForLocation</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetNodeForLocationRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-node-for-location-response/index.html">GetNodeForLocationResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getNodeForLocation">DOM#getNodeForLocation</a> operation call.
+Returns node id at given location. Depending on whether DOM domain is enabled, nodeId is
+either returned or not.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetNodeForLocationResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-node-stack-traces-request/index.html">GetNodeStackTracesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getNodeStackTraces">DOM#getNodeStackTraces</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetNodeStackTracesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-node-stack-traces-response/index.html">GetNodeStackTracesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getNodeStackTraces">DOM#getNodeStackTraces</a> operation call.
+Gets stack traces associated with a Node. As of now, only provides stack trace for Node creation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetNodeStackTracesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-outer-h-t-m-l-request/index.html">GetOuterHTMLRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getOuterHTML">DOM#getOuterHTML</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetOuterHTMLRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-outer-h-t-m-l-response/index.html">GetOuterHTMLResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getOuterHTML">DOM#getOuterHTML</a> operation call.
+Returns node's HTML markup.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetOuterHTMLResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-relayout-boundary-request/index.html">GetRelayoutBoundaryRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getRelayoutBoundary">DOM#getRelayoutBoundary</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetRelayoutBoundaryRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-relayout-boundary-response/index.html">GetRelayoutBoundaryResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getRelayoutBoundary">DOM#getRelayoutBoundary</a> operation call.
+Returns the id of the nearest ancestor that is a relayout boundary.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetRelayoutBoundaryResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-search-results-request/index.html">GetSearchResultsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getSearchResults">DOM#getSearchResults</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetSearchResultsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-search-results-response/index.html">GetSearchResultsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getSearchResults">DOM#getSearchResults</a> operation call.
+Returns search results from given <code>fromIndex</code> to given <code>toIndex</code> from the search with the given
+identifier.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetSearchResultsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-inline-style-invalidated-event/index.html">InlineStyleInvalidatedEvent</a></h4>
+</td>
+<td>
+<p>Fired when <code>Element</code>'s inline style is modified via a CSS property modification.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InlineStyleInvalidatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-move-to-request/index.html">MoveToRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-moveTo">DOM#moveTo</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MoveToRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-move-to-response/index.html">MoveToResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-moveTo">DOM#moveTo</a> operation call.
+Moves node into the new container, places it before the given anchor.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MoveToResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-node/index.html">Node</a></h4>
+</td>
+<td>
+<p>DOM interaction is implemented in terms of mirror objects that represent the actual DOM nodes.
+DOMNode is a base node mirror type.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Node</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-node-id.html">NodeId</a></h4>
+</td>
+<td>
+<p>Unique DOM node identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">NodeId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-perform-search-request/index.html">PerformSearchRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-performSearch">DOM#performSearch</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PerformSearchRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-perform-search-response/index.html">PerformSearchResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-performSearch">DOM#performSearch</a> operation call.
+Searches for a given string in the DOM tree. Use <code>getSearchResults</code> to access search results or
+<code>cancelSearch</code> to end this search session.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PerformSearchResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-pseudo-element-added-event/index.html">PseudoElementAddedEvent</a></h4>
+</td>
+<td>
+<p>Called when a pseudo element is added to an element.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PseudoElementAddedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-pseudo-element-removed-event/index.html">PseudoElementRemovedEvent</a></h4>
+</td>
+<td>
+<p>Called when a pseudo element is removed from an element.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PseudoElementRemovedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-pseudo-type/index.html">PseudoType</a></h4>
+</td>
+<td>
+<p>Pseudo element type.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">PseudoType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-push-node-by-path-to-frontend-request/index.html">PushNodeByPathToFrontendRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-pushNodeByPathToFrontend">DOM#pushNodeByPathToFrontend</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PushNodeByPathToFrontendRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-push-node-by-path-to-frontend-response/index.html">PushNodeByPathToFrontendResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-pushNodeByPathToFrontend">DOM#pushNodeByPathToFrontend</a> operation call.
+Requests that the node is sent to the caller given its path. // FIXME, use XPath</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PushNodeByPathToFrontendResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-push-nodes-by-backend-ids-to-frontend-request/index.html">PushNodesByBackendIdsToFrontendRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-pushNodesByBackendIdsToFrontend">DOM#pushNodesByBackendIdsToFrontend</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PushNodesByBackendIdsToFrontendRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-push-nodes-by-backend-ids-to-frontend-response/index.html">PushNodesByBackendIdsToFrontendResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-pushNodesByBackendIdsToFrontend">DOM#pushNodesByBackendIdsToFrontend</a> operation call.
+Requests that a batch of nodes is sent to the caller given their backend node ids.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PushNodesByBackendIdsToFrontendResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-quad.html">Quad</a></h4>
+</td>
+<td>
+<p>An array of quad vertices, x immediately followed by y for each point, points clock-wise.</p>
+<code><span class="keyword">typealias </span><span class="identifier">Quad</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-query-selector-all-request/index.html">QuerySelectorAllRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-querySelectorAll">DOM#querySelectorAll</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">QuerySelectorAllRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-query-selector-all-response/index.html">QuerySelectorAllResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-querySelectorAll">DOM#querySelectorAll</a> operation call.
+Executes <code>querySelectorAll</code> on a given node.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">QuerySelectorAllResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-query-selector-request/index.html">QuerySelectorRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-querySelector">DOM#querySelector</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">QuerySelectorRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-query-selector-response/index.html">QuerySelectorResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-querySelector">DOM#querySelector</a> operation call.
+Executes <code>querySelector</code> on a given node.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">QuerySelectorResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-rect/index.html">Rect</a></h4>
+</td>
+<td>
+<p>Rectangle.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Rect</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remove-attribute-request/index.html">RemoveAttributeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-removeAttribute">DOM#removeAttribute</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoveAttributeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remove-node-request/index.html">RemoveNodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-removeNode">DOM#removeNode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoveNodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-child-nodes-request/index.html">RequestChildNodesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-requestChildNodes">DOM#requestChildNodes</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestChildNodesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-node-request/index.html">RequestNodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-requestNode">DOM#requestNode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestNodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-node-response/index.html">RequestNodeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-requestNode">DOM#requestNode</a> operation call.
+Requests that the node is sent to the caller given the JavaScript node object reference. All
+nodes that form the path from the node to the root are also sent to the client as a series of
+<code>setChildNodes</code> notifications.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestNodeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-resolve-node-request/index.html">ResolveNodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-resolveNode">DOM#resolveNode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResolveNodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-resolve-node-response/index.html">ResolveNodeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-resolveNode">DOM#resolveNode</a> operation call.
+Resolves the JavaScript node object for a given NodeId or BackendNodeId.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResolveNodeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-r-g-b-a/index.html">RGBA</a></h4>
+</td>
+<td>
+<p>A structure holding an RGBA color.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RGBA</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-scroll-into-view-if-needed-request/index.html">ScrollIntoViewIfNeededRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-scrollIntoViewIfNeeded">DOM#scrollIntoViewIfNeeded</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScrollIntoViewIfNeededRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-attributes-as-text-request/index.html">SetAttributesAsTextRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-setAttributesAsText">DOM#setAttributesAsText</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetAttributesAsTextRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-attribute-value-request/index.html">SetAttributeValueRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-setAttributeValue">DOM#setAttributeValue</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetAttributeValueRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-child-nodes-event/index.html">SetChildNodesEvent</a></h4>
+</td>
+<td>
+<p>Fired when backend wants to provide client with the missing DOM structure. This happens upon
+most of the calls requesting node ids.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetChildNodesEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-file-input-files-request/index.html">SetFileInputFilesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-setFileInputFiles">DOM#setFileInputFiles</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetFileInputFilesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-inspected-node-request/index.html">SetInspectedNodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-setInspectedNode">DOM#setInspectedNode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetInspectedNodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-node-name-request/index.html">SetNodeNameRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-setNodeName">DOM#setNodeName</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetNodeNameRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-node-name-response/index.html">SetNodeNameResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-setNodeName">DOM#setNodeName</a> operation call.
+Sets node name for a node with given id.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetNodeNameResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-node-stack-traces-enabled-request/index.html">SetNodeStackTracesEnabledRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-setNodeStackTracesEnabled">DOM#setNodeStackTracesEnabled</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetNodeStackTracesEnabledRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-node-value-request/index.html">SetNodeValueRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-setNodeValue">DOM#setNodeValue</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetNodeValueRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-outer-h-t-m-l-request/index.html">SetOuterHTMLRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-setOuterHTML">DOM#setOuterHTML</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetOuterHTMLRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-shadow-root-popped-event/index.html">ShadowRootPoppedEvent</a></h4>
+</td>
+<td>
+<p>Called when shadow root is popped from the element.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ShadowRootPoppedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-shadow-root-pushed-event/index.html">ShadowRootPushedEvent</a></h4>
+</td>
+<td>
+<p>Called when shadow root is pushed into the element.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ShadowRootPushedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-shadow-root-type/index.html">ShadowRootType</a></h4>
+</td>
+<td>
+<p>Shadow root type.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ShadowRootType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-shape-outside-info/index.html">ShapeOutsideInfo</a></h4>
+</td>
+<td>
+<p>CSS Shape Outside details.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ShapeOutsideInfo</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

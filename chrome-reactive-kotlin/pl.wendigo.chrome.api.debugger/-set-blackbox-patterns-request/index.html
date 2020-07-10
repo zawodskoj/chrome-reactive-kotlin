@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetBlackboxPatternsRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">SetBlackboxPatternsRequest</a><br/>
+<br/>
+<h1>SetBlackboxPatternsRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBlackboxPatternsRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L765">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBlackboxPatterns">Debugger#setBlackboxPatterns</a> operation call.</p>
+<p>Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in
+scripts with url matching one of the patterns. VM will try to leave blackboxed script by
+performing 'step in' several times, finally resorting to 'step out' if unsuccessful.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBlackboxPatterns">Debugger#setBlackboxPatterns</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-debugger-operations/set-blackbox-patterns.html">DebuggerOperations.setBlackboxPatterns</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBlackboxPatterns">Debugger#setBlackboxPatterns</a> operation call.</p>
+<code><span class="identifier">SetBlackboxPatternsRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBlackboxPatternsRequest$<init>(kotlin.collections.List((kotlin.String)))/patterns">patterns</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="patterns.html">patterns</a></h4>
+</td>
+<td>
+<p>Array of regexps that will be used to check script url for blackbox state.</p>
+<code><span class="keyword">val </span><span class="identifier">patterns</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DebuggerOperations.setBreakpointByUrl - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="index.html">DebuggerOperations</a>&nbsp;/&nbsp;<a href="./set-breakpoint-by-url.html">setBreakpointByUrl</a><br/>
+<br/>
+<h1>setBreakpointByUrl</h1>
+<a name="pl.wendigo.chrome.api.debugger.DebuggerOperations$setBreakpointByUrl(pl.wendigo.chrome.api.debugger.SetBreakpointByUrlRequest)"></a>
+<code><span class="keyword">fun </span><span class="identifier">setBreakpointByUrl</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setBreakpointByUrl(pl.wendigo.chrome.api.debugger.SetBreakpointByUrlRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-breakpoint-by-url-request/index.html"><span class="identifier">SetBreakpointByUrlRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-breakpoint-by-url-response/index.html"><span class="identifier">SetBreakpointByUrlResponse</span></a><span class="symbol">&gt;</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L177">(source)</a>
+<p>Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this
+command is issued, all existing parsed scripts will have breakpoints resolved and returned in
+<code>locations</code> property. Further matching script parsing will result in subsequent
+<code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointByUrl">Debugger#setBreakpointByUrl</a> method documentation.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RequestEntriesResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.cachestorage</a>&nbsp;/&nbsp;<a href="./index.html">RequestEntriesResponse</a><br/>
+<br/>
+<h1>RequestEntriesResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestEntriesResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/cachestorage/Operations.kt#L197">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestEntries">CacheStorage#requestEntries</a> operation call.
+Requests data from cache.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestEntries">CacheStorage#requestEntries</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-cache-storage-operations/request-entries.html">CacheStorageOperations.requestEntries</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestEntries">CacheStorage#requestEntries</a> operation call.
+Requests data from cache.</p>
+<code><span class="identifier">RequestEntriesResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.cachestorage.RequestEntriesResponse$<init>(kotlin.collections.List((pl.wendigo.chrome.api.cachestorage.DataEntry)), kotlin.Double)/cacheDataEntries">cacheDataEntries</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-data-entry/index.html"><span class="identifier">DataEntry</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.cachestorage.RequestEntriesResponse$<init>(kotlin.collections.List((pl.wendigo.chrome.api.cachestorage.DataEntry)), kotlin.Double)/returnCount">returnCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="cache-data-entries.html">cacheDataEntries</a></h4>
+</td>
+<td>
+<p>Array of object store data entries.</p>
+<code><span class="keyword">val </span><span class="identifier">cacheDataEntries</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-data-entry/index.html"><span class="identifier">DataEntry</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="return-count.html">returnCount</a></h4>
+</td>
+<td>
+<p>Count of returned entries from this storage. If pathFilter is empty, it
+is the count of all entries from this storage.</p>
+<code><span class="keyword">val </span><span class="identifier">returnCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

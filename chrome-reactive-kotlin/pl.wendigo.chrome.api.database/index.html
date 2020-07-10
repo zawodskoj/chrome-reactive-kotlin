@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.database - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.database</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.database</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Database">Database</a> domain implementation accessible via <a href="-database-operations/index.html">DatabaseOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-add-database-event/index.html">AddDatabaseEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddDatabaseEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-database/index.html">Database</a></h4>
+</td>
+<td>
+<p>Database object.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Database</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-database-id.html">DatabaseId</a></h4>
+</td>
+<td>
+<p>Unique identifier of Database object.</p>
+<code><span class="keyword">typealias </span><span class="identifier">DatabaseId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-database-operations/index.html">DatabaseOperations</a></h4>
+</td>
+<td>
+<p>DatabaseOperations represents Database protocol domain request/response operations and events that can be captured.</p>
+<code><span class="keyword">class </span><span class="identifier">DatabaseOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-error/index.html">Error</a></h4>
+</td>
+<td>
+<p>Database error.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Error</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-execute-s-q-l-request/index.html">ExecuteSQLRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Database#method-executeSQL">Database#executeSQL</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExecuteSQLRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-execute-s-q-l-response/index.html">ExecuteSQLResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Database#method-executeSQL">Database#executeSQL</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExecuteSQLResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-database-table-names-request/index.html">GetDatabaseTableNamesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Database#method-getDatabaseTableNames">Database#getDatabaseTableNames</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetDatabaseTableNamesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-database-table-names-response/index.html">GetDatabaseTableNamesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Database#method-getDatabaseTableNames">Database#getDatabaseTableNames</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetDatabaseTableNamesResponse</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

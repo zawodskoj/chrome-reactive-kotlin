@@ -1,0 +1,225 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TargetOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.target</a>&nbsp;/&nbsp;<a href="./index.html">TargetOperations</a><br/>
+<br/>
+<h1>TargetOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">TargetOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/target/Operations.kt#L8">(source)</a>
+<p>Supports additional targets discovery and allows to attach to them.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target">Target</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="activate-target.html">activateTarget</a></h4>
+</td>
+<td>
+<p>Activates (focuses) the target.</p>
+<code><span class="keyword">fun </span><span class="identifier">activateTarget</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$activateTarget(pl.wendigo.chrome.api.target.ActivateTargetRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-activate-target-request/index.html"><span class="identifier">ActivateTargetRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="attached-to-target.html">attachedToTarget</a></h4>
+</td>
+<td>
+<p>Issued when attached to target because of auto-attach or <code>attachToTarget</code> command.</p>
+<code><span class="keyword">fun </span><span class="identifier">attachedToTarget</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-attached-to-target-event/index.html"><span class="identifier">AttachedToTargetEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="attach-to-browser-target.html">attachToBrowserTarget</a></h4>
+</td>
+<td>
+<p>Attaches to the browser target, only uses flat sessionId mode.</p>
+<code><span class="keyword">fun </span><span class="identifier">attachToBrowserTarget</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-attach-to-browser-target-response/index.html"><span class="identifier">AttachToBrowserTargetResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="attach-to-target.html">attachToTarget</a></h4>
+</td>
+<td>
+<p>Attaches to the target with given id.</p>
+<code><span class="keyword">fun </span><span class="identifier">attachToTarget</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$attachToTarget(pl.wendigo.chrome.api.target.AttachToTargetRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-attach-to-target-request/index.html"><span class="identifier">AttachToTargetRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-attach-to-target-response/index.html"><span class="identifier">AttachToTargetResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="close-target.html">closeTarget</a></h4>
+</td>
+<td>
+<p>Closes the target. If the target is a page that gets closed too.</p>
+<code><span class="keyword">fun </span><span class="identifier">closeTarget</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$closeTarget(pl.wendigo.chrome.api.target.CloseTargetRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-close-target-request/index.html"><span class="identifier">CloseTargetRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-close-target-response/index.html"><span class="identifier">CloseTargetResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="create-browser-context.html">createBrowserContext</a></h4>
+</td>
+<td>
+<p>Creates a new empty BrowserContext. Similar to an incognito profile but you can have more than
+one.</p>
+<code><span class="keyword">fun </span><span class="identifier">createBrowserContext</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$createBrowserContext(pl.wendigo.chrome.api.target.CreateBrowserContextRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-create-browser-context-request/index.html"><span class="identifier">CreateBrowserContextRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-create-browser-context-response/index.html"><span class="identifier">CreateBrowserContextResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="create-target.html">createTarget</a></h4>
+</td>
+<td>
+<p>Creates a new page.</p>
+<code><span class="keyword">fun </span><span class="identifier">createTarget</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$createTarget(pl.wendigo.chrome.api.target.CreateTargetRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-create-target-request/index.html"><span class="identifier">CreateTargetRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-create-target-response/index.html"><span class="identifier">CreateTargetResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="detached-from-target.html">detachedFromTarget</a></h4>
+</td>
+<td>
+<p>Issued when detached from target for any reason (including <code>detachFromTarget</code> command). Can be
+issued multiple times per target if multiple sessions have been attached to it.</p>
+<code><span class="keyword">fun </span><span class="identifier">detachedFromTarget</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-detached-from-target-event/index.html"><span class="identifier">DetachedFromTargetEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="detach-from-target.html">detachFromTarget</a></h4>
+</td>
+<td>
+<p>Detaches session with given id.</p>
+<code><span class="keyword">fun </span><span class="identifier">detachFromTarget</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$detachFromTarget(pl.wendigo.chrome.api.target.DetachFromTargetRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-detach-from-target-request/index.html"><span class="identifier">DetachFromTargetRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dispose-browser-context.html">disposeBrowserContext</a></h4>
+</td>
+<td>
+<p>Deletes a BrowserContext. All the belonging pages will be closed without calling their
+beforeunload hooks.</p>
+<code><span class="keyword">fun </span><span class="identifier">disposeBrowserContext</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$disposeBrowserContext(pl.wendigo.chrome.api.target.DisposeBrowserContextRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-dispose-browser-context-request/index.html"><span class="identifier">DisposeBrowserContextRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Target domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="expose-dev-tools-protocol.html">exposeDevToolsProtocol</a></h4>
+</td>
+<td>
+<p>Inject object to the target's main frame that provides a communication
+channel with browser target.</p>
+<code><span class="keyword">fun </span><span class="identifier">exposeDevToolsProtocol</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$exposeDevToolsProtocol(pl.wendigo.chrome.api.target.ExposeDevToolsProtocolRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-expose-dev-tools-protocol-request/index.html"><span class="identifier">ExposeDevToolsProtocolRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-browser-contexts.html">getBrowserContexts</a></h4>
+</td>
+<td>
+<p>Returns all browser contexts created with <code>Target.createBrowserContext</code> method.</p>
+<code><span class="keyword">fun </span><span class="identifier">getBrowserContexts</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-browser-contexts-response/index.html"><span class="identifier">GetBrowserContextsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-target-info.html">getTargetInfo</a></h4>
+</td>
+<td>
+<p>Returns information about a target.</p>
+<code><span class="keyword">fun </span><span class="identifier">getTargetInfo</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$getTargetInfo(pl.wendigo.chrome.api.target.GetTargetInfoRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-target-info-request/index.html"><span class="identifier">GetTargetInfoRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-target-info-response/index.html"><span class="identifier">GetTargetInfoResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-targets.html">getTargets</a></h4>
+</td>
+<td>
+<p>Retrieves a list of available targets.</p>
+<code><span class="keyword">fun </span><span class="identifier">getTargets</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-targets-response/index.html"><span class="identifier">GetTargetsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="received-message-from-target.html">receivedMessageFromTarget</a></h4>
+</td>
+<td>
+<p>Notifies about a new protocol message received from the session (as reported in
+<code>attachedToTarget</code> event).</p>
+<code><span class="keyword">fun </span><span class="identifier">receivedMessageFromTarget</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-received-message-from-target-event/index.html"><span class="identifier">ReceivedMessageFromTargetEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="send-message-to-target.html">sendMessageToTarget</a></h4>
+</td>
+<td>
+<p>Sends protocol message over session with given id.
+Consider using flat mode instead; see commands attachToTarget, setAutoAttach,
+and crbug.com/991325.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">sendMessageToTarget</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$sendMessageToTarget(pl.wendigo.chrome.api.target.SendMessageToTargetRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-send-message-to-target-request/index.html"><span class="identifier">SendMessageToTargetRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-auto-attach.html">setAutoAttach</a></h4>
+</td>
+<td>
+<p>Controls whether to automatically attach to new targets which are considered to be related to
+this one. When turned on, attaches to all existing related targets as well. When turned off,
+automatically detaches from all currently attached targets.</p>
+<code><span class="keyword">fun </span><span class="identifier">setAutoAttach</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$setAutoAttach(pl.wendigo.chrome.api.target.SetAutoAttachRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-auto-attach-request/index.html"><span class="identifier">SetAutoAttachRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-discover-targets.html">setDiscoverTargets</a></h4>
+</td>
+<td>
+<p>Controls whether to discover available targets and notify via
+<code>targetCreated/targetInfoChanged/targetDestroyed</code> events.</p>
+<code><span class="keyword">fun </span><span class="identifier">setDiscoverTargets</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$setDiscoverTargets(pl.wendigo.chrome.api.target.SetDiscoverTargetsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-discover-targets-request/index.html"><span class="identifier">SetDiscoverTargetsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-remote-locations.html">setRemoteLocations</a></h4>
+</td>
+<td>
+<p>Enables target discovery for the specified locations, when <code>setDiscoverTargets</code> was set to
+<code>true</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">setRemoteLocations</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.TargetOperations$setRemoteLocations(pl.wendigo.chrome.api.target.SetRemoteLocationsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-remote-locations-request/index.html"><span class="identifier">SetRemoteLocationsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target-crashed.html">targetCrashed</a></h4>
+</td>
+<td>
+<p>Issued when a target has crashed.</p>
+<code><span class="keyword">fun </span><span class="identifier">targetCrashed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-target-crashed-event/index.html"><span class="identifier">TargetCrashedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target-created.html">targetCreated</a></h4>
+</td>
+<td>
+<p>Issued when a possible inspection target is created.</p>
+<code><span class="keyword">fun </span><span class="identifier">targetCreated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-target-created-event/index.html"><span class="identifier">TargetCreatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target-destroyed.html">targetDestroyed</a></h4>
+</td>
+<td>
+<p>Issued when a target is destroyed.</p>
+<code><span class="keyword">fun </span><span class="identifier">targetDestroyed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-target-destroyed-event/index.html"><span class="identifier">TargetDestroyedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target-info-changed.html">targetInfoChanged</a></h4>
+</td>
+<td>
+<p>Issued when some information about a target has changed. This only happens between
+<code>targetCreated</code> and <code>targetDestroyed</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">targetInfoChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-target-info-changed-event/index.html"><span class="identifier">TargetInfoChangedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

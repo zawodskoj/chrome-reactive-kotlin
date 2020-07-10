@@ -1,0 +1,786 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.page - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.page</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.page</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page">Page</a> domain implementation accessible via <a href="-page-operations/index.html">PageOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-add-compilation-cache-request/index.html">AddCompilationCacheRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-addCompilationCache">Page#addCompilationCache</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddCompilationCacheRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-add-script-to-evaluate-on-load-request/index.html">AddScriptToEvaluateOnLoadRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-addScriptToEvaluateOnLoad">Page#addScriptToEvaluateOnLoad</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddScriptToEvaluateOnLoadRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-add-script-to-evaluate-on-load-response/index.html">AddScriptToEvaluateOnLoadResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-addScriptToEvaluateOnLoad">Page#addScriptToEvaluateOnLoad</a> operation call.
+Deprecated, please use addScriptToEvaluateOnNewDocument instead.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddScriptToEvaluateOnLoadResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-add-script-to-evaluate-on-new-document-request/index.html">AddScriptToEvaluateOnNewDocumentRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-addScriptToEvaluateOnNewDocument">Page#addScriptToEvaluateOnNewDocument</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddScriptToEvaluateOnNewDocumentRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-add-script-to-evaluate-on-new-document-response/index.html">AddScriptToEvaluateOnNewDocumentResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-addScriptToEvaluateOnNewDocument">Page#addScriptToEvaluateOnNewDocument</a> operation call.
+Evaluates given script in every frame upon creation (before loading frame's scripts).</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddScriptToEvaluateOnNewDocumentResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-app-manifest-error/index.html">AppManifestError</a></h4>
+</td>
+<td>
+<p>Error while paring app manifest.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AppManifestError</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-app-manifest-parsed-properties/index.html">AppManifestParsedProperties</a></h4>
+</td>
+<td>
+<p>Parsed app manifest properties.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AppManifestParsedProperties</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-capture-screenshot-request/index.html">CaptureScreenshotRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-captureScreenshot">Page#captureScreenshot</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CaptureScreenshotRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-capture-screenshot-response/index.html">CaptureScreenshotResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-captureScreenshot">Page#captureScreenshot</a> operation call.
+Capture page screenshot.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CaptureScreenshotResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-capture-snapshot-request/index.html">CaptureSnapshotRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-captureSnapshot">Page#captureSnapshot</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CaptureSnapshotRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-capture-snapshot-response/index.html">CaptureSnapshotResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-captureSnapshot">Page#captureSnapshot</a> operation call.
+Returns a snapshot of the page as a string. For MHTML format, the serialization includes
+iframes, shadow DOM, external resources, and element-inline styles.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CaptureSnapshotResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-client-navigation-disposition/index.html">ClientNavigationDisposition</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ClientNavigationDisposition</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-client-navigation-reason/index.html">ClientNavigationReason</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ClientNavigationReason</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-compilation-cache-produced-event/index.html">CompilationCacheProducedEvent</a></h4>
+</td>
+<td>
+<p>Issued for every compilation cache generated. Is only available
+if Page.setGenerateCompilationCache is enabled.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CompilationCacheProducedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-create-isolated-world-request/index.html">CreateIsolatedWorldRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-createIsolatedWorld">Page#createIsolatedWorld</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CreateIsolatedWorldRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-create-isolated-world-response/index.html">CreateIsolatedWorldResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-createIsolatedWorld">Page#createIsolatedWorld</a> operation call.
+Creates an isolated world for the given frame.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CreateIsolatedWorldResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-delete-cookie-request/index.html">DeleteCookieRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-deleteCookie">Page#deleteCookie</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DeleteCookieRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-dialog-type/index.html">DialogType</a></h4>
+</td>
+<td>
+<p>Javascript dialog type.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">DialogType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-dom-content-event-fired-event/index.html">DomContentEventFiredEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DomContentEventFiredEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-download-progress-event/index.html">DownloadProgressEvent</a></h4>
+</td>
+<td>
+<p>Fired when download makes progress. Last call has |done| == true.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DownloadProgressEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-download-will-begin-event/index.html">DownloadWillBeginEvent</a></h4>
+</td>
+<td>
+<p>Fired when page is about to start a download.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DownloadWillBeginEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-file-chooser-opened-event/index.html">FileChooserOpenedEvent</a></h4>
+</td>
+<td>
+<p>Emitted only when <code>page.interceptFileChooser</code> is enabled.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FileChooserOpenedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-font-families/index.html">FontFamilies</a></h4>
+</td>
+<td>
+<p>Generic font families collection.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FontFamilies</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-font-sizes/index.html">FontSizes</a></h4>
+</td>
+<td>
+<p>Default font sizes.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FontSizes</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame/index.html">Frame</a></h4>
+</td>
+<td>
+<p>Information about the Frame on the page.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Frame</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-attached-event/index.html">FrameAttachedEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame has been attached to its parent.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameAttachedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-cleared-scheduled-navigation-event/index.html">FrameClearedScheduledNavigationEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame no longer has a scheduled navigation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameClearedScheduledNavigationEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-detached-event/index.html">FrameDetachedEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame has been detached from its parent.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameDetachedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-id.html">FrameId</a></h4>
+</td>
+<td>
+<p>Unique frame identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">FrameId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-navigated-event/index.html">FrameNavigatedEvent</a></h4>
+</td>
+<td>
+<p>Fired once navigation of the frame has completed. Frame is now associated with the new loader.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameNavigatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-requested-navigation-event/index.html">FrameRequestedNavigationEvent</a></h4>
+</td>
+<td>
+<p>Fired when a renderer-initiated navigation is requested.
+Navigation may still be cancelled after the event is issued.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameRequestedNavigationEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-resource/index.html">FrameResource</a></h4>
+</td>
+<td>
+<p>Information about the Resource on the page.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameResource</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-resource-tree/index.html">FrameResourceTree</a></h4>
+</td>
+<td>
+<p>Information about the Frame hierarchy along with their cached resources.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameResourceTree</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-scheduled-navigation-event/index.html">FrameScheduledNavigationEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame schedules a potential navigation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameScheduledNavigationEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-started-loading-event/index.html">FrameStartedLoadingEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame has started loading.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameStartedLoadingEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-stopped-loading-event/index.html">FrameStoppedLoadingEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame has stopped loading.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameStoppedLoadingEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-tree/index.html">FrameTree</a></h4>
+</td>
+<td>
+<p>Information about the Frame hierarchy.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameTree</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-generate-test-report-request/index.html">GenerateTestReportRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-generateTestReport">Page#generateTestReport</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GenerateTestReportRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-app-manifest-response/index.html">GetAppManifestResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getAppManifest">Page#getAppManifest</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetAppManifestResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-cookies-response/index.html">GetCookiesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getCookies">Page#getCookies</a> operation call.
+Returns all browser cookies. Depending on the backend support, will return detailed cookie
+information in the <code>cookies</code> field.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetCookiesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-frame-tree-response/index.html">GetFrameTreeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getFrameTree">Page#getFrameTree</a> operation call.
+Returns present frame tree structure.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetFrameTreeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-installability-errors-response/index.html">GetInstallabilityErrorsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getInstallabilityErrors">Page#getInstallabilityErrors</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetInstallabilityErrorsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-layout-metrics-response/index.html">GetLayoutMetricsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getLayoutMetrics">Page#getLayoutMetrics</a> operation call.
+Returns metrics relating to the layouting of the page, such as viewport bounds/scale.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetLayoutMetricsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-manifest-icons-response/index.html">GetManifestIconsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getManifestIcons">Page#getManifestIcons</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetManifestIconsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-navigation-history-response/index.html">GetNavigationHistoryResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getNavigationHistory">Page#getNavigationHistory</a> operation call.
+Returns navigation history for the current page.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetNavigationHistoryResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-resource-content-request/index.html">GetResourceContentRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getResourceContent">Page#getResourceContent</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetResourceContentRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-resource-content-response/index.html">GetResourceContentResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getResourceContent">Page#getResourceContent</a> operation call.
+Returns content of the given resource.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetResourceContentResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-resource-tree-response/index.html">GetResourceTreeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getResourceTree">Page#getResourceTree</a> operation call.
+Returns present frame / resource tree structure.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetResourceTreeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-handle-java-script-dialog-request/index.html">HandleJavaScriptDialogRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-handleJavaScriptDialog">Page#handleJavaScriptDialog</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HandleJavaScriptDialogRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-installability-error/index.html">InstallabilityError</a></h4>
+</td>
+<td>
+<p>The installability error</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InstallabilityError</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-installability-error-argument/index.html">InstallabilityErrorArgument</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InstallabilityErrorArgument</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-javascript-dialog-closed-event/index.html">JavascriptDialogClosedEvent</a></h4>
+</td>
+<td>
+<p>Fired when a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload) has been
+closed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">JavascriptDialogClosedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-javascript-dialog-opening-event/index.html">JavascriptDialogOpeningEvent</a></h4>
+</td>
+<td>
+<p>Fired when a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload) is about to
+open.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">JavascriptDialogOpeningEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-layout-viewport/index.html">LayoutViewport</a></h4>
+</td>
+<td>
+<p>Layout viewport position and dimensions.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LayoutViewport</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-lifecycle-event-event/index.html">LifecycleEventEvent</a></h4>
+</td>
+<td>
+<p>Fired for top level page lifecycle events such as navigation, load, paint, etc.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LifecycleEventEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-load-event-fired-event/index.html">LoadEventFiredEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LoadEventFiredEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-navigated-within-document-event/index.html">NavigatedWithinDocumentEvent</a></h4>
+</td>
+<td>
+<p>Fired when same-document navigation happens, e.g. due to history API usage or anchor navigation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NavigatedWithinDocumentEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-navigate-request/index.html">NavigateRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-navigate">Page#navigate</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NavigateRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-navigate-response/index.html">NavigateResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-navigate">Page#navigate</a> operation call.
+Navigates current page to the given URL.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NavigateResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-navigate-to-history-entry-request/index.html">NavigateToHistoryEntryRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-navigateToHistoryEntry">Page#navigateToHistoryEntry</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NavigateToHistoryEntryRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-navigation-entry/index.html">NavigationEntry</a></h4>
+</td>
+<td>
+<p>Navigation history entry.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NavigationEntry</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-page-operations/index.html">PageOperations</a></h4>
+</td>
+<td>
+<p>Actions and events related to the inspected page belong to the page domain.</p>
+<code><span class="keyword">class </span><span class="identifier">PageOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-print-to-p-d-f-request/index.html">PrintToPDFRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-printToPDF">Page#printToPDF</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PrintToPDFRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-print-to-p-d-f-response/index.html">PrintToPDFResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-printToPDF">Page#printToPDF</a> operation call.
+Print page as PDF.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PrintToPDFResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-referrer-policy/index.html">ReferrerPolicy</a></h4>
+</td>
+<td>
+<p>The referring-policy used for the navigation.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ReferrerPolicy</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-reload-request/index.html">ReloadRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-reload">Page#reload</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReloadRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remove-script-to-evaluate-on-load-request/index.html">RemoveScriptToEvaluateOnLoadRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-removeScriptToEvaluateOnLoad">Page#removeScriptToEvaluateOnLoad</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoveScriptToEvaluateOnLoadRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remove-script-to-evaluate-on-new-document-request/index.html">RemoveScriptToEvaluateOnNewDocumentRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-removeScriptToEvaluateOnNewDocument">Page#removeScriptToEvaluateOnNewDocument</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoveScriptToEvaluateOnNewDocumentRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-screencast-frame-ack-request/index.html">ScreencastFrameAckRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-screencastFrameAck">Page#screencastFrameAck</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScreencastFrameAckRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-screencast-frame-event/index.html">ScreencastFrameEvent</a></h4>
+</td>
+<td>
+<p>Compressed image data requested by the <code>startScreencast</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScreencastFrameEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-screencast-frame-metadata/index.html">ScreencastFrameMetadata</a></h4>
+</td>
+<td>
+<p>Screencast frame metadata.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScreencastFrameMetadata</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-screencast-visibility-changed-event/index.html">ScreencastVisibilityChangedEvent</a></h4>
+</td>
+<td>
+<p>Fired when the page with currently enabled screencast was shown or hidden `.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScreencastVisibilityChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-script-identifier.html">ScriptIdentifier</a></h4>
+</td>
+<td>
+<p>Unique script identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">ScriptIdentifier</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-search-in-resource-request/index.html">SearchInResourceRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-searchInResource">Page#searchInResource</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SearchInResourceRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-search-in-resource-response/index.html">SearchInResourceResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-searchInResource">Page#searchInResource</a> operation call.
+Searches for given string in resource content.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SearchInResourceResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-ad-blocking-enabled-request/index.html">SetAdBlockingEnabledRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setAdBlockingEnabled">Page#setAdBlockingEnabled</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetAdBlockingEnabledRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-bypass-c-s-p-request/index.html">SetBypassCSPRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setBypassCSP">Page#setBypassCSP</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBypassCSPRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-device-metrics-override-request/index.html">SetDeviceMetricsOverrideRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setDeviceMetricsOverride">Page#setDeviceMetricsOverride</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetDeviceMetricsOverrideRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-device-orientation-override-request/index.html">SetDeviceOrientationOverrideRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setDeviceOrientationOverride">Page#setDeviceOrientationOverride</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetDeviceOrientationOverrideRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-document-content-request/index.html">SetDocumentContentRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setDocumentContent">Page#setDocumentContent</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetDocumentContentRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-download-behavior-request/index.html">SetDownloadBehaviorRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setDownloadBehavior">Page#setDownloadBehavior</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetDownloadBehaviorRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-font-families-request/index.html">SetFontFamiliesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setFontFamilies">Page#setFontFamilies</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetFontFamiliesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-font-sizes-request/index.html">SetFontSizesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setFontSizes">Page#setFontSizes</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetFontSizesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-geolocation-override-request/index.html">SetGeolocationOverrideRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setGeolocationOverride">Page#setGeolocationOverride</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetGeolocationOverrideRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-intercept-file-chooser-dialog-request/index.html">SetInterceptFileChooserDialogRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setInterceptFileChooserDialog">Page#setInterceptFileChooserDialog</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetInterceptFileChooserDialogRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-lifecycle-events-enabled-request/index.html">SetLifecycleEventsEnabledRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setLifecycleEventsEnabled">Page#setLifecycleEventsEnabled</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetLifecycleEventsEnabledRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-produce-compilation-cache-request/index.html">SetProduceCompilationCacheRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setProduceCompilationCache">Page#setProduceCompilationCache</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetProduceCompilationCacheRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-touch-emulation-enabled-request/index.html">SetTouchEmulationEnabledRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setTouchEmulationEnabled">Page#setTouchEmulationEnabled</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetTouchEmulationEnabledRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-web-lifecycle-state-request/index.html">SetWebLifecycleStateRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setWebLifecycleState">Page#setWebLifecycleState</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetWebLifecycleStateRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-start-screencast-request/index.html">StartScreencastRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-startScreencast">Page#startScreencast</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StartScreencastRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-transition-type/index.html">TransitionType</a></h4>
+</td>
+<td>
+<p>Transition type.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">TransitionType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-viewport/index.html">Viewport</a></h4>
+</td>
+<td>
+<p>Viewport for capturing screenshot.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Viewport</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-visual-viewport/index.html">VisualViewport</a></h4>
+</td>
+<td>
+<p>Visual viewport position, dimensions, and scale.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">VisualViewport</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-window-open-event/index.html">WindowOpenEvent</a></h4>
+</td>
+<td>
+<p>Fired when a new window is going to be opened, via window.open(), link click, form submission,
+etc.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WindowOpenEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

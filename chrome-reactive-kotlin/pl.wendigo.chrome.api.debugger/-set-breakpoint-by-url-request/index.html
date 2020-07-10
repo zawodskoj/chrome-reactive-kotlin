@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetBreakpointByUrlRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">SetBreakpointByUrlRequest</a><br/>
+<br/>
+<h1>SetBreakpointByUrlRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBreakpointByUrlRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L877">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointByUrl">Debugger#setBreakpointByUrl</a> operation call.</p>
+<p>Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this
+command is issued, all existing parsed scripts will have breakpoints resolved and returned in
+<code>locations</code> property. Further matching script parsing will result in subsequent
+<code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointByUrl">Debugger#setBreakpointByUrl</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-debugger-operations/set-breakpoint-by-url.html">DebuggerOperations.setBreakpointByUrl</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointByUrl">Debugger#setBreakpointByUrl</a> operation call.</p>
+<code><span class="identifier">SetBreakpointByUrlRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointByUrlRequest$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String)/lineNumber">lineNumber</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointByUrlRequest$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointByUrlRequest$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String)/urlRegex">urlRegex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointByUrlRequest$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String)/scriptHash">scriptHash</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointByUrlRequest$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String)/columnNumber">columnNumber</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointByUrlRequest$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String)/condition">condition</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="column-number.html">columnNumber</a></h4>
+</td>
+<td>
+<p>Offset in the line to set breakpoint at.</p>
+<code><span class="keyword">val </span><span class="identifier">columnNumber</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="condition.html">condition</a></h4>
+</td>
+<td>
+<p>Expression to use as a breakpoint condition. When specified, debugger will only stop on the
+breakpoint if this expression evaluates to true.</p>
+<code><span class="keyword">val </span><span class="identifier">condition</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="line-number.html">lineNumber</a></h4>
+</td>
+<td>
+<p>Line number to set breakpoint at.</p>
+<code><span class="keyword">val </span><span class="identifier">lineNumber</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="script-hash.html">scriptHash</a></h4>
+</td>
+<td>
+<p>Script hash of the resources to set breakpoint on.</p>
+<code><span class="keyword">val </span><span class="identifier">scriptHash</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>URL of the resources to set breakpoint on.</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url-regex.html">urlRegex</a></h4>
+</td>
+<td>
+<p>Regex pattern for the URLs of the resources to set breakpoints on. Either <code>url</code> or
+<code>urlRegex</code> must be specified.</p>
+<code><span class="keyword">val </span><span class="identifier">urlRegex</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

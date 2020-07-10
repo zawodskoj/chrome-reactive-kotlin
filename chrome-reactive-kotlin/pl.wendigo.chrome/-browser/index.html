@@ -1,0 +1,85 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Browser - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome</a>&nbsp;/&nbsp;<a href="./index.html">Browser</a><br/>
+<br/>
+<h1>Browser</h1>
+<code><span class="keyword">class </span><span class="identifier">Browser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html"><span class="identifier">AutoCloseable</span></a><span class="symbol">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/Browser.kt#L20">(source)</a>
+<p>Creates new browser that allows querying remote chrome instance for debugging sessions</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-builder/index.html">Builder</a></h4>
+</td>
+<td>
+<p><a href="-builder/index.html">Builder</a> is responsible for setting options and defaults while creating new instance of <a href="./index.html">Browser</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">Builder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="attach.html">attach</a></h4>
+</td>
+<td>
+<p>Attaches to existing target creating new session if multiplexed connections is used.</p>
+<code><span class="keyword">fun </span><span class="identifier">attach</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.Browser$attach(pl.wendigo.chrome.api.target.TargetInfo)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.target/-target-info/index.html"><span class="identifier">TargetInfo</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.targets/-target/index.html"><span class="identifier">Target</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="close.html">close</a></h4>
+</td>
+<td>
+<p>Closes target releasing all resources on the browser side and connections.</p>
+<code><span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.Browser$close(pl.wendigo.chrome.targets.Target)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.targets/-target/index.html"><span class="identifier">Target</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Closes session manager and all established connections to debugger.</p>
+<code><span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target.html">target</a></h4>
+</td>
+<td>
+<p>Creates new target and opens new debugging session via debugging protocol.</p>
+<code><span class="keyword">fun </span><span class="identifier">target</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.Browser$target(kotlin.String, kotlin.Boolean, kotlin.Int, kotlin.Int)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;options.blankPage<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.Browser$target(kotlin.String, kotlin.Boolean, kotlin.Int, kotlin.Int)/incognito">incognito</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;options.incognito<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.Browser$target(kotlin.String, kotlin.Boolean, kotlin.Int, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;options.viewportWidth<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.Browser$target(kotlin.String, kotlin.Boolean, kotlin.Int, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;options.viewportHeight<span class="symbol">)</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.targets/-target/index.html"><span class="identifier">Target</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="targets.html">targets</a></h4>
+</td>
+<td>
+<p>Lists all targets that can be attached to.</p>
+<code><span class="keyword">fun </span><span class="identifier">targets</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.api.target/-target-info/index.html"><span class="identifier">TargetInfo</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="builder.html">builder</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">builder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

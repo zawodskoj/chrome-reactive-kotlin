@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Request - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">Request</a><br/>
+<br/>
+<h1>Request</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Request</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Types.kt#L306">(source)</a>
+<p>HTTP request data.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#type-Request">Network#Request</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>HTTP request data.</p>
+<code><span class="identifier">Request</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.Request$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.security.MixedContentType, pl.wendigo.chrome.api.network.ResourcePriority, kotlin.String, kotlin.Boolean)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Request$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.security.MixedContentType, pl.wendigo.chrome.api.network.ResourcePriority, kotlin.String, kotlin.Boolean)/urlFragment">urlFragment</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Request$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.security.MixedContentType, pl.wendigo.chrome.api.network.ResourcePriority, kotlin.String, kotlin.Boolean)/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Request$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.security.MixedContentType, pl.wendigo.chrome.api.network.ResourcePriority, kotlin.String, kotlin.Boolean)/headers">headers</span><span class="symbol">:</span>&nbsp;<a href="../-headers.html"><span class="identifier">Headers</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Request$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.security.MixedContentType, pl.wendigo.chrome.api.network.ResourcePriority, kotlin.String, kotlin.Boolean)/postData">postData</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Request$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.security.MixedContentType, pl.wendigo.chrome.api.network.ResourcePriority, kotlin.String, kotlin.Boolean)/hasPostData">hasPostData</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Request$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.security.MixedContentType, pl.wendigo.chrome.api.network.ResourcePriority, kotlin.String, kotlin.Boolean)/mixedContentType">mixedContentType</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.security/-mixed-content-type/index.html"><span class="identifier">MixedContentType</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Request$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.security.MixedContentType, pl.wendigo.chrome.api.network.ResourcePriority, kotlin.String, kotlin.Boolean)/initialPriority">initialPriority</span><span class="symbol">:</span>&nbsp;<a href="../-resource-priority/index.html"><span class="identifier">ResourcePriority</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Request$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.security.MixedContentType, pl.wendigo.chrome.api.network.ResourcePriority, kotlin.String, kotlin.Boolean)/referrerPolicy">referrerPolicy</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Request$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.security.MixedContentType, pl.wendigo.chrome.api.network.ResourcePriority, kotlin.String, kotlin.Boolean)/isLinkPreload">isLinkPreload</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="has-post-data.html">hasPostData</a></h4>
+</td>
+<td>
+<p>True when the request has POST data. Note that postData might still be omitted when this flag is true when the data is too long.</p>
+<code><span class="keyword">val </span><span class="identifier">hasPostData</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="headers.html">headers</a></h4>
+</td>
+<td>
+<p>HTTP request headers.</p>
+<code><span class="keyword">val </span><span class="identifier">headers</span><span class="symbol">: </span><a href="../-headers.html"><span class="identifier">Headers</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="initial-priority.html">initialPriority</a></h4>
+</td>
+<td>
+<p>Priority of the resource request at the time request is sent.</p>
+<code><span class="keyword">val </span><span class="identifier">initialPriority</span><span class="symbol">: </span><a href="../-resource-priority/index.html"><span class="identifier">ResourcePriority</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-link-preload.html">isLinkPreload</a></h4>
+</td>
+<td>
+<p>Whether is loaded via link preload.</p>
+<code><span class="keyword">val </span><span class="identifier">isLinkPreload</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="method.html">method</a></h4>
+</td>
+<td>
+<p>HTTP request method.</p>
+<code><span class="keyword">val </span><span class="identifier">method</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="mixed-content-type.html">mixedContentType</a></h4>
+</td>
+<td>
+<p>The mixed content type of the request.</p>
+<code><span class="keyword">val </span><span class="identifier">mixedContentType</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.security/-mixed-content-type/index.html"><span class="identifier">MixedContentType</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post-data.html">postData</a></h4>
+</td>
+<td>
+<p>HTTP POST request data.</p>
+<code><span class="keyword">val </span><span class="identifier">postData</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="referrer-policy.html">referrerPolicy</a></h4>
+</td>
+<td>
+<p>The referrer policy of the request, as defined in https://www.w3.org/TR/referrer-policy/</p>
+<code><span class="keyword">val </span><span class="identifier">referrerPolicy</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>Request URL (without fragment).</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url-fragment.html">urlFragment</a></h4>
+</td>
+<td>
+<p>Fragment of the requested URL starting with hash, if present.</p>
+<code><span class="keyword">val </span><span class="identifier">urlFragment</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

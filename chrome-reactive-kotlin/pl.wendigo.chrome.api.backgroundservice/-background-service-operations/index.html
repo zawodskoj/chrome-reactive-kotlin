@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BackgroundServiceOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.backgroundservice</a>&nbsp;/&nbsp;<a href="./index.html">BackgroundServiceOperations</a><br/>
+<br/>
+<h1>BackgroundServiceOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">BackgroundServiceOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/backgroundservice/Operations.kt#L10">(source)</a>
+<p>Defines events for background web platform features.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/BackgroundService">BackgroundService</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="background-service-event-received.html">backgroundServiceEventReceived</a></h4>
+</td>
+<td>
+<p>Called with all existing backgroundServiceEvents when enabled, and all new
+events afterwards if enabled and recording.</p>
+<code><span class="keyword">fun </span><span class="identifier">backgroundServiceEventReceived</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-background-service-event-received-event/index.html"><span class="identifier">BackgroundServiceEventReceivedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-events.html">clearEvents</a></h4>
+</td>
+<td>
+<p>Clears all stored data for the service.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearEvents</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.backgroundservice.BackgroundServiceOperations$clearEvents(pl.wendigo.chrome.api.backgroundservice.ClearEventsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-clear-events-request/index.html"><span class="identifier">ClearEventsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all BackgroundService domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="recording-state-changed.html">recordingStateChanged</a></h4>
+</td>
+<td>
+<p>Called when the recording state for the service has been updated.</p>
+<code><span class="keyword">fun </span><span class="identifier">recordingStateChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-recording-state-changed-event/index.html"><span class="identifier">RecordingStateChangedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-recording.html">setRecording</a></h4>
+</td>
+<td>
+<p>Set the recording state for the service.</p>
+<code><span class="keyword">fun </span><span class="identifier">setRecording</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.backgroundservice.BackgroundServiceOperations$setRecording(pl.wendigo.chrome.api.backgroundservice.SetRecordingRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-recording-request/index.html"><span class="identifier">SetRecordingRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-observing.html">startObserving</a></h4>
+</td>
+<td>
+<p>Enables event updates for the service.</p>
+<code><span class="keyword">fun </span><span class="identifier">startObserving</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.backgroundservice.BackgroundServiceOperations$startObserving(pl.wendigo.chrome.api.backgroundservice.StartObservingRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-start-observing-request/index.html"><span class="identifier">StartObservingRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop-observing.html">stopObserving</a></h4>
+</td>
+<td>
+<p>Disables event updates for the service.</p>
+<code><span class="keyword">fun </span><span class="identifier">stopObserving</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.backgroundservice.BackgroundServiceOperations$stopObserving(pl.wendigo.chrome.api.backgroundservice.StopObservingRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-stop-observing-request/index.html"><span class="identifier">StopObservingRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

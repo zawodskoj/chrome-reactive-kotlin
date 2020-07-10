@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>VideoEncodeAcceleratorCapability - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.systeminfo</a>&nbsp;/&nbsp;<a href="./index.html">VideoEncodeAcceleratorCapability</a><br/>
+<br/>
+<h1>VideoEncodeAcceleratorCapability</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">VideoEncodeAcceleratorCapability</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/systeminfo/Types.kt#L100">(source)</a>
+<p>Describes a supported video encoding profile with its associated maximum
+resolution and maximum framerate.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/SystemInfo#type-VideoEncodeAcceleratorCapability">SystemInfo#VideoEncodeAcceleratorCapability</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Describes a supported video encoding profile with its associated maximum
+resolution and maximum framerate.</p>
+<code><span class="identifier">VideoEncodeAcceleratorCapability</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.VideoEncodeAcceleratorCapability$<init>(kotlin.String, pl.wendigo.chrome.api.systeminfo.Size, kotlin.Int, kotlin.Int)/profile">profile</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.VideoEncodeAcceleratorCapability$<init>(kotlin.String, pl.wendigo.chrome.api.systeminfo.Size, kotlin.Int, kotlin.Int)/maxResolution">maxResolution</span><span class="symbol">:</span>&nbsp;<a href="../-size/index.html"><span class="identifier">Size</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.VideoEncodeAcceleratorCapability$<init>(kotlin.String, pl.wendigo.chrome.api.systeminfo.Size, kotlin.Int, kotlin.Int)/maxFramerateNumerator">maxFramerateNumerator</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.VideoEncodeAcceleratorCapability$<init>(kotlin.String, pl.wendigo.chrome.api.systeminfo.Size, kotlin.Int, kotlin.Int)/maxFramerateDenominator">maxFramerateDenominator</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="max-framerate-denominator.html">maxFramerateDenominator</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">maxFramerateDenominator</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="max-framerate-numerator.html">maxFramerateNumerator</a></h4>
+</td>
+<td>
+<p>Maximum encoding framerate in frames per second supported for this
+|profile|, as fraction's numerator and denominator, e.g. 24/1 fps,
+24000/1001 fps, etc.</p>
+<code><span class="keyword">val </span><span class="identifier">maxFramerateNumerator</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="max-resolution.html">maxResolution</a></h4>
+</td>
+<td>
+<p>Maximum video dimensions in pixels supported for this |profile|.</p>
+<code><span class="keyword">val </span><span class="identifier">maxResolution</span><span class="symbol">: </span><a href="../-size/index.html"><span class="identifier">Size</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="profile.html">profile</a></h4>
+</td>
+<td>
+<p>Video codec profile that is supported, e.g H264 Main.</p>
+<code><span class="keyword">val </span><span class="identifier">profile</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

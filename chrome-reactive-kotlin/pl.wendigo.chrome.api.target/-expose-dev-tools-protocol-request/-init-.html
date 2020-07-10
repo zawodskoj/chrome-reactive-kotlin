@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ExposeDevToolsProtocolRequest.<init> - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.target</a>&nbsp;/&nbsp;<a href="index.html">ExposeDevToolsProtocolRequest</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="pl.wendigo.chrome.api.target.ExposeDevToolsProtocolRequest$&lt;init&gt;(kotlin.String, kotlin.String)"></a>
+<code><span class="identifier">ExposeDevToolsProtocolRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.target.ExposeDevToolsProtocolRequest$<init>(kotlin.String, kotlin.String)/targetId">targetId</span><span class="symbol">:</span>&nbsp;<a href="../-target-i-d.html"><span class="identifier">TargetID</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.target.ExposeDevToolsProtocolRequest$<init>(kotlin.String, kotlin.String)/bindingName">bindingName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-exposeDevToolsProtocol">Target#exposeDevToolsProtocol</a> operation call.</p>
+<p>Inject object to the target's main frame that provides a communication
+channel with browser target.</p>
+<p>Injected object will be available as <code>window[bindingName]</code>.</p>
+<p>The object has the follwing API:</p>
+<ul><li><code>binding.send(json)</code> - a method to send messages over the remote debugging protocol</li>
+<li><code>binding.onmessage = json =&gt; handleMessage(json)</code> - a callback that will be called for the protocol notifications and command responses.</li>
+</ul>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-exposeDevToolsProtocol">Target#exposeDevToolsProtocol</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-target-operations/expose-dev-tools-protocol.html">TargetOperations.exposeDevToolsProtocol</a></p>
+</p>
+</BODY>
+</HTML>

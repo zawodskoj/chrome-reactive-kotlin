@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RuntimeOperations.addBinding - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="index.html">RuntimeOperations</a>&nbsp;/&nbsp;<a href="./add-binding.html">addBinding</a><br/>
+<br/>
+<h1>addBinding</h1>
+<a name="pl.wendigo.chrome.api.runtime.RuntimeOperations$addBinding(pl.wendigo.chrome.api.runtime.AddBindingRequest)"></a>
+<code><span class="keyword">fun </span><span class="identifier">addBinding</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$addBinding(pl.wendigo.chrome.api.runtime.AddBindingRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-add-binding-request/index.html"><span class="identifier">AddBindingRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Operations.kt#L183">(source)</a>
+<p>If executionContextId is empty, adds binding with the given name on the
+global objects of all inspected contexts, including those created later,
+bindings survive reloads.
+If executionContextId is specified, adds binding only on global object of
+given execution context.
+Binding function takes exactly one argument, this argument should be string,
+in case of any other input, function throws an exception.
+Each binding function call produces Runtime.bindingCalled notification.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-addBinding">Runtime#addBinding</a> method documentation.</p>
+</BODY>
+</HTML>

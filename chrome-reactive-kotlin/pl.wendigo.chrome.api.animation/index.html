@@ -1,0 +1,165 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.animation - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.animation</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.animation</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation">Animation</a> domain implementation accessible via <a href="-animation-operations/index.html">AnimationOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-animation/index.html">Animation</a></h4>
+</td>
+<td>
+<p>Animation instance.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Animation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-animation-canceled-event/index.html">AnimationCanceledEvent</a></h4>
+</td>
+<td>
+<p>Event for when an animation has been cancelled.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AnimationCanceledEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-animation-created-event/index.html">AnimationCreatedEvent</a></h4>
+</td>
+<td>
+<p>Event for each animation that has been created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AnimationCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-animation-effect/index.html">AnimationEffect</a></h4>
+</td>
+<td>
+<p>AnimationEffect instance</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AnimationEffect</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-animation-operations/index.html">AnimationOperations</a></h4>
+</td>
+<td>
+<p>AnimationOperations represents Animation protocol domain request/response operations and events that can be captured.</p>
+<code><span class="keyword">class </span><span class="identifier">AnimationOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-animation-started-event/index.html">AnimationStartedEvent</a></h4>
+</td>
+<td>
+<p>Event for animation that has been started.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AnimationStartedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-current-time-request/index.html">GetCurrentTimeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-getCurrentTime">Animation#getCurrentTime</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetCurrentTimeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-current-time-response/index.html">GetCurrentTimeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-getCurrentTime">Animation#getCurrentTime</a> operation call.
+Returns the current time of the an animation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetCurrentTimeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-playback-rate-response/index.html">GetPlaybackRateResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-getPlaybackRate">Animation#getPlaybackRate</a> operation call.
+Gets the playback rate of the document timeline.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetPlaybackRateResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-keyframes-rule/index.html">KeyframesRule</a></h4>
+</td>
+<td>
+<p>Keyframes Rule</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">KeyframesRule</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-keyframe-style/index.html">KeyframeStyle</a></h4>
+</td>
+<td>
+<p>Keyframe Style</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">KeyframeStyle</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-release-animations-request/index.html">ReleaseAnimationsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-releaseAnimations">Animation#releaseAnimations</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReleaseAnimationsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-resolve-animation-request/index.html">ResolveAnimationRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-resolveAnimation">Animation#resolveAnimation</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResolveAnimationRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-resolve-animation-response/index.html">ResolveAnimationResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-resolveAnimation">Animation#resolveAnimation</a> operation call.
+Gets the remote object of the Animation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResolveAnimationResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-seek-animations-request/index.html">SeekAnimationsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-seekAnimations">Animation#seekAnimations</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SeekAnimationsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-paused-request/index.html">SetPausedRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-setPaused">Animation#setPaused</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetPausedRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-playback-rate-request/index.html">SetPlaybackRateRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-setPlaybackRate">Animation#setPlaybackRate</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetPlaybackRateRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-timing-request/index.html">SetTimingRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-setTiming">Animation#setTiming</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetTimingRequest</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

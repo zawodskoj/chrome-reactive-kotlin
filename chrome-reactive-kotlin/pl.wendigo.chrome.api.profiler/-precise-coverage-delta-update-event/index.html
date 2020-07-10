@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PreciseCoverageDeltaUpdateEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.profiler</a>&nbsp;/&nbsp;<a href="./index.html">PreciseCoverageDeltaUpdateEvent</a><br/>
+<br/>
+<h1>PreciseCoverageDeltaUpdateEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PreciseCoverageDeltaUpdateEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/profiler/Operations.kt#L364">(source)</a>
+<p>Reports coverage delta since the last poll (either from an event like this, or from
+<code>takePreciseCoverage</code> for the current isolate. May only be sent if precise code
+coverage has been started. This event can be trigged by the embedder to, for example,
+trigger collection of coverage data immediatelly at a certain point in time.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#event-preciseCoverageDeltaUpdate">Profiler#preciseCoverageDeltaUpdate</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Reports coverage delta since the last poll (either from an event like this, or from
+<code>takePreciseCoverage</code> for the current isolate. May only be sent if precise code
+coverage has been started. This event can be trigged by the embedder to, for example,
+trigger collection of coverage data immediatelly at a certain point in time.</p>
+<code><span class="identifier">PreciseCoverageDeltaUpdateEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.profiler.PreciseCoverageDeltaUpdateEvent$<init>(kotlin.Double, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.ScriptCoverage)))/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.PreciseCoverageDeltaUpdateEvent$<init>(kotlin.Double, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.ScriptCoverage)))/occassion">occassion</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.PreciseCoverageDeltaUpdateEvent$<init>(kotlin.Double, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.ScriptCoverage)))/result">result</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-script-coverage/index.html"><span class="identifier">ScriptCoverage</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="occassion.html">occassion</a></h4>
+</td>
+<td>
+<p>Identifier for distinguishing coverage events.</p>
+<code><span class="keyword">val </span><span class="identifier">occassion</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="result.html">result</a></h4>
+</td>
+<td>
+<p>Coverage data for the current isolate.</p>
+<code><span class="keyword">val </span><span class="identifier">result</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-script-coverage/index.html"><span class="identifier">ScriptCoverage</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timestamp.html">timestamp</a></h4>
+</td>
+<td>
+<p>Monotonically increasing time (in seconds) when the coverage update was taken in the backend.</p>
+<code><span class="keyword">val </span><span class="identifier">timestamp</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

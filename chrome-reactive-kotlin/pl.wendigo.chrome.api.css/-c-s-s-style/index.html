@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CSSStyle - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.css</a>&nbsp;/&nbsp;<a href="./index.html">CSSStyle</a><br/>
+<br/>
+<h1>CSSStyle</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CSSStyle</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/css/Types.kt#L350">(source)</a>
+<p>CSS style representation.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#type-CSSStyle">CSS#CSSStyle</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>CSS style representation.</p>
+<code><span class="identifier">CSSStyle</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSStyle$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.css.CSSProperty)), kotlin.collections.List((pl.wendigo.chrome.api.css.ShorthandEntry)), kotlin.String, pl.wendigo.chrome.api.css.SourceRange)/styleSheetId">styleSheetId</span><span class="symbol">:</span>&nbsp;<a href="../-style-sheet-id.html"><span class="identifier">StyleSheetId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSStyle$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.css.CSSProperty)), kotlin.collections.List((pl.wendigo.chrome.api.css.ShorthandEntry)), kotlin.String, pl.wendigo.chrome.api.css.SourceRange)/cssProperties">cssProperties</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-c-s-s-property/index.html"><span class="identifier">CSSProperty</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSStyle$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.css.CSSProperty)), kotlin.collections.List((pl.wendigo.chrome.api.css.ShorthandEntry)), kotlin.String, pl.wendigo.chrome.api.css.SourceRange)/shorthandEntries">shorthandEntries</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-shorthand-entry/index.html"><span class="identifier">ShorthandEntry</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSStyle$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.css.CSSProperty)), kotlin.collections.List((pl.wendigo.chrome.api.css.ShorthandEntry)), kotlin.String, pl.wendigo.chrome.api.css.SourceRange)/cssText">cssText</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSStyle$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.css.CSSProperty)), kotlin.collections.List((pl.wendigo.chrome.api.css.ShorthandEntry)), kotlin.String, pl.wendigo.chrome.api.css.SourceRange)/range">range</span><span class="symbol">:</span>&nbsp;<a href="../-source-range/index.html"><span class="identifier">SourceRange</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="css-properties.html">cssProperties</a></h4>
+</td>
+<td>
+<p>CSS properties in the style.</p>
+<code><span class="keyword">val </span><span class="identifier">cssProperties</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-c-s-s-property/index.html"><span class="identifier">CSSProperty</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="css-text.html">cssText</a></h4>
+</td>
+<td>
+<p>Style declaration text (if available).</p>
+<code><span class="keyword">val </span><span class="identifier">cssText</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="range.html">range</a></h4>
+</td>
+<td>
+<p>Style declaration range in the enclosing stylesheet (if available).</p>
+<code><span class="keyword">val </span><span class="identifier">range</span><span class="symbol">: </span><a href="../-source-range/index.html"><span class="identifier">SourceRange</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shorthand-entries.html">shorthandEntries</a></h4>
+</td>
+<td>
+<p>Computed values for all shorthands found in the style.</p>
+<code><span class="keyword">val </span><span class="identifier">shorthandEntries</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-shorthand-entry/index.html"><span class="identifier">ShorthandEntry</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="style-sheet-id.html">styleSheetId</a></h4>
+</td>
+<td>
+<p>The css style sheet identifier (absent for user agent stylesheet and user-specified
+stylesheet rules) this rule came from.</p>
+<code><span class="keyword">val </span><span class="identifier">styleSheetId</span><span class="symbol">: </span><a href="../-style-sheet-id.html"><span class="identifier">StyleSheetId</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

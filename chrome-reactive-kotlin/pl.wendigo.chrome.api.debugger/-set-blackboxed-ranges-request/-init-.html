@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetBlackboxedRangesRequest.<init> - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="index.html">SetBlackboxedRangesRequest</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="pl.wendigo.chrome.api.debugger.SetBlackboxedRangesRequest$&lt;init&gt;(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.ScriptPosition)))"></a>
+<code><span class="identifier">SetBlackboxedRangesRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBlackboxedRangesRequest$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.ScriptPosition)))/scriptId">scriptId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-script-id.html"><span class="identifier">ScriptId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBlackboxedRangesRequest$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.ScriptPosition)))/positions">positions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-script-position/index.html"><span class="identifier">ScriptPosition</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBlackboxedRanges">Debugger#setBlackboxedRanges</a> operation call.</p>
+<p>Makes backend skip steps in the script in blackboxed ranges. VM will try leave blacklisted
+scripts by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
+Positions array contains positions where blackbox state is changed. First interval isn't
+blackboxed. Array should be sorted.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBlackboxedRanges">Debugger#setBlackboxedRanges</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-debugger-operations/set-blackboxed-ranges.html">DebuggerOperations.setBlackboxedRanges</a></p>
+</p>
+</BODY>
+</HTML>

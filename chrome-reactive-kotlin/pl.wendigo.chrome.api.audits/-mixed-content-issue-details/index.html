@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MixedContentIssueDetails - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.audits</a>&nbsp;/&nbsp;<a href="./index.html">MixedContentIssueDetails</a><br/>
+<br/>
+<h1>MixedContentIssueDetails</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MixedContentIssueDetails</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/audits/Types.kt#L231">(source)</a>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Audits#type-MixedContentIssueDetails">Audits#MixedContentIssueDetails</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">MixedContentIssueDetails</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.audits.MixedContentIssueDetails$<init>(pl.wendigo.chrome.api.audits.MixedContentResourceType, pl.wendigo.chrome.api.audits.MixedContentResolutionStatus, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest, pl.wendigo.chrome.api.audits.AffectedFrame)/resourceType">resourceType</span><span class="symbol">:</span>&nbsp;<a href="../-mixed-content-resource-type/index.html"><span class="identifier">MixedContentResourceType</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.MixedContentIssueDetails$<init>(pl.wendigo.chrome.api.audits.MixedContentResourceType, pl.wendigo.chrome.api.audits.MixedContentResolutionStatus, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest, pl.wendigo.chrome.api.audits.AffectedFrame)/resolutionStatus">resolutionStatus</span><span class="symbol">:</span>&nbsp;<a href="../-mixed-content-resolution-status/index.html"><span class="identifier">MixedContentResolutionStatus</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.MixedContentIssueDetails$<init>(pl.wendigo.chrome.api.audits.MixedContentResourceType, pl.wendigo.chrome.api.audits.MixedContentResolutionStatus, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest, pl.wendigo.chrome.api.audits.AffectedFrame)/insecureURL">insecureURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.MixedContentIssueDetails$<init>(pl.wendigo.chrome.api.audits.MixedContentResourceType, pl.wendigo.chrome.api.audits.MixedContentResolutionStatus, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest, pl.wendigo.chrome.api.audits.AffectedFrame)/mainResourceURL">mainResourceURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.MixedContentIssueDetails$<init>(pl.wendigo.chrome.api.audits.MixedContentResourceType, pl.wendigo.chrome.api.audits.MixedContentResolutionStatus, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest, pl.wendigo.chrome.api.audits.AffectedFrame)/request">request</span><span class="symbol">:</span>&nbsp;<a href="../-affected-request/index.html"><span class="identifier">AffectedRequest</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.MixedContentIssueDetails$<init>(pl.wendigo.chrome.api.audits.MixedContentResourceType, pl.wendigo.chrome.api.audits.MixedContentResolutionStatus, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest, pl.wendigo.chrome.api.audits.AffectedFrame)/frame">frame</span><span class="symbol">:</span>&nbsp;<a href="../-affected-frame/index.html"><span class="identifier">AffectedFrame</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="frame.html">frame</a></h4>
+</td>
+<td>
+<p>Optional because not every mixed content issue is necessarily linked to a frame.</p>
+<code><span class="keyword">val </span><span class="identifier">frame</span><span class="symbol">: </span><a href="../-affected-frame/index.html"><span class="identifier">AffectedFrame</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="insecure-u-r-l.html">insecureURL</a></h4>
+</td>
+<td>
+<p>The unsafe http url causing the mixed content issue.</p>
+<code><span class="keyword">val </span><span class="identifier">insecureURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="main-resource-u-r-l.html">mainResourceURL</a></h4>
+</td>
+<td>
+<p>The url responsible for the call to an unsafe url.</p>
+<code><span class="keyword">val </span><span class="identifier">mainResourceURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request.html">request</a></h4>
+</td>
+<td>
+<p>The mixed content request.
+Does not always exist (e.g. for unsafe form submission urls).</p>
+<code><span class="keyword">val </span><span class="identifier">request</span><span class="symbol">: </span><a href="../-affected-request/index.html"><span class="identifier">AffectedRequest</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resolution-status.html">resolutionStatus</a></h4>
+</td>
+<td>
+<p>The way the mixed content issue is being resolved.</p>
+<code><span class="keyword">val </span><span class="identifier">resolutionStatus</span><span class="symbol">: </span><a href="../-mixed-content-resolution-status/index.html"><span class="identifier">MixedContentResolutionStatus</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resource-type.html">resourceType</a></h4>
+</td>
+<td>
+<p>The type of resource causing the mixed content issue (css, js, iframe,
+form,...). Marked as optional because it is mapped to from
+blink::mojom::RequestContextType, which will be replaced
+by network::mojom::RequestDestination</p>
+<code><span class="keyword">val </span><span class="identifier">resourceType</span><span class="symbol">: </span><a href="../-mixed-content-resource-type/index.html"><span class="identifier">MixedContentResourceType</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

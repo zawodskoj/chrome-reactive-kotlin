@@ -1,0 +1,524 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DOMOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.dom</a>&nbsp;/&nbsp;<a href="./index.html">DOMOperations</a><br/>
+<br/>
+<h1>DOMOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">DOMOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/dom/Operations.kt#L14">(source)</a>
+<p>This domain exposes DOM read/write operations. Each DOM Node is represented with its mirror object
+that has an <code>id</code>. This <code>id</code> can be used to get additional information on the Node, resolve it into
+the JavaScript object wrapper, etc. It is important that client receives DOM events only for the
+nodes that are known to the client. Backend keeps track of the nodes that were sent to the client
+and never sends the same node twice. It is client's responsibility to collect information about
+the nodes that were sent to the client.Note that <code>iframe</code> owner elements will return
+corresponding document elements as their child nodes.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM">DOM</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="attribute-modified.html">attributeModified</a></h4>
+</td>
+<td>
+<p>Fired when <code>Element</code>'s attribute is modified.</p>
+<code><span class="keyword">fun </span><span class="identifier">attributeModified</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-attribute-modified-event/index.html"><span class="identifier">AttributeModifiedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="attribute-removed.html">attributeRemoved</a></h4>
+</td>
+<td>
+<p>Fired when <code>Element</code>'s attribute is removed.</p>
+<code><span class="keyword">fun </span><span class="identifier">attributeRemoved</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-attribute-removed-event/index.html"><span class="identifier">AttributeRemovedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="character-data-modified.html">characterDataModified</a></h4>
+</td>
+<td>
+<p>Mirrors <code>DOMCharacterDataModified</code> event.</p>
+<code><span class="keyword">fun </span><span class="identifier">characterDataModified</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-character-data-modified-event/index.html"><span class="identifier">CharacterDataModifiedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="child-node-count-updated.html">childNodeCountUpdated</a></h4>
+</td>
+<td>
+<p>Fired when <code>Container</code>'s child node count has changed.</p>
+<code><span class="keyword">fun </span><span class="identifier">childNodeCountUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-child-node-count-updated-event/index.html"><span class="identifier">ChildNodeCountUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="child-node-inserted.html">childNodeInserted</a></h4>
+</td>
+<td>
+<p>Mirrors <code>DOMNodeInserted</code> event.</p>
+<code><span class="keyword">fun </span><span class="identifier">childNodeInserted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-child-node-inserted-event/index.html"><span class="identifier">ChildNodeInsertedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="child-node-removed.html">childNodeRemoved</a></h4>
+</td>
+<td>
+<p>Mirrors <code>DOMNodeRemoved</code> event.</p>
+<code><span class="keyword">fun </span><span class="identifier">childNodeRemoved</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-child-node-removed-event/index.html"><span class="identifier">ChildNodeRemovedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="collect-class-names-from-subtree.html">collectClassNamesFromSubtree</a></h4>
+</td>
+<td>
+<p>Collects class names for the node with given id and all of it's child nodes.</p>
+<code><span class="keyword">fun </span><span class="identifier">collectClassNamesFromSubtree</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$collectClassNamesFromSubtree(pl.wendigo.chrome.api.dom.CollectClassNamesFromSubtreeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-collect-class-names-from-subtree-request/index.html"><span class="identifier">CollectClassNamesFromSubtreeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-collect-class-names-from-subtree-response/index.html"><span class="identifier">CollectClassNamesFromSubtreeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="copy-to.html">copyTo</a></h4>
+</td>
+<td>
+<p>Creates a deep copy of the specified node and places it into the target container before the
+given anchor.</p>
+<code><span class="keyword">fun </span><span class="identifier">copyTo</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$copyTo(pl.wendigo.chrome.api.dom.CopyToRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-copy-to-request/index.html"><span class="identifier">CopyToRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-copy-to-response/index.html"><span class="identifier">CopyToResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="describe-node.html">describeNode</a></h4>
+</td>
+<td>
+<p>Describes node given its id, does not require domain to be enabled. Does not start tracking any
+objects, can be used for automation.</p>
+<code><span class="keyword">fun </span><span class="identifier">describeNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$describeNode(pl.wendigo.chrome.api.dom.DescribeNodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-describe-node-request/index.html"><span class="identifier">DescribeNodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-describe-node-response/index.html"><span class="identifier">DescribeNodeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables DOM agent for the given page.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="discard-search-results.html">discardSearchResults</a></h4>
+</td>
+<td>
+<p>Discards search results from the session with the given id. <code>getSearchResults</code> should no longer
+be called for that search.</p>
+<code><span class="keyword">fun </span><span class="identifier">discardSearchResults</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$discardSearchResults(pl.wendigo.chrome.api.dom.DiscardSearchResultsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-discard-search-results-request/index.html"><span class="identifier">DiscardSearchResultsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="distributed-nodes-updated.html">distributedNodesUpdated</a></h4>
+</td>
+<td>
+<p>Called when distrubution is changed.</p>
+<code><span class="keyword">fun </span><span class="identifier">distributedNodesUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-distributed-nodes-updated-event/index.html"><span class="identifier">DistributedNodesUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="document-updated.html">documentUpdated</a></h4>
+</td>
+<td>
+<p>Fired when <code>Document</code> has been totally updated. Node ids are no longer valid.</p>
+<code><span class="keyword">fun </span><span class="identifier">documentUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables DOM agent for the given page.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all DOM domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="focus.html">focus</a></h4>
+</td>
+<td>
+<p>Focuses the given element.</p>
+<code><span class="keyword">fun </span><span class="identifier">focus</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$focus(pl.wendigo.chrome.api.dom.FocusRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-focus-request/index.html"><span class="identifier">FocusRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-attributes.html">getAttributes</a></h4>
+</td>
+<td>
+<p>Returns attributes for the specified node.</p>
+<code><span class="keyword">fun </span><span class="identifier">getAttributes</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getAttributes(pl.wendigo.chrome.api.dom.GetAttributesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-attributes-request/index.html"><span class="identifier">GetAttributesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-attributes-response/index.html"><span class="identifier">GetAttributesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-box-model.html">getBoxModel</a></h4>
+</td>
+<td>
+<p>Returns boxes for the given node.</p>
+<code><span class="keyword">fun </span><span class="identifier">getBoxModel</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getBoxModel(pl.wendigo.chrome.api.dom.GetBoxModelRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-box-model-request/index.html"><span class="identifier">GetBoxModelRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-box-model-response/index.html"><span class="identifier">GetBoxModelResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-content-quads.html">getContentQuads</a></h4>
+</td>
+<td>
+<p>Returns quads that describe node position on the page. This method
+might return multiple quads for inline nodes.</p>
+<code><span class="keyword">fun </span><span class="identifier">getContentQuads</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getContentQuads(pl.wendigo.chrome.api.dom.GetContentQuadsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-content-quads-request/index.html"><span class="identifier">GetContentQuadsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-content-quads-response/index.html"><span class="identifier">GetContentQuadsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-document.html">getDocument</a></h4>
+</td>
+<td>
+<p>Returns the root DOM node (and optionally the subtree) to the caller.</p>
+<code><span class="keyword">fun </span><span class="identifier">getDocument</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getDocument(pl.wendigo.chrome.api.dom.GetDocumentRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-document-request/index.html"><span class="identifier">GetDocumentRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-document-response/index.html"><span class="identifier">GetDocumentResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-file-info.html">getFileInfo</a></h4>
+</td>
+<td>
+<p>Returns file information for the given
+File wrapper.</p>
+<code><span class="keyword">fun </span><span class="identifier">getFileInfo</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getFileInfo(pl.wendigo.chrome.api.dom.GetFileInfoRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-file-info-request/index.html"><span class="identifier">GetFileInfoRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-file-info-response/index.html"><span class="identifier">GetFileInfoResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-flattened-document.html">getFlattenedDocument</a></h4>
+</td>
+<td>
+<p>Returns the root DOM node (and optionally the subtree) to the caller.</p>
+<code><span class="keyword">fun </span><span class="identifier">getFlattenedDocument</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getFlattenedDocument(pl.wendigo.chrome.api.dom.GetFlattenedDocumentRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-flattened-document-request/index.html"><span class="identifier">GetFlattenedDocumentRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-flattened-document-response/index.html"><span class="identifier">GetFlattenedDocumentResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-frame-owner.html">getFrameOwner</a></h4>
+</td>
+<td>
+<p>Returns iframe node that owns iframe with the given domain.</p>
+<code><span class="keyword">fun </span><span class="identifier">getFrameOwner</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getFrameOwner(pl.wendigo.chrome.api.dom.GetFrameOwnerRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-frame-owner-request/index.html"><span class="identifier">GetFrameOwnerRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-frame-owner-response/index.html"><span class="identifier">GetFrameOwnerResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-node-for-location.html">getNodeForLocation</a></h4>
+</td>
+<td>
+<p>Returns node id at given location. Depending on whether DOM domain is enabled, nodeId is
+either returned or not.</p>
+<code><span class="keyword">fun </span><span class="identifier">getNodeForLocation</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getNodeForLocation(pl.wendigo.chrome.api.dom.GetNodeForLocationRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-node-for-location-request/index.html"><span class="identifier">GetNodeForLocationRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-node-for-location-response/index.html"><span class="identifier">GetNodeForLocationResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-node-stack-traces.html">getNodeStackTraces</a></h4>
+</td>
+<td>
+<p>Gets stack traces associated with a Node. As of now, only provides stack trace for Node creation.</p>
+<code><span class="keyword">fun </span><span class="identifier">getNodeStackTraces</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getNodeStackTraces(pl.wendigo.chrome.api.dom.GetNodeStackTracesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-node-stack-traces-request/index.html"><span class="identifier">GetNodeStackTracesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-node-stack-traces-response/index.html"><span class="identifier">GetNodeStackTracesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-outer-h-t-m-l.html">getOuterHTML</a></h4>
+</td>
+<td>
+<p>Returns node's HTML markup.</p>
+<code><span class="keyword">fun </span><span class="identifier">getOuterHTML</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getOuterHTML(pl.wendigo.chrome.api.dom.GetOuterHTMLRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-outer-h-t-m-l-request/index.html"><span class="identifier">GetOuterHTMLRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-outer-h-t-m-l-response/index.html"><span class="identifier">GetOuterHTMLResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-relayout-boundary.html">getRelayoutBoundary</a></h4>
+</td>
+<td>
+<p>Returns the id of the nearest ancestor that is a relayout boundary.</p>
+<code><span class="keyword">fun </span><span class="identifier">getRelayoutBoundary</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getRelayoutBoundary(pl.wendigo.chrome.api.dom.GetRelayoutBoundaryRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-relayout-boundary-request/index.html"><span class="identifier">GetRelayoutBoundaryRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-relayout-boundary-response/index.html"><span class="identifier">GetRelayoutBoundaryResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-search-results.html">getSearchResults</a></h4>
+</td>
+<td>
+<p>Returns search results from given <code>fromIndex</code> to given <code>toIndex</code> from the search with the given
+identifier.</p>
+<code><span class="keyword">fun </span><span class="identifier">getSearchResults</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$getSearchResults(pl.wendigo.chrome.api.dom.GetSearchResultsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-search-results-request/index.html"><span class="identifier">GetSearchResultsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-search-results-response/index.html"><span class="identifier">GetSearchResultsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hide-highlight.html">hideHighlight</a></h4>
+</td>
+<td>
+<p>Hides any highlight.</p>
+<code><span class="keyword">fun </span><span class="identifier">hideHighlight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="highlight-node.html">highlightNode</a></h4>
+</td>
+<td>
+<p>Highlights DOM node.</p>
+<code><span class="keyword">fun </span><span class="identifier">highlightNode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="highlight-rect.html">highlightRect</a></h4>
+</td>
+<td>
+<p>Highlights given rectangle.</p>
+<code><span class="keyword">fun </span><span class="identifier">highlightRect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="inline-style-invalidated.html">inlineStyleInvalidated</a></h4>
+</td>
+<td>
+<p>Fired when <code>Element</code>'s inline style is modified via a CSS property modification.</p>
+<code><span class="keyword">fun </span><span class="identifier">inlineStyleInvalidated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-inline-style-invalidated-event/index.html"><span class="identifier">InlineStyleInvalidatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="mark-undoable-state.html">markUndoableState</a></h4>
+</td>
+<td>
+<p>Marks last undoable state.</p>
+<code><span class="keyword">fun </span><span class="identifier">markUndoableState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="move-to.html">moveTo</a></h4>
+</td>
+<td>
+<p>Moves node into the new container, places it before the given anchor.</p>
+<code><span class="keyword">fun </span><span class="identifier">moveTo</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$moveTo(pl.wendigo.chrome.api.dom.MoveToRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-move-to-request/index.html"><span class="identifier">MoveToRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-move-to-response/index.html"><span class="identifier">MoveToResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="perform-search.html">performSearch</a></h4>
+</td>
+<td>
+<p>Searches for a given string in the DOM tree. Use <code>getSearchResults</code> to access search results or
+<code>cancelSearch</code> to end this search session.</p>
+<code><span class="keyword">fun </span><span class="identifier">performSearch</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$performSearch(pl.wendigo.chrome.api.dom.PerformSearchRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-perform-search-request/index.html"><span class="identifier">PerformSearchRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-perform-search-response/index.html"><span class="identifier">PerformSearchResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pseudo-element-added.html">pseudoElementAdded</a></h4>
+</td>
+<td>
+<p>Called when a pseudo element is added to an element.</p>
+<code><span class="keyword">fun </span><span class="identifier">pseudoElementAdded</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-pseudo-element-added-event/index.html"><span class="identifier">PseudoElementAddedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pseudo-element-removed.html">pseudoElementRemoved</a></h4>
+</td>
+<td>
+<p>Called when a pseudo element is removed from an element.</p>
+<code><span class="keyword">fun </span><span class="identifier">pseudoElementRemoved</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-pseudo-element-removed-event/index.html"><span class="identifier">PseudoElementRemovedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="push-node-by-path-to-frontend.html">pushNodeByPathToFrontend</a></h4>
+</td>
+<td>
+<p>Requests that the node is sent to the caller given its path. // FIXME, use XPath</p>
+<code><span class="keyword">fun </span><span class="identifier">pushNodeByPathToFrontend</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$pushNodeByPathToFrontend(pl.wendigo.chrome.api.dom.PushNodeByPathToFrontendRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-push-node-by-path-to-frontend-request/index.html"><span class="identifier">PushNodeByPathToFrontendRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-push-node-by-path-to-frontend-response/index.html"><span class="identifier">PushNodeByPathToFrontendResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="push-nodes-by-backend-ids-to-frontend.html">pushNodesByBackendIdsToFrontend</a></h4>
+</td>
+<td>
+<p>Requests that a batch of nodes is sent to the caller given their backend node ids.</p>
+<code><span class="keyword">fun </span><span class="identifier">pushNodesByBackendIdsToFrontend</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$pushNodesByBackendIdsToFrontend(pl.wendigo.chrome.api.dom.PushNodesByBackendIdsToFrontendRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-push-nodes-by-backend-ids-to-frontend-request/index.html"><span class="identifier">PushNodesByBackendIdsToFrontendRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-push-nodes-by-backend-ids-to-frontend-response/index.html"><span class="identifier">PushNodesByBackendIdsToFrontendResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="query-selector.html">querySelector</a></h4>
+</td>
+<td>
+<p>Executes <code>querySelector</code> on a given node.</p>
+<code><span class="keyword">fun </span><span class="identifier">querySelector</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$querySelector(pl.wendigo.chrome.api.dom.QuerySelectorRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-query-selector-request/index.html"><span class="identifier">QuerySelectorRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-query-selector-response/index.html"><span class="identifier">QuerySelectorResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="query-selector-all.html">querySelectorAll</a></h4>
+</td>
+<td>
+<p>Executes <code>querySelectorAll</code> on a given node.</p>
+<code><span class="keyword">fun </span><span class="identifier">querySelectorAll</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$querySelectorAll(pl.wendigo.chrome.api.dom.QuerySelectorAllRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-query-selector-all-request/index.html"><span class="identifier">QuerySelectorAllRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-query-selector-all-response/index.html"><span class="identifier">QuerySelectorAllResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="redo.html">redo</a></h4>
+</td>
+<td>
+<p>Re-does the last undone action.</p>
+<code><span class="keyword">fun </span><span class="identifier">redo</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-attribute.html">removeAttribute</a></h4>
+</td>
+<td>
+<p>Removes attribute with given name from an element with given id.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeAttribute</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$removeAttribute(pl.wendigo.chrome.api.dom.RemoveAttributeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-attribute-request/index.html"><span class="identifier">RemoveAttributeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-node.html">removeNode</a></h4>
+</td>
+<td>
+<p>Removes node with given id.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$removeNode(pl.wendigo.chrome.api.dom.RemoveNodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-node-request/index.html"><span class="identifier">RemoveNodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-child-nodes.html">requestChildNodes</a></h4>
+</td>
+<td>
+<p>Requests that children of the node with given id are returned to the caller in form of
+<code>setChildNodes</code> events where not only immediate children are retrieved, but all children down to
+the specified depth.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestChildNodes</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$requestChildNodes(pl.wendigo.chrome.api.dom.RequestChildNodesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-request-child-nodes-request/index.html"><span class="identifier">RequestChildNodesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-node.html">requestNode</a></h4>
+</td>
+<td>
+<p>Requests that the node is sent to the caller given the JavaScript node object reference. All
+nodes that form the path from the node to the root are also sent to the client as a series of
+<code>setChildNodes</code> notifications.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$requestNode(pl.wendigo.chrome.api.dom.RequestNodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-request-node-request/index.html"><span class="identifier">RequestNodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-request-node-response/index.html"><span class="identifier">RequestNodeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resolve-node.html">resolveNode</a></h4>
+</td>
+<td>
+<p>Resolves the JavaScript node object for a given NodeId or BackendNodeId.</p>
+<code><span class="keyword">fun </span><span class="identifier">resolveNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$resolveNode(pl.wendigo.chrome.api.dom.ResolveNodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-resolve-node-request/index.html"><span class="identifier">ResolveNodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-resolve-node-response/index.html"><span class="identifier">ResolveNodeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scroll-into-view-if-needed.html">scrollIntoViewIfNeeded</a></h4>
+</td>
+<td>
+<p>Scrolls the specified rect of the given node into view if not already visible.
+Note: exactly one between nodeId, backendNodeId and objectId should be passed
+to identify the node.</p>
+<code><span class="keyword">fun </span><span class="identifier">scrollIntoViewIfNeeded</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$scrollIntoViewIfNeeded(pl.wendigo.chrome.api.dom.ScrollIntoViewIfNeededRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-scroll-into-view-if-needed-request/index.html"><span class="identifier">ScrollIntoViewIfNeededRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-attributes-as-text.html">setAttributesAsText</a></h4>
+</td>
+<td>
+<p>Sets attributes on element with given id. This method is useful when user edits some existing
+attribute value and types in several attribute name/value pairs.</p>
+<code><span class="keyword">fun </span><span class="identifier">setAttributesAsText</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$setAttributesAsText(pl.wendigo.chrome.api.dom.SetAttributesAsTextRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-attributes-as-text-request/index.html"><span class="identifier">SetAttributesAsTextRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-attribute-value.html">setAttributeValue</a></h4>
+</td>
+<td>
+<p>Sets attribute for an element with given id.</p>
+<code><span class="keyword">fun </span><span class="identifier">setAttributeValue</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$setAttributeValue(pl.wendigo.chrome.api.dom.SetAttributeValueRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-attribute-value-request/index.html"><span class="identifier">SetAttributeValueRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-child-nodes.html">setChildNodes</a></h4>
+</td>
+<td>
+<p>Fired when backend wants to provide client with the missing DOM structure. This happens upon
+most of the calls requesting node ids.</p>
+<code><span class="keyword">fun </span><span class="identifier">setChildNodes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-set-child-nodes-event/index.html"><span class="identifier">SetChildNodesEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-file-input-files.html">setFileInputFiles</a></h4>
+</td>
+<td>
+<p>Sets files for the given file input element.</p>
+<code><span class="keyword">fun </span><span class="identifier">setFileInputFiles</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$setFileInputFiles(pl.wendigo.chrome.api.dom.SetFileInputFilesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-file-input-files-request/index.html"><span class="identifier">SetFileInputFilesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-inspected-node.html">setInspectedNode</a></h4>
+</td>
+<td>
+<p>Enables console to refer to the node with given id via $x (see Command Line API for more details
+$x functions).</p>
+<code><span class="keyword">fun </span><span class="identifier">setInspectedNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$setInspectedNode(pl.wendigo.chrome.api.dom.SetInspectedNodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-inspected-node-request/index.html"><span class="identifier">SetInspectedNodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-node-name.html">setNodeName</a></h4>
+</td>
+<td>
+<p>Sets node name for a node with given id.</p>
+<code><span class="keyword">fun </span><span class="identifier">setNodeName</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$setNodeName(pl.wendigo.chrome.api.dom.SetNodeNameRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-node-name-request/index.html"><span class="identifier">SetNodeNameRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-node-name-response/index.html"><span class="identifier">SetNodeNameResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-node-stack-traces-enabled.html">setNodeStackTracesEnabled</a></h4>
+</td>
+<td>
+<p>Sets if stack traces should be captured for Nodes. See <code>Node.getNodeStackTraces</code>. Default is disabled.</p>
+<code><span class="keyword">fun </span><span class="identifier">setNodeStackTracesEnabled</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$setNodeStackTracesEnabled(pl.wendigo.chrome.api.dom.SetNodeStackTracesEnabledRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-node-stack-traces-enabled-request/index.html"><span class="identifier">SetNodeStackTracesEnabledRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-node-value.html">setNodeValue</a></h4>
+</td>
+<td>
+<p>Sets node value for a node with given id.</p>
+<code><span class="keyword">fun </span><span class="identifier">setNodeValue</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$setNodeValue(pl.wendigo.chrome.api.dom.SetNodeValueRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-node-value-request/index.html"><span class="identifier">SetNodeValueRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-outer-h-t-m-l.html">setOuterHTML</a></h4>
+</td>
+<td>
+<p>Sets node HTML markup, returns new node id.</p>
+<code><span class="keyword">fun </span><span class="identifier">setOuterHTML</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.DOMOperations$setOuterHTML(pl.wendigo.chrome.api.dom.SetOuterHTMLRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-outer-h-t-m-l-request/index.html"><span class="identifier">SetOuterHTMLRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shadow-root-popped.html">shadowRootPopped</a></h4>
+</td>
+<td>
+<p>Called when shadow root is popped from the element.</p>
+<code><span class="keyword">fun </span><span class="identifier">shadowRootPopped</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-shadow-root-popped-event/index.html"><span class="identifier">ShadowRootPoppedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shadow-root-pushed.html">shadowRootPushed</a></h4>
+</td>
+<td>
+<p>Called when shadow root is pushed into the element.</p>
+<code><span class="keyword">fun </span><span class="identifier">shadowRootPushed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-shadow-root-pushed-event/index.html"><span class="identifier">ShadowRootPushedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="undo.html">undo</a></h4>
+</td>
+<td>
+<p>Undoes the last performed action.</p>
+<code><span class="keyword">fun </span><span class="identifier">undo</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ReadRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.io</a>&nbsp;/&nbsp;<a href="./index.html">ReadRequest</a><br/>
+<br/>
+<h1>ReadRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReadRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/io/Operations.kt#L61">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IO#method-read">IO#read</a> operation call.</p>
+<p>Read a chunk of the stream</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/IO#method-read">IO#read</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-i-o-operations/read.html">IOOperations.read</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IO#method-read">IO#read</a> operation call.</p>
+<code><span class="identifier">ReadRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.io.ReadRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int)/handle">handle</span><span class="symbol">:</span>&nbsp;<a href="../-stream-handle.html"><span class="identifier">StreamHandle</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.io.ReadRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.io.ReadRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int)/size">size</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="handle.html">handle</a></h4>
+</td>
+<td>
+<p>Handle of the stream to read.</p>
+<code><span class="keyword">val </span><span class="identifier">handle</span><span class="symbol">: </span><a href="../-stream-handle.html"><span class="identifier">StreamHandle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="offset.html">offset</a></h4>
+</td>
+<td>
+<p>Seek to the specified offset before reading (if not specificed, proceed with offset
+following the last read). Some types of streams may only support sequential reads.</p>
+<code><span class="keyword">val </span><span class="identifier">offset</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="size.html">size</a></h4>
+</td>
+<td>
+<p>Maximum number of bytes to read (left upon the agent discretion if not specified).</p>
+<code><span class="keyword">val </span><span class="identifier">size</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

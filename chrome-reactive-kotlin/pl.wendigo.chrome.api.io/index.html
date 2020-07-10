@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.io - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.io</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.io</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/IO">IO</a> domain implementation accessible via <a href="-i-o-operations/index.html">IOOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-close-request/index.html">CloseRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IO#method-close">IO#close</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CloseRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-i-o-operations/index.html">IOOperations</a></h4>
+</td>
+<td>
+<p>Input/Output operations for streams produced by DevTools.</p>
+<code><span class="keyword">class </span><span class="identifier">IOOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-read-request/index.html">ReadRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IO#method-read">IO#read</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReadRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-read-response/index.html">ReadResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/IO#method-read">IO#read</a> operation call.
+Read a chunk of the stream</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReadResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-resolve-blob-request/index.html">ResolveBlobRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IO#method-resolveBlob">IO#resolveBlob</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResolveBlobRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-resolve-blob-response/index.html">ResolveBlobResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/IO#method-resolveBlob">IO#resolveBlob</a> operation call.
+Return UUID of Blob object specified by a remote object id.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResolveBlobResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-stream-handle.html">StreamHandle</a></h4>
+</td>
+<td>
+<p>This is either obtained from another method or specifed as <code>blob:&amp;amp;lt;uuid&amp;amp;gt;</code> where
+<code>&amp;amp;lt;uuid&amp;amp;gt</code> is an UUID of a Blob.</p>
+<code><span class="keyword">typealias </span><span class="identifier">StreamHandle</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

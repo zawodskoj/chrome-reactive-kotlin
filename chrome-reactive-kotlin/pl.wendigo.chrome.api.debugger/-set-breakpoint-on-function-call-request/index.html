@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetBreakpointOnFunctionCallRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">SetBreakpointOnFunctionCallRequest</a><br/>
+<br/>
+<h1>SetBreakpointOnFunctionCallRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBreakpointOnFunctionCallRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L944">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointOnFunctionCall">Debugger#setBreakpointOnFunctionCall</a> operation call.</p>
+<p>Sets JavaScript breakpoint before each call to the given function.
+If another function was created from the same source as a given one,
+calling it will also trigger the breakpoint.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointOnFunctionCall">Debugger#setBreakpointOnFunctionCall</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-debugger-operations/set-breakpoint-on-function-call.html">DebuggerOperations.setBreakpointOnFunctionCall</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointOnFunctionCall">Debugger#setBreakpointOnFunctionCall</a> operation call.</p>
+<code><span class="identifier">SetBreakpointOnFunctionCallRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointOnFunctionCallRequest$<init>(kotlin.String, kotlin.String)/objectId">objectId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-remote-object-id.html"><span class="identifier">RemoteObjectId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointOnFunctionCallRequest$<init>(kotlin.String, kotlin.String)/condition">condition</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="condition.html">condition</a></h4>
+</td>
+<td>
+<p>Expression to use as a breakpoint condition. When specified, debugger will
+stop on the breakpoint if this expression evaluates to true.</p>
+<code><span class="keyword">val </span><span class="identifier">condition</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="object-id.html">objectId</a></h4>
+</td>
+<td>
+<p>Function object id.</p>
+<code><span class="keyword">val </span><span class="identifier">objectId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-remote-object-id.html"><span class="identifier">RemoteObjectId</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

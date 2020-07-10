@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>InlineTextBox - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.domsnapshot</a>&nbsp;/&nbsp;<a href="./index.html">InlineTextBox</a><br/>
+<br/>
+<h1>InlineTextBox</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InlineTextBox</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/domsnapshot/Types.kt#L164">(source)</a>
+<p>Details of post layout rendered text positions. The exact layout should not be regarded as
+stable and may change between versions.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot#type-InlineTextBox">DOMSnapshot#InlineTextBox</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Details of post layout rendered text positions. The exact layout should not be regarded as
+stable and may change between versions.</p>
+<code><span class="identifier">InlineTextBox</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.InlineTextBox$<init>(pl.wendigo.chrome.api.dom.Rect, kotlin.Int, kotlin.Int)/boundingBox">boundingBox</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.dom/-rect/index.html"><span class="identifier">Rect</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.InlineTextBox$<init>(pl.wendigo.chrome.api.dom.Rect, kotlin.Int, kotlin.Int)/startCharacterIndex">startCharacterIndex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.InlineTextBox$<init>(pl.wendigo.chrome.api.dom.Rect, kotlin.Int, kotlin.Int)/numCharacters">numCharacters</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="bounding-box.html">boundingBox</a></h4>
+</td>
+<td>
+<p>The bounding box in document coordinates. Note that scroll offset of the document is ignored.</p>
+<code><span class="keyword">val </span><span class="identifier">boundingBox</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.dom/-rect/index.html"><span class="identifier">Rect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="num-characters.html">numCharacters</a></h4>
+</td>
+<td>
+<p>The number of characters in this post layout textbox substring. Characters that would be
+represented as a surrogate pair in UTF-16 have length 2.</p>
+<code><span class="keyword">val </span><span class="identifier">numCharacters</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-character-index.html">startCharacterIndex</a></h4>
+</td>
+<td>
+<p>The starting index in characters, for this post layout textbox substring. Characters that
+would be represented as a surrogate pair in UTF-16 have length 2.</p>
+<code><span class="keyword">val </span><span class="identifier">startCharacterIndex</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

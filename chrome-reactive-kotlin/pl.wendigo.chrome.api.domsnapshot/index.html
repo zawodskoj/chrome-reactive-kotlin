@@ -1,0 +1,185 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.domsnapshot - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.domsnapshot</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.domsnapshot</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot">DOMSnapshot</a> domain implementation accessible via <a href="-d-o-m-snapshot-operations/index.html">DOMSnapshotOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-array-of-strings.html">ArrayOfStrings</a></h4>
+</td>
+<td>
+<p>Index of the string in the strings table.</p>
+<code><span class="keyword">typealias </span><span class="identifier">ArrayOfStrings</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="-string-index.html"><span class="identifier">StringIndex</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-capture-snapshot-request/index.html">CaptureSnapshotRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot#method-captureSnapshot">DOMSnapshot#captureSnapshot</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CaptureSnapshotRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-capture-snapshot-response/index.html">CaptureSnapshotResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot#method-captureSnapshot">DOMSnapshot#captureSnapshot</a> operation call.
+Returns a document snapshot, including the full DOM tree of the root node (including iframes,
+template contents, and imported documents) in a flattened array, as well as layout and
+white-listed computed style information for the nodes. Shadow DOM in the returned DOM tree is
+flattened.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CaptureSnapshotResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-computed-style/index.html">ComputedStyle</a></h4>
+</td>
+<td>
+<p>A subset of the full ComputedStyle as defined by the request whitelist.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ComputedStyle</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-document-snapshot/index.html">DocumentSnapshot</a></h4>
+</td>
+<td>
+<p>Document snapshot.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DocumentSnapshot</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-d-o-m-node/index.html">DOMNode</a></h4>
+</td>
+<td>
+<p>A Node in the DOM tree.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DOMNode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-d-o-m-snapshot-operations/index.html">DOMSnapshotOperations</a></h4>
+</td>
+<td>
+<p>This domain facilitates obtaining document snapshots with DOM, layout, and style information.</p>
+<code><span class="keyword">class </span><span class="identifier">DOMSnapshotOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-snapshot-request/index.html">GetSnapshotRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot#method-getSnapshot">DOMSnapshot#getSnapshot</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetSnapshotRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-snapshot-response/index.html">GetSnapshotResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot#method-getSnapshot">DOMSnapshot#getSnapshot</a> operation call.
+Returns a document snapshot, including the full DOM tree of the root node (including iframes,
+template contents, and imported documents) in a flattened array, as well as layout and
+white-listed computed style information for the nodes. Shadow DOM in the returned DOM tree is
+flattened.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetSnapshotResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-inline-text-box/index.html">InlineTextBox</a></h4>
+</td>
+<td>
+<p>Details of post layout rendered text positions. The exact layout should not be regarded as
+stable and may change between versions.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InlineTextBox</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-layout-tree-node/index.html">LayoutTreeNode</a></h4>
+</td>
+<td>
+<p>Details of an element in the DOM tree with a LayoutObject.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LayoutTreeNode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-layout-tree-snapshot/index.html">LayoutTreeSnapshot</a></h4>
+</td>
+<td>
+<p>Table of details of an element in the DOM tree with a LayoutObject.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LayoutTreeSnapshot</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-name-value/index.html">NameValue</a></h4>
+</td>
+<td>
+<p>A name/value pair.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NameValue</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-node-tree-snapshot/index.html">NodeTreeSnapshot</a></h4>
+</td>
+<td>
+<p>Table containing nodes.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NodeTreeSnapshot</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-rare-boolean-data/index.html">RareBooleanData</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RareBooleanData</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-rare-integer-data/index.html">RareIntegerData</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RareIntegerData</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-rare-string-data/index.html">RareStringData</a></h4>
+</td>
+<td>
+<p>Data that is only present on rare nodes.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RareStringData</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-rectangle.html">Rectangle</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">Rectangle</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-string-index.html">StringIndex</a></h4>
+</td>
+<td>
+<p>Index of the string in the strings table.</p>
+<code><span class="keyword">typealias </span><span class="identifier">StringIndex</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-text-box-snapshot/index.html">TextBoxSnapshot</a></h4>
+</td>
+<td>
+<p>Table of details of the post layout rendered text positions. The exact layout should not be regarded as
+stable and may change between versions.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TextBoxSnapshot</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

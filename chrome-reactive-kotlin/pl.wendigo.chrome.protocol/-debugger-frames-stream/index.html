@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DebuggerFramesStream - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.protocol</a>&nbsp;/&nbsp;<a href="./index.html">DebuggerFramesStream</a><br/>
+<br/>
+<h1>DebuggerFramesStream</h1>
+<code><span class="keyword">class </span><span class="identifier">DebuggerFramesStream</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">WebSocketListener</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/protocol/DebuggerFramesStream.kt#L21">(source)</a>
+<p>DebuggerFramesStream represents connection to remote websocket endpoint of the DevTools Protocol
+(either inspectable page debugger url http://localhost:9222/json or browser debugger url http://localhost:9222/json/version)</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Creates new WebSocketFramesStream for given web webSocketUri, buffer size, frame mapper, and ws client</p>
+<code><span class="identifier">DebuggerFramesStream</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$<init>(kotlin.String, kotlin.Int, pl.wendigo.chrome.protocol.FrameMapper, okhttp3.OkHttpClient)/webSocketUri">webSocketUri</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$<init>(kotlin.String, kotlin.Int, pl.wendigo.chrome.protocol.FrameMapper, okhttp3.OkHttpClient)/framesBufferSize">framesBufferSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$<init>(kotlin.String, kotlin.Int, pl.wendigo.chrome.protocol.FrameMapper, okhttp3.OkHttpClient)/mapper">mapper</span><span class="symbol">:</span>&nbsp;<a href="../-frame-mapper/index.html"><span class="identifier">FrameMapper</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$<init>(kotlin.String, kotlin.Int, pl.wendigo.chrome.protocol.FrameMapper, okhttp3.OkHttpClient)/webSocketClient">webSocketClient</span><span class="symbol">:</span>&nbsp;<span class="identifier">OkHttpClient</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="close.html">close</a></h4>
+</td>
+<td>
+<p>Closes stream</p>
+<code><span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="event-frames.html">eventFrames</a></h4>
+</td>
+<td>
+<p>Returns all frames that represent events from connection.</p>
+<code><span class="keyword">fun </span><span class="identifier">eventFrames</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frames.html">frames</a></h4>
+</td>
+<td>
+<p>Returns all frames received from connection.</p>
+<code><span class="keyword">fun </span><span class="identifier">frames</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-response.html">getResponse</a></h4>
+</td>
+<td>
+<p>Returns protocol response for given request frame (if any).</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$getResponse(pl.wendigo.chrome.protocol.RequestFrame, java.lang.Class((pl.wendigo.chrome.protocol.DebuggerFramesStream.getResponse.T)))/requestFrame">requestFrame</span><span class="symbol">:</span>&nbsp;<a href="../-request-frame/index.html"><span class="identifier">RequestFrame</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$getResponse(pl.wendigo.chrome.protocol.RequestFrame, java.lang.Class((pl.wendigo.chrome.protocol.DebuggerFramesStream.getResponse.T)))/clazz">clazz</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-closed.html">onClosed</a></h4>
+</td>
+<td>
+<p>onClosed is called when websocket is being closed.</p>
+<code><span class="keyword">fun </span><span class="identifier">onClosed</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$onClosed(okhttp3.WebSocket, kotlin.Int, kotlin.String)/webSocket">webSocket</span><span class="symbol">:</span>&nbsp;<span class="identifier">WebSocket</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$onClosed(okhttp3.WebSocket, kotlin.Int, kotlin.String)/code">code</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$onClosed(okhttp3.WebSocket, kotlin.Int, kotlin.String)/reason">reason</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-failure.html">onFailure</a></h4>
+</td>
+<td>
+<p>onFailure is called when websocket protocol error occurs.</p>
+<code><span class="keyword">fun </span><span class="identifier">onFailure</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$onFailure(okhttp3.WebSocket, kotlin.Throwable, okhttp3.Response)/webSocket">webSocket</span><span class="symbol">:</span>&nbsp;<span class="identifier">WebSocket</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$onFailure(okhttp3.WebSocket, kotlin.Throwable, okhttp3.Response)/t">t</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$onFailure(okhttp3.WebSocket, kotlin.Throwable, okhttp3.Response)/response">response</span><span class="symbol">:</span>&nbsp;<span class="identifier">Response</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-message.html">onMessage</a></h4>
+</td>
+<td>
+<p>onMessage is called when new frame arrives on websocket.</p>
+<code><span class="keyword">fun </span><span class="identifier">onMessage</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$onMessage(okhttp3.WebSocket, kotlin.String)/webSocket">webSocket</span><span class="symbol">:</span>&nbsp;<span class="identifier">WebSocket</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$onMessage(okhttp3.WebSocket, kotlin.String)/text">text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="send.html">send</a></h4>
+</td>
+<td>
+<p>Sends frame over the connection.</p>
+<code><span class="keyword">fun </span><span class="identifier">send</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.DebuggerFramesStream$send(pl.wendigo.chrome.protocol.RequestFrame)/frame">frame</span><span class="symbol">:</span>&nbsp;<a href="../-request-frame/index.html"><span class="identifier">RequestFrame</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetRequestInterceptionRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">SetRequestInterceptionRequest</a><br/>
+<br/>
+<h1>SetRequestInterceptionRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetRequestInterceptionRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L1010">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setRequestInterception">Network#setRequestInterception</a> operation call.</p>
+<p>Sets the requests to intercept that match the provided patterns and optionally resource types.
+Deprecated, please use Fetch.enable instead.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setRequestInterception">Network#setRequestInterception</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-network-operations/set-request-interception.html">NetworkOperations.setRequestInterception</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setRequestInterception">Network#setRequestInterception</a> operation call.</p>
+<code><span class="identifier">SetRequestInterceptionRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.SetRequestInterceptionRequest$<init>(kotlin.collections.List((pl.wendigo.chrome.api.network.RequestPattern)))/patterns">patterns</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-request-pattern/index.html"><span class="identifier">RequestPattern</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="patterns.html">patterns</a></h4>
+</td>
+<td>
+<p>Requests matching any of these patterns will be forwarded and wait for the corresponding
+continueInterceptedRequest call.</p>
+<code><span class="keyword">val </span><span class="identifier">patterns</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-request-pattern/index.html"><span class="identifier">RequestPattern</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

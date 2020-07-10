@@ -1,0 +1,549 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.css - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.css</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.css</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS">CSS</a> domain implementation accessible via <a href="-c-s-s-operations/index.html">CSSOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-add-rule-request/index.html">AddRuleRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-addRule">CSS#addRule</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddRuleRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-add-rule-response/index.html">AddRuleResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-addRule">CSS#addRule</a> operation call.
+Inserts a new rule with the given <code>ruleText</code> in a stylesheet with given <code>styleSheetId</code>, at the
+position specified by <code>location</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddRuleResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-collect-class-names-request/index.html">CollectClassNamesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-collectClassNames">CSS#collectClassNames</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CollectClassNamesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-collect-class-names-response/index.html">CollectClassNamesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-collectClassNames">CSS#collectClassNames</a> operation call.
+Returns all class names from specified stylesheet.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CollectClassNamesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-create-style-sheet-request/index.html">CreateStyleSheetRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-createStyleSheet">CSS#createStyleSheet</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CreateStyleSheetRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-create-style-sheet-response/index.html">CreateStyleSheetResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-createStyleSheet">CSS#createStyleSheet</a> operation call.
+Creates a new special "via-inspector" stylesheet in the frame with given <code>frameId</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CreateStyleSheetResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-s-s-computed-style-property/index.html">CSSComputedStyleProperty</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CSSComputedStyleProperty</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-s-s-keyframe-rule/index.html">CSSKeyframeRule</a></h4>
+</td>
+<td>
+<p>CSS keyframe rule representation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CSSKeyframeRule</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-s-s-keyframes-rule/index.html">CSSKeyframesRule</a></h4>
+</td>
+<td>
+<p>CSS keyframes rule representation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CSSKeyframesRule</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-s-s-media/index.html">CSSMedia</a></h4>
+</td>
+<td>
+<p>CSS media rule descriptor.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CSSMedia</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-s-s-operations/index.html">CSSOperations</a></h4>
+</td>
+<td>
+<p>This domain exposes CSS read/write operations. All CSS objects (stylesheets, rules, and styles)
+have an associated <code>id</code> used in subsequent operations on the related object. Each object type has
+a specific <code>id</code> structure, and those are not interchangeable between objects of different kinds.
+CSS objects can be loaded using the <code>get*ForNode()</code> calls (which accept a DOM node id). A client
+can also keep track of stylesheets via the <code>styleSheetAdded</code>/<code>styleSheetRemoved</code> events and
+subsequently load the required stylesheet contents using the <code>getStyleSheet[Text]()</code> methods.</p>
+<code><span class="keyword">class </span><span class="identifier">CSSOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-s-s-property/index.html">CSSProperty</a></h4>
+</td>
+<td>
+<p>CSS property declaration data.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CSSProperty</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-s-s-rule/index.html">CSSRule</a></h4>
+</td>
+<td>
+<p>CSS rule representation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CSSRule</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-s-s-style/index.html">CSSStyle</a></h4>
+</td>
+<td>
+<p>CSS style representation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CSSStyle</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-s-s-style-sheet-header/index.html">CSSStyleSheetHeader</a></h4>
+</td>
+<td>
+<p>CSS stylesheet metainformation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CSSStyleSheetHeader</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-font-face/index.html">FontFace</a></h4>
+</td>
+<td>
+<p>Properties of a web font: https://www.w3.org/TR/2008/REC-CSS2-20080411/fonts.html#font-descriptions
+and additional information such as platformFontFamily and fontVariationAxes.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FontFace</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-fonts-updated-event/index.html">FontsUpdatedEvent</a></h4>
+</td>
+<td>
+<p>Fires whenever a web font is updated.  A non-empty font parameter indicates a successfully loaded
+web font</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FontsUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-font-variation-axis/index.html">FontVariationAxis</a></h4>
+</td>
+<td>
+<p>Information about font variation axes for variable fonts</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FontVariationAxis</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-force-pseudo-state-request/index.html">ForcePseudoStateRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-forcePseudoState">CSS#forcePseudoState</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ForcePseudoStateRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-background-colors-request/index.html">GetBackgroundColorsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getBackgroundColors">CSS#getBackgroundColors</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetBackgroundColorsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-background-colors-response/index.html">GetBackgroundColorsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getBackgroundColors">CSS#getBackgroundColors</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetBackgroundColorsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-computed-style-for-node-request/index.html">GetComputedStyleForNodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getComputedStyleForNode">CSS#getComputedStyleForNode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetComputedStyleForNodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-computed-style-for-node-response/index.html">GetComputedStyleForNodeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getComputedStyleForNode">CSS#getComputedStyleForNode</a> operation call.
+Returns the computed style for a DOM node identified by <code>nodeId</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetComputedStyleForNodeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-inline-styles-for-node-request/index.html">GetInlineStylesForNodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getInlineStylesForNode">CSS#getInlineStylesForNode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetInlineStylesForNodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-inline-styles-for-node-response/index.html">GetInlineStylesForNodeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getInlineStylesForNode">CSS#getInlineStylesForNode</a> operation call.
+Returns the styles defined inline (explicitly in the "style" attribute and implicitly, using DOM
+attributes) for a DOM node identified by <code>nodeId</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetInlineStylesForNodeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-matched-styles-for-node-request/index.html">GetMatchedStylesForNodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getMatchedStylesForNode">CSS#getMatchedStylesForNode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetMatchedStylesForNodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-matched-styles-for-node-response/index.html">GetMatchedStylesForNodeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getMatchedStylesForNode">CSS#getMatchedStylesForNode</a> operation call.
+Returns requested styles for a DOM node identified by <code>nodeId</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetMatchedStylesForNodeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-media-queries-response/index.html">GetMediaQueriesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getMediaQueries">CSS#getMediaQueries</a> operation call.
+Returns all media queries parsed by the rendering engine.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetMediaQueriesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-platform-fonts-for-node-request/index.html">GetPlatformFontsForNodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getPlatformFontsForNode">CSS#getPlatformFontsForNode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetPlatformFontsForNodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-platform-fonts-for-node-response/index.html">GetPlatformFontsForNodeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getPlatformFontsForNode">CSS#getPlatformFontsForNode</a> operation call.
+Requests information about platform fonts which we used to render child TextNodes in the given
+node.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetPlatformFontsForNodeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-style-sheet-text-request/index.html">GetStyleSheetTextRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getStyleSheetText">CSS#getStyleSheetText</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetStyleSheetTextRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-style-sheet-text-response/index.html">GetStyleSheetTextResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getStyleSheetText">CSS#getStyleSheetText</a> operation call.
+Returns the current textual content for a stylesheet.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetStyleSheetTextResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-inherited-style-entry/index.html">InheritedStyleEntry</a></h4>
+</td>
+<td>
+<p>Inherited CSS rule collection from ancestor node.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InheritedStyleEntry</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-media-query/index.html">MediaQuery</a></h4>
+</td>
+<td>
+<p>Media query descriptor.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MediaQuery</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-media-query-expression/index.html">MediaQueryExpression</a></h4>
+</td>
+<td>
+<p>Media query expression descriptor.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MediaQueryExpression</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-platform-font-usage/index.html">PlatformFontUsage</a></h4>
+</td>
+<td>
+<p>Information about amount of glyphs that were rendered with given font.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PlatformFontUsage</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-pseudo-element-matches/index.html">PseudoElementMatches</a></h4>
+</td>
+<td>
+<p>CSS rule collection for a single pseudo style.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PseudoElementMatches</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-rule-match/index.html">RuleMatch</a></h4>
+</td>
+<td>
+<p>Match data for a CSS rule.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RuleMatch</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-rule-usage/index.html">RuleUsage</a></h4>
+</td>
+<td>
+<p>CSS coverage information.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RuleUsage</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-selector-list/index.html">SelectorList</a></h4>
+</td>
+<td>
+<p>Selector list data.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SelectorList</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-effective-property-value-for-node-request/index.html">SetEffectivePropertyValueForNodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setEffectivePropertyValueForNode">CSS#setEffectivePropertyValueForNode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetEffectivePropertyValueForNodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-keyframe-key-request/index.html">SetKeyframeKeyRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setKeyframeKey">CSS#setKeyframeKey</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetKeyframeKeyRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-keyframe-key-response/index.html">SetKeyframeKeyResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setKeyframeKey">CSS#setKeyframeKey</a> operation call.
+Modifies the keyframe rule key text.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetKeyframeKeyResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-local-fonts-enabled-request/index.html">SetLocalFontsEnabledRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setLocalFontsEnabled">CSS#setLocalFontsEnabled</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetLocalFontsEnabledRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-media-text-request/index.html">SetMediaTextRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setMediaText">CSS#setMediaText</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetMediaTextRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-media-text-response/index.html">SetMediaTextResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setMediaText">CSS#setMediaText</a> operation call.
+Modifies the rule selector.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetMediaTextResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-rule-selector-request/index.html">SetRuleSelectorRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setRuleSelector">CSS#setRuleSelector</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetRuleSelectorRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-rule-selector-response/index.html">SetRuleSelectorResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setRuleSelector">CSS#setRuleSelector</a> operation call.
+Modifies the rule selector.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetRuleSelectorResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-style-sheet-text-request/index.html">SetStyleSheetTextRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setStyleSheetText">CSS#setStyleSheetText</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetStyleSheetTextRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-style-sheet-text-response/index.html">SetStyleSheetTextResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setStyleSheetText">CSS#setStyleSheetText</a> operation call.
+Sets the new stylesheet text.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetStyleSheetTextResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-style-texts-request/index.html">SetStyleTextsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setStyleTexts">CSS#setStyleTexts</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetStyleTextsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-style-texts-response/index.html">SetStyleTextsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setStyleTexts">CSS#setStyleTexts</a> operation call.
+Applies specified style edits one after another in the given order.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetStyleTextsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-shorthand-entry/index.html">ShorthandEntry</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ShorthandEntry</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-source-range/index.html">SourceRange</a></h4>
+</td>
+<td>
+<p>Text range within a resource. All numbers are zero-based.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SourceRange</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-stop-rule-usage-tracking-response/index.html">StopRuleUsageTrackingResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-stopRuleUsageTracking">CSS#stopRuleUsageTracking</a> operation call.
+Stop tracking rule usage and return the list of rules that were used since last call to
+<code>takeCoverageDelta</code> (or since start of coverage instrumentation)</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StopRuleUsageTrackingResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-style-declaration-edit/index.html">StyleDeclarationEdit</a></h4>
+</td>
+<td>
+<p>A descriptor of operation to mutate style declaration text.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StyleDeclarationEdit</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-style-sheet-added-event/index.html">StyleSheetAddedEvent</a></h4>
+</td>
+<td>
+<p>Fired whenever an active document stylesheet is added.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StyleSheetAddedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-style-sheet-changed-event/index.html">StyleSheetChangedEvent</a></h4>
+</td>
+<td>
+<p>Fired whenever a stylesheet is changed as a result of the client operation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StyleSheetChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-style-sheet-id.html">StyleSheetId</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">StyleSheetId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-style-sheet-origin/index.html">StyleSheetOrigin</a></h4>
+</td>
+<td>
+<p>Stylesheet type: &amp;quot;injected&amp;quot; for stylesheets injected via extension, &amp;quot;user-agent&amp;quot; for user-agent
+stylesheets, &amp;quot;inspector&amp;quot; for stylesheets created by the inspector (i.e. those holding the &amp;quot;via
+inspector&amp;quot; rules), &amp;quot;regular&amp;quot; for regular stylesheets.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">StyleSheetOrigin</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-style-sheet-removed-event/index.html">StyleSheetRemovedEvent</a></h4>
+</td>
+<td>
+<p>Fired whenever an active document stylesheet is removed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StyleSheetRemovedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-take-coverage-delta-response/index.html">TakeCoverageDeltaResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-takeCoverageDelta">CSS#takeCoverageDelta</a> operation call.
+Obtain list of rules that became used since last call to this method (or since start of coverage
+instrumentation)</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TakeCoverageDeltaResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-value/index.html">Value</a></h4>
+</td>
+<td>
+<p>Data for a simple selector (these are delimited by commas in a selector list).</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Value</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

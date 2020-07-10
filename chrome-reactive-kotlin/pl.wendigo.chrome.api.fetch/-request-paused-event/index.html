@@ -1,0 +1,109 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RequestPausedEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.fetch</a>&nbsp;/&nbsp;<a href="./index.html">RequestPausedEvent</a><br/>
+<br/>
+<h1>RequestPausedEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestPausedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/fetch/Operations.kt#L354">(source)</a>
+<p>Issued when the domain is enabled and the request URL matches the
+specified filter. The request is paused until the client responds
+with one of continueRequest, failRequest or fulfillRequest.
+The stage of the request can be determined by presence of responseErrorReason
+and responseStatusCode -- the request is at the response stage if either
+of these fields is present and in the request stage otherwise.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#event-requestPaused">Fetch#requestPaused</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Issued when the domain is enabled and the request URL matches the
+specified filter. The request is paused until the client responds
+with one of continueRequest, failRequest or fulfillRequest.
+The stage of the request can be determined by presence of responseErrorReason
+and responseStatusCode -- the request is at the response stage if either
+of these fields is present and in the request stage otherwise.</p>
+<code><span class="identifier">RequestPausedEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.fetch.RequestPausedEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.ErrorReason, kotlin.Int, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)), kotlin.String)/requestId">requestId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.RequestPausedEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.ErrorReason, kotlin.Int, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)), kotlin.String)/request">request</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.network/-request/index.html"><span class="identifier">Request</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.RequestPausedEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.ErrorReason, kotlin.Int, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)), kotlin.String)/frameId">frameId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.page/-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.RequestPausedEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.ErrorReason, kotlin.Int, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)), kotlin.String)/resourceType">resourceType</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.network/-resource-type/index.html"><span class="identifier">ResourceType</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.RequestPausedEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.ErrorReason, kotlin.Int, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)), kotlin.String)/responseErrorReason">responseErrorReason</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.network/-error-reason/index.html"><span class="identifier">ErrorReason</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.RequestPausedEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.ErrorReason, kotlin.Int, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)), kotlin.String)/responseStatusCode">responseStatusCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.RequestPausedEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.ErrorReason, kotlin.Int, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)), kotlin.String)/responseHeaders">responseHeaders</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-header-entry/index.html"><span class="identifier">HeaderEntry</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.RequestPausedEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.ErrorReason, kotlin.Int, kotlin.collections.List((pl.wendigo.chrome.api.fetch.HeaderEntry)), kotlin.String)/networkId">networkId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="frame-id.html">frameId</a></h4>
+</td>
+<td>
+<p>The id of the frame that initiated the request.</p>
+<code><span class="keyword">val </span><span class="identifier">frameId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.page/-frame-id.html"><span class="identifier">FrameId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="network-id.html">networkId</a></h4>
+</td>
+<td>
+<p>If the intercepted request had a corresponding Network.requestWillBeSent event fired for it,
+then this networkId will be the same as the requestId present in the requestWillBeSent event.</p>
+<code><span class="keyword">val </span><span class="identifier">networkId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request.html">request</a></h4>
+</td>
+<td>
+<p>The details of the request.</p>
+<code><span class="keyword">val </span><span class="identifier">request</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-request/index.html"><span class="identifier">Request</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<p>Each request the page makes will have a unique id.</p>
+<code><span class="keyword">val </span><span class="identifier">requestId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resource-type.html">resourceType</a></h4>
+</td>
+<td>
+<p>How the requested resource will be used.</p>
+<code><span class="keyword">val </span><span class="identifier">resourceType</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-resource-type/index.html"><span class="identifier">ResourceType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="response-error-reason.html">responseErrorReason</a></h4>
+</td>
+<td>
+<p>Response error if intercepted at response stage.</p>
+<code><span class="keyword">val </span><span class="identifier">responseErrorReason</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-error-reason/index.html"><span class="identifier">ErrorReason</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="response-headers.html">responseHeaders</a></h4>
+</td>
+<td>
+<p>Response headers if intercepted at the response stage.</p>
+<code><span class="keyword">val </span><span class="identifier">responseHeaders</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-header-entry/index.html"><span class="identifier">HeaderEntry</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="response-status-code.html">responseStatusCode</a></h4>
+</td>
+<td>
+<p>Response code if intercepted at response stage.</p>
+<code><span class="keyword">val </span><span class="identifier">responseStatusCode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

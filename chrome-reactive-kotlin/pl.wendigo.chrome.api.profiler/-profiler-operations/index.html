@@ -1,0 +1,177 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ProfilerOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.profiler</a>&nbsp;/&nbsp;<a href="./index.html">ProfilerOperations</a><br/>
+<br/>
+<h1>ProfilerOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">ProfilerOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/profiler/Operations.kt#L8">(source)</a>
+<p>ProfilerOperations represents Profiler protocol domain request/response operations and events that can be captured.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler">Profiler</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="console-profile-finished.html">consoleProfileFinished</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all Profiler.consoleProfileFinished events.</p>
+<code><span class="keyword">fun </span><span class="identifier">consoleProfileFinished</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-console-profile-finished-event/index.html"><span class="identifier">ConsoleProfileFinishedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="console-profile-started.html">consoleProfileStarted</a></h4>
+</td>
+<td>
+<p>Sent when new profile recording is started using console.profile() call.</p>
+<code><span class="keyword">fun </span><span class="identifier">consoleProfileStarted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-console-profile-started-event/index.html"><span class="identifier">ConsoleProfileStartedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable-runtime-call-stats.html">disableRuntimeCallStats</a></h4>
+</td>
+<td>
+<p>Disable run time call stats collection.</p>
+<code><span class="keyword">fun </span><span class="identifier">disableRuntimeCallStats</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable-runtime-call-stats.html">enableRuntimeCallStats</a></h4>
+</td>
+<td>
+<p>Enable run time call stats collection.</p>
+<code><span class="keyword">fun </span><span class="identifier">enableRuntimeCallStats</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Profiler domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-best-effort-coverage.html">getBestEffortCoverage</a></h4>
+</td>
+<td>
+<p>Collect coverage data for the current isolate. The coverage data may be incomplete due to
+garbage collection.</p>
+<code><span class="keyword">fun </span><span class="identifier">getBestEffortCoverage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-best-effort-coverage-response/index.html"><span class="identifier">GetBestEffortCoverageResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-runtime-call-stats.html">getRuntimeCallStats</a></h4>
+</td>
+<td>
+<p>Retrieve run time call stats.</p>
+<code><span class="keyword">fun </span><span class="identifier">getRuntimeCallStats</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-runtime-call-stats-response/index.html"><span class="identifier">GetRuntimeCallStatsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="precise-coverage-delta-update.html">preciseCoverageDeltaUpdate</a></h4>
+</td>
+<td>
+<p>Reports coverage delta since the last poll (either from an event like this, or from
+<code>takePreciseCoverage</code> for the current isolate. May only be sent if precise code
+coverage has been started. This event can be trigged by the embedder to, for example,
+trigger collection of coverage data immediatelly at a certain point in time.</p>
+<code><span class="keyword">fun </span><span class="identifier">preciseCoverageDeltaUpdate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-precise-coverage-delta-update-event/index.html"><span class="identifier">PreciseCoverageDeltaUpdateEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-sampling-interval.html">setSamplingInterval</a></h4>
+</td>
+<td>
+<p>Changes CPU profiler sampling interval. Must be called before CPU profiles recording started.</p>
+<code><span class="keyword">fun </span><span class="identifier">setSamplingInterval</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.profiler.ProfilerOperations$setSamplingInterval(pl.wendigo.chrome.api.profiler.SetSamplingIntervalRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-sampling-interval-request/index.html"><span class="identifier">SetSamplingIntervalRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start.html">start</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">start</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-precise-coverage.html">startPreciseCoverage</a></h4>
+</td>
+<td>
+<p>Enable precise code coverage. Coverage data for JavaScript executed before enabling precise code
+coverage may be incomplete. Enabling prevents running optimized code and resets execution
+counters.</p>
+<code><span class="keyword">fun </span><span class="identifier">startPreciseCoverage</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.profiler.ProfilerOperations$startPreciseCoverage(pl.wendigo.chrome.api.profiler.StartPreciseCoverageRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-start-precise-coverage-request/index.html"><span class="identifier">StartPreciseCoverageRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-start-precise-coverage-response/index.html"><span class="identifier">StartPreciseCoverageResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-type-profile.html">startTypeProfile</a></h4>
+</td>
+<td>
+<p>Enable type profile.</p>
+<code><span class="keyword">fun </span><span class="identifier">startTypeProfile</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop.html">stop</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">stop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-stop-response/index.html"><span class="identifier">StopResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop-precise-coverage.html">stopPreciseCoverage</a></h4>
+</td>
+<td>
+<p>Disable precise code coverage. Disabling releases unnecessary execution count records and allows
+executing optimized code.</p>
+<code><span class="keyword">fun </span><span class="identifier">stopPreciseCoverage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop-type-profile.html">stopTypeProfile</a></h4>
+</td>
+<td>
+<p>Disable type profile. Disabling releases type profile data collected so far.</p>
+<code><span class="keyword">fun </span><span class="identifier">stopTypeProfile</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="take-precise-coverage.html">takePreciseCoverage</a></h4>
+</td>
+<td>
+<p>Collect coverage data for the current isolate, and resets execution counters. Precise code
+coverage needs to have started.</p>
+<code><span class="keyword">fun </span><span class="identifier">takePreciseCoverage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-take-precise-coverage-response/index.html"><span class="identifier">TakePreciseCoverageResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="take-type-profile.html">takeTypeProfile</a></h4>
+</td>
+<td>
+<p>Collect type profile.</p>
+<code><span class="keyword">fun </span><span class="identifier">takeTypeProfile</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-take-type-profile-response/index.html"><span class="identifier">TakeTypeProfileResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

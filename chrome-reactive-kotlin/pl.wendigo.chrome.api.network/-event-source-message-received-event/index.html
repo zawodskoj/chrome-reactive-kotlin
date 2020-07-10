@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EventSourceMessageReceivedEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">EventSourceMessageReceivedEvent</a><br/>
+<br/>
+<h1>EventSourceMessageReceivedEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EventSourceMessageReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L1082">(source)</a>
+<p>Fired when EventSource message is received.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#event-eventSourceMessageReceived">Network#eventSourceMessageReceived</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when EventSource message is received.</p>
+<code><span class="identifier">EventSourceMessageReceivedEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.EventSourceMessageReceivedEvent$<init>(kotlin.String, kotlin.Double, kotlin.String, kotlin.String, kotlin.String)/requestId">requestId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.EventSourceMessageReceivedEvent$<init>(kotlin.String, kotlin.Double, kotlin.String, kotlin.String, kotlin.String)/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="../-monotonic-time.html"><span class="identifier">MonotonicTime</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.EventSourceMessageReceivedEvent$<init>(kotlin.String, kotlin.Double, kotlin.String, kotlin.String, kotlin.String)/eventName">eventName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.EventSourceMessageReceivedEvent$<init>(kotlin.String, kotlin.Double, kotlin.String, kotlin.String, kotlin.String)/eventId">eventId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.EventSourceMessageReceivedEvent$<init>(kotlin.String, kotlin.Double, kotlin.String, kotlin.String, kotlin.String)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="data.html">data</a></h4>
+</td>
+<td>
+<p>Message content.</p>
+<code><span class="keyword">val </span><span class="identifier">data</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="event-id.html">eventId</a></h4>
+</td>
+<td>
+<p>Message identifier.</p>
+<code><span class="keyword">val </span><span class="identifier">eventId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="event-name.html">eventName</a></h4>
+</td>
+<td>
+<p>Message type.</p>
+<code><span class="keyword">val </span><span class="identifier">eventName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<p>Request identifier.</p>
+<code><span class="keyword">val </span><span class="identifier">requestId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timestamp.html">timestamp</a></h4>
+</td>
+<td>
+<p>Timestamp.</p>
+<code><span class="keyword">val </span><span class="identifier">timestamp</span><span class="symbol">: </span><a href="../-monotonic-time.html"><span class="identifier">MonotonicTime</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

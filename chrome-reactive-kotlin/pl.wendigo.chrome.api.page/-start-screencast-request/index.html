@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>StartScreencastRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.page</a>&nbsp;/&nbsp;<a href="./index.html">StartScreencastRequest</a><br/>
+<br/>
+<h1>StartScreencastRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StartScreencastRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/page/Operations.kt#L1613">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-startScreencast">Page#startScreencast</a> operation call.</p>
+<p>Starts sending each frame using the <code>screencastFrame</code> event.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-startScreencast">Page#startScreencast</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-page-operations/start-screencast.html">PageOperations.startScreencast</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-startScreencast">Page#startScreencast</a> operation call.</p>
+<code><span class="identifier">StartScreencastRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.StartScreencastRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/format">format</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.StartScreencastRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/quality">quality</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.StartScreencastRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/maxWidth">maxWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.StartScreencastRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/maxHeight">maxHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.StartScreencastRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/everyNthFrame">everyNthFrame</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="every-nth-frame.html">everyNthFrame</a></h4>
+</td>
+<td>
+<p>Send every n-th frame.</p>
+<code><span class="keyword">val </span><span class="identifier">everyNthFrame</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="format.html">format</a></h4>
+</td>
+<td>
+<p>Image compression format.</p>
+<code><span class="keyword">val </span><span class="identifier">format</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="max-height.html">maxHeight</a></h4>
+</td>
+<td>
+<p>Maximum screenshot height.</p>
+<code><span class="keyword">val </span><span class="identifier">maxHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="max-width.html">maxWidth</a></h4>
+</td>
+<td>
+<p>Maximum screenshot width.</p>
+<code><span class="keyword">val </span><span class="identifier">maxWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="quality.html">quality</a></h4>
+</td>
+<td>
+<p>Compression quality from range <a href="#">0..100</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">quality</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

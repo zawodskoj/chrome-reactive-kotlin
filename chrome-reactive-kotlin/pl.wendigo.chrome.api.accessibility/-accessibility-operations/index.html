@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AccessibilityOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.accessibility</a>&nbsp;/&nbsp;<a href="./index.html">AccessibilityOperations</a><br/>
+<br/>
+<h1>AccessibilityOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">AccessibilityOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/accessibility/Operations.kt#L10">(source)</a>
+<p>AccessibilityOperations represents Accessibility protocol domain request/response operations and events that can be captured.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Accessibility">Accessibility</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables the accessibility domain.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables the accessibility domain which causes <code>AXNodeId</code>s to remain consistent between method calls.
+This turns on accessibility for the page, which can impact performance until accessibility is disabled.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Accessibility domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-full-a-x-tree.html">getFullAXTree</a></h4>
+</td>
+<td>
+<p>Fetches the entire accessibility tree</p>
+<code><span class="keyword">fun </span><span class="identifier">getFullAXTree</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-full-a-x-tree-response/index.html"><span class="identifier">GetFullAXTreeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-partial-a-x-tree.html">getPartialAXTree</a></h4>
+</td>
+<td>
+<p>Fetches the accessibility node and partial accessibility tree for this DOM node, if it exists.</p>
+<code><span class="keyword">fun </span><span class="identifier">getPartialAXTree</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.accessibility.AccessibilityOperations$getPartialAXTree(pl.wendigo.chrome.api.accessibility.GetPartialAXTreeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-partial-a-x-tree-request/index.html"><span class="identifier">GetPartialAXTreeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-partial-a-x-tree-response/index.html"><span class="identifier">GetPartialAXTreeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

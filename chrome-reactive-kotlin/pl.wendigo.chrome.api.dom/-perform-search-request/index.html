@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PerformSearchRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.dom</a>&nbsp;/&nbsp;<a href="./index.html">PerformSearchRequest</a><br/>
+<br/>
+<h1>PerformSearchRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PerformSearchRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/dom/Operations.kt#L1067">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-performSearch">DOM#performSearch</a> operation call.</p>
+<p>Searches for a given string in the DOM tree. Use <code>getSearchResults</code> to access search results or
+<code>cancelSearch</code> to end this search session.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-performSearch">DOM#performSearch</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-d-o-m-operations/perform-search.html">DOMOperations.performSearch</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-performSearch">DOM#performSearch</a> operation call.</p>
+<code><span class="identifier">PerformSearchRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.PerformSearchRequest$<init>(kotlin.String, kotlin.Boolean)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.dom.PerformSearchRequest$<init>(kotlin.String, kotlin.Boolean)/includeUserAgentShadowDOM">includeUserAgentShadowDOM</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="include-user-agent-shadow-d-o-m.html">includeUserAgentShadowDOM</a></h4>
+</td>
+<td>
+<p>True to search in user agent shadow DOM.</p>
+<code><span class="keyword">val </span><span class="identifier">includeUserAgentShadowDOM</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="query.html">query</a></h4>
+</td>
+<td>
+<p>Plain text or query selector or XPath search query.</p>
+<code><span class="keyword">val </span><span class="identifier">query</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

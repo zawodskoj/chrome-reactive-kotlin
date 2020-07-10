@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EventListener - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.domdebugger</a>&nbsp;/&nbsp;<a href="./index.html">EventListener</a><br/>
+<br/>
+<h1>EventListener</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EventListener</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/domdebugger/Types.kt#L23">(source)</a>
+<p>Object event listener.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#type-EventListener">DOMDebugger#EventListener</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Object event listener.</p>
+<code><span class="identifier">EventListener</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.EventListener$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.EventListener$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/useCapture">useCapture</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.EventListener$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/passive">passive</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.EventListener$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/once">once</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.EventListener$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/scriptId">scriptId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-script-id.html"><span class="identifier">ScriptId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.EventListener$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/lineNumber">lineNumber</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.EventListener$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/columnNumber">columnNumber</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.EventListener$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/handler">handler</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.EventListener$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/originalHandler">originalHandler</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.EventListener$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.Int)/backendNodeId">backendNodeId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.dom/-backend-node-id.html"><span class="identifier">BackendNodeId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="backend-node-id.html">backendNodeId</a></h4>
+</td>
+<td>
+<p>Node the listener is added to (if any).</p>
+<code><span class="keyword">val </span><span class="identifier">backendNodeId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.dom/-backend-node-id.html"><span class="identifier">BackendNodeId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="column-number.html">columnNumber</a></h4>
+</td>
+<td>
+<p>Column number in the script (0-based).</p>
+<code><span class="keyword">val </span><span class="identifier">columnNumber</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handler.html">handler</a></h4>
+</td>
+<td>
+<p>Event handler function value.</p>
+<code><span class="keyword">val </span><span class="identifier">handler</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="line-number.html">lineNumber</a></h4>
+</td>
+<td>
+<p>Line number in the script (0-based).</p>
+<code><span class="keyword">val </span><span class="identifier">lineNumber</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="once.html">once</a></h4>
+</td>
+<td>
+<p><code>EventListener</code>'s once flag.</p>
+<code><span class="keyword">val </span><span class="identifier">once</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="original-handler.html">originalHandler</a></h4>
+</td>
+<td>
+<p>Event original handler function value.</p>
+<code><span class="keyword">val </span><span class="identifier">originalHandler</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="passive.html">passive</a></h4>
+</td>
+<td>
+<p><code>EventListener</code>'s passive flag.</p>
+<code><span class="keyword">val </span><span class="identifier">passive</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="script-id.html">scriptId</a></h4>
+</td>
+<td>
+<p>Script id of the handler code.</p>
+<code><span class="keyword">val </span><span class="identifier">scriptId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-script-id.html"><span class="identifier">ScriptId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<p><code>EventListener</code>'s type.</p>
+<code><span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="use-capture.html">useCapture</a></h4>
+</td>
+<td>
+<p><code>EventListener</code>'s useCapture.</p>
+<code><span class="keyword">val </span><span class="identifier">useCapture</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

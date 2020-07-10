@@ -1,0 +1,120 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.memory - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.memory</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.memory</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Memory">Memory</a> domain implementation accessible via <a href="-memory-operations/index.html">MemoryOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-get-all-time-sampling-profile-response/index.html">GetAllTimeSamplingProfileResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-getAllTimeSamplingProfile">Memory#getAllTimeSamplingProfile</a> operation call.
+Retrieve native memory allocations profile
+collected since renderer process startup.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetAllTimeSamplingProfileResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-browser-sampling-profile-response/index.html">GetBrowserSamplingProfileResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-getBrowserSamplingProfile">Memory#getBrowserSamplingProfile</a> operation call.
+Retrieve native memory allocations profile
+collected since browser process startup.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetBrowserSamplingProfileResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-d-o-m-counters-response/index.html">GetDOMCountersResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-getDOMCounters">Memory#getDOMCounters</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetDOMCountersResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-sampling-profile-response/index.html">GetSamplingProfileResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-getSamplingProfile">Memory#getSamplingProfile</a> operation call.
+Retrieve native memory allocations profile collected since last
+<code>startSampling</code> call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetSamplingProfileResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-memory-operations/index.html">MemoryOperations</a></h4>
+</td>
+<td>
+<p>MemoryOperations represents Memory protocol domain request/response operations and events that can be captured.</p>
+<code><span class="keyword">class </span><span class="identifier">MemoryOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-module/index.html">Module</a></h4>
+</td>
+<td>
+<p>Executable module information</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Module</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-pressure-level/index.html">PressureLevel</a></h4>
+</td>
+<td>
+<p>Memory pressure level.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">PressureLevel</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-sampling-profile/index.html">SamplingProfile</a></h4>
+</td>
+<td>
+<p>Array of heap profile samples.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SamplingProfile</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-sampling-profile-node/index.html">SamplingProfileNode</a></h4>
+</td>
+<td>
+<p>Heap profile sample.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SamplingProfileNode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-pressure-notifications-suppressed-request/index.html">SetPressureNotificationsSuppressedRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-setPressureNotificationsSuppressed">Memory#setPressureNotificationsSuppressed</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetPressureNotificationsSuppressedRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-simulate-pressure-notification-request/index.html">SimulatePressureNotificationRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-simulatePressureNotification">Memory#simulatePressureNotification</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SimulatePressureNotificationRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-start-sampling-request/index.html">StartSamplingRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-startSampling">Memory#startSampling</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StartSamplingRequest</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

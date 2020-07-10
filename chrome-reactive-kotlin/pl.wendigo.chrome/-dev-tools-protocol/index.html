@@ -1,0 +1,438 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DevToolsProtocol - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome</a>&nbsp;/&nbsp;<a href="./index.html">DevToolsProtocol</a><br/>
+<br/>
+<h1>DevToolsProtocol</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">DevToolsProtocol</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/DevToolsProtocol.kt#L58">(source)</a>
+<p>DevToolsProtocol represents all operations on all domains that can be issued to control Chrome via <a href="https://chromedevtools.github.io/devtools-protocol/">DevTools Protocol</a>.</p>
+<p><strong>Link</strong><br/>
+<a href="https://github.com/chromedevtools/devtools-protocol">https://github.com/chromedevtools/devtools-protocol</a></p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/">https://chromedevtools.github.io/devtools-protocol/</a></p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-accessibility.html">Accessibility</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.accessibility/-accessibility-operations/index.html">AccessibilityOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/Accessibility">Accessibility</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">Accessibility</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.accessibility/-accessibility-operations/index.html"><span class="identifier">AccessibilityOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-animation.html">Animation</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.animation/-animation-operations/index.html">AnimationOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation">Animation</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">Animation</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.animation/-animation-operations/index.html"><span class="identifier">AnimationOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-application-cache.html">ApplicationCache</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.applicationcache/-application-cache-operations/index.html">ApplicationCacheOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache">ApplicationCache</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">ApplicationCache</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.applicationcache/-application-cache-operations/index.html"><span class="identifier">ApplicationCacheOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-audits.html">Audits</a></h4>
+</td>
+<td>
+<p>Audits domain allows investigation of page violations and possible improvements.</p>
+<code><span class="keyword">val </span><span class="identifier">Audits</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.audits/-audits-operations/index.html"><span class="identifier">AuditsOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-background-service.html">BackgroundService</a></h4>
+</td>
+<td>
+<p>Defines events for background web platform features.</p>
+<code><span class="keyword">val </span><span class="identifier">BackgroundService</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.backgroundservice/-background-service-operations/index.html"><span class="identifier">BackgroundServiceOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-browser.html">Browser</a></h4>
+</td>
+<td>
+<p>The Browser domain defines methods and events for browser managing.</p>
+<code><span class="keyword">val </span><span class="identifier">Browser</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.browser/-browser-operations/index.html"><span class="identifier">BrowserOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cache-storage.html">CacheStorage</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.cachestorage/-cache-storage-operations/index.html">CacheStorageOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage">CacheStorage</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">CacheStorage</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.cachestorage/-cache-storage-operations/index.html"><span class="identifier">CacheStorageOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cast.html">Cast</a></h4>
+</td>
+<td>
+<p>A domain for interacting with Cast, Presentation API, and Remote Playback API
+functionalities.</p>
+<code><span class="keyword">val </span><span class="identifier">Cast</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.cast/-cast-operations/index.html"><span class="identifier">CastOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-console.html">Console</a></h4>
+</td>
+<td>
+<p>This domain is deprecated - use Runtime or Log instead.</p>
+<code><span class="keyword">val </span><s><span class="identifier">Console</span></s><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.console/-console-operations/index.html"><span class="identifier">ConsoleOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-s-s.html">CSS</a></h4>
+</td>
+<td>
+<p>This domain exposes CSS read/write operations. All CSS objects (stylesheets, rules, and styles)
+have an associated <code>id</code> used in subsequent operations on the related object. Each object type has
+a specific <code>id</code> structure, and those are not interchangeable between objects of different kinds.
+CSS objects can be loaded using the <code>get*ForNode()</code> calls (which accept a DOM node id). A client
+can also keep track of stylesheets via the <code>styleSheetAdded</code>/<code>styleSheetRemoved</code> events and
+subsequently load the required stylesheet contents using the <code>getStyleSheet[Text]()</code> methods.</p>
+<code><span class="keyword">val </span><span class="identifier">CSS</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.css/-c-s-s-operations/index.html"><span class="identifier">CSSOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-database.html">Database</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.database/-database-operations/index.html">DatabaseOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/Database">Database</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">Database</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.database/-database-operations/index.html"><span class="identifier">DatabaseOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-debugger.html">Debugger</a></h4>
+</td>
+<td>
+<p>Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing
+breakpoints, stepping through execution, exploring stack traces, etc.</p>
+<code><span class="keyword">val </span><span class="identifier">Debugger</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.debugger/-debugger-operations/index.html"><span class="identifier">DebuggerOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-device-orientation.html">DeviceOrientation</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.deviceorientation/-device-orientation-operations/index.html">DeviceOrientationOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/DeviceOrientation">DeviceOrientation</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">DeviceOrientation</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.deviceorientation/-device-orientation-operations/index.html"><span class="identifier">DeviceOrientationOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-d-o-m.html">DOM</a></h4>
+</td>
+<td>
+<p>This domain exposes DOM read/write operations. Each DOM Node is represented with its mirror object
+that has an <code>id</code>. This <code>id</code> can be used to get additional information on the Node, resolve it into
+the JavaScript object wrapper, etc. It is important that client receives DOM events only for the
+nodes that are known to the client. Backend keeps track of the nodes that were sent to the client
+and never sends the same node twice. It is client's responsibility to collect information about
+the nodes that were sent to the client.Note that <code>iframe</code> owner elements will return
+corresponding document elements as their child nodes.</p>
+<code><span class="keyword">val </span><span class="identifier">DOM</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.dom/-d-o-m-operations/index.html"><span class="identifier">DOMOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-d-o-m-debugger.html">DOMDebugger</a></h4>
+</td>
+<td>
+<p>DOM debugging allows setting breakpoints on particular DOM operations and events. JavaScript
+execution will stop on these operations as if there was a regular breakpoint set.</p>
+<code><span class="keyword">val </span><span class="identifier">DOMDebugger</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.domdebugger/-d-o-m-debugger-operations/index.html"><span class="identifier">DOMDebuggerOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-d-o-m-snapshot.html">DOMSnapshot</a></h4>
+</td>
+<td>
+<p>This domain facilitates obtaining document snapshots with DOM, layout, and style information.</p>
+<code><span class="keyword">val </span><span class="identifier">DOMSnapshot</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.domsnapshot/-d-o-m-snapshot-operations/index.html"><span class="identifier">DOMSnapshotOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-d-o-m-storage.html">DOMStorage</a></h4>
+</td>
+<td>
+<p>Query and modify DOM storage.</p>
+<code><span class="keyword">val </span><span class="identifier">DOMStorage</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.domstorage/-d-o-m-storage-operations/index.html"><span class="identifier">DOMStorageOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-emulation.html">Emulation</a></h4>
+</td>
+<td>
+<p>This domain emulates different environments for the page.</p>
+<code><span class="keyword">val </span><span class="identifier">Emulation</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.emulation/-emulation-operations/index.html"><span class="identifier">EmulationOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-fetch.html">Fetch</a></h4>
+</td>
+<td>
+<p>A domain for letting clients substitute browser's network layer with client code.</p>
+<code><span class="keyword">val </span><span class="identifier">Fetch</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.fetch/-fetch-operations/index.html"><span class="identifier">FetchOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-headless-experimental.html">HeadlessExperimental</a></h4>
+</td>
+<td>
+<p>This domain provides experimental commands only supported in headless mode.</p>
+<code><span class="keyword">val </span><span class="identifier">HeadlessExperimental</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.headlessexperimental/-headless-experimental-operations/index.html"><span class="identifier">HeadlessExperimentalOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-heap-profiler.html">HeapProfiler</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.heapprofiler/-heap-profiler-operations/index.html">HeapProfilerOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler">HeapProfiler</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">HeapProfiler</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.heapprofiler/-heap-profiler-operations/index.html"><span class="identifier">HeapProfilerOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-indexed-d-b.html">IndexedDB</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.indexeddb/-indexed-d-b-operations/index.html">IndexedDBOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB">IndexedDB</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">IndexedDB</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.indexeddb/-indexed-d-b-operations/index.html"><span class="identifier">IndexedDBOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-input.html">Input</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.input/-input-operations/index.html">InputOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/Input">Input</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">Input</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.input/-input-operations/index.html"><span class="identifier">InputOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-inspector.html">Inspector</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.inspector/-inspector-operations/index.html">InspectorOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/Inspector">Inspector</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">Inspector</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.inspector/-inspector-operations/index.html"><span class="identifier">InspectorOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-i-o.html">IO</a></h4>
+</td>
+<td>
+<p>Input/Output operations for streams produced by DevTools.</p>
+<code><span class="keyword">val </span><span class="identifier">IO</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.io/-i-o-operations/index.html"><span class="identifier">IOOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-layer-tree.html">LayerTree</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.layertree/-layer-tree-operations/index.html">LayerTreeOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree">LayerTree</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">LayerTree</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.layertree/-layer-tree-operations/index.html"><span class="identifier">LayerTreeOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-log.html">Log</a></h4>
+</td>
+<td>
+<p>Provides access to log entries.</p>
+<code><span class="keyword">val </span><span class="identifier">Log</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.log/-log-operations/index.html"><span class="identifier">LogOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-media.html">Media</a></h4>
+</td>
+<td>
+<p>This domain allows detailed inspection of media elements</p>
+<code><span class="keyword">val </span><span class="identifier">Media</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.media/-media-operations/index.html"><span class="identifier">MediaOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-memory.html">Memory</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.memory/-memory-operations/index.html">MemoryOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/Memory">Memory</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">Memory</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.memory/-memory-operations/index.html"><span class="identifier">MemoryOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-network.html">Network</a></h4>
+</td>
+<td>
+<p>Network domain allows tracking network activities of the page. It exposes information about http,
+file, data and other requests and responses, their headers, bodies, timing, etc.</p>
+<code><span class="keyword">val </span><span class="identifier">Network</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-network-operations/index.html"><span class="identifier">NetworkOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-overlay.html">Overlay</a></h4>
+</td>
+<td>
+<p>This domain provides various functionality related to drawing atop the inspected page.</p>
+<code><span class="keyword">val </span><span class="identifier">Overlay</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.overlay/-overlay-operations/index.html"><span class="identifier">OverlayOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-page.html">Page</a></h4>
+</td>
+<td>
+<p>Actions and events related to the inspected page belong to the page domain.</p>
+<code><span class="keyword">val </span><span class="identifier">Page</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.page/-page-operations/index.html"><span class="identifier">PageOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-performance.html">Performance</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.performance/-performance-operations/index.html">PerformanceOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/Performance">Performance</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">Performance</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.performance/-performance-operations/index.html"><span class="identifier">PerformanceOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-profiler.html">Profiler</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.profiler/-profiler-operations/index.html">ProfilerOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler">Profiler</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">Profiler</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.profiler/-profiler-operations/index.html"><span class="identifier">ProfilerOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-runtime.html">Runtime</a></h4>
+</td>
+<td>
+<p>Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects.
+Evaluation results are returned as mirror object that expose object type, string representation
+and unique identifier that can be used for further object reference. Original objects are
+maintained in memory unless they are either explicitly released or are released along with the
+other objects in their object group.</p>
+<code><span class="keyword">val </span><span class="identifier">Runtime</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-runtime-operations/index.html"><span class="identifier">RuntimeOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-schema.html">Schema</a></h4>
+</td>
+<td>
+<p>This domain is deprecated.</p>
+<code><span class="keyword">val </span><s><span class="identifier">Schema</span></s><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.schema/-schema-operations/index.html"><span class="identifier">SchemaOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-security.html">Security</a></h4>
+</td>
+<td>
+<p>Security</p>
+<code><span class="keyword">val </span><span class="identifier">Security</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.security/-security-operations/index.html"><span class="identifier">SecurityOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-service-worker.html">ServiceWorker</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.serviceworker/-service-worker-operations/index.html">ServiceWorkerOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker">ServiceWorker</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">ServiceWorker</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.serviceworker/-service-worker-operations/index.html"><span class="identifier">ServiceWorkerOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-storage.html">Storage</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.storage/-storage-operations/index.html">StorageOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage">Storage</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">Storage</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.storage/-storage-operations/index.html"><span class="identifier">StorageOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-system-info.html">SystemInfo</a></h4>
+</td>
+<td>
+<p>The SystemInfo domain defines methods and events for querying low-level system information.</p>
+<code><span class="keyword">val </span><span class="identifier">SystemInfo</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.systeminfo/-system-info-operations/index.html"><span class="identifier">SystemInfoOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-target.html">Target</a></h4>
+</td>
+<td>
+<p>Supports additional targets discovery and allows to attach to them.</p>
+<code><span class="keyword">val </span><span class="identifier">Target</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.target/-target-operations/index.html"><span class="identifier">TargetOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-tethering.html">Tethering</a></h4>
+</td>
+<td>
+<p>The Tethering domain defines methods and events for browser port binding.</p>
+<code><span class="keyword">val </span><span class="identifier">Tethering</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.tethering/-tethering-operations/index.html"><span class="identifier">TetheringOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-tracing.html">Tracing</a></h4>
+</td>
+<td>
+<p>Lazily returns <a href="../../pl.wendigo.chrome.api.tracing/-tracing-operations/index.html">TracingOperations</a> domain object allowing to perform operations on <a href="https://chromedevtools.github.io/devtools-protocol/tot/Tracing">Tracing</a> protocol domain.</p>
+<code><span class="keyword">val </span><span class="identifier">Tracing</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.tracing/-tracing-operations/index.html"><span class="identifier">TracingOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-audio.html">WebAudio</a></h4>
+</td>
+<td>
+<p>This domain allows inspection of Web Audio API.
+https://webaudio.github.io/web-audio-api/</p>
+<code><span class="keyword">val </span><span class="identifier">WebAudio</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.webaudio/-web-audio-operations/index.html"><span class="identifier">WebAudioOperations</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-web-authn.html">WebAuthn</a></h4>
+</td>
+<td>
+<p>This domain allows configuring virtual authenticators to test the WebAuthn
+API.</p>
+<code><span class="keyword">val </span><span class="identifier">WebAuthn</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.webauthn/-web-authn-operations/index.html"><span class="identifier">WebAuthnOperations</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="close.html">close</a></h4>
+</td>
+<td>
+<p>Closes target.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-events.html">Events</a></h4>
+</td>
+<td>
+<p>Returns <a href="#">Flowable</a> capturing all events.</p>
+<code><span class="keyword">fun </span><span class="identifier">Events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.targets/-target/index.html">Target</a></h4>
+</td>
+<td>
+<p>Represents browser <a href="-target.html">Target</a> that can be controlled via DevTools Protocol API</p>
+<code><span class="keyword">class </span><span class="identifier">Target</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DevToolsProtocol</span></a><span class="symbol">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html"><span class="identifier">AutoCloseable</span></a><span class="symbol">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

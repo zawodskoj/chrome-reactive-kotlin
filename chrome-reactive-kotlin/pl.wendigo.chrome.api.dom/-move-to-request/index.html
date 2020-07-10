@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MoveToRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.dom</a>&nbsp;/&nbsp;<a href="./index.html">MoveToRequest</a><br/>
+<br/>
+<h1>MoveToRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MoveToRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/dom/Operations.kt#L1025">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-moveTo">DOM#moveTo</a> operation call.</p>
+<p>Moves node into the new container, places it before the given anchor.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-moveTo">DOM#moveTo</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-d-o-m-operations/move-to.html">DOMOperations.moveTo</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-moveTo">DOM#moveTo</a> operation call.</p>
+<code><span class="identifier">MoveToRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.MoveToRequest$<init>(kotlin.Int, kotlin.Int, kotlin.Int)/nodeId">nodeId</span><span class="symbol">:</span>&nbsp;<a href="../-node-id.html"><span class="identifier">NodeId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.dom.MoveToRequest$<init>(kotlin.Int, kotlin.Int, kotlin.Int)/targetNodeId">targetNodeId</span><span class="symbol">:</span>&nbsp;<a href="../-node-id.html"><span class="identifier">NodeId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.dom.MoveToRequest$<init>(kotlin.Int, kotlin.Int, kotlin.Int)/insertBeforeNodeId">insertBeforeNodeId</span><span class="symbol">:</span>&nbsp;<a href="../-node-id.html"><span class="identifier">NodeId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="insert-before-node-id.html">insertBeforeNodeId</a></h4>
+</td>
+<td>
+<p>Drop node before this one (if absent, the moved node becomes the last child of
+<code>targetNodeId</code>).</p>
+<code><span class="keyword">val </span><span class="identifier">insertBeforeNodeId</span><span class="symbol">: </span><a href="../-node-id.html"><span class="identifier">NodeId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="node-id.html">nodeId</a></h4>
+</td>
+<td>
+<p>Id of the node to move.</p>
+<code><span class="keyword">val </span><span class="identifier">nodeId</span><span class="symbol">: </span><a href="../-node-id.html"><span class="identifier">NodeId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target-node-id.html">targetNodeId</a></h4>
+</td>
+<td>
+<p>Id of the element to drop the moved node into.</p>
+<code><span class="keyword">val </span><span class="identifier">targetNodeId</span><span class="symbol">: </span><a href="../-node-id.html"><span class="identifier">NodeId</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

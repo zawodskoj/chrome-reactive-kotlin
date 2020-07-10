@@ -1,0 +1,230 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.browser - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.browser</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.browser</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser">Browser</a> domain implementation accessible via <a href="-browser-operations/index.html">BrowserOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-bounds/index.html">Bounds</a></h4>
+</td>
+<td>
+<p>Browser window bounds information</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Bounds</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-browser-context-i-d.html">BrowserContextID</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">BrowserContextID</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-browser-operations/index.html">BrowserOperations</a></h4>
+</td>
+<td>
+<p>The Browser domain defines methods and events for browser managing.</p>
+<code><span class="keyword">class </span><span class="identifier">BrowserOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-bucket/index.html">Bucket</a></h4>
+</td>
+<td>
+<p>Chrome histogram bucket.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Bucket</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-browser-command-line-response/index.html">GetBrowserCommandLineResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getBrowserCommandLine">Browser#getBrowserCommandLine</a> operation call.
+Returns the command line switches for the browser process if, and only if
+--enable-automation is on the commandline.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetBrowserCommandLineResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-histogram-request/index.html">GetHistogramRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getHistogram">Browser#getHistogram</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetHistogramRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-histogram-response/index.html">GetHistogramResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getHistogram">Browser#getHistogram</a> operation call.
+Get a Chrome histogram by name.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetHistogramResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-histograms-request/index.html">GetHistogramsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getHistograms">Browser#getHistograms</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetHistogramsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-histograms-response/index.html">GetHistogramsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getHistograms">Browser#getHistograms</a> operation call.
+Get Chrome histograms.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetHistogramsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-version-response/index.html">GetVersionResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getVersion">Browser#getVersion</a> operation call.
+Returns version information.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetVersionResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-window-bounds-request/index.html">GetWindowBoundsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getWindowBounds">Browser#getWindowBounds</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetWindowBoundsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-window-bounds-response/index.html">GetWindowBoundsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getWindowBounds">Browser#getWindowBounds</a> operation call.
+Get position and size of the browser window.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetWindowBoundsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-window-for-target-request/index.html">GetWindowForTargetRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getWindowForTarget">Browser#getWindowForTarget</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetWindowForTargetRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-window-for-target-response/index.html">GetWindowForTargetResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getWindowForTarget">Browser#getWindowForTarget</a> operation call.
+Get the browser window that contains the devtools target.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetWindowForTargetResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-grant-permissions-request/index.html">GrantPermissionsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-grantPermissions">Browser#grantPermissions</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GrantPermissionsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-histogram/index.html">Histogram</a></h4>
+</td>
+<td>
+<p>Chrome histogram.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Histogram</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-permission-descriptor/index.html">PermissionDescriptor</a></h4>
+</td>
+<td>
+<p>Definition of PermissionDescriptor defined in the Permissions API:
+https://w3c.github.io/permissions/#dictdef-permissiondescriptor.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PermissionDescriptor</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-permission-setting/index.html">PermissionSetting</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">PermissionSetting</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-permission-type/index.html">PermissionType</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">PermissionType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-reset-permissions-request/index.html">ResetPermissionsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-resetPermissions">Browser#resetPermissions</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResetPermissionsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-dock-tile-request/index.html">SetDockTileRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-setDockTile">Browser#setDockTile</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetDockTileRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-download-behavior-request/index.html">SetDownloadBehaviorRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-setDownloadBehavior">Browser#setDownloadBehavior</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetDownloadBehaviorRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-permission-request/index.html">SetPermissionRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-setPermission">Browser#setPermission</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetPermissionRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-window-bounds-request/index.html">SetWindowBoundsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-setWindowBounds">Browser#setWindowBounds</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetWindowBoundsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-window-i-d.html">WindowID</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">WindowID</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-window-state/index.html">WindowState</a></h4>
+</td>
+<td>
+<p>The state of the browser window.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">WindowState</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

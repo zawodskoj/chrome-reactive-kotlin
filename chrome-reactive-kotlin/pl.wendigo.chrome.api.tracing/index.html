@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.tracing - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.tracing</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.tracing</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Tracing">Tracing</a> domain implementation accessible via <a href="-tracing-operations/index.html">TracingOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-buffer-usage-event/index.html">BufferUsageEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BufferUsageEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-data-collected-event/index.html">DataCollectedEvent</a></h4>
+</td>
+<td>
+<p>Contains an bucket of collected trace events. When tracing is stopped collected events will be
+send as a sequence of dataCollected events followed by tracingComplete event.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DataCollectedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-categories-response/index.html">GetCategoriesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#method-getCategories">Tracing#getCategories</a> operation call.
+Gets supported tracing categories.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetCategoriesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-memory-dump-config.html">MemoryDumpConfig</a></h4>
+</td>
+<td>
+<p>Configuration for memory dump. Used only when &amp;quot;memory-infra&amp;quot; category is enabled.</p>
+<code><span class="keyword">typealias </span><span class="identifier">MemoryDumpConfig</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-record-clock-sync-marker-request/index.html">RecordClockSyncMarkerRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#method-recordClockSyncMarker">Tracing#recordClockSyncMarker</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RecordClockSyncMarkerRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-memory-dump-request/index.html">RequestMemoryDumpRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#method-requestMemoryDump">Tracing#requestMemoryDump</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestMemoryDumpRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-memory-dump-response/index.html">RequestMemoryDumpResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#method-requestMemoryDump">Tracing#requestMemoryDump</a> operation call.
+Request a global memory dump.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestMemoryDumpResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-start-request/index.html">StartRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#method-start">Tracing#start</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StartRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-stream-compression/index.html">StreamCompression</a></h4>
+</td>
+<td>
+<p>Compression type to use for traces returned via streams.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">StreamCompression</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-stream-format/index.html">StreamFormat</a></h4>
+</td>
+<td>
+<p>Data format of a trace. Can be either the legacy JSON format or the
+protocol buffer format. Note that the JSON format will be deprecated soon.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">StreamFormat</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-trace-config/index.html">TraceConfig</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TraceConfig</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-tracing-complete-event/index.html">TracingCompleteEvent</a></h4>
+</td>
+<td>
+<p>Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+delivered via dataCollected events.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TracingCompleteEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-tracing-operations/index.html">TracingOperations</a></h4>
+</td>
+<td>
+<p>TracingOperations represents Tracing protocol domain request/response operations and events that can be captured.</p>
+<code><span class="keyword">class </span><span class="identifier">TracingOperations</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

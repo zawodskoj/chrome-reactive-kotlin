@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LayerTreeOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.layertree</a>&nbsp;/&nbsp;<a href="./index.html">LayerTreeOperations</a><br/>
+<br/>
+<h1>LayerTreeOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">LayerTreeOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/layertree/Operations.kt#L10">(source)</a>
+<p>LayerTreeOperations represents LayerTree protocol domain request/response operations and events that can be captured.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree">LayerTree</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="compositing-reasons.html">compositingReasons</a></h4>
+</td>
+<td>
+<p>Provides the reasons why the given layer was composited.</p>
+<code><span class="keyword">fun </span><span class="identifier">compositingReasons</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.layertree.LayerTreeOperations$compositingReasons(pl.wendigo.chrome.api.layertree.CompositingReasonsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-compositing-reasons-request/index.html"><span class="identifier">CompositingReasonsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-compositing-reasons-response/index.html"><span class="identifier">CompositingReasonsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables compositing tree inspection.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables compositing tree inspection.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all LayerTree domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="layer-painted.html">layerPainted</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all LayerTree.layerPainted events.</p>
+<code><span class="keyword">fun </span><span class="identifier">layerPainted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-layer-painted-event/index.html"><span class="identifier">LayerPaintedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="layer-tree-did-change.html">layerTreeDidChange</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all LayerTree.layerTreeDidChange events.</p>
+<code><span class="keyword">fun </span><span class="identifier">layerTreeDidChange</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-layer-tree-did-change-event/index.html"><span class="identifier">LayerTreeDidChangeEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load-snapshot.html">loadSnapshot</a></h4>
+</td>
+<td>
+<p>Returns the snapshot identifier.</p>
+<code><span class="keyword">fun </span><span class="identifier">loadSnapshot</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.layertree.LayerTreeOperations$loadSnapshot(pl.wendigo.chrome.api.layertree.LoadSnapshotRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-load-snapshot-request/index.html"><span class="identifier">LoadSnapshotRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-load-snapshot-response/index.html"><span class="identifier">LoadSnapshotResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="make-snapshot.html">makeSnapshot</a></h4>
+</td>
+<td>
+<p>Returns the layer snapshot identifier.</p>
+<code><span class="keyword">fun </span><span class="identifier">makeSnapshot</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.layertree.LayerTreeOperations$makeSnapshot(pl.wendigo.chrome.api.layertree.MakeSnapshotRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-make-snapshot-request/index.html"><span class="identifier">MakeSnapshotRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-make-snapshot-response/index.html"><span class="identifier">MakeSnapshotResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="profile-snapshot.html">profileSnapshot</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">profileSnapshot</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.layertree.LayerTreeOperations$profileSnapshot(pl.wendigo.chrome.api.layertree.ProfileSnapshotRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-profile-snapshot-request/index.html"><span class="identifier">ProfileSnapshotRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-profile-snapshot-response/index.html"><span class="identifier">ProfileSnapshotResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="release-snapshot.html">releaseSnapshot</a></h4>
+</td>
+<td>
+<p>Releases layer snapshot captured by the back-end.</p>
+<code><span class="keyword">fun </span><span class="identifier">releaseSnapshot</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.layertree.LayerTreeOperations$releaseSnapshot(pl.wendigo.chrome.api.layertree.ReleaseSnapshotRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-release-snapshot-request/index.html"><span class="identifier">ReleaseSnapshotRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="replay-snapshot.html">replaySnapshot</a></h4>
+</td>
+<td>
+<p>Replays the layer snapshot and returns the resulting bitmap.</p>
+<code><span class="keyword">fun </span><span class="identifier">replaySnapshot</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.layertree.LayerTreeOperations$replaySnapshot(pl.wendigo.chrome.api.layertree.ReplaySnapshotRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-replay-snapshot-request/index.html"><span class="identifier">ReplaySnapshotRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-replay-snapshot-response/index.html"><span class="identifier">ReplaySnapshotResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="snapshot-command-log.html">snapshotCommandLog</a></h4>
+</td>
+<td>
+<p>Replays the layer snapshot and returns canvas log.</p>
+<code><span class="keyword">fun </span><span class="identifier">snapshotCommandLog</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.layertree.LayerTreeOperations$snapshotCommandLog(pl.wendigo.chrome.api.layertree.SnapshotCommandLogRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-snapshot-command-log-request/index.html"><span class="identifier">SnapshotCommandLogRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-snapshot-command-log-response/index.html"><span class="identifier">SnapshotCommandLogResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

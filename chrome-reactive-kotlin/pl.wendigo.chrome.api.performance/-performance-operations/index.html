@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PerformanceOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.performance</a>&nbsp;/&nbsp;<a href="./index.html">PerformanceOperations</a><br/>
+<br/>
+<h1>PerformanceOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">PerformanceOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/performance/Operations.kt#L8">(source)</a>
+<p>PerformanceOperations represents Performance protocol domain request/response operations and events that can be captured.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Performance">Performance</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disable collecting and reporting metrics.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enable collecting and reporting metrics.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.performance.PerformanceOperations$enable(pl.wendigo.chrome.api.performance.EnableRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-enable-request/index.html"><span class="identifier">EnableRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Performance domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-metrics.html">getMetrics</a></h4>
+</td>
+<td>
+<p>Retrieve current values of run-time metrics.</p>
+<code><span class="keyword">fun </span><span class="identifier">getMetrics</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-metrics-response/index.html"><span class="identifier">GetMetricsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="metrics.html">metrics</a></h4>
+</td>
+<td>
+<p>Current values of the metrics.</p>
+<code><span class="keyword">fun </span><span class="identifier">metrics</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-metrics-event/index.html"><span class="identifier">MetricsEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-time-domain.html">setTimeDomain</a></h4>
+</td>
+<td>
+<p>Sets time domain to use for collecting and reporting duration metrics.
+Note that this must be called before enabling metrics collection. Calling
+this method while metrics collection is enabled returns an error.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">setTimeDomain</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.performance.PerformanceOperations$setTimeDomain(pl.wendigo.chrome.api.performance.SetTimeDomainRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-time-domain-request/index.html"><span class="identifier">SetTimeDomainRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

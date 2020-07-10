@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.protocol - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.protocol</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.protocol</h2>
+<p>Contains DevTools protocol primitives (<a href="-debugger-frames-stream/index.html">DebuggerFramesStream</a>, <a href="-request-frame/index.html">RequestFrame</a>/<a href="-response-frame/index.html">ResponseFrame</a> and <a href="-event/index.html">Event</a> base classes).</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-chrome-debugger-connection/index.html">ChromeDebuggerConnection</a></h4>
+</td>
+<td>
+<p>ChromeDebuggerConnection represents connection to chrome's debugger via <a href="https://chromedevtools.github.io/devtools-protocol/">DevTools Protocol</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">ChromeDebuggerConnection</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-debugger-frames-stream/index.html">DebuggerFramesStream</a></h4>
+</td>
+<td>
+<p>DebuggerFramesStream represents connection to remote websocket endpoint of the DevTools Protocol
+(either inspectable page debugger url http://localhost:9222/json or browser debugger url http://localhost:9222/json/version)</p>
+<code><span class="keyword">class </span><span class="identifier">DebuggerFramesStream</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">WebSocketListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-event/index.html">Event</a></h4>
+</td>
+<td>
+<p>Debugger event represents generic protocol event consisting of domain and event names.
+This class is also supertype of all parameterized events.</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Event</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-event-mapper/index.html">EventMapper</a></h4>
+</td>
+<td>
+<p>EventMapper is responsible for mapping events carried by <a href="-response-frame/index.html">ResponseFrame</a> to typed events representations.</p>
+<code><span class="keyword">class </span><span class="identifier">EventMapper</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-frame-mapper/index.html">FrameMapper</a></h4>
+</td>
+<td>
+<p>FrameMapper is responsible for (de)serializing frames exchanged via Chrome's <a href="https://chromedevtools.github.io/devtools-protocol/">DevTool Protocol</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">FrameMapper</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-error/index.html">RequestError</a></h4>
+</td>
+<td>
+<p>Represents protocol error.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestError</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-frame/index.html">RequestFrame</a></h4>
+</td>
+<td>
+<p>Represents request frame.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestFrame</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-response-frame/index.html">ResponseFrame</a></h4>
+</td>
+<td>
+<p>Represents generic protocol response.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResponseFrame</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Annotations</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-experimental/index.html">Experimental</a></h4>
+</td>
+<td>
+<p>This annotation is used on DevTools Protocol APIs and types that are marked as experimental.</p>
+<code><span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">Experimental</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Exceptions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-deserialization-failed/index.html">DeserializationFailed</a></h4>
+</td>
+<td>
+<p>Frame deserialization failed on object mapper.</p>
+<code><span class="keyword">class </span><span class="identifier">DeserializationFailed</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html"><span class="identifier">Exception</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-inspector-command-failed/index.html">InspectorCommandFailed</a></h4>
+</td>
+<td>
+<p>Inspector command has failed.</p>
+<code><span class="keyword">class </span><span class="identifier">InspectorCommandFailed</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html"><span class="identifier">Exception</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-failed/index.html">RequestFailed</a></h4>
+</td>
+<td>
+<p>Protocol request has failed.</p>
+<code><span class="keyword">class </span><span class="identifier">RequestFailed</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html"><span class="identifier">Exception</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-serialization-failed/index.html">SerializationFailed</a></h4>
+</td>
+<td>
+<p>Frame serialization failed on object mapper.</p>
+<code><span class="keyword">class </span><span class="identifier">SerializationFailed</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html"><span class="identifier">Exception</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

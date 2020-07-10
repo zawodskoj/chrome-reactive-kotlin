@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GetNodeForLocationRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.dom</a>&nbsp;/&nbsp;<a href="./index.html">GetNodeForLocationRequest</a><br/>
+<br/>
+<h1>GetNodeForLocationRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetNodeForLocationRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/dom/Operations.kt#L857">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getNodeForLocation">DOM#getNodeForLocation</a> operation call.</p>
+<p>Returns node id at given location. Depending on whether DOM domain is enabled, nodeId is
+either returned or not.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getNodeForLocation">DOM#getNodeForLocation</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-d-o-m-operations/get-node-for-location.html">DOMOperations.getNodeForLocation</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getNodeForLocation">DOM#getNodeForLocation</a> operation call.</p>
+<code><span class="identifier">GetNodeForLocationRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.GetNodeForLocationRequest$<init>(kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.dom.GetNodeForLocationRequest$<init>(kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.dom.GetNodeForLocationRequest$<init>(kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean)/includeUserAgentShadowDOM">includeUserAgentShadowDOM</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.dom.GetNodeForLocationRequest$<init>(kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean)/ignorePointerEventsNone">ignorePointerEventsNone</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="ignore-pointer-events-none.html">ignorePointerEventsNone</a></h4>
+</td>
+<td>
+<p>Whether to ignore pointer-events: none on elements and hit test them.</p>
+<code><span class="keyword">val </span><span class="identifier">ignorePointerEventsNone</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="include-user-agent-shadow-d-o-m.html">includeUserAgentShadowDOM</a></h4>
+</td>
+<td>
+<p>False to skip to the nearest non-UA shadow root ancestor (default: false).</p>
+<code><span class="keyword">val </span><span class="identifier">includeUserAgentShadowDOM</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="x.html">x</a></h4>
+</td>
+<td>
+<p>X coordinate.</p>
+<code><span class="keyword">val </span><span class="identifier">x</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="y.html">y</a></h4>
+</td>
+<td>
+<p>Y coordinate.</p>
+<code><span class="keyword">val </span><span class="identifier">y</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

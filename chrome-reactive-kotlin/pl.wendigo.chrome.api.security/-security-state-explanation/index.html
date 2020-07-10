@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SecurityStateExplanation - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.security</a>&nbsp;/&nbsp;<a href="./index.html">SecurityStateExplanation</a><br/>
+<br/>
+<h1>SecurityStateExplanation</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SecurityStateExplanation</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/security/Types.kt#L208">(source)</a>
+<p>An explanation of an factor contributing to the security state.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Security#type-SecurityStateExplanation">Security#SecurityStateExplanation</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>An explanation of an factor contributing to the security state.</p>
+<code><span class="identifier">SecurityStateExplanation</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateExplanation$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.MixedContentType, kotlin.collections.List((kotlin.String)), kotlin.collections.List((kotlin.String)))/securityState">securityState</span><span class="symbol">:</span>&nbsp;<a href="../-security-state/index.html"><span class="identifier">SecurityState</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateExplanation$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.MixedContentType, kotlin.collections.List((kotlin.String)), kotlin.collections.List((kotlin.String)))/title">title</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateExplanation$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.MixedContentType, kotlin.collections.List((kotlin.String)), kotlin.collections.List((kotlin.String)))/summary">summary</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateExplanation$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.MixedContentType, kotlin.collections.List((kotlin.String)), kotlin.collections.List((kotlin.String)))/description">description</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateExplanation$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.MixedContentType, kotlin.collections.List((kotlin.String)), kotlin.collections.List((kotlin.String)))/mixedContentType">mixedContentType</span><span class="symbol">:</span>&nbsp;<a href="../-mixed-content-type/index.html"><span class="identifier">MixedContentType</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateExplanation$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.MixedContentType, kotlin.collections.List((kotlin.String)), kotlin.collections.List((kotlin.String)))/certificate">certificate</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateExplanation$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.String, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.MixedContentType, kotlin.collections.List((kotlin.String)), kotlin.collections.List((kotlin.String)))/recommendations">recommendations</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="certificate.html">certificate</a></h4>
+</td>
+<td>
+<p>Page certificate.</p>
+<code><span class="keyword">val </span><span class="identifier">certificate</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="description.html">description</a></h4>
+</td>
+<td>
+<p>Full text explanation of the factor.</p>
+<code><span class="keyword">val </span><span class="identifier">description</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="mixed-content-type.html">mixedContentType</a></h4>
+</td>
+<td>
+<p>The type of mixed content described by the explanation.</p>
+<code><span class="keyword">val </span><span class="identifier">mixedContentType</span><span class="symbol">: </span><a href="../-mixed-content-type/index.html"><span class="identifier">MixedContentType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="recommendations.html">recommendations</a></h4>
+</td>
+<td>
+<p>Recommendations to fix any issues.</p>
+<code><span class="keyword">val </span><span class="identifier">recommendations</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="security-state.html">securityState</a></h4>
+</td>
+<td>
+<p>Security state representing the severity of the factor being explained.</p>
+<code><span class="keyword">val </span><span class="identifier">securityState</span><span class="symbol">: </span><a href="../-security-state/index.html"><span class="identifier">SecurityState</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="summary.html">summary</a></h4>
+</td>
+<td>
+<p>Short phrase describing the type of factor.</p>
+<code><span class="keyword">val </span><span class="identifier">summary</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="title.html">title</a></h4>
+</td>
+<td>
+<p>Title describing the type of factor.</p>
+<code><span class="keyword">val </span><span class="identifier">title</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

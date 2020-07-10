@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EnableResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">EnableResponse</a><br/>
+<br/>
+<h1>EnableResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EnableResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L337">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-enable">Debugger#enable</a> operation call.
+Enables debugger for the given page. Clients should not assume that the debugging has been
+enabled until the result for this command is received.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-enable">Debugger#enable</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-debugger-operations/enable.html">DebuggerOperations.enable</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-enable">Debugger#enable</a> operation call.
+Enables debugger for the given page. Clients should not assume that the debugging has been
+enabled until the result for this command is received.</p>
+<code><span class="identifier">EnableResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.EnableResponse$<init>(kotlin.String)/debuggerId">debuggerId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-unique-debugger-id.html"><span class="identifier">UniqueDebuggerId</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="debugger-id.html">debuggerId</a></h4>
+</td>
+<td>
+<p>Unique identifier of the debugger.</p>
+<code><span class="keyword">val </span><span class="identifier">debuggerId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-unique-debugger-id.html"><span class="identifier">UniqueDebuggerId</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

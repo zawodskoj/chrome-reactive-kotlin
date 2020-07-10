@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BlockedSetCookieWithReason - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">BlockedSetCookieWithReason</a><br/>
+<br/>
+<h1>BlockedSetCookieWithReason</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BlockedSetCookieWithReason</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Types.kt#L926">(source)</a>
+<p>A cookie which was not stored from a response with the corresponding reason.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#type-BlockedSetCookieWithReason">Network#BlockedSetCookieWithReason</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>A cookie which was not stored from a response with the corresponding reason.</p>
+<code><span class="identifier">BlockedSetCookieWithReason</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.BlockedSetCookieWithReason$<init>(kotlin.collections.List((pl.wendigo.chrome.api.network.SetCookieBlockedReason)), kotlin.String, pl.wendigo.chrome.api.network.Cookie)/blockedReasons">blockedReasons</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-set-cookie-blocked-reason/index.html"><span class="identifier">SetCookieBlockedReason</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.BlockedSetCookieWithReason$<init>(kotlin.collections.List((pl.wendigo.chrome.api.network.SetCookieBlockedReason)), kotlin.String, pl.wendigo.chrome.api.network.Cookie)/cookieLine">cookieLine</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.BlockedSetCookieWithReason$<init>(kotlin.collections.List((pl.wendigo.chrome.api.network.SetCookieBlockedReason)), kotlin.String, pl.wendigo.chrome.api.network.Cookie)/cookie">cookie</span><span class="symbol">:</span>&nbsp;<a href="../-cookie/index.html"><span class="identifier">Cookie</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="blocked-reasons.html">blockedReasons</a></h4>
+</td>
+<td>
+<p>The reason(s) this cookie was blocked.</p>
+<code><span class="keyword">val </span><span class="identifier">blockedReasons</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-set-cookie-blocked-reason/index.html"><span class="identifier">SetCookieBlockedReason</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cookie.html">cookie</a></h4>
+</td>
+<td>
+<p>The cookie object which represents the cookie which was not stored. It is optional because
+sometimes complete cookie information is not available, such as in the case of parsing
+errors.</p>
+<code><span class="keyword">val </span><span class="identifier">cookie</span><span class="symbol">: </span><a href="../-cookie/index.html"><span class="identifier">Cookie</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cookie-line.html">cookieLine</a></h4>
+</td>
+<td>
+<p>The string representing this individual cookie as it would appear in the header.
+This is not the entire "cookie" or "set-cookie" header which could have multiple cookies.</p>
+<code><span class="keyword">val </span><span class="identifier">cookieLine</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

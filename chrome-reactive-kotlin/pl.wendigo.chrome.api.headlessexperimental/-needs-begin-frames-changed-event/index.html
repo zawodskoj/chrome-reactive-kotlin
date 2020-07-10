@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NeedsBeginFramesChangedEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.headlessexperimental</a>&nbsp;/&nbsp;<a href="./index.html">NeedsBeginFramesChangedEvent</a><br/>
+<br/>
+<h1>NeedsBeginFramesChangedEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NeedsBeginFramesChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/headlessexperimental/Operations.kt#L121">(source)</a>
+<p>Issued when the target starts or stops needing BeginFrames.
+Deprecated. Issue beginFrame unconditionally instead and use result from
+beginFrame to detect whether the frames were suppressed.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/HeadlessExperimental#event-needsBeginFramesChanged">HeadlessExperimental#needsBeginFramesChanged</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Issued when the target starts or stops needing BeginFrames.
+Deprecated. Issue beginFrame unconditionally instead and use result from
+beginFrame to detect whether the frames were suppressed.</p>
+<code><span class="identifier">NeedsBeginFramesChangedEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.headlessexperimental.NeedsBeginFramesChangedEvent$<init>(kotlin.Boolean)/needsBeginFrames">needsBeginFrames</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="needs-begin-frames.html">needsBeginFrames</a></h4>
+</td>
+<td>
+<p>True if BeginFrames are needed, false otherwise.</p>
+<code><span class="keyword">val </span><span class="identifier">needsBeginFrames</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.headlessexperimental - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.headlessexperimental</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.headlessexperimental</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeadlessExperimental">HeadlessExperimental</a> domain implementation accessible via <a href="-headless-experimental-operations/index.html">HeadlessExperimentalOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-begin-frame-request/index.html">BeginFrameRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeadlessExperimental#method-beginFrame">HeadlessExperimental#beginFrame</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BeginFrameRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-begin-frame-response/index.html">BeginFrameResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeadlessExperimental#method-beginFrame">HeadlessExperimental#beginFrame</a> operation call.
+Sends a BeginFrame to the target and returns when the frame was completed. Optionally captures a
+screenshot from the resulting frame. Requires that the target was created with enabled
+BeginFrameControl. Designed for use with --run-all-compositor-stages-before-draw, see also
+https://goo.gl/3zHXhB for more background.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BeginFrameResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-headless-experimental-operations/index.html">HeadlessExperimentalOperations</a></h4>
+</td>
+<td>
+<p>This domain provides experimental commands only supported in headless mode.</p>
+<code><span class="keyword">class </span><span class="identifier">HeadlessExperimentalOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-needs-begin-frames-changed-event/index.html">NeedsBeginFramesChangedEvent</a></h4>
+</td>
+<td>
+<p>Issued when the target starts or stops needing BeginFrames.
+Deprecated. Issue beginFrame unconditionally instead and use result from
+beginFrame to detect whether the frames were suppressed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NeedsBeginFramesChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-screenshot-params/index.html">ScreenshotParams</a></h4>
+</td>
+<td>
+<p>Encoding options for a screenshot.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScreenshotParams</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ProfileNode - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.profiler</a>&nbsp;/&nbsp;<a href="./index.html">ProfileNode</a><br/>
+<br/>
+<h1>ProfileNode</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ProfileNode</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/profiler/Types.kt#L9">(source)</a>
+<p>Profile node. Holds callsite information, execution statistics and child nodes.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#type-ProfileNode">Profiler#ProfileNode</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Profile node. Holds callsite information, execution statistics and child nodes.</p>
+<code><span class="identifier">ProfileNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.profiler.ProfileNode$<init>(kotlin.Int, pl.wendigo.chrome.api.runtime.CallFrame, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.PositionTickInfo)))/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.ProfileNode$<init>(kotlin.Int, pl.wendigo.chrome.api.runtime.CallFrame, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.PositionTickInfo)))/callFrame">callFrame</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-call-frame/index.html"><span class="identifier">CallFrame</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.ProfileNode$<init>(kotlin.Int, pl.wendigo.chrome.api.runtime.CallFrame, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.PositionTickInfo)))/hitCount">hitCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.ProfileNode$<init>(kotlin.Int, pl.wendigo.chrome.api.runtime.CallFrame, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.PositionTickInfo)))/children">children</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.ProfileNode$<init>(kotlin.Int, pl.wendigo.chrome.api.runtime.CallFrame, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.PositionTickInfo)))/deoptReason">deoptReason</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.ProfileNode$<init>(kotlin.Int, pl.wendigo.chrome.api.runtime.CallFrame, kotlin.Int, kotlin.collections.List((kotlin.Int)), kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.PositionTickInfo)))/positionTicks">positionTicks</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-position-tick-info/index.html"><span class="identifier">PositionTickInfo</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="call-frame.html">callFrame</a></h4>
+</td>
+<td>
+<p>Function location.</p>
+<code><span class="keyword">val </span><span class="identifier">callFrame</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-call-frame/index.html"><span class="identifier">CallFrame</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="children.html">children</a></h4>
+</td>
+<td>
+<p>Child node ids.</p>
+<code><span class="keyword">val </span><span class="identifier">children</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="deopt-reason.html">deoptReason</a></h4>
+</td>
+<td>
+<p>The reason of being not optimized. The function may be deoptimized or marked as don't
+optimize.</p>
+<code><span class="keyword">val </span><span class="identifier">deoptReason</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hit-count.html">hitCount</a></h4>
+</td>
+<td>
+<p>Number of samples where this node was on top of the call stack.</p>
+<code><span class="keyword">val </span><span class="identifier">hitCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="id.html">id</a></h4>
+</td>
+<td>
+<p>Unique id of the node.</p>
+<code><span class="keyword">val </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="position-ticks.html">positionTicks</a></h4>
+</td>
+<td>
+<p>An array of source position ticks.</p>
+<code><span class="keyword">val </span><span class="identifier">positionTicks</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-position-tick-info/index.html"><span class="identifier">PositionTickInfo</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

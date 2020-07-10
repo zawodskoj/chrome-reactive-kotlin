@@ -1,0 +1,205 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.profiler - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.profiler</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.profiler</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler">Profiler</a> domain implementation accessible via <a href="-profiler-operations/index.html">ProfilerOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-console-profile-finished-event/index.html">ConsoleProfileFinishedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ConsoleProfileFinishedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-console-profile-started-event/index.html">ConsoleProfileStartedEvent</a></h4>
+</td>
+<td>
+<p>Sent when new profile recording is started using console.profile() call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ConsoleProfileStartedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-counter-info/index.html">CounterInfo</a></h4>
+</td>
+<td>
+<p>Collected counter information.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CounterInfo</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-coverage-range/index.html">CoverageRange</a></h4>
+</td>
+<td>
+<p>Coverage data for a source range.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CoverageRange</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-function-coverage/index.html">FunctionCoverage</a></h4>
+</td>
+<td>
+<p>Coverage data for a JavaScript function.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FunctionCoverage</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-best-effort-coverage-response/index.html">GetBestEffortCoverageResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-getBestEffortCoverage">Profiler#getBestEffortCoverage</a> operation call.
+Collect coverage data for the current isolate. The coverage data may be incomplete due to
+garbage collection.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetBestEffortCoverageResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-runtime-call-stats-response/index.html">GetRuntimeCallStatsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-getRuntimeCallStats">Profiler#getRuntimeCallStats</a> operation call.
+Retrieve run time call stats.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetRuntimeCallStatsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-position-tick-info/index.html">PositionTickInfo</a></h4>
+</td>
+<td>
+<p>Specifies a number of samples attributed to a certain source position.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PositionTickInfo</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-precise-coverage-delta-update-event/index.html">PreciseCoverageDeltaUpdateEvent</a></h4>
+</td>
+<td>
+<p>Reports coverage delta since the last poll (either from an event like this, or from
+<code>takePreciseCoverage</code> for the current isolate. May only be sent if precise code
+coverage has been started. This event can be trigged by the embedder to, for example,
+trigger collection of coverage data immediatelly at a certain point in time.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PreciseCoverageDeltaUpdateEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-profile/index.html">Profile</a></h4>
+</td>
+<td>
+<p>Profile.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Profile</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-profile-node/index.html">ProfileNode</a></h4>
+</td>
+<td>
+<p>Profile node. Holds callsite information, execution statistics and child nodes.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ProfileNode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-profiler-operations/index.html">ProfilerOperations</a></h4>
+</td>
+<td>
+<p>ProfilerOperations represents Profiler protocol domain request/response operations and events that can be captured.</p>
+<code><span class="keyword">class </span><span class="identifier">ProfilerOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-script-coverage/index.html">ScriptCoverage</a></h4>
+</td>
+<td>
+<p>Coverage data for a JavaScript script.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScriptCoverage</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-script-type-profile/index.html">ScriptTypeProfile</a></h4>
+</td>
+<td>
+<p>Type profile data collected during runtime for a JavaScript script.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScriptTypeProfile</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-sampling-interval-request/index.html">SetSamplingIntervalRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-setSamplingInterval">Profiler#setSamplingInterval</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetSamplingIntervalRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-start-precise-coverage-request/index.html">StartPreciseCoverageRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-startPreciseCoverage">Profiler#startPreciseCoverage</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StartPreciseCoverageRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-start-precise-coverage-response/index.html">StartPreciseCoverageResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-startPreciseCoverage">Profiler#startPreciseCoverage</a> operation call.
+Enable precise code coverage. Coverage data for JavaScript executed before enabling precise code
+coverage may be incomplete. Enabling prevents running optimized code and resets execution
+counters.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StartPreciseCoverageResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-stop-response/index.html">StopResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-stop">Profiler#stop</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StopResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-take-precise-coverage-response/index.html">TakePreciseCoverageResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-takePreciseCoverage">Profiler#takePreciseCoverage</a> operation call.
+Collect coverage data for the current isolate, and resets execution counters. Precise code
+coverage needs to have started.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TakePreciseCoverageResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-take-type-profile-response/index.html">TakeTypeProfileResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-takeTypeProfile">Profiler#takeTypeProfile</a> operation call.
+Collect type profile.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TakeTypeProfileResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-type-object/index.html">TypeObject</a></h4>
+</td>
+<td>
+<p>Describes a type collected during runtime.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TypeObject</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-type-profile-entry/index.html">TypeProfileEntry</a></h4>
+</td>
+<td>
+<p>Source offset and types for a parameter or return value.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TypeProfileEntry</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

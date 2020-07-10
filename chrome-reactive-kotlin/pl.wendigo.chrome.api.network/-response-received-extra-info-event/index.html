@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ResponseReceivedExtraInfoEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">ResponseReceivedExtraInfoEvent</a><br/>
+<br/>
+<h1>ResponseReceivedExtraInfoEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResponseReceivedExtraInfoEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L1605">(source)</a>
+<p>Fired when additional information about a responseReceived event is available from the network
+stack. Not every responseReceived event will have an additional responseReceivedExtraInfo for
+it, and responseReceivedExtraInfo may be fired before or after responseReceived.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#event-responseReceivedExtraInfo">Network#responseReceivedExtraInfo</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when additional information about a responseReceived event is available from the network
+stack. Not every responseReceived event will have an additional responseReceivedExtraInfo for
+it, and responseReceivedExtraInfo may be fired before or after responseReceived.</p>
+<code><span class="identifier">ResponseReceivedExtraInfoEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.ResponseReceivedExtraInfoEvent$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.network.BlockedSetCookieWithReason)), kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String)/requestId">requestId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ResponseReceivedExtraInfoEvent$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.network.BlockedSetCookieWithReason)), kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String)/blockedCookies">blockedCookies</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-blocked-set-cookie-with-reason/index.html"><span class="identifier">BlockedSetCookieWithReason</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ResponseReceivedExtraInfoEvent$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.network.BlockedSetCookieWithReason)), kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String)/headers">headers</span><span class="symbol">:</span>&nbsp;<a href="../-headers.html"><span class="identifier">Headers</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ResponseReceivedExtraInfoEvent$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.network.BlockedSetCookieWithReason)), kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String)/headersText">headersText</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="blocked-cookies.html">blockedCookies</a></h4>
+</td>
+<td>
+<p>A list of cookies which were not stored from the response along with the corresponding
+reasons for blocking. The cookies here may not be valid due to syntax errors, which
+are represented by the invalid cookie line string instead of a proper cookie.</p>
+<code><span class="keyword">val </span><span class="identifier">blockedCookies</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-blocked-set-cookie-with-reason/index.html"><span class="identifier">BlockedSetCookieWithReason</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="headers.html">headers</a></h4>
+</td>
+<td>
+<p>Raw response headers as they were received over the wire.</p>
+<code><span class="keyword">val </span><span class="identifier">headers</span><span class="symbol">: </span><a href="../-headers.html"><span class="identifier">Headers</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="headers-text.html">headersText</a></h4>
+</td>
+<td>
+<p>Raw response header text as it was received over the wire. The raw text may not always be
+available, such as in the case of HTTP/2 or QUIC.</p>
+<code><span class="keyword">val </span><span class="identifier">headersText</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<p>Request identifier. Used to match this information to another responseReceived event.</p>
+<code><span class="keyword">val </span><span class="identifier">requestId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

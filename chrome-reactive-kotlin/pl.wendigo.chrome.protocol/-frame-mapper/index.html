@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FrameMapper - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.protocol</a>&nbsp;/&nbsp;<a href="./index.html">FrameMapper</a><br/>
+<br/>
+<h1>FrameMapper</h1>
+<code><span class="keyword">class </span><span class="identifier">FrameMapper</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/protocol/FrameMapper.kt#L11">(source)</a>
+<p>FrameMapper is responsible for (de)serializing frames exchanged via Chrome's <a href="https://chromedevtools.github.io/devtools-protocol/">DevTool Protocol</a>.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>FrameMapper is responsible for (de)serializing frames exchanged via Chrome's <a href="https://chromedevtools.github.io/devtools-protocol/">DevTool Protocol</a>.</p>
+<code><span class="identifier">FrameMapper</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.FrameMapper$<init>(com.fasterxml.jackson.databind.ObjectMapper)/mapper">mapper</span><span class="symbol">:</span>&nbsp;<span class="identifier">ObjectMapper</span>&nbsp;<span class="symbol">=</span>&nbsp;DEFAULT_MAPPER<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="deserialize.html">deserialize</a></h4>
+</td>
+<td>
+<p>Deserialize provided text to clazz.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">deserialize</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.FrameMapper$deserialize(kotlin.String, java.lang.Class((pl.wendigo.chrome.protocol.FrameMapper.deserialize.T)))/text">text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.FrameMapper$deserialize(kotlin.String, java.lang.Class((pl.wendigo.chrome.protocol.FrameMapper.deserialize.T)))/clazz">clazz</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="deserialize-response.html">deserializeResponse</a></h4>
+</td>
+<td>
+<p>Deserialize response frame as clazz</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">deserializeResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.FrameMapper$deserializeResponse(pl.wendigo.chrome.protocol.RequestFrame, pl.wendigo.chrome.protocol.ResponseFrame, java.lang.Class((pl.wendigo.chrome.protocol.FrameMapper.deserializeResponse.T)))/requestFrame">requestFrame</span><span class="symbol">:</span>&nbsp;<a href="../-request-frame/index.html"><span class="identifier">RequestFrame</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.FrameMapper$deserializeResponse(pl.wendigo.chrome.protocol.RequestFrame, pl.wendigo.chrome.protocol.ResponseFrame, java.lang.Class((pl.wendigo.chrome.protocol.FrameMapper.deserializeResponse.T)))/responseFrame">responseFrame</span><span class="symbol">:</span>&nbsp;<a href="../-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.FrameMapper$deserializeResponse(pl.wendigo.chrome.protocol.RequestFrame, pl.wendigo.chrome.protocol.ResponseFrame, java.lang.Class((pl.wendigo.chrome.protocol.FrameMapper.deserializeResponse.T)))/clazz">clazz</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="serialize.html">serialize</a></h4>
+</td>
+<td>
+<p>Serializes request frame using internal object mapper</p>
+<code><span class="keyword">fun </span><span class="identifier">serialize</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.FrameMapper$serialize(pl.wendigo.chrome.protocol.RequestFrame)/requestFrame">requestFrame</span><span class="symbol">:</span>&nbsp;<a href="../-request-frame/index.html"><span class="identifier">RequestFrame</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

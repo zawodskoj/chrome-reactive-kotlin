@@ -1,0 +1,218 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Response - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">Response</a><br/>
+<br/>
+<h1>Response</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Response</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Types.kt#L549">(source)</a>
+<p>HTTP response data.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#type-Response">Network#Response</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>HTTP response data.</p>
+<code><span class="identifier">Response</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/status">status</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/statusText">statusText</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/headers">headers</span><span class="symbol">:</span>&nbsp;<a href="../-headers.html"><span class="identifier">Headers</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/headersText">headersText</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/mimeType">mimeType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/requestHeaders">requestHeaders</span><span class="symbol">:</span>&nbsp;<a href="../-headers.html"><span class="identifier">Headers</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/requestHeadersText">requestHeadersText</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/connectionReused">connectionReused</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/connectionId">connectionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/remoteIPAddress">remoteIPAddress</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/remotePort">remotePort</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/fromDiskCache">fromDiskCache</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/fromServiceWorker">fromServiceWorker</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/fromPrefetchCache">fromPrefetchCache</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/encodedDataLength">encodedDataLength</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/timing">timing</span><span class="symbol">:</span>&nbsp;<a href="../-resource-timing/index.html"><span class="identifier">ResourceTiming</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/serviceWorkerResponseSource">serviceWorkerResponseSource</span><span class="symbol">:</span>&nbsp;<a href="../-service-worker-response-source/index.html"><span class="identifier">ServiceWorkerResponseSource</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/responseTime">responseTime</span><span class="symbol">:</span>&nbsp;<a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/cacheStorageCacheName">cacheStorageCacheName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/protocol">protocol</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/securityState">securityState</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.security/-security-state/index.html"><span class="identifier">SecurityState</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.Response$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.Boolean, kotlin.Double, kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Double, pl.wendigo.chrome.api.network.ResourceTiming, pl.wendigo.chrome.api.network.ServiceWorkerResponseSource, kotlin.Double, kotlin.String, kotlin.String, pl.wendigo.chrome.api.security.SecurityState, pl.wendigo.chrome.api.network.SecurityDetails)/securityDetails">securityDetails</span><span class="symbol">:</span>&nbsp;<a href="../-security-details/index.html"><span class="identifier">SecurityDetails</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="cache-storage-cache-name.html">cacheStorageCacheName</a></h4>
+</td>
+<td>
+<p>Cache Storage Cache Name.</p>
+<code><span class="keyword">val </span><span class="identifier">cacheStorageCacheName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="connection-id.html">connectionId</a></h4>
+</td>
+<td>
+<p>Physical connection id that was actually used for this request.</p>
+<code><span class="keyword">val </span><span class="identifier">connectionId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="connection-reused.html">connectionReused</a></h4>
+</td>
+<td>
+<p>Specifies whether physical connection was actually reused for this request.</p>
+<code><span class="keyword">val </span><span class="identifier">connectionReused</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="encoded-data-length.html">encodedDataLength</a></h4>
+</td>
+<td>
+<p>Total number of bytes received for this request so far.</p>
+<code><span class="keyword">val </span><span class="identifier">encodedDataLength</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="from-disk-cache.html">fromDiskCache</a></h4>
+</td>
+<td>
+<p>Specifies that the request was served from the disk cache.</p>
+<code><span class="keyword">val </span><span class="identifier">fromDiskCache</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="from-prefetch-cache.html">fromPrefetchCache</a></h4>
+</td>
+<td>
+<p>Specifies that the request was served from the prefetch cache.</p>
+<code><span class="keyword">val </span><span class="identifier">fromPrefetchCache</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="from-service-worker.html">fromServiceWorker</a></h4>
+</td>
+<td>
+<p>Specifies that the request was served from the ServiceWorker.</p>
+<code><span class="keyword">val </span><span class="identifier">fromServiceWorker</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="headers.html">headers</a></h4>
+</td>
+<td>
+<p>HTTP response headers.</p>
+<code><span class="keyword">val </span><span class="identifier">headers</span><span class="symbol">: </span><a href="../-headers.html"><span class="identifier">Headers</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="headers-text.html">headersText</a></h4>
+</td>
+<td>
+<p>HTTP response headers text.</p>
+<code><span class="keyword">val </span><span class="identifier">headersText</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="mime-type.html">mimeType</a></h4>
+</td>
+<td>
+<p>Resource mimeType as determined by the browser.</p>
+<code><span class="keyword">val </span><span class="identifier">mimeType</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="protocol.html">protocol</a></h4>
+</td>
+<td>
+<p>Protocol used to fetch this request.</p>
+<code><span class="keyword">val </span><span class="identifier">protocol</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remote-i-p-address.html">remoteIPAddress</a></h4>
+</td>
+<td>
+<p>Remote IP address.</p>
+<code><span class="keyword">val </span><span class="identifier">remoteIPAddress</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remote-port.html">remotePort</a></h4>
+</td>
+<td>
+<p>Remote port.</p>
+<code><span class="keyword">val </span><span class="identifier">remotePort</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-headers.html">requestHeaders</a></h4>
+</td>
+<td>
+<p>Refined HTTP request headers that were actually transmitted over the network.</p>
+<code><span class="keyword">val </span><span class="identifier">requestHeaders</span><span class="symbol">: </span><a href="../-headers.html"><span class="identifier">Headers</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-headers-text.html">requestHeadersText</a></h4>
+</td>
+<td>
+<p>HTTP request headers text.</p>
+<code><span class="keyword">val </span><span class="identifier">requestHeadersText</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="response-time.html">responseTime</a></h4>
+</td>
+<td>
+<p>The time at which the returned response was generated.</p>
+<code><span class="keyword">val </span><span class="identifier">responseTime</span><span class="symbol">: </span><a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="security-details.html">securityDetails</a></h4>
+</td>
+<td>
+<p>Security details for the request.</p>
+<code><span class="keyword">val </span><span class="identifier">securityDetails</span><span class="symbol">: </span><a href="../-security-details/index.html"><span class="identifier">SecurityDetails</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="security-state.html">securityState</a></h4>
+</td>
+<td>
+<p>Security state of the request resource.</p>
+<code><span class="keyword">val </span><span class="identifier">securityState</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.security/-security-state/index.html"><span class="identifier">SecurityState</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="service-worker-response-source.html">serviceWorkerResponseSource</a></h4>
+</td>
+<td>
+<p>Response source of response from ServiceWorker.</p>
+<code><span class="keyword">val </span><span class="identifier">serviceWorkerResponseSource</span><span class="symbol">: </span><a href="../-service-worker-response-source/index.html"><span class="identifier">ServiceWorkerResponseSource</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="status.html">status</a></h4>
+</td>
+<td>
+<p>HTTP response status code.</p>
+<code><span class="keyword">val </span><span class="identifier">status</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="status-text.html">statusText</a></h4>
+</td>
+<td>
+<p>HTTP response status text.</p>
+<code><span class="keyword">val </span><span class="identifier">statusText</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timing.html">timing</a></h4>
+</td>
+<td>
+<p>Timing information for the given request.</p>
+<code><span class="keyword">val </span><span class="identifier">timing</span><span class="symbol">: </span><a href="../-resource-timing/index.html"><span class="identifier">ResourceTiming</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>Response URL. This URL can be different from CachedResource.url in case of redirect.</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

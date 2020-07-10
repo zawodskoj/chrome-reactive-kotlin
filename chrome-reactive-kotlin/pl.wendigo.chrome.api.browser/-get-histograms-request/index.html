@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GetHistogramsRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.browser</a>&nbsp;/&nbsp;<a href="./index.html">GetHistogramsRequest</a><br/>
+<br/>
+<h1>GetHistogramsRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetHistogramsRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/browser/Operations.kt#L308">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getHistograms">Browser#getHistograms</a> operation call.</p>
+<p>Get Chrome histograms.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getHistograms">Browser#getHistograms</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-browser-operations/get-histograms.html">BrowserOperations.getHistograms</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getHistograms">Browser#getHistograms</a> operation call.</p>
+<code><span class="identifier">GetHistogramsRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.GetHistogramsRequest$<init>(kotlin.String, kotlin.Boolean)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.browser.GetHistogramsRequest$<init>(kotlin.String, kotlin.Boolean)/delta">delta</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="delta.html">delta</a></h4>
+</td>
+<td>
+<p>If true, retrieve delta since last call.</p>
+<code><span class="keyword">val </span><span class="identifier">delta</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="query.html">query</a></h4>
+</td>
+<td>
+<p>Requested substring in name. Only histograms which have query as a
+substring in their name are extracted. An empty or absent query returns
+all histograms.</p>
+<code><span class="keyword">val </span><span class="identifier">query</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

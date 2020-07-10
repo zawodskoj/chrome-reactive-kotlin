@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SameSiteCookieIssueDetails - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.audits</a>&nbsp;/&nbsp;<a href="./index.html">SameSiteCookieIssueDetails</a><br/>
+<br/>
+<h1>SameSiteCookieIssueDetails</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SameSiteCookieIssueDetails</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/audits/Types.kt#L113">(source)</a>
+<p>This information is currently necessary, as the front-end has a difficult
+time finding a specific cookie. With this, we can convey specific error
+information without the cookie.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Audits#type-SameSiteCookieIssueDetails">Audits#SameSiteCookieIssueDetails</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>This information is currently necessary, as the front-end has a difficult
+time finding a specific cookie. With this, we can convey specific error
+information without the cookie.</p>
+<code><span class="identifier">SameSiteCookieIssueDetails</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.audits.SameSiteCookieIssueDetails$<init>(pl.wendigo.chrome.api.audits.AffectedCookie, kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieWarningReason)), kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieExclusionReason)), pl.wendigo.chrome.api.audits.SameSiteCookieOperation, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest)/cookie">cookie</span><span class="symbol">:</span>&nbsp;<a href="../-affected-cookie/index.html"><span class="identifier">AffectedCookie</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.SameSiteCookieIssueDetails$<init>(pl.wendigo.chrome.api.audits.AffectedCookie, kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieWarningReason)), kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieExclusionReason)), pl.wendigo.chrome.api.audits.SameSiteCookieOperation, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest)/cookieWarningReasons">cookieWarningReasons</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-same-site-cookie-warning-reason/index.html"><span class="identifier">SameSiteCookieWarningReason</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.SameSiteCookieIssueDetails$<init>(pl.wendigo.chrome.api.audits.AffectedCookie, kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieWarningReason)), kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieExclusionReason)), pl.wendigo.chrome.api.audits.SameSiteCookieOperation, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest)/cookieExclusionReasons">cookieExclusionReasons</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-same-site-cookie-exclusion-reason/index.html"><span class="identifier">SameSiteCookieExclusionReason</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.SameSiteCookieIssueDetails$<init>(pl.wendigo.chrome.api.audits.AffectedCookie, kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieWarningReason)), kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieExclusionReason)), pl.wendigo.chrome.api.audits.SameSiteCookieOperation, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest)/operation">operation</span><span class="symbol">:</span>&nbsp;<a href="../-same-site-cookie-operation/index.html"><span class="identifier">SameSiteCookieOperation</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.SameSiteCookieIssueDetails$<init>(pl.wendigo.chrome.api.audits.AffectedCookie, kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieWarningReason)), kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieExclusionReason)), pl.wendigo.chrome.api.audits.SameSiteCookieOperation, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest)/siteForCookies">siteForCookies</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.SameSiteCookieIssueDetails$<init>(pl.wendigo.chrome.api.audits.AffectedCookie, kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieWarningReason)), kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieExclusionReason)), pl.wendigo.chrome.api.audits.SameSiteCookieOperation, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest)/cookieUrl">cookieUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.SameSiteCookieIssueDetails$<init>(pl.wendigo.chrome.api.audits.AffectedCookie, kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieWarningReason)), kotlin.collections.List((pl.wendigo.chrome.api.audits.SameSiteCookieExclusionReason)), pl.wendigo.chrome.api.audits.SameSiteCookieOperation, kotlin.String, kotlin.String, pl.wendigo.chrome.api.audits.AffectedRequest)/request">request</span><span class="symbol">:</span>&nbsp;<a href="../-affected-request/index.html"><span class="identifier">AffectedRequest</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="cookie.html">cookie</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">cookie</span><span class="symbol">: </span><a href="../-affected-cookie/index.html"><span class="identifier">AffectedCookie</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cookie-exclusion-reasons.html">cookieExclusionReasons</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">cookieExclusionReasons</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-same-site-cookie-exclusion-reason/index.html"><span class="identifier">SameSiteCookieExclusionReason</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cookie-url.html">cookieUrl</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">cookieUrl</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cookie-warning-reasons.html">cookieWarningReasons</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">cookieWarningReasons</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-same-site-cookie-warning-reason/index.html"><span class="identifier">SameSiteCookieWarningReason</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="operation.html">operation</a></h4>
+</td>
+<td>
+<p>Optionally identifies the site-for-cookies and the cookie url, which
+may be used by the front-end as additional context.</p>
+<code><span class="keyword">val </span><span class="identifier">operation</span><span class="symbol">: </span><a href="../-same-site-cookie-operation/index.html"><span class="identifier">SameSiteCookieOperation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request.html">request</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">request</span><span class="symbol">: </span><a href="../-affected-request/index.html"><span class="identifier">AffectedRequest</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="site-for-cookies.html">siteForCookies</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">siteForCookies</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

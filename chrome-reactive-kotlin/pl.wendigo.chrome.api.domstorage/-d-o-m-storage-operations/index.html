@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DOMStorageOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.domstorage</a>&nbsp;/&nbsp;<a href="./index.html">DOMStorageOperations</a><br/>
+<br/>
+<h1>DOMStorageOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">DOMStorageOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/domstorage/Operations.kt#L10">(source)</a>
+<p>Query and modify DOM storage.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMStorage">DOMStorage</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="clear.html">clear</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clear</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domstorage.DOMStorageOperations$clear(pl.wendigo.chrome.api.domstorage.ClearRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-clear-request/index.html"><span class="identifier">ClearRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables storage tracking, prevents storage events from being sent to the client.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dom-storage-item-added.html">domStorageItemAdded</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all DOMStorage.domStorageItemAdded events.</p>
+<code><span class="keyword">fun </span><span class="identifier">domStorageItemAdded</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-dom-storage-item-added-event/index.html"><span class="identifier">DomStorageItemAddedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dom-storage-item-removed.html">domStorageItemRemoved</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all DOMStorage.domStorageItemRemoved events.</p>
+<code><span class="keyword">fun </span><span class="identifier">domStorageItemRemoved</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-dom-storage-item-removed-event/index.html"><span class="identifier">DomStorageItemRemovedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dom-storage-items-cleared.html">domStorageItemsCleared</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all DOMStorage.domStorageItemsCleared events.</p>
+<code><span class="keyword">fun </span><span class="identifier">domStorageItemsCleared</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-dom-storage-items-cleared-event/index.html"><span class="identifier">DomStorageItemsClearedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dom-storage-item-updated.html">domStorageItemUpdated</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all DOMStorage.domStorageItemUpdated events.</p>
+<code><span class="keyword">fun </span><span class="identifier">domStorageItemUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-dom-storage-item-updated-event/index.html"><span class="identifier">DomStorageItemUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables storage tracking, storage events will now be delivered to the client.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all DOMStorage domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-d-o-m-storage-items.html">getDOMStorageItems</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDOMStorageItems</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domstorage.DOMStorageOperations$getDOMStorageItems(pl.wendigo.chrome.api.domstorage.GetDOMStorageItemsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-d-o-m-storage-items-request/index.html"><span class="identifier">GetDOMStorageItemsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-d-o-m-storage-items-response/index.html"><span class="identifier">GetDOMStorageItemsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-d-o-m-storage-item.html">removeDOMStorageItem</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeDOMStorageItem</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domstorage.DOMStorageOperations$removeDOMStorageItem(pl.wendigo.chrome.api.domstorage.RemoveDOMStorageItemRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-d-o-m-storage-item-request/index.html"><span class="identifier">RemoveDOMStorageItemRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-d-o-m-storage-item.html">setDOMStorageItem</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDOMStorageItem</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domstorage.DOMStorageOperations$setDOMStorageItem(pl.wendigo.chrome.api.domstorage.SetDOMStorageItemRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-d-o-m-storage-item-request/index.html"><span class="identifier">SetDOMStorageItemRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

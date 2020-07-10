@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CallFrame - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">CallFrame</a><br/>
+<br/>
+<h1>CallFrame</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CallFrame</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Types.kt#L66">(source)</a>
+<p>JavaScript call frame. Array of call frames form the call stack.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#type-CallFrame">Debugger#CallFrame</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>JavaScript call frame. Array of call frames form the call stack.</p>
+<code><span class="identifier">CallFrame</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.CallFrame$<init>(kotlin.String, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.Scope)), pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject)/callFrameId">callFrameId</span><span class="symbol">:</span>&nbsp;<a href="../-call-frame-id.html"><span class="identifier">CallFrameId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.CallFrame$<init>(kotlin.String, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.Scope)), pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject)/functionName">functionName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.CallFrame$<init>(kotlin.String, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.Scope)), pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject)/functionLocation">functionLocation</span><span class="symbol">:</span>&nbsp;<a href="../-location/index.html"><span class="identifier">Location</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.CallFrame$<init>(kotlin.String, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.Scope)), pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject)/location">location</span><span class="symbol">:</span>&nbsp;<a href="../-location/index.html"><span class="identifier">Location</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.CallFrame$<init>(kotlin.String, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.Scope)), pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.CallFrame$<init>(kotlin.String, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.Scope)), pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject)/scopeChain">scopeChain</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-scope/index.html"><span class="identifier">Scope</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.CallFrame$<init>(kotlin.String, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.Scope)), pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject)/_this">_this</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.CallFrame$<init>(kotlin.String, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.Scope)), pl.wendigo.chrome.api.runtime.RemoteObject, pl.wendigo.chrome.api.runtime.RemoteObject)/returnValue">returnValue</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="_this.html">_this</a></h4>
+</td>
+<td>
+<p><code>this</code> object for this call frame.</p>
+<code><span class="keyword">val </span><span class="identifier">_this</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-remote-object/index.html"><span class="identifier">RemoteObject</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="call-frame-id.html">callFrameId</a></h4>
+</td>
+<td>
+<p>Call frame identifier. This identifier is only valid while the virtual machine is paused.</p>
+<code><span class="keyword">val </span><span class="identifier">callFrameId</span><span class="symbol">: </span><a href="../-call-frame-id.html"><span class="identifier">CallFrameId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="function-location.html">functionLocation</a></h4>
+</td>
+<td>
+<p>Location in the source code.</p>
+<code><span class="keyword">val </span><span class="identifier">functionLocation</span><span class="symbol">: </span><a href="../-location/index.html"><span class="identifier">Location</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="function-name.html">functionName</a></h4>
+</td>
+<td>
+<p>Name of the JavaScript function called on this call frame.</p>
+<code><span class="keyword">val </span><span class="identifier">functionName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="location.html">location</a></h4>
+</td>
+<td>
+<p>Location in the source code.</p>
+<code><span class="keyword">val </span><span class="identifier">location</span><span class="symbol">: </span><a href="../-location/index.html"><span class="identifier">Location</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="return-value.html">returnValue</a></h4>
+</td>
+<td>
+<p>The value being returned, if the function is at return point.</p>
+<code><span class="keyword">val </span><span class="identifier">returnValue</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scope-chain.html">scopeChain</a></h4>
+</td>
+<td>
+<p>Scope chain for this call frame.</p>
+<code><span class="keyword">val </span><span class="identifier">scopeChain</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-scope/index.html"><span class="identifier">Scope</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>JavaScript script name or url.</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

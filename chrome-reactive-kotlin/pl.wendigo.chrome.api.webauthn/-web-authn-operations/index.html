@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>WebAuthnOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.webauthn</a>&nbsp;/&nbsp;<a href="./index.html">WebAuthnOperations</a><br/>
+<br/>
+<h1>WebAuthnOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">WebAuthnOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/webauthn/Operations.kt#L11">(source)</a>
+<p>This domain allows configuring virtual authenticators to test the WebAuthn
+API.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/WebAuthn">WebAuthn</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-credential.html">addCredential</a></h4>
+</td>
+<td>
+<p>Adds the credential to the specified authenticator.</p>
+<code><span class="keyword">fun </span><span class="identifier">addCredential</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.WebAuthnOperations$addCredential(pl.wendigo.chrome.api.webauthn.AddCredentialRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-add-credential-request/index.html"><span class="identifier">AddCredentialRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-virtual-authenticator.html">addVirtualAuthenticator</a></h4>
+</td>
+<td>
+<p>Creates and adds a virtual authenticator.</p>
+<code><span class="keyword">fun </span><span class="identifier">addVirtualAuthenticator</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.WebAuthnOperations$addVirtualAuthenticator(pl.wendigo.chrome.api.webauthn.AddVirtualAuthenticatorRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-add-virtual-authenticator-request/index.html"><span class="identifier">AddVirtualAuthenticatorRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-add-virtual-authenticator-response/index.html"><span class="identifier">AddVirtualAuthenticatorResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-credentials.html">clearCredentials</a></h4>
+</td>
+<td>
+<p>Clears all the credentials from the specified device.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearCredentials</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.WebAuthnOperations$clearCredentials(pl.wendigo.chrome.api.webauthn.ClearCredentialsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-clear-credentials-request/index.html"><span class="identifier">ClearCredentialsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disable the WebAuthn domain.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enable the WebAuthn domain and start intercepting credential storage and
+retrieval with a virtual authenticator.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all WebAuthn domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-credential.html">getCredential</a></h4>
+</td>
+<td>
+<p>Returns a single credential stored in the given virtual authenticator that
+matches the credential ID.</p>
+<code><span class="keyword">fun </span><span class="identifier">getCredential</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.WebAuthnOperations$getCredential(pl.wendigo.chrome.api.webauthn.GetCredentialRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-credential-request/index.html"><span class="identifier">GetCredentialRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-credential-response/index.html"><span class="identifier">GetCredentialResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-credentials.html">getCredentials</a></h4>
+</td>
+<td>
+<p>Returns all the credentials stored in the given virtual authenticator.</p>
+<code><span class="keyword">fun </span><span class="identifier">getCredentials</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.WebAuthnOperations$getCredentials(pl.wendigo.chrome.api.webauthn.GetCredentialsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-credentials-request/index.html"><span class="identifier">GetCredentialsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-credentials-response/index.html"><span class="identifier">GetCredentialsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-credential.html">removeCredential</a></h4>
+</td>
+<td>
+<p>Removes a credential from the authenticator.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeCredential</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.WebAuthnOperations$removeCredential(pl.wendigo.chrome.api.webauthn.RemoveCredentialRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-credential-request/index.html"><span class="identifier">RemoveCredentialRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-virtual-authenticator.html">removeVirtualAuthenticator</a></h4>
+</td>
+<td>
+<p>Removes the given authenticator.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeVirtualAuthenticator</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.WebAuthnOperations$removeVirtualAuthenticator(pl.wendigo.chrome.api.webauthn.RemoveVirtualAuthenticatorRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-virtual-authenticator-request/index.html"><span class="identifier">RemoveVirtualAuthenticatorRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-automatic-presence-simulation.html">setAutomaticPresenceSimulation</a></h4>
+</td>
+<td>
+<p>Sets whether tests of user presence will succeed immediately (if true) or fail to resolve (if false) for an authenticator.
+The default is true.</p>
+<code><span class="keyword">fun </span><span class="identifier">setAutomaticPresenceSimulation</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.WebAuthnOperations$setAutomaticPresenceSimulation(pl.wendigo.chrome.api.webauthn.SetAutomaticPresenceSimulationRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-automatic-presence-simulation-request/index.html"><span class="identifier">SetAutomaticPresenceSimulationRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-user-verified.html">setUserVerified</a></h4>
+</td>
+<td>
+<p>Sets whether User Verification succeeds or fails for an authenticator.
+The default is true.</p>
+<code><span class="keyword">fun </span><span class="identifier">setUserVerified</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.WebAuthnOperations$setUserVerified(pl.wendigo.chrome.api.webauthn.SetUserVerifiedRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-user-verified-request/index.html"><span class="identifier">SetUserVerifiedRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

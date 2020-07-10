@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>HeapProfilerOperations.lastSeenObjectId - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.heapprofiler</a>&nbsp;/&nbsp;<a href="index.html">HeapProfilerOperations</a>&nbsp;/&nbsp;<a href="./last-seen-object-id.html">lastSeenObjectId</a><br/>
+<br/>
+<h1>lastSeenObjectId</h1>
+<a name="pl.wendigo.chrome.api.heapprofiler.HeapProfilerOperations$lastSeenObjectId()"></a>
+<code><span class="keyword">fun </span><span class="identifier">lastSeenObjectId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-last-seen-object-id-event/index.html"><span class="identifier">LastSeenObjectIdEvent</span></a><span class="symbol">&gt;</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/heapprofiler/Operations.kt#L111">(source)</a>
+<p>If heap objects tracking has been started then backend regularly sends a current value for last
+seen object id and corresponding timestamp. If the were changes in the heap since last event
+then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.</p>
+</BODY>
+</HTML>

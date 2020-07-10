@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.domdebugger - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.domdebugger</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.domdebugger</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger">DOMDebugger</a> domain implementation accessible via <a href="-d-o-m-debugger-operations/index.html">DOMDebuggerOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-d-o-m-breakpoint-type/index.html">DOMBreakpointType</a></h4>
+</td>
+<td>
+<p>DOM breakpoint type.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">DOMBreakpointType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-d-o-m-debugger-operations/index.html">DOMDebuggerOperations</a></h4>
+</td>
+<td>
+<p>DOM debugging allows setting breakpoints on particular DOM operations and events. JavaScript
+execution will stop on these operations as if there was a regular breakpoint set.</p>
+<code><span class="keyword">class </span><span class="identifier">DOMDebuggerOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-event-listener/index.html">EventListener</a></h4>
+</td>
+<td>
+<p>Object event listener.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EventListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-event-listeners-request/index.html">GetEventListenersRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-getEventListeners">DOMDebugger#getEventListeners</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetEventListenersRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-event-listeners-response/index.html">GetEventListenersResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-getEventListeners">DOMDebugger#getEventListeners</a> operation call.
+Returns event listeners of the given object.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetEventListenersResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remove-d-o-m-breakpoint-request/index.html">RemoveDOMBreakpointRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-removeDOMBreakpoint">DOMDebugger#removeDOMBreakpoint</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoveDOMBreakpointRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remove-event-listener-breakpoint-request/index.html">RemoveEventListenerBreakpointRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-removeEventListenerBreakpoint">DOMDebugger#removeEventListenerBreakpoint</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoveEventListenerBreakpointRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remove-instrumentation-breakpoint-request/index.html">RemoveInstrumentationBreakpointRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-removeInstrumentationBreakpoint">DOMDebugger#removeInstrumentationBreakpoint</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoveInstrumentationBreakpointRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remove-x-h-r-breakpoint-request/index.html">RemoveXHRBreakpointRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-removeXHRBreakpoint">DOMDebugger#removeXHRBreakpoint</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoveXHRBreakpointRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-d-o-m-breakpoint-request/index.html">SetDOMBreakpointRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-setDOMBreakpoint">DOMDebugger#setDOMBreakpoint</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetDOMBreakpointRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-event-listener-breakpoint-request/index.html">SetEventListenerBreakpointRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-setEventListenerBreakpoint">DOMDebugger#setEventListenerBreakpoint</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetEventListenerBreakpointRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-instrumentation-breakpoint-request/index.html">SetInstrumentationBreakpointRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-setInstrumentationBreakpoint">DOMDebugger#setInstrumentationBreakpoint</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetInstrumentationBreakpointRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-x-h-r-breakpoint-request/index.html">SetXHRBreakpointRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-setXHRBreakpoint">DOMDebugger#setXHRBreakpoint</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetXHRBreakpointRequest</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FrameResource - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.page</a>&nbsp;/&nbsp;<a href="./index.html">FrameResource</a><br/>
+<br/>
+<h1>FrameResource</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameResource</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/page/Types.kt#L70">(source)</a>
+<p>Information about the Resource on the page.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#type-FrameResource">Page#FrameResource</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Information about the Resource on the page.</p>
+<code><span class="identifier">FrameResource</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.FrameResource$<init>(kotlin.String, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Double, kotlin.Double, kotlin.Boolean, kotlin.Boolean)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.FrameResource$<init>(kotlin.String, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Double, kotlin.Double, kotlin.Boolean, kotlin.Boolean)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.network/-resource-type/index.html"><span class="identifier">ResourceType</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.FrameResource$<init>(kotlin.String, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Double, kotlin.Double, kotlin.Boolean, kotlin.Boolean)/mimeType">mimeType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.FrameResource$<init>(kotlin.String, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Double, kotlin.Double, kotlin.Boolean, kotlin.Boolean)/lastModified">lastModified</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.network/-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.FrameResource$<init>(kotlin.String, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Double, kotlin.Double, kotlin.Boolean, kotlin.Boolean)/contentSize">contentSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.FrameResource$<init>(kotlin.String, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Double, kotlin.Double, kotlin.Boolean, kotlin.Boolean)/failed">failed</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.FrameResource$<init>(kotlin.String, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Double, kotlin.Double, kotlin.Boolean, kotlin.Boolean)/canceled">canceled</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="canceled.html">canceled</a></h4>
+</td>
+<td>
+<p>True if the resource was canceled during loading.</p>
+<code><span class="keyword">val </span><span class="identifier">canceled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="content-size.html">contentSize</a></h4>
+</td>
+<td>
+<p>Resource content size.</p>
+<code><span class="keyword">val </span><span class="identifier">contentSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="failed.html">failed</a></h4>
+</td>
+<td>
+<p>True if the resource failed to load.</p>
+<code><span class="keyword">val </span><span class="identifier">failed</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="last-modified.html">lastModified</a></h4>
+</td>
+<td>
+<p>last-modified timestamp as reported by server.</p>
+<code><span class="keyword">val </span><span class="identifier">lastModified</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="mime-type.html">mimeType</a></h4>
+</td>
+<td>
+<p>Resource mimeType as determined by the browser.</p>
+<code><span class="keyword">val </span><span class="identifier">mimeType</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<p>Type of this resource.</p>
+<code><span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-resource-type/index.html"><span class="identifier">ResourceType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>Resource URL.</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TakeResponseBodyAsStreamRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.fetch</a>&nbsp;/&nbsp;<a href="./index.html">TakeResponseBodyAsStreamRequest</a><br/>
+<br/>
+<h1>TakeResponseBodyAsStreamRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TakeResponseBodyAsStreamRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/fetch/Operations.kt#L312">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-takeResponseBodyAsStream">Fetch#takeResponseBodyAsStream</a> operation call.</p>
+<p>Returns a handle to the stream representing the response body.
+The request must be paused in the HeadersReceived stage.
+Note that after this command the request can't be continued
+as is -- client either needs to cancel it or to provide the
+response body.
+The stream only supports sequential read, IO.read will fail if the position
+is specified.
+This method is mutually exclusive with getResponseBody.
+Calling other methods that affect the request or disabling fetch
+domain before body is received results in an undefined behavior.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-takeResponseBodyAsStream">Fetch#takeResponseBodyAsStream</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-fetch-operations/take-response-body-as-stream.html">FetchOperations.takeResponseBodyAsStream</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-takeResponseBodyAsStream">Fetch#takeResponseBodyAsStream</a> operation call.</p>
+<code><span class="identifier">TakeResponseBodyAsStreamRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.fetch.TakeResponseBodyAsStreamRequest$<init>(kotlin.String)/requestId">requestId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">requestId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

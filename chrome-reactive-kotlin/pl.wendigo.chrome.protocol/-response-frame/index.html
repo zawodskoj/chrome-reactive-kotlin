@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ResponseFrame - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.protocol</a>&nbsp;/&nbsp;<a href="./index.html">ResponseFrame</a><br/>
+<br/>
+<h1>ResponseFrame</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResponseFrame</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/protocol/ResponseFrame.kt#L9">(source)</a>
+<p>Represents generic protocol response.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents generic protocol response.</p>
+<code><span class="identifier">ResponseFrame</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.ResponseFrame$<init>(kotlin.Long, com.fasterxml.jackson.databind.JsonNode, pl.wendigo.chrome.protocol.RequestError, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.ResponseFrame$<init>(kotlin.Long, com.fasterxml.jackson.databind.JsonNode, pl.wendigo.chrome.protocol.RequestError, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String)/result">result</span><span class="symbol">:</span>&nbsp;<span class="identifier">JsonNode</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.ResponseFrame$<init>(kotlin.Long, com.fasterxml.jackson.databind.JsonNode, pl.wendigo.chrome.protocol.RequestError, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String)/error">error</span><span class="symbol">:</span>&nbsp;<a href="../-request-error/index.html"><span class="identifier">RequestError</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.ResponseFrame$<init>(kotlin.Long, com.fasterxml.jackson.databind.JsonNode, pl.wendigo.chrome.protocol.RequestError, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String)/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.ResponseFrame$<init>(kotlin.Long, com.fasterxml.jackson.databind.JsonNode, pl.wendigo.chrome.protocol.RequestError, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String)/params">params</span><span class="symbol">:</span>&nbsp;<span class="identifier">JsonNode</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.ResponseFrame$<init>(kotlin.Long, com.fasterxml.jackson.databind.JsonNode, pl.wendigo.chrome.protocol.RequestError, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String)/sessionId">sessionId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.target/-session-i-d.html"><span class="identifier">SessionID</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="error.html">error</a></h4>
+</td>
+<td>
+<p>Request error.</p>
+<code><span class="keyword">val </span><span class="identifier">error</span><span class="symbol">: </span><a href="../-request-error/index.html"><span class="identifier">RequestError</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="id.html">id</a></h4>
+</td>
+<td>
+<p>Response id.</p>
+<code><span class="keyword">val </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="method.html">method</a></h4>
+</td>
+<td>
+<p>Request method or response event name.</p>
+<code><span class="keyword">val </span><span class="identifier">method</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="params.html">params</a></h4>
+</td>
+<td>
+<p>Response params.</p>
+<code><span class="keyword">val </span><span class="identifier">params</span><span class="symbol">: </span><span class="identifier">JsonNode</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="result.html">result</a></h4>
+</td>
+<td>
+<p>Response result.</p>
+<code><span class="keyword">val </span><span class="identifier">result</span><span class="symbol">: </span><span class="identifier">JsonNode</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="session-id.html">sessionId</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">sessionId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.target/-session-i-d.html"><span class="identifier">SessionID</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="matches-session-id.html">matchesSessionId</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">matchesSessionId</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.ResponseFrame$matchesSessionId(kotlin.String)/sessionId">sessionId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.target/-session-i-d.html"><span class="identifier">SessionID</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

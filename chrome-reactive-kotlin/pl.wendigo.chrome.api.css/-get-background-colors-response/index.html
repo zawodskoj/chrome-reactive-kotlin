@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GetBackgroundColorsResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.css</a>&nbsp;/&nbsp;<a href="./index.html">GetBackgroundColorsResponse</a><br/>
+<br/>
+<h1>GetBackgroundColorsResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetBackgroundColorsResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/css/Operations.kt#L368">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getBackgroundColors">CSS#getBackgroundColors</a> operation call.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getBackgroundColors">CSS#getBackgroundColors</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-c-s-s-operations/get-background-colors.html">CSSOperations.getBackgroundColors</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getBackgroundColors">CSS#getBackgroundColors</a> operation call.</p>
+<code><span class="identifier">GetBackgroundColorsResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.GetBackgroundColorsResponse$<init>(kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.String)/backgroundColors">backgroundColors</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.GetBackgroundColorsResponse$<init>(kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.String)/computedFontSize">computedFontSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.GetBackgroundColorsResponse$<init>(kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.String)/computedFontWeight">computedFontWeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="background-colors.html">backgroundColors</a></h4>
+</td>
+<td>
+<p>The range of background colors behind this element, if it contains any visible text. If no
+visible text is present, this will be undefined. In the case of a flat background color,
+this will consist of simply that color. In the case of a gradient, this will consist of each
+of the color stops. For anything more complicated, this will be an empty array. Images will
+be ignored (as if the image had failed to load).</p>
+<code><span class="keyword">val </span><span class="identifier">backgroundColors</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="computed-font-size.html">computedFontSize</a></h4>
+</td>
+<td>
+<p>The computed font size for this node, as a CSS computed value string (e.g. '12px').</p>
+<code><span class="keyword">val </span><span class="identifier">computedFontSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="computed-font-weight.html">computedFontWeight</a></h4>
+</td>
+<td>
+<p>The computed font weight for this node, as a CSS computed value string (e.g. 'normal' or
+'100').</p>
+<code><span class="keyword">val </span><span class="identifier">computedFontWeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

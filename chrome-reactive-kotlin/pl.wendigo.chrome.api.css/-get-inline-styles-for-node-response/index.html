@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GetInlineStylesForNodeResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.css</a>&nbsp;/&nbsp;<a href="./index.html">GetInlineStylesForNodeResponse</a><br/>
+<br/>
+<h1>GetInlineStylesForNodeResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetInlineStylesForNodeResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/css/Operations.kt#L445">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getInlineStylesForNode">CSS#getInlineStylesForNode</a> operation call.
+Returns the styles defined inline (explicitly in the "style" attribute and implicitly, using DOM
+attributes) for a DOM node identified by <code>nodeId</code>.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getInlineStylesForNode">CSS#getInlineStylesForNode</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-c-s-s-operations/get-inline-styles-for-node.html">CSSOperations.getInlineStylesForNode</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getInlineStylesForNode">CSS#getInlineStylesForNode</a> operation call.
+Returns the styles defined inline (explicitly in the "style" attribute and implicitly, using DOM
+attributes) for a DOM node identified by <code>nodeId</code>.</p>
+<code><span class="identifier">GetInlineStylesForNodeResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.GetInlineStylesForNodeResponse$<init>(pl.wendigo.chrome.api.css.CSSStyle, pl.wendigo.chrome.api.css.CSSStyle)/inlineStyle">inlineStyle</span><span class="symbol">:</span>&nbsp;<a href="../-c-s-s-style/index.html"><span class="identifier">CSSStyle</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.GetInlineStylesForNodeResponse$<init>(pl.wendigo.chrome.api.css.CSSStyle, pl.wendigo.chrome.api.css.CSSStyle)/attributesStyle">attributesStyle</span><span class="symbol">:</span>&nbsp;<a href="../-c-s-s-style/index.html"><span class="identifier">CSSStyle</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="attributes-style.html">attributesStyle</a></h4>
+</td>
+<td>
+<p>Attribute-defined element style (e.g. resulting from "width=20 height=100%").</p>
+<code><span class="keyword">val </span><span class="identifier">attributesStyle</span><span class="symbol">: </span><a href="../-c-s-s-style/index.html"><span class="identifier">CSSStyle</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="inline-style.html">inlineStyle</a></h4>
+</td>
+<td>
+<p>Inline style for the specified DOM node.</p>
+<code><span class="keyword">val </span><span class="identifier">inlineStyle</span><span class="symbol">: </span><a href="../-c-s-s-style/index.html"><span class="identifier">CSSStyle</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

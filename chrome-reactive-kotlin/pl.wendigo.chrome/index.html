@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome</h2>
+<p>Contains library main API (<a href="-browser/index.html">Browser</a> and <a href="-dev-tools-protocol/index.html">DevToolsProtocol</a>)</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-browser/index.html">Browser</a></h4>
+</td>
+<td>
+<p>Creates new browser that allows querying remote chrome instance for debugging sessions</p>
+<code><span class="keyword">class </span><span class="identifier">Browser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html"><span class="identifier">AutoCloseable</span></a><span class="symbol">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-dev-tools-protocol/index.html">DevToolsProtocol</a></h4>
+</td>
+<td>
+<p>DevToolsProtocol represents all operations on all domains that can be issued to control Chrome via <a href="https://chromedevtools.github.io/devtools-protocol/">DevTools Protocol</a>.</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">DevToolsProtocol</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-flowable-block.html">FlowableBlock</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">FlowableBlock</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Flowable</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-single-block.html">SingleBlock</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">SingleBlock</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Single</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Exceptions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-browser-info-discovery-failed-exception/index.html">BrowserInfoDiscoveryFailedException</a></h4>
+</td>
+<td>
+<p>BrowserInfoDiscoveryFailedException is thrown when there's no possibility to query browser for debugger websocket endpoint.</p>
+<code><span class="keyword">class </span><span class="identifier">BrowserInfoDiscoveryFailedException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html"><span class="identifier">RuntimeException</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="await.html">await</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">await</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome$await(kotlin.Function0((io.reactivex.Single((pl.wendigo.chrome.await.T)))))/block">block</span><span class="symbol">:</span>&nbsp;<a href="-single-block.html"><span class="identifier">SingleBlock</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="await-many.html">awaitMany</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">awaitMany</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome$awaitMany(kotlin.Function0((io.reactivex.Flowable((pl.wendigo.chrome.awaitMany.T)))))/block">block</span><span class="symbol">:</span>&nbsp;<a href="-flowable-block.html"><span class="identifier">FlowableBlock</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BeginFrameRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.headlessexperimental</a>&nbsp;/&nbsp;<a href="./index.html">BeginFrameRequest</a><br/>
+<br/>
+<h1>BeginFrameRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BeginFrameRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/headlessexperimental/Operations.kt#L61">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeadlessExperimental#method-beginFrame">HeadlessExperimental#beginFrame</a> operation call.</p>
+<p>Sends a BeginFrame to the target and returns when the frame was completed. Optionally captures a
+screenshot from the resulting frame. Requires that the target was created with enabled
+BeginFrameControl. Designed for use with --run-all-compositor-stages-before-draw, see also
+https://goo.gl/3zHXhB for more background.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/HeadlessExperimental#method-beginFrame">HeadlessExperimental#beginFrame</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-headless-experimental-operations/begin-frame.html">HeadlessExperimentalOperations.beginFrame</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeadlessExperimental#method-beginFrame">HeadlessExperimental#beginFrame</a> operation call.</p>
+<code><span class="identifier">BeginFrameRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.headlessexperimental.BeginFrameRequest$<init>(kotlin.Double, kotlin.Double, kotlin.Boolean, pl.wendigo.chrome.api.headlessexperimental.ScreenshotParams)/frameTimeTicks">frameTimeTicks</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.headlessexperimental.BeginFrameRequest$<init>(kotlin.Double, kotlin.Double, kotlin.Boolean, pl.wendigo.chrome.api.headlessexperimental.ScreenshotParams)/interval">interval</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.headlessexperimental.BeginFrameRequest$<init>(kotlin.Double, kotlin.Double, kotlin.Boolean, pl.wendigo.chrome.api.headlessexperimental.ScreenshotParams)/noDisplayUpdates">noDisplayUpdates</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.headlessexperimental.BeginFrameRequest$<init>(kotlin.Double, kotlin.Double, kotlin.Boolean, pl.wendigo.chrome.api.headlessexperimental.ScreenshotParams)/screenshot">screenshot</span><span class="symbol">:</span>&nbsp;<a href="../-screenshot-params/index.html"><span class="identifier">ScreenshotParams</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="frame-time-ticks.html">frameTimeTicks</a></h4>
+</td>
+<td>
+<p>Timestamp of this BeginFrame in Renderer TimeTicks (milliseconds of uptime). If not set,
+the current time will be used.</p>
+<code><span class="keyword">val </span><span class="identifier">frameTimeTicks</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="interval.html">interval</a></h4>
+</td>
+<td>
+<p>The interval between BeginFrames that is reported to the compositor, in milliseconds.
+Defaults to a 60 frames/second interval, i.e. about 16.666 milliseconds.</p>
+<code><span class="keyword">val </span><span class="identifier">interval</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="no-display-updates.html">noDisplayUpdates</a></h4>
+</td>
+<td>
+<p>Whether updates should not be committed and drawn onto the display. False by default. If
+true, only side effects of the BeginFrame will be run, such as layout and animations, but
+any visual updates may not be visible on the display or in screenshots.</p>
+<code><span class="keyword">val </span><span class="identifier">noDisplayUpdates</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="screenshot.html">screenshot</a></h4>
+</td>
+<td>
+<p>If set, a screenshot of the frame will be captured and returned in the response. Otherwise,
+no screenshot will be captured. Note that capturing a screenshot can fail, for example,
+during renderer initialization. In such a case, no screenshot data will be returned.</p>
+<code><span class="keyword">val </span><span class="identifier">screenshot</span><span class="symbol">: </span><a href="../-screenshot-params/index.html"><span class="identifier">ScreenshotParams</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

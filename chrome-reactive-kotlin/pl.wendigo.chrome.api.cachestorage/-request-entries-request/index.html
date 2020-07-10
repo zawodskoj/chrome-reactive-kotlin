@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RequestEntriesRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.cachestorage</a>&nbsp;/&nbsp;<a href="./index.html">RequestEntriesRequest</a><br/>
+<br/>
+<h1>RequestEntriesRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestEntriesRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/cachestorage/Operations.kt#L167">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestEntries">CacheStorage#requestEntries</a> operation call.</p>
+<p>Requests data from cache.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestEntries">CacheStorage#requestEntries</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-cache-storage-operations/request-entries.html">CacheStorageOperations.requestEntries</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestEntries">CacheStorage#requestEntries</a> operation call.</p>
+<code><span class="identifier">RequestEntriesRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.cachestorage.RequestEntriesRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.String)/cacheId">cacheId</span><span class="symbol">:</span>&nbsp;<a href="../-cache-id.html"><span class="identifier">CacheId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.cachestorage.RequestEntriesRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.String)/skipCount">skipCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.cachestorage.RequestEntriesRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.String)/pageSize">pageSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.cachestorage.RequestEntriesRequest$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.String)/pathFilter">pathFilter</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="cache-id.html">cacheId</a></h4>
+</td>
+<td>
+<p>ID of cache to get entries from.</p>
+<code><span class="keyword">val </span><span class="identifier">cacheId</span><span class="symbol">: </span><a href="../-cache-id.html"><span class="identifier">CacheId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="page-size.html">pageSize</a></h4>
+</td>
+<td>
+<p>Number of records to fetch.</p>
+<code><span class="keyword">val </span><span class="identifier">pageSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="path-filter.html">pathFilter</a></h4>
+</td>
+<td>
+<p>If present, only return the entries containing this substring in the path</p>
+<code><span class="keyword">val </span><span class="identifier">pathFilter</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="skip-count.html">skipCount</a></h4>
+</td>
+<td>
+<p>Number of records to skip.</p>
+<code><span class="keyword">val </span><span class="identifier">skipCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

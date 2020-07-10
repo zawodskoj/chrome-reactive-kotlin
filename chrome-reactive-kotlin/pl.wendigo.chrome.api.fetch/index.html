@@ -1,0 +1,185 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.fetch - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.fetch</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.fetch</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch">Fetch</a> domain implementation accessible via <a href="-fetch-operations/index.html">FetchOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-auth-challenge/index.html">AuthChallenge</a></h4>
+</td>
+<td>
+<p>Authorization challenge for HTTP status code 401 or 407.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AuthChallenge</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-auth-challenge-response/index.html">AuthChallengeResponse</a></h4>
+</td>
+<td>
+<p>Response to an AuthChallenge.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AuthChallengeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-auth-required-event/index.html">AuthRequiredEvent</a></h4>
+</td>
+<td>
+<p>Issued when the domain is enabled with handleAuthRequests set to true.
+The request is paused until client responds with continueWithAuth.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AuthRequiredEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-continue-request-request/index.html">ContinueRequestRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-continueRequest">Fetch#continueRequest</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContinueRequestRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-continue-with-auth-request/index.html">ContinueWithAuthRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-continueWithAuth">Fetch#continueWithAuth</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContinueWithAuthRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-enable-request/index.html">EnableRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-enable">Fetch#enable</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EnableRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-fail-request-request/index.html">FailRequestRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-failRequest">Fetch#failRequest</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FailRequestRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-fetch-operations/index.html">FetchOperations</a></h4>
+</td>
+<td>
+<p>A domain for letting clients substitute browser's network layer with client code.</p>
+<code><span class="keyword">class </span><span class="identifier">FetchOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-fulfill-request-request/index.html">FulfillRequestRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-fulfillRequest">Fetch#fulfillRequest</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FulfillRequestRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-response-body-request/index.html">GetResponseBodyRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-getResponseBody">Fetch#getResponseBody</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetResponseBodyRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-response-body-response/index.html">GetResponseBodyResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-getResponseBody">Fetch#getResponseBody</a> operation call.
+Causes the body of the response to be received from the server and
+returned as a single string. May only be issued for a request that
+is paused in the Response stage and is mutually exclusive with
+takeResponseBodyForInterceptionAsStream. Calling other methods that
+affect the request or disabling fetch domain before body is received
+results in an undefined behavior.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetResponseBodyResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-header-entry/index.html">HeaderEntry</a></h4>
+</td>
+<td>
+<p>Response HTTP header entry</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HeaderEntry</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-id.html">RequestId</a></h4>
+</td>
+<td>
+<p>Unique request identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">RequestId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-pattern/index.html">RequestPattern</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestPattern</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-paused-event/index.html">RequestPausedEvent</a></h4>
+</td>
+<td>
+<p>Issued when the domain is enabled and the request URL matches the
+specified filter. The request is paused until the client responds
+with one of continueRequest, failRequest or fulfillRequest.
+The stage of the request can be determined by presence of responseErrorReason
+and responseStatusCode -- the request is at the response stage if either
+of these fields is present and in the request stage otherwise.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestPausedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-stage/index.html">RequestStage</a></h4>
+</td>
+<td>
+<p>Stages of the request to handle. Request will intercept before the request is
+sent. Response will intercept after the response is received (but before response
+body is received.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">RequestStage</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-take-response-body-as-stream-request/index.html">TakeResponseBodyAsStreamRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-takeResponseBodyAsStream">Fetch#takeResponseBodyAsStream</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TakeResponseBodyAsStreamRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-take-response-body-as-stream-response/index.html">TakeResponseBodyAsStreamResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#method-takeResponseBodyAsStream">Fetch#takeResponseBodyAsStream</a> operation call.
+Returns a handle to the stream representing the response body.
+The request must be paused in the HeadersReceived stage.
+Note that after this command the request can't be continued
+as is -- client either needs to cancel it or to provide the
+response body.
+The stream only supports sequential read, IO.read will fail if the position
+is specified.
+This method is mutually exclusive with getResponseBody.
+Calling other methods that affect the request or disabling fetch
+domain before body is received results in an undefined behavior.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TakeResponseBodyAsStreamResponse</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

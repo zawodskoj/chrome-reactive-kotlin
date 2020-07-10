@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SignedExchangeHeader - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">SignedExchangeHeader</a><br/>
+<br/>
+<h1>SignedExchangeHeader</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SignedExchangeHeader</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Types.kt#L1176">(source)</a>
+<p>Information about a signed exchange header.
+https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.html#cbor-representation</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#type-SignedExchangeHeader">Network#SignedExchangeHeader</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Information about a signed exchange header.
+https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.html#cbor-representation</p>
+<code><span class="identifier">SignedExchangeHeader</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.SignedExchangeHeader$<init>(kotlin.String, kotlin.Int, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.collections.List((pl.wendigo.chrome.api.network.SignedExchangeSignature)), kotlin.String)/requestUrl">requestUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SignedExchangeHeader$<init>(kotlin.String, kotlin.Int, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.collections.List((pl.wendigo.chrome.api.network.SignedExchangeSignature)), kotlin.String)/responseCode">responseCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SignedExchangeHeader$<init>(kotlin.String, kotlin.Int, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.collections.List((pl.wendigo.chrome.api.network.SignedExchangeSignature)), kotlin.String)/responseHeaders">responseHeaders</span><span class="symbol">:</span>&nbsp;<a href="../-headers.html"><span class="identifier">Headers</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SignedExchangeHeader$<init>(kotlin.String, kotlin.Int, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.collections.List((pl.wendigo.chrome.api.network.SignedExchangeSignature)), kotlin.String)/signatures">signatures</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-signed-exchange-signature/index.html"><span class="identifier">SignedExchangeSignature</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SignedExchangeHeader$<init>(kotlin.String, kotlin.Int, kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.collections.List((pl.wendigo.chrome.api.network.SignedExchangeSignature)), kotlin.String)/headerIntegrity">headerIntegrity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="header-integrity.html">headerIntegrity</a></h4>
+</td>
+<td>
+<p>Signed exchange header integrity hash in the form of "sha256-&lt;base64-hash-value&gt;".</p>
+<code><span class="keyword">val </span><span class="identifier">headerIntegrity</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-url.html">requestUrl</a></h4>
+</td>
+<td>
+<p>Signed exchange request URL.</p>
+<code><span class="keyword">val </span><span class="identifier">requestUrl</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="response-code.html">responseCode</a></h4>
+</td>
+<td>
+<p>Signed exchange response code.</p>
+<code><span class="keyword">val </span><span class="identifier">responseCode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="response-headers.html">responseHeaders</a></h4>
+</td>
+<td>
+<p>Signed exchange response headers.</p>
+<code><span class="keyword">val </span><span class="identifier">responseHeaders</span><span class="symbol">: </span><a href="../-headers.html"><span class="identifier">Headers</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="signatures.html">signatures</a></h4>
+</td>
+<td>
+<p>Signed exchange response signature.</p>
+<code><span class="keyword">val </span><span class="identifier">signatures</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-signed-exchange-signature/index.html"><span class="identifier">SignedExchangeSignature</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EmulateNetworkConditionsRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">EmulateNetworkConditionsRequest</a><br/>
+<br/>
+<h1>EmulateNetworkConditionsRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EmulateNetworkConditionsRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L501">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-emulateNetworkConditions">Network#emulateNetworkConditions</a> operation call.</p>
+<p>Activates emulation of network conditions.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-emulateNetworkConditions">Network#emulateNetworkConditions</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-network-operations/emulate-network-conditions.html">NetworkOperations.emulateNetworkConditions</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-emulateNetworkConditions">Network#emulateNetworkConditions</a> operation call.</p>
+<code><span class="identifier">EmulateNetworkConditionsRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.EmulateNetworkConditionsRequest$<init>(kotlin.Boolean, kotlin.Double, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.ConnectionType)/offline">offline</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.EmulateNetworkConditionsRequest$<init>(kotlin.Boolean, kotlin.Double, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.ConnectionType)/latency">latency</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.EmulateNetworkConditionsRequest$<init>(kotlin.Boolean, kotlin.Double, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.ConnectionType)/downloadThroughput">downloadThroughput</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.EmulateNetworkConditionsRequest$<init>(kotlin.Boolean, kotlin.Double, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.ConnectionType)/uploadThroughput">uploadThroughput</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.EmulateNetworkConditionsRequest$<init>(kotlin.Boolean, kotlin.Double, kotlin.Double, kotlin.Double, pl.wendigo.chrome.api.network.ConnectionType)/connectionType">connectionType</span><span class="symbol">:</span>&nbsp;<a href="../-connection-type/index.html"><span class="identifier">ConnectionType</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="connection-type.html">connectionType</a></h4>
+</td>
+<td>
+<p>Connection type if known.</p>
+<code><span class="keyword">val </span><span class="identifier">connectionType</span><span class="symbol">: </span><a href="../-connection-type/index.html"><span class="identifier">ConnectionType</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="download-throughput.html">downloadThroughput</a></h4>
+</td>
+<td>
+<p>Maximal aggregated download throughput (bytes/sec). -1 disables download throttling.</p>
+<code><span class="keyword">val </span><span class="identifier">downloadThroughput</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="latency.html">latency</a></h4>
+</td>
+<td>
+<p>Minimum latency from request sent to response headers received (ms).</p>
+<code><span class="keyword">val </span><span class="identifier">latency</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="offline.html">offline</a></h4>
+</td>
+<td>
+<p>True to emulate internet disconnection.</p>
+<code><span class="keyword">val </span><span class="identifier">offline</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="upload-throughput.html">uploadThroughput</a></h4>
+</td>
+<td>
+<p>Maximal aggregated upload throughput (bytes/sec).  -1 disables upload throttling.</p>
+<code><span class="keyword">val </span><span class="identifier">uploadThroughput</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

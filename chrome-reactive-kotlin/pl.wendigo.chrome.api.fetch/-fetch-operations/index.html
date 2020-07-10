@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FetchOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.fetch</a>&nbsp;/&nbsp;<a href="./index.html">FetchOperations</a><br/>
+<br/>
+<h1>FetchOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">FetchOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/fetch/Operations.kt#L10">(source)</a>
+<p>A domain for letting clients substitute browser's network layer with client code.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch">Fetch</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="auth-required.html">authRequired</a></h4>
+</td>
+<td>
+<p>Issued when the domain is enabled with handleAuthRequests set to true.
+The request is paused until client responds with continueWithAuth.</p>
+<code><span class="keyword">fun </span><span class="identifier">authRequired</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-auth-required-event/index.html"><span class="identifier">AuthRequiredEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="continue-request.html">continueRequest</a></h4>
+</td>
+<td>
+<p>Continues the request, optionally modifying some of its parameters.</p>
+<code><span class="keyword">fun </span><span class="identifier">continueRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.fetch.FetchOperations$continueRequest(pl.wendigo.chrome.api.fetch.ContinueRequestRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-continue-request-request/index.html"><span class="identifier">ContinueRequestRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="continue-with-auth.html">continueWithAuth</a></h4>
+</td>
+<td>
+<p>Continues a request supplying authChallengeResponse following authRequired event.</p>
+<code><span class="keyword">fun </span><span class="identifier">continueWithAuth</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.fetch.FetchOperations$continueWithAuth(pl.wendigo.chrome.api.fetch.ContinueWithAuthRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-continue-with-auth-request/index.html"><span class="identifier">ContinueWithAuthRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables the fetch domain.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables issuing of requestPaused events. A request will be paused until client
+calls one of failRequest, fulfillRequest or continueRequest/continueWithAuth.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.fetch.FetchOperations$enable(pl.wendigo.chrome.api.fetch.EnableRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-enable-request/index.html"><span class="identifier">EnableRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Fetch domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fail-request.html">failRequest</a></h4>
+</td>
+<td>
+<p>Causes the request to fail with specified reason.</p>
+<code><span class="keyword">fun </span><span class="identifier">failRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.fetch.FetchOperations$failRequest(pl.wendigo.chrome.api.fetch.FailRequestRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-fail-request-request/index.html"><span class="identifier">FailRequestRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fulfill-request.html">fulfillRequest</a></h4>
+</td>
+<td>
+<p>Provides response to the request.</p>
+<code><span class="keyword">fun </span><span class="identifier">fulfillRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.fetch.FetchOperations$fulfillRequest(pl.wendigo.chrome.api.fetch.FulfillRequestRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-fulfill-request-request/index.html"><span class="identifier">FulfillRequestRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-response-body.html">getResponseBody</a></h4>
+</td>
+<td>
+<p>Causes the body of the response to be received from the server and
+returned as a single string. May only be issued for a request that
+is paused in the Response stage and is mutually exclusive with
+takeResponseBodyForInterceptionAsStream. Calling other methods that
+affect the request or disabling fetch domain before body is received
+results in an undefined behavior.</p>
+<code><span class="keyword">fun </span><span class="identifier">getResponseBody</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.fetch.FetchOperations$getResponseBody(pl.wendigo.chrome.api.fetch.GetResponseBodyRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-response-body-request/index.html"><span class="identifier">GetResponseBodyRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-response-body-response/index.html"><span class="identifier">GetResponseBodyResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-paused.html">requestPaused</a></h4>
+</td>
+<td>
+<p>Issued when the domain is enabled and the request URL matches the
+specified filter. The request is paused until the client responds
+with one of continueRequest, failRequest or fulfillRequest.
+The stage of the request can be determined by presence of responseErrorReason
+and responseStatusCode -- the request is at the response stage if either
+of these fields is present and in the request stage otherwise.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestPaused</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-request-paused-event/index.html"><span class="identifier">RequestPausedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="take-response-body-as-stream.html">takeResponseBodyAsStream</a></h4>
+</td>
+<td>
+<p>Returns a handle to the stream representing the response body.
+The request must be paused in the HeadersReceived stage.
+Note that after this command the request can't be continued
+as is -- client either needs to cancel it or to provide the
+response body.
+The stream only supports sequential read, IO.read will fail if the position
+is specified.
+This method is mutually exclusive with getResponseBody.
+Calling other methods that affect the request or disabling fetch
+domain before body is received results in an undefined behavior.</p>
+<code><span class="keyword">fun </span><span class="identifier">takeResponseBodyAsStream</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.fetch.FetchOperations$takeResponseBodyAsStream(pl.wendigo.chrome.api.fetch.TakeResponseBodyAsStreamRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-take-response-body-as-stream-request/index.html"><span class="identifier">TakeResponseBodyAsStreamRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-take-response-body-as-stream-response/index.html"><span class="identifier">TakeResponseBodyAsStreamResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

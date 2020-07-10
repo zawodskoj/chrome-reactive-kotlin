@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GetMatchedStylesForNodeResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.css</a>&nbsp;/&nbsp;<a href="./index.html">GetMatchedStylesForNodeResponse</a><br/>
+<br/>
+<h1>GetMatchedStylesForNodeResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetMatchedStylesForNodeResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/css/Operations.kt#L480">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getMatchedStylesForNode">CSS#getMatchedStylesForNode</a> operation call.
+Returns requested styles for a DOM node identified by <code>nodeId</code>.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getMatchedStylesForNode">CSS#getMatchedStylesForNode</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-c-s-s-operations/get-matched-styles-for-node.html">CSSOperations.getMatchedStylesForNode</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getMatchedStylesForNode">CSS#getMatchedStylesForNode</a> operation call.
+Returns requested styles for a DOM node identified by <code>nodeId</code>.</p>
+<code><span class="identifier">GetMatchedStylesForNodeResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.GetMatchedStylesForNodeResponse$<init>(pl.wendigo.chrome.api.css.CSSStyle, pl.wendigo.chrome.api.css.CSSStyle, kotlin.collections.List((pl.wendigo.chrome.api.css.RuleMatch)), kotlin.collections.List((pl.wendigo.chrome.api.css.PseudoElementMatches)), kotlin.collections.List((pl.wendigo.chrome.api.css.InheritedStyleEntry)), kotlin.collections.List((pl.wendigo.chrome.api.css.CSSKeyframesRule)))/inlineStyle">inlineStyle</span><span class="symbol">:</span>&nbsp;<a href="../-c-s-s-style/index.html"><span class="identifier">CSSStyle</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.GetMatchedStylesForNodeResponse$<init>(pl.wendigo.chrome.api.css.CSSStyle, pl.wendigo.chrome.api.css.CSSStyle, kotlin.collections.List((pl.wendigo.chrome.api.css.RuleMatch)), kotlin.collections.List((pl.wendigo.chrome.api.css.PseudoElementMatches)), kotlin.collections.List((pl.wendigo.chrome.api.css.InheritedStyleEntry)), kotlin.collections.List((pl.wendigo.chrome.api.css.CSSKeyframesRule)))/attributesStyle">attributesStyle</span><span class="symbol">:</span>&nbsp;<a href="../-c-s-s-style/index.html"><span class="identifier">CSSStyle</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.GetMatchedStylesForNodeResponse$<init>(pl.wendigo.chrome.api.css.CSSStyle, pl.wendigo.chrome.api.css.CSSStyle, kotlin.collections.List((pl.wendigo.chrome.api.css.RuleMatch)), kotlin.collections.List((pl.wendigo.chrome.api.css.PseudoElementMatches)), kotlin.collections.List((pl.wendigo.chrome.api.css.InheritedStyleEntry)), kotlin.collections.List((pl.wendigo.chrome.api.css.CSSKeyframesRule)))/matchedCSSRules">matchedCSSRules</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-rule-match/index.html"><span class="identifier">RuleMatch</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.GetMatchedStylesForNodeResponse$<init>(pl.wendigo.chrome.api.css.CSSStyle, pl.wendigo.chrome.api.css.CSSStyle, kotlin.collections.List((pl.wendigo.chrome.api.css.RuleMatch)), kotlin.collections.List((pl.wendigo.chrome.api.css.PseudoElementMatches)), kotlin.collections.List((pl.wendigo.chrome.api.css.InheritedStyleEntry)), kotlin.collections.List((pl.wendigo.chrome.api.css.CSSKeyframesRule)))/pseudoElements">pseudoElements</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-pseudo-element-matches/index.html"><span class="identifier">PseudoElementMatches</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.GetMatchedStylesForNodeResponse$<init>(pl.wendigo.chrome.api.css.CSSStyle, pl.wendigo.chrome.api.css.CSSStyle, kotlin.collections.List((pl.wendigo.chrome.api.css.RuleMatch)), kotlin.collections.List((pl.wendigo.chrome.api.css.PseudoElementMatches)), kotlin.collections.List((pl.wendigo.chrome.api.css.InheritedStyleEntry)), kotlin.collections.List((pl.wendigo.chrome.api.css.CSSKeyframesRule)))/inherited">inherited</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-inherited-style-entry/index.html"><span class="identifier">InheritedStyleEntry</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.GetMatchedStylesForNodeResponse$<init>(pl.wendigo.chrome.api.css.CSSStyle, pl.wendigo.chrome.api.css.CSSStyle, kotlin.collections.List((pl.wendigo.chrome.api.css.RuleMatch)), kotlin.collections.List((pl.wendigo.chrome.api.css.PseudoElementMatches)), kotlin.collections.List((pl.wendigo.chrome.api.css.InheritedStyleEntry)), kotlin.collections.List((pl.wendigo.chrome.api.css.CSSKeyframesRule)))/cssKeyframesRules">cssKeyframesRules</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-c-s-s-keyframes-rule/index.html"><span class="identifier">CSSKeyframesRule</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="attributes-style.html">attributesStyle</a></h4>
+</td>
+<td>
+<p>Attribute-defined element style (e.g. resulting from "width=20 height=100%").</p>
+<code><span class="keyword">val </span><span class="identifier">attributesStyle</span><span class="symbol">: </span><a href="../-c-s-s-style/index.html"><span class="identifier">CSSStyle</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="css-keyframes-rules.html">cssKeyframesRules</a></h4>
+</td>
+<td>
+<p>A list of CSS keyframed animations matching this node.</p>
+<code><span class="keyword">val </span><span class="identifier">cssKeyframesRules</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-c-s-s-keyframes-rule/index.html"><span class="identifier">CSSKeyframesRule</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="inherited.html">inherited</a></h4>
+</td>
+<td>
+<p>A chain of inherited styles (from the immediate node parent up to the DOM tree root).</p>
+<code><span class="keyword">val </span><span class="identifier">inherited</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-inherited-style-entry/index.html"><span class="identifier">InheritedStyleEntry</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="inline-style.html">inlineStyle</a></h4>
+</td>
+<td>
+<p>Inline style for the specified DOM node.</p>
+<code><span class="keyword">val </span><span class="identifier">inlineStyle</span><span class="symbol">: </span><a href="../-c-s-s-style/index.html"><span class="identifier">CSSStyle</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="matched-c-s-s-rules.html">matchedCSSRules</a></h4>
+</td>
+<td>
+<p>CSS rules matching this node, from all applicable stylesheets.</p>
+<code><span class="keyword">val </span><span class="identifier">matchedCSSRules</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-rule-match/index.html"><span class="identifier">RuleMatch</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pseudo-elements.html">pseudoElements</a></h4>
+</td>
+<td>
+<p>Pseudo style matches for this node.</p>
+<code><span class="keyword">val </span><span class="identifier">pseudoElements</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-pseudo-element-matches/index.html"><span class="identifier">PseudoElementMatches</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

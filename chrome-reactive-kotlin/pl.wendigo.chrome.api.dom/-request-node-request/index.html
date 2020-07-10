@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RequestNodeRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.dom</a>&nbsp;/&nbsp;<a href="./index.html">RequestNodeRequest</a><br/>
+<br/>
+<h1>RequestNodeRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestNodeRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/dom/Operations.kt#L1305">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-requestNode">DOM#requestNode</a> operation call.</p>
+<p>Requests that the node is sent to the caller given the JavaScript node object reference. All
+nodes that form the path from the node to the root are also sent to the client as a series of
+<code>setChildNodes</code> notifications.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-requestNode">DOM#requestNode</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-d-o-m-operations/request-node.html">DOMOperations.requestNode</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-requestNode">DOM#requestNode</a> operation call.</p>
+<code><span class="identifier">RequestNodeRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.RequestNodeRequest$<init>(kotlin.String)/objectId">objectId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-remote-object-id.html"><span class="identifier">RemoteObjectId</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="object-id.html">objectId</a></h4>
+</td>
+<td>
+<p>JavaScript object id to convert into node.</p>
+<code><span class="keyword">val </span><span class="identifier">objectId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-remote-object-id.html"><span class="identifier">RemoteObjectId</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

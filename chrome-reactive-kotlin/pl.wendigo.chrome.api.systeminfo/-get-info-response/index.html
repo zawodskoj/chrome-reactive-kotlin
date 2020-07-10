@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GetInfoResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.systeminfo</a>&nbsp;/&nbsp;<a href="./index.html">GetInfoResponse</a><br/>
+<br/>
+<h1>GetInfoResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetInfoResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/systeminfo/Operations.kt#L43">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/SystemInfo#method-getInfo">SystemInfo#getInfo</a> operation call.
+Returns information about the system.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/SystemInfo#method-getInfo">SystemInfo#getInfo</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-system-info-operations/get-info.html">SystemInfoOperations.getInfo</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/SystemInfo#method-getInfo">SystemInfo#getInfo</a> operation call.
+Returns information about the system.</p>
+<code><span class="identifier">GetInfoResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GetInfoResponse$<init>(pl.wendigo.chrome.api.systeminfo.GPUInfo, kotlin.String, kotlin.String, kotlin.String)/gpu">gpu</span><span class="symbol">:</span>&nbsp;<a href="../-g-p-u-info/index.html"><span class="identifier">GPUInfo</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GetInfoResponse$<init>(pl.wendigo.chrome.api.systeminfo.GPUInfo, kotlin.String, kotlin.String, kotlin.String)/modelName">modelName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GetInfoResponse$<init>(pl.wendigo.chrome.api.systeminfo.GPUInfo, kotlin.String, kotlin.String, kotlin.String)/modelVersion">modelVersion</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.systeminfo.GetInfoResponse$<init>(pl.wendigo.chrome.api.systeminfo.GPUInfo, kotlin.String, kotlin.String, kotlin.String)/commandLine">commandLine</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="command-line.html">commandLine</a></h4>
+</td>
+<td>
+<p>The command line string used to launch the browser. Will be the empty string if not
+supported.</p>
+<code><span class="keyword">val </span><span class="identifier">commandLine</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="gpu.html">gpu</a></h4>
+</td>
+<td>
+<p>Information about the GPUs on the system.</p>
+<code><span class="keyword">val </span><span class="identifier">gpu</span><span class="symbol">: </span><a href="../-g-p-u-info/index.html"><span class="identifier">GPUInfo</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="model-name.html">modelName</a></h4>
+</td>
+<td>
+<p>A platform-dependent description of the model of the machine. On Mac OS, this is, for
+example, 'MacBookPro'. Will be the empty string if not supported.</p>
+<code><span class="keyword">val </span><span class="identifier">modelName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="model-version.html">modelVersion</a></h4>
+</td>
+<td>
+<p>A platform-dependent description of the version of the machine. On Mac OS, this is, for
+example, '10.1'. Will be the empty string if not supported.</p>
+<code><span class="keyword">val </span><span class="identifier">modelVersion</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

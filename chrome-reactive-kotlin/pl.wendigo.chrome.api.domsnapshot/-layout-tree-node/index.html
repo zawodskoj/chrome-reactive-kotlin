@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LayoutTreeNode - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.domsnapshot</a>&nbsp;/&nbsp;<a href="./index.html">LayoutTreeNode</a><br/>
+<br/>
+<h1>LayoutTreeNode</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LayoutTreeNode</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/domsnapshot/Types.kt#L189">(source)</a>
+<p>Details of an element in the DOM tree with a LayoutObject.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot#type-LayoutTreeNode">DOMSnapshot#LayoutTreeNode</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Details of an element in the DOM tree with a LayoutObject.</p>
+<code><span class="identifier">LayoutTreeNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.LayoutTreeNode$<init>(kotlin.Int, pl.wendigo.chrome.api.dom.Rect, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.InlineTextBox)), kotlin.Int, kotlin.Int, kotlin.Boolean)/domNodeIndex">domNodeIndex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.LayoutTreeNode$<init>(kotlin.Int, pl.wendigo.chrome.api.dom.Rect, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.InlineTextBox)), kotlin.Int, kotlin.Int, kotlin.Boolean)/boundingBox">boundingBox</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.dom/-rect/index.html"><span class="identifier">Rect</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.LayoutTreeNode$<init>(kotlin.Int, pl.wendigo.chrome.api.dom.Rect, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.InlineTextBox)), kotlin.Int, kotlin.Int, kotlin.Boolean)/layoutText">layoutText</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.LayoutTreeNode$<init>(kotlin.Int, pl.wendigo.chrome.api.dom.Rect, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.InlineTextBox)), kotlin.Int, kotlin.Int, kotlin.Boolean)/inlineTextNodes">inlineTextNodes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-inline-text-box/index.html"><span class="identifier">InlineTextBox</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.LayoutTreeNode$<init>(kotlin.Int, pl.wendigo.chrome.api.dom.Rect, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.InlineTextBox)), kotlin.Int, kotlin.Int, kotlin.Boolean)/styleIndex">styleIndex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.LayoutTreeNode$<init>(kotlin.Int, pl.wendigo.chrome.api.dom.Rect, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.InlineTextBox)), kotlin.Int, kotlin.Int, kotlin.Boolean)/paintOrder">paintOrder</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.LayoutTreeNode$<init>(kotlin.Int, pl.wendigo.chrome.api.dom.Rect, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.domsnapshot.InlineTextBox)), kotlin.Int, kotlin.Int, kotlin.Boolean)/isStackingContext">isStackingContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="bounding-box.html">boundingBox</a></h4>
+</td>
+<td>
+<p>The bounding box in document coordinates. Note that scroll offset of the document is ignored.</p>
+<code><span class="keyword">val </span><span class="identifier">boundingBox</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.dom/-rect/index.html"><span class="identifier">Rect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dom-node-index.html">domNodeIndex</a></h4>
+</td>
+<td>
+<p>The index of the related DOM node in the <code>domNodes</code> array returned by <code>getSnapshot</code>.</p>
+<code><span class="keyword">val </span><span class="identifier">domNodeIndex</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="inline-text-nodes.html">inlineTextNodes</a></h4>
+</td>
+<td>
+<p>The post-layout inline text nodes, if any.</p>
+<code><span class="keyword">val </span><span class="identifier">inlineTextNodes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-inline-text-box/index.html"><span class="identifier">InlineTextBox</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-stacking-context.html">isStackingContext</a></h4>
+</td>
+<td>
+<p>Set to true to indicate the element begins a new stacking context.</p>
+<code><span class="keyword">val </span><span class="identifier">isStackingContext</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="layout-text.html">layoutText</a></h4>
+</td>
+<td>
+<p>Contents of the LayoutText, if any.</p>
+<code><span class="keyword">val </span><span class="identifier">layoutText</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="paint-order.html">paintOrder</a></h4>
+</td>
+<td>
+<p>Global paint order index, which is determined by the stacking order of the nodes. Nodes
+that are painted together will have the same index. Only provided if includePaintOrder in
+getSnapshot was true.</p>
+<code><span class="keyword">val </span><span class="identifier">paintOrder</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="style-index.html">styleIndex</a></h4>
+</td>
+<td>
+<p>Index into the <code>computedStyles</code> array returned by <code>getSnapshot</code>.</p>
+<code><span class="keyword">val </span><span class="identifier">styleIndex</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

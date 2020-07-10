@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PreciseCoverageDeltaUpdateEvent.<init> - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.profiler</a>&nbsp;/&nbsp;<a href="index.html">PreciseCoverageDeltaUpdateEvent</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="pl.wendigo.chrome.api.profiler.PreciseCoverageDeltaUpdateEvent$&lt;init&gt;(kotlin.Double, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.ScriptCoverage)))"></a>
+<code><span class="identifier">PreciseCoverageDeltaUpdateEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.profiler.PreciseCoverageDeltaUpdateEvent$<init>(kotlin.Double, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.ScriptCoverage)))/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.PreciseCoverageDeltaUpdateEvent$<init>(kotlin.Double, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.ScriptCoverage)))/occassion">occassion</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.PreciseCoverageDeltaUpdateEvent$<init>(kotlin.Double, kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.profiler.ScriptCoverage)))/result">result</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-script-coverage/index.html"><span class="identifier">ScriptCoverage</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code>
+<p>Reports coverage delta since the last poll (either from an event like this, or from
+<code>takePreciseCoverage</code> for the current isolate. May only be sent if precise code
+coverage has been started. This event can be trigged by the embedder to, for example,
+trigger collection of coverage data immediatelly at a certain point in time.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#event-preciseCoverageDeltaUpdate">Profiler#preciseCoverageDeltaUpdate</a> event documentation.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TracingOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.tracing</a>&nbsp;/&nbsp;<a href="./index.html">TracingOperations</a><br/>
+<br/>
+<h1>TracingOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">TracingOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/tracing/Operations.kt#L10">(source)</a>
+<p>TracingOperations represents Tracing protocol domain request/response operations and events that can be captured.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Tracing">Tracing</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="buffer-usage.html">bufferUsage</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all Tracing.bufferUsage events.</p>
+<code><span class="keyword">fun </span><span class="identifier">bufferUsage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-buffer-usage-event/index.html"><span class="identifier">BufferUsageEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="data-collected.html">dataCollected</a></h4>
+</td>
+<td>
+<p>Contains an bucket of collected trace events. When tracing is stopped collected events will be
+send as a sequence of dataCollected events followed by tracingComplete event.</p>
+<code><span class="keyword">fun </span><span class="identifier">dataCollected</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-data-collected-event/index.html"><span class="identifier">DataCollectedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="end.html">end</a></h4>
+</td>
+<td>
+<p>Stop trace events collection.</p>
+<code><span class="keyword">fun </span><span class="identifier">end</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Tracing domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-categories.html">getCategories</a></h4>
+</td>
+<td>
+<p>Gets supported tracing categories.</p>
+<code><span class="keyword">fun </span><span class="identifier">getCategories</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-categories-response/index.html"><span class="identifier">GetCategoriesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="record-clock-sync-marker.html">recordClockSyncMarker</a></h4>
+</td>
+<td>
+<p>Record a clock sync marker in the trace.</p>
+<code><span class="keyword">fun </span><span class="identifier">recordClockSyncMarker</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.tracing.TracingOperations$recordClockSyncMarker(pl.wendigo.chrome.api.tracing.RecordClockSyncMarkerRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-record-clock-sync-marker-request/index.html"><span class="identifier">RecordClockSyncMarkerRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-memory-dump.html">requestMemoryDump</a></h4>
+</td>
+<td>
+<p>Request a global memory dump.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestMemoryDump</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.tracing.TracingOperations$requestMemoryDump(pl.wendigo.chrome.api.tracing.RequestMemoryDumpRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-request-memory-dump-request/index.html"><span class="identifier">RequestMemoryDumpRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-request-memory-dump-response/index.html"><span class="identifier">RequestMemoryDumpResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start.html">start</a></h4>
+</td>
+<td>
+<p>Start trace events collection.</p>
+<code><span class="keyword">fun </span><span class="identifier">start</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.tracing.TracingOperations$start(pl.wendigo.chrome.api.tracing.StartRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-start-request/index.html"><span class="identifier">StartRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="tracing-complete.html">tracingComplete</a></h4>
+</td>
+<td>
+<p>Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+delivered via dataCollected events.</p>
+<code><span class="keyword">fun </span><span class="identifier">tracingComplete</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-tracing-complete-event/index.html"><span class="identifier">TracingCompleteEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

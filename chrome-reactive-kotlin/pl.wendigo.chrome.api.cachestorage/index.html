@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.cachestorage - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.cachestorage</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.cachestorage</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage">CacheStorage</a> domain implementation accessible via <a href="-cache-storage-operations/index.html">CacheStorageOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-cache/index.html">Cache</a></h4>
+</td>
+<td>
+<p>Cache identifier.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Cache</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cached-response/index.html">CachedResponse</a></h4>
+</td>
+<td>
+<p>Cached response</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CachedResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cached-response-type/index.html">CachedResponseType</a></h4>
+</td>
+<td>
+<p>type of HTTP response cached</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">CachedResponseType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cache-id.html">CacheId</a></h4>
+</td>
+<td>
+<p>Unique identifier of the Cache object.</p>
+<code><span class="keyword">typealias </span><span class="identifier">CacheId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cache-storage-operations/index.html">CacheStorageOperations</a></h4>
+</td>
+<td>
+<p>CacheStorageOperations represents CacheStorage protocol domain request/response operations and events that can be captured.</p>
+<code><span class="keyword">class </span><span class="identifier">CacheStorageOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-data-entry/index.html">DataEntry</a></h4>
+</td>
+<td>
+<p>Data entry.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DataEntry</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-delete-cache-request/index.html">DeleteCacheRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-deleteCache">CacheStorage#deleteCache</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DeleteCacheRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-delete-entry-request/index.html">DeleteEntryRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-deleteEntry">CacheStorage#deleteEntry</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DeleteEntryRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-header/index.html">Header</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Header</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-cached-response-request/index.html">RequestCachedResponseRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestCachedResponse">CacheStorage#requestCachedResponse</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestCachedResponseRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-cached-response-response/index.html">RequestCachedResponseResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestCachedResponse">CacheStorage#requestCachedResponse</a> operation call.
+Fetches cache entry.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestCachedResponseResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-cache-names-request/index.html">RequestCacheNamesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestCacheNames">CacheStorage#requestCacheNames</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestCacheNamesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-cache-names-response/index.html">RequestCacheNamesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestCacheNames">CacheStorage#requestCacheNames</a> operation call.
+Requests cache names.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestCacheNamesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-entries-request/index.html">RequestEntriesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestEntries">CacheStorage#requestEntries</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestEntriesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-entries-response/index.html">RequestEntriesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestEntries">CacheStorage#requestEntries</a> operation call.
+Requests data from cache.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestEntriesResponse</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MemoryOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.memory</a>&nbsp;/&nbsp;<a href="./index.html">MemoryOperations</a><br/>
+<br/>
+<h1>MemoryOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">MemoryOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/memory/Operations.kt#L10">(source)</a>
+<p>MemoryOperations represents Memory protocol domain request/response operations and events that can be captured.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Memory">Memory</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Memory domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="forcibly-purge-java-script-memory.html">forciblyPurgeJavaScriptMemory</a></h4>
+</td>
+<td>
+<p>Simulate OomIntervention by purging V8 memory.</p>
+<code><span class="keyword">fun </span><span class="identifier">forciblyPurgeJavaScriptMemory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-all-time-sampling-profile.html">getAllTimeSamplingProfile</a></h4>
+</td>
+<td>
+<p>Retrieve native memory allocations profile
+collected since renderer process startup.</p>
+<code><span class="keyword">fun </span><span class="identifier">getAllTimeSamplingProfile</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-all-time-sampling-profile-response/index.html"><span class="identifier">GetAllTimeSamplingProfileResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-browser-sampling-profile.html">getBrowserSamplingProfile</a></h4>
+</td>
+<td>
+<p>Retrieve native memory allocations profile
+collected since browser process startup.</p>
+<code><span class="keyword">fun </span><span class="identifier">getBrowserSamplingProfile</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-browser-sampling-profile-response/index.html"><span class="identifier">GetBrowserSamplingProfileResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-d-o-m-counters.html">getDOMCounters</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDOMCounters</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-d-o-m-counters-response/index.html"><span class="identifier">GetDOMCountersResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-sampling-profile.html">getSamplingProfile</a></h4>
+</td>
+<td>
+<p>Retrieve native memory allocations profile collected since last
+<code>startSampling</code> call.</p>
+<code><span class="keyword">fun </span><span class="identifier">getSamplingProfile</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-sampling-profile-response/index.html"><span class="identifier">GetSamplingProfileResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="prepare-for-leak-detection.html">prepareForLeakDetection</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">prepareForLeakDetection</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-pressure-notifications-suppressed.html">setPressureNotificationsSuppressed</a></h4>
+</td>
+<td>
+<p>Enable/disable suppressing memory pressure notifications in all processes.</p>
+<code><span class="keyword">fun </span><span class="identifier">setPressureNotificationsSuppressed</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.memory.MemoryOperations$setPressureNotificationsSuppressed(pl.wendigo.chrome.api.memory.SetPressureNotificationsSuppressedRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-pressure-notifications-suppressed-request/index.html"><span class="identifier">SetPressureNotificationsSuppressedRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="simulate-pressure-notification.html">simulatePressureNotification</a></h4>
+</td>
+<td>
+<p>Simulate a memory pressure notification in all processes.</p>
+<code><span class="keyword">fun </span><span class="identifier">simulatePressureNotification</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.memory.MemoryOperations$simulatePressureNotification(pl.wendigo.chrome.api.memory.SimulatePressureNotificationRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-simulate-pressure-notification-request/index.html"><span class="identifier">SimulatePressureNotificationRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-sampling.html">startSampling</a></h4>
+</td>
+<td>
+<p>Start collecting native memory profile.</p>
+<code><span class="keyword">fun </span><span class="identifier">startSampling</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.memory.MemoryOperations$startSampling(pl.wendigo.chrome.api.memory.StartSamplingRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-start-sampling-request/index.html"><span class="identifier">StartSamplingRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop-sampling.html">stopSampling</a></h4>
+</td>
+<td>
+<p>Stop collecting native memory profile.</p>
+<code><span class="keyword">fun </span><span class="identifier">stopSampling</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

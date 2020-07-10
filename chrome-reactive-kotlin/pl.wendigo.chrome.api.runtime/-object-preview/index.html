@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ObjectPreview - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="./index.html">ObjectPreview</a><br/>
+<br/>
+<h1>ObjectPreview</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ObjectPreview</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Types.kt#L109">(source)</a>
+<p>Object containing abbreviated remote object value.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#type-ObjectPreview">Runtime#ObjectPreview</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Object containing abbreviated remote object value.</p>
+<code><span class="identifier">ObjectPreview</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ObjectPreview$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.runtime.PropertyPreview)), kotlin.collections.List((pl.wendigo.chrome.api.runtime.EntryPreview)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ObjectPreview$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.runtime.PropertyPreview)), kotlin.collections.List((pl.wendigo.chrome.api.runtime.EntryPreview)))/subtype">subtype</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ObjectPreview$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.runtime.PropertyPreview)), kotlin.collections.List((pl.wendigo.chrome.api.runtime.EntryPreview)))/description">description</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ObjectPreview$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.runtime.PropertyPreview)), kotlin.collections.List((pl.wendigo.chrome.api.runtime.EntryPreview)))/overflow">overflow</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ObjectPreview$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.runtime.PropertyPreview)), kotlin.collections.List((pl.wendigo.chrome.api.runtime.EntryPreview)))/properties">properties</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-property-preview/index.html"><span class="identifier">PropertyPreview</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.ObjectPreview$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.runtime.PropertyPreview)), kotlin.collections.List((pl.wendigo.chrome.api.runtime.EntryPreview)))/entries">entries</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-entry-preview/index.html"><span class="identifier">EntryPreview</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="description.html">description</a></h4>
+</td>
+<td>
+<p>String representation of the object.</p>
+<code><span class="keyword">val </span><span class="identifier">description</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="entries.html">entries</a></h4>
+</td>
+<td>
+<p>List of the entries. Specified for <code>map</code> and <code>set</code> subtype values only.</p>
+<code><span class="keyword">val </span><span class="identifier">entries</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-entry-preview/index.html"><span class="identifier">EntryPreview</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="overflow.html">overflow</a></h4>
+</td>
+<td>
+<p>True iff some of the properties or entries of the original object did not fit.</p>
+<code><span class="keyword">val </span><span class="identifier">overflow</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="properties.html">properties</a></h4>
+</td>
+<td>
+<p>List of the properties.</p>
+<code><span class="keyword">val </span><span class="identifier">properties</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-property-preview/index.html"><span class="identifier">PropertyPreview</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subtype.html">subtype</a></h4>
+</td>
+<td>
+<p>Object subtype hint. Specified for <code>object</code> type values only.</p>
+<code><span class="keyword">val </span><span class="identifier">subtype</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<p>Object type.</p>
+<code><span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

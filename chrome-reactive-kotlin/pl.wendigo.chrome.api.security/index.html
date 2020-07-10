@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.security - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.security</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.security</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Security">Security</a> domain implementation accessible via <a href="-security-operations/index.html">SecurityOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-certificate-error-action/index.html">CertificateErrorAction</a></h4>
+</td>
+<td>
+<p>The action to take when a certificate error occurs. continue will continue processing the
+request and cancel will cancel the request.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">CertificateErrorAction</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-certificate-error-event/index.html">CertificateErrorEvent</a></h4>
+</td>
+<td>
+<p>There is a certificate error. If overriding certificate errors is enabled, then it should be
+handled with the <code>handleCertificateError</code> command. Note: this event does not fire if the
+certificate error has been allowed internally. Only one client per target should override
+certificate errors at the same time.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CertificateErrorEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-certificate-id.html">CertificateId</a></h4>
+</td>
+<td>
+<p>An internal certificate ID value.</p>
+<code><span class="keyword">typealias </span><span class="identifier">CertificateId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-certificate-security-state/index.html">CertificateSecurityState</a></h4>
+</td>
+<td>
+<p>Details about the security state of the page certificate.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CertificateSecurityState</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-handle-certificate-error-request/index.html">HandleCertificateErrorRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Security#method-handleCertificateError">Security#handleCertificateError</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HandleCertificateErrorRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-insecure-content-status/index.html">InsecureContentStatus</a></h4>
+</td>
+<td>
+<p>Information about insecure content on the page.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InsecureContentStatus</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-mixed-content-type/index.html">MixedContentType</a></h4>
+</td>
+<td>
+<p>A description of mixed content (HTTP resources on HTTPS pages), as defined by
+https://www.w3.org/TR/mixed-content/#categories</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">MixedContentType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-safety-tip-info/index.html">SafetyTipInfo</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SafetyTipInfo</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-safety-tip-status/index.html">SafetyTipStatus</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">SafetyTipStatus</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-security-operations/index.html">SecurityOperations</a></h4>
+</td>
+<td>
+<p>Security</p>
+<code><span class="keyword">class </span><span class="identifier">SecurityOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-security-state/index.html">SecurityState</a></h4>
+</td>
+<td>
+<p>The security level of a page or resource.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">SecurityState</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-security-state-changed-event/index.html">SecurityStateChangedEvent</a></h4>
+</td>
+<td>
+<p>The security state of the page changed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SecurityStateChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-security-state-explanation/index.html">SecurityStateExplanation</a></h4>
+</td>
+<td>
+<p>An explanation of an factor contributing to the security state.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SecurityStateExplanation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-ignore-certificate-errors-request/index.html">SetIgnoreCertificateErrorsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Security#method-setIgnoreCertificateErrors">Security#setIgnoreCertificateErrors</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetIgnoreCertificateErrorsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-override-certificate-errors-request/index.html">SetOverrideCertificateErrorsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Security#method-setOverrideCertificateErrors">Security#setOverrideCertificateErrors</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetOverrideCertificateErrorsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-visible-security-state/index.html">VisibleSecurityState</a></h4>
+</td>
+<td>
+<p>Security state information about the page.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">VisibleSecurityState</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-visible-security-state-changed-event/index.html">VisibleSecurityStateChangedEvent</a></h4>
+</td>
+<td>
+<p>The security state of the page changed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">VisibleSecurityStateChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

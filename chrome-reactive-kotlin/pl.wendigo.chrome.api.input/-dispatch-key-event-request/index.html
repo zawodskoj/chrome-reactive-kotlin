@@ -1,0 +1,165 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DispatchKeyEventRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.input</a>&nbsp;/&nbsp;<a href="./index.html">DispatchKeyEventRequest</a><br/>
+<br/>
+<h1>DispatchKeyEventRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DispatchKeyEventRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/input/Operations.kt#L99">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Input#method-dispatchKeyEvent">Input#dispatchKeyEvent</a> operation call.</p>
+<p>Dispatches a key event to the page.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Input#method-dispatchKeyEvent">Input#dispatchKeyEvent</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-input-operations/dispatch-key-event.html">InputOperations.dispatchKeyEvent</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Input#method-dispatchKeyEvent">Input#dispatchKeyEvent</a> operation call.</p>
+<code><span class="identifier">DispatchKeyEventRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/modifiers">modifiers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/text">text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/unmodifiedText">unmodifiedText</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/keyIdentifier">keyIdentifier</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/code">code</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/windowsVirtualKeyCode">windowsVirtualKeyCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/nativeVirtualKeyCode">nativeVirtualKeyCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/autoRepeat">autoRepeat</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/isKeypad">isKeypad</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/isSystemKey">isSystemKey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/location">location</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.input.DispatchKeyEventRequest$<init>(kotlin.String, kotlin.Int, kotlin.Double, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.collections.List((kotlin.String)))/commands">commands</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="auto-repeat.html">autoRepeat</a></h4>
+</td>
+<td>
+<p>Whether the event was generated from auto repeat (default: false).</p>
+<code><span class="keyword">val </span><span class="identifier">autoRepeat</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="code.html">code</a></h4>
+</td>
+<td>
+<p>Unique DOM defined string value for each physical key (e.g., 'KeyA') (default: "").</p>
+<code><span class="keyword">val </span><span class="identifier">code</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="commands.html">commands</a></h4>
+</td>
+<td>
+<p>Editing commands to send with the key event (e.g., 'selectAll') (default: []).
+These are related to but not equal the command names used in <code>document.execCommand</code> and NSStandardKeyBindingResponding.
+See https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/core/editing/commands/editor_command_names.h for valid command names.</p>
+<code><span class="keyword">val </span><span class="identifier">commands</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-keypad.html">isKeypad</a></h4>
+</td>
+<td>
+<p>Whether the event was generated from the keypad (default: false).</p>
+<code><span class="keyword">val </span><span class="identifier">isKeypad</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-system-key.html">isSystemKey</a></h4>
+</td>
+<td>
+<p>Whether the event was a system key event (default: false).</p>
+<code><span class="keyword">val </span><span class="identifier">isSystemKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="key.html">key</a></h4>
+</td>
+<td>
+<p>Unique DOM defined string value describing the meaning of the key in the context of active
+modifiers, keyboard layout, etc (e.g., 'AltGr') (default: "").</p>
+<code><span class="keyword">val </span><span class="identifier">key</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="key-identifier.html">keyIdentifier</a></h4>
+</td>
+<td>
+<p>Unique key identifier (e.g., 'U+0041') (default: "").</p>
+<code><span class="keyword">val </span><span class="identifier">keyIdentifier</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="location.html">location</a></h4>
+</td>
+<td>
+<p>Whether the event was from the left or right side of the keyboard. 1=Left, 2=Right (default:
+0).</p>
+<code><span class="keyword">val </span><span class="identifier">location</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="modifiers.html">modifiers</a></h4>
+</td>
+<td>
+<p>Bit field representing pressed modifier keys. Alt=1, Ctrl=2, Meta/Command=4, Shift=8
+(default: 0).</p>
+<code><span class="keyword">val </span><span class="identifier">modifiers</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="native-virtual-key-code.html">nativeVirtualKeyCode</a></h4>
+</td>
+<td>
+<p>Native virtual key code (default: 0).</p>
+<code><span class="keyword">val </span><span class="identifier">nativeVirtualKeyCode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="text.html">text</a></h4>
+</td>
+<td>
+<p>Text as generated by processing a virtual key code with a keyboard layout. Not needed for
+for <code>keyUp</code> and <code>rawKeyDown</code> events (default: "")</p>
+<code><span class="keyword">val </span><span class="identifier">text</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timestamp.html">timestamp</a></h4>
+</td>
+<td>
+<p>Time at which the event occurred.</p>
+<code><span class="keyword">val </span><span class="identifier">timestamp</span><span class="symbol">: </span><a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<p>Type of the key event.</p>
+<code><span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unmodified-text.html">unmodifiedText</a></h4>
+</td>
+<td>
+<p>Text that would have been generated by the keyboard if no modifiers were pressed (except for
+shift). Useful for shortcut (accelerator) key handling (default: "").</p>
+<code><span class="keyword">val </span><span class="identifier">unmodifiedText</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="windows-virtual-key-code.html">windowsVirtualKeyCode</a></h4>
+</td>
+<td>
+<p>Windows virtual key code (default: 0).</p>
+<code><span class="keyword">val </span><span class="identifier">windowsVirtualKeyCode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

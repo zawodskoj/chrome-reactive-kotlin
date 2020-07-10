@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ResponseReceivedEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">ResponseReceivedEvent</a><br/>
+<br/>
+<h1>ResponseReceivedEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResponseReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L1377">(source)</a>
+<p>Fired when HTTP response is available.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#event-responseReceived">Network#responseReceived</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when HTTP response is available.</p>
+<code><span class="identifier">ResponseReceivedEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.ResponseReceivedEvent$<init>(kotlin.String, kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.Response, kotlin.String)/requestId">requestId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ResponseReceivedEvent$<init>(kotlin.String, kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.Response, kotlin.String)/loaderId">loaderId</span><span class="symbol">:</span>&nbsp;<a href="../-loader-id.html"><span class="identifier">LoaderId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ResponseReceivedEvent$<init>(kotlin.String, kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.Response, kotlin.String)/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="../-monotonic-time.html"><span class="identifier">MonotonicTime</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ResponseReceivedEvent$<init>(kotlin.String, kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.Response, kotlin.String)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../-resource-type/index.html"><span class="identifier">ResourceType</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ResponseReceivedEvent$<init>(kotlin.String, kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.Response, kotlin.String)/response">response</span><span class="symbol">:</span>&nbsp;<a href="../-response/index.html"><span class="identifier">Response</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ResponseReceivedEvent$<init>(kotlin.String, kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.network.Response, kotlin.String)/frameId">frameId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.page/-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="frame-id.html">frameId</a></h4>
+</td>
+<td>
+<p>Frame identifier.</p>
+<code><span class="keyword">val </span><span class="identifier">frameId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.page/-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="loader-id.html">loaderId</a></h4>
+</td>
+<td>
+<p>Loader identifier. Empty string if the request is fetched from worker.</p>
+<code><span class="keyword">val </span><span class="identifier">loaderId</span><span class="symbol">: </span><a href="../-loader-id.html"><span class="identifier">LoaderId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<p>Request identifier.</p>
+<code><span class="keyword">val </span><span class="identifier">requestId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="response.html">response</a></h4>
+</td>
+<td>
+<p>Response data.</p>
+<code><span class="keyword">val </span><span class="identifier">response</span><span class="symbol">: </span><a href="../-response/index.html"><span class="identifier">Response</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timestamp.html">timestamp</a></h4>
+</td>
+<td>
+<p>Timestamp.</p>
+<code><span class="keyword">val </span><span class="identifier">timestamp</span><span class="symbol">: </span><a href="../-monotonic-time.html"><span class="identifier">MonotonicTime</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<p>Resource type.</p>
+<code><span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="../-resource-type/index.html"><span class="identifier">ResourceType</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

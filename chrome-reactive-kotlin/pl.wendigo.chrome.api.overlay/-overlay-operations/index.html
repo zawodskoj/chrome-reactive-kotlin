@@ -1,0 +1,216 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>OverlayOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.overlay</a>&nbsp;/&nbsp;<a href="./index.html">OverlayOperations</a><br/>
+<br/>
+<h1>OverlayOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">OverlayOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/overlay/Operations.kt#L10">(source)</a>
+<p>This domain provides various functionality related to drawing atop the inspected page.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Overlay">Overlay</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables domain notifications.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables domain notifications.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Overlay domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-highlight-object-for-test.html">getHighlightObjectForTest</a></h4>
+</td>
+<td>
+<p>For testing.</p>
+<code><span class="keyword">fun </span><span class="identifier">getHighlightObjectForTest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$getHighlightObjectForTest(pl.wendigo.chrome.api.overlay.GetHighlightObjectForTestRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-highlight-object-for-test-request/index.html"><span class="identifier">GetHighlightObjectForTestRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-highlight-object-for-test-response/index.html"><span class="identifier">GetHighlightObjectForTestResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hide-highlight.html">hideHighlight</a></h4>
+</td>
+<td>
+<p>Hides any highlight.</p>
+<code><span class="keyword">fun </span><span class="identifier">hideHighlight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="highlight-frame.html">highlightFrame</a></h4>
+</td>
+<td>
+<p>Highlights owner element of the frame with given id.</p>
+<code><span class="keyword">fun </span><span class="identifier">highlightFrame</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$highlightFrame(pl.wendigo.chrome.api.overlay.HighlightFrameRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-highlight-frame-request/index.html"><span class="identifier">HighlightFrameRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="highlight-node.html">highlightNode</a></h4>
+</td>
+<td>
+<p>Highlights DOM node with given id or with the given JavaScript object wrapper. Either nodeId or
+objectId must be specified.</p>
+<code><span class="keyword">fun </span><span class="identifier">highlightNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$highlightNode(pl.wendigo.chrome.api.overlay.HighlightNodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-highlight-node-request/index.html"><span class="identifier">HighlightNodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="highlight-quad.html">highlightQuad</a></h4>
+</td>
+<td>
+<p>Highlights given quad. Coordinates are absolute with respect to the main frame viewport.</p>
+<code><span class="keyword">fun </span><span class="identifier">highlightQuad</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$highlightQuad(pl.wendigo.chrome.api.overlay.HighlightQuadRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-highlight-quad-request/index.html"><span class="identifier">HighlightQuadRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="highlight-rect.html">highlightRect</a></h4>
+</td>
+<td>
+<p>Highlights given rectangle. Coordinates are absolute with respect to the main frame viewport.</p>
+<code><span class="keyword">fun </span><span class="identifier">highlightRect</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$highlightRect(pl.wendigo.chrome.api.overlay.HighlightRectRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-highlight-rect-request/index.html"><span class="identifier">HighlightRectRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="inspect-mode-canceled.html">inspectModeCanceled</a></h4>
+</td>
+<td>
+<p>Fired when user cancels the inspect mode.</p>
+<code><span class="keyword">fun </span><span class="identifier">inspectModeCanceled</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="inspect-node-requested.html">inspectNodeRequested</a></h4>
+</td>
+<td>
+<p>Fired when the node should be inspected. This happens after call to <code>setInspectMode</code> or when
+user manually inspects an element.</p>
+<code><span class="keyword">fun </span><span class="identifier">inspectNodeRequested</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-inspect-node-requested-event/index.html"><span class="identifier">InspectNodeRequestedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="node-highlight-requested.html">nodeHighlightRequested</a></h4>
+</td>
+<td>
+<p>Fired when the node should be highlighted. This happens after call to <code>setInspectMode</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">nodeHighlightRequested</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-node-highlight-requested-event/index.html"><span class="identifier">NodeHighlightRequestedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="screenshot-requested.html">screenshotRequested</a></h4>
+</td>
+<td>
+<p>Fired when user asks to capture screenshot of some area on the page.</p>
+<code><span class="keyword">fun </span><span class="identifier">screenshotRequested</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-screenshot-requested-event/index.html"><span class="identifier">ScreenshotRequestedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-inspect-mode.html">setInspectMode</a></h4>
+</td>
+<td>
+<p>Enters the 'inspect' mode. In this mode, elements that user is hovering over are highlighted.
+Backend then generates 'inspectNodeRequested' event upon element selection.</p>
+<code><span class="keyword">fun </span><span class="identifier">setInspectMode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$setInspectMode(pl.wendigo.chrome.api.overlay.SetInspectModeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-inspect-mode-request/index.html"><span class="identifier">SetInspectModeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-paused-in-debugger-message.html">setPausedInDebuggerMessage</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setPausedInDebuggerMessage</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$setPausedInDebuggerMessage(pl.wendigo.chrome.api.overlay.SetPausedInDebuggerMessageRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-paused-in-debugger-message-request/index.html"><span class="identifier">SetPausedInDebuggerMessageRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-show-ad-highlights.html">setShowAdHighlights</a></h4>
+</td>
+<td>
+<p>Highlights owner element of all frames detected to be ads.</p>
+<code><span class="keyword">fun </span><span class="identifier">setShowAdHighlights</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$setShowAdHighlights(pl.wendigo.chrome.api.overlay.SetShowAdHighlightsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-show-ad-highlights-request/index.html"><span class="identifier">SetShowAdHighlightsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-show-debug-borders.html">setShowDebugBorders</a></h4>
+</td>
+<td>
+<p>Requests that backend shows debug borders on layers</p>
+<code><span class="keyword">fun </span><span class="identifier">setShowDebugBorders</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$setShowDebugBorders(pl.wendigo.chrome.api.overlay.SetShowDebugBordersRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-show-debug-borders-request/index.html"><span class="identifier">SetShowDebugBordersRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-show-f-p-s-counter.html">setShowFPSCounter</a></h4>
+</td>
+<td>
+<p>Requests that backend shows the FPS counter</p>
+<code><span class="keyword">fun </span><span class="identifier">setShowFPSCounter</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$setShowFPSCounter(pl.wendigo.chrome.api.overlay.SetShowFPSCounterRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-show-f-p-s-counter-request/index.html"><span class="identifier">SetShowFPSCounterRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-show-hinge.html">setShowHinge</a></h4>
+</td>
+<td>
+<p>Add a dual screen device hinge</p>
+<code><span class="keyword">fun </span><span class="identifier">setShowHinge</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$setShowHinge(pl.wendigo.chrome.api.overlay.SetShowHingeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-show-hinge-request/index.html"><span class="identifier">SetShowHingeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-show-hit-test-borders.html">setShowHitTestBorders</a></h4>
+</td>
+<td>
+<p>Requests that backend shows hit-test borders on layers</p>
+<code><span class="keyword">fun </span><span class="identifier">setShowHitTestBorders</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$setShowHitTestBorders(pl.wendigo.chrome.api.overlay.SetShowHitTestBordersRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-show-hit-test-borders-request/index.html"><span class="identifier">SetShowHitTestBordersRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-show-layout-shift-regions.html">setShowLayoutShiftRegions</a></h4>
+</td>
+<td>
+<p>Requests that backend shows layout shift regions</p>
+<code><span class="keyword">fun </span><span class="identifier">setShowLayoutShiftRegions</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$setShowLayoutShiftRegions(pl.wendigo.chrome.api.overlay.SetShowLayoutShiftRegionsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-show-layout-shift-regions-request/index.html"><span class="identifier">SetShowLayoutShiftRegionsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-show-paint-rects.html">setShowPaintRects</a></h4>
+</td>
+<td>
+<p>Requests that backend shows paint rectangles</p>
+<code><span class="keyword">fun </span><span class="identifier">setShowPaintRects</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$setShowPaintRects(pl.wendigo.chrome.api.overlay.SetShowPaintRectsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-show-paint-rects-request/index.html"><span class="identifier">SetShowPaintRectsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-show-scroll-bottleneck-rects.html">setShowScrollBottleneckRects</a></h4>
+</td>
+<td>
+<p>Requests that backend shows scroll bottleneck rects</p>
+<code><span class="keyword">fun </span><span class="identifier">setShowScrollBottleneckRects</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$setShowScrollBottleneckRects(pl.wendigo.chrome.api.overlay.SetShowScrollBottleneckRectsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-show-scroll-bottleneck-rects-request/index.html"><span class="identifier">SetShowScrollBottleneckRectsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-show-viewport-size-on-resize.html">setShowViewportSizeOnResize</a></h4>
+</td>
+<td>
+<p>Paints viewport size upon main frame resize.</p>
+<code><span class="keyword">fun </span><span class="identifier">setShowViewportSizeOnResize</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.overlay.OverlayOperations$setShowViewportSizeOnResize(pl.wendigo.chrome.api.overlay.SetShowViewportSizeOnResizeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-show-viewport-size-on-resize-request/index.html"><span class="identifier">SetShowViewportSizeOnResizeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,425 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NetworkOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">NetworkOperations</a><br/>
+<br/>
+<h1>NetworkOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">NetworkOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L9">(source)</a>
+<p>Network domain allows tracking network activities of the page. It exposes information about http,
+file, data and other requests and responses, their headers, bodies, timing, etc.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network">Network</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="can-clear-browser-cache.html">canClearBrowserCache</a></h4>
+</td>
+<td>
+<p>Tells whether clearing browser cache is supported.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">canClearBrowserCache</span></s><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-can-clear-browser-cache-response/index.html"><span class="identifier">CanClearBrowserCacheResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="can-clear-browser-cookies.html">canClearBrowserCookies</a></h4>
+</td>
+<td>
+<p>Tells whether clearing browser cookies is supported.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">canClearBrowserCookies</span></s><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-can-clear-browser-cookies-response/index.html"><span class="identifier">CanClearBrowserCookiesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="can-emulate-network-conditions.html">canEmulateNetworkConditions</a></h4>
+</td>
+<td>
+<p>Tells whether emulation of network conditions is supported.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">canEmulateNetworkConditions</span></s><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-can-emulate-network-conditions-response/index.html"><span class="identifier">CanEmulateNetworkConditionsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-browser-cache.html">clearBrowserCache</a></h4>
+</td>
+<td>
+<p>Clears browser cache.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearBrowserCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-browser-cookies.html">clearBrowserCookies</a></h4>
+</td>
+<td>
+<p>Clears browser cookies.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearBrowserCookies</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="continue-intercepted-request.html">continueInterceptedRequest</a></h4>
+</td>
+<td>
+<p>Response to Network.requestIntercepted which either modifies the request to continue with any
+modifications, or blocks it, or completes it with the provided response bytes. If a network
+fetch occurs as a result which encounters a redirect an additional Network.requestIntercepted
+event will be sent with the same InterceptionId.
+Deprecated, use Fetch.continueRequest, Fetch.fulfillRequest and Fetch.failRequest instead.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">continueInterceptedRequest</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$continueInterceptedRequest(pl.wendigo.chrome.api.network.ContinueInterceptedRequestRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-continue-intercepted-request-request/index.html"><span class="identifier">ContinueInterceptedRequestRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="data-received.html">dataReceived</a></h4>
+</td>
+<td>
+<p>Fired when data chunk was received over the network.</p>
+<code><span class="keyword">fun </span><span class="identifier">dataReceived</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-data-received-event/index.html"><span class="identifier">DataReceivedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="delete-cookies.html">deleteCookies</a></h4>
+</td>
+<td>
+<p>Deletes browser cookies with matching name and url or domain/path pair.</p>
+<code><span class="keyword">fun </span><span class="identifier">deleteCookies</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$deleteCookies(pl.wendigo.chrome.api.network.DeleteCookiesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-delete-cookies-request/index.html"><span class="identifier">DeleteCookiesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables network tracking, prevents network events from being sent to the client.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="emulate-network-conditions.html">emulateNetworkConditions</a></h4>
+</td>
+<td>
+<p>Activates emulation of network conditions.</p>
+<code><span class="keyword">fun </span><span class="identifier">emulateNetworkConditions</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$emulateNetworkConditions(pl.wendigo.chrome.api.network.EmulateNetworkConditionsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-emulate-network-conditions-request/index.html"><span class="identifier">EmulateNetworkConditionsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables network tracking, network events will now be delivered to the client.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$enable(pl.wendigo.chrome.api.network.EnableRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-enable-request/index.html"><span class="identifier">EnableRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Network domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="event-source-message-received.html">eventSourceMessageReceived</a></h4>
+</td>
+<td>
+<p>Fired when EventSource message is received.</p>
+<code><span class="keyword">fun </span><span class="identifier">eventSourceMessageReceived</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-event-source-message-received-event/index.html"><span class="identifier">EventSourceMessageReceivedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-all-cookies.html">getAllCookies</a></h4>
+</td>
+<td>
+<p>Returns all browser cookies. Depending on the backend support, will return detailed cookie
+information in the <code>cookies</code> field.</p>
+<code><span class="keyword">fun </span><span class="identifier">getAllCookies</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-all-cookies-response/index.html"><span class="identifier">GetAllCookiesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-certificate.html">getCertificate</a></h4>
+</td>
+<td>
+<p>Returns the DER-encoded certificate.</p>
+<code><span class="keyword">fun </span><span class="identifier">getCertificate</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$getCertificate(pl.wendigo.chrome.api.network.GetCertificateRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-certificate-request/index.html"><span class="identifier">GetCertificateRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-certificate-response/index.html"><span class="identifier">GetCertificateResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-cookies.html">getCookies</a></h4>
+</td>
+<td>
+<p>Returns all browser cookies for the current URL. Depending on the backend support, will return
+detailed cookie information in the <code>cookies</code> field.</p>
+<code><span class="keyword">fun </span><span class="identifier">getCookies</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$getCookies(pl.wendigo.chrome.api.network.GetCookiesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-cookies-request/index.html"><span class="identifier">GetCookiesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-cookies-response/index.html"><span class="identifier">GetCookiesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-request-post-data.html">getRequestPostData</a></h4>
+</td>
+<td>
+<p>Returns post data sent with the request. Returns an error when no data was sent with the request.</p>
+<code><span class="keyword">fun </span><span class="identifier">getRequestPostData</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$getRequestPostData(pl.wendigo.chrome.api.network.GetRequestPostDataRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-request-post-data-request/index.html"><span class="identifier">GetRequestPostDataRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-request-post-data-response/index.html"><span class="identifier">GetRequestPostDataResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-response-body.html">getResponseBody</a></h4>
+</td>
+<td>
+<p>Returns content served for the given request.</p>
+<code><span class="keyword">fun </span><span class="identifier">getResponseBody</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$getResponseBody(pl.wendigo.chrome.api.network.GetResponseBodyRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-response-body-request/index.html"><span class="identifier">GetResponseBodyRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-response-body-response/index.html"><span class="identifier">GetResponseBodyResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-response-body-for-interception.html">getResponseBodyForInterception</a></h4>
+</td>
+<td>
+<p>Returns content served for the given currently intercepted request.</p>
+<code><span class="keyword">fun </span><span class="identifier">getResponseBodyForInterception</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$getResponseBodyForInterception(pl.wendigo.chrome.api.network.GetResponseBodyForInterceptionRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-response-body-for-interception-request/index.html"><span class="identifier">GetResponseBodyForInterceptionRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-response-body-for-interception-response/index.html"><span class="identifier">GetResponseBodyForInterceptionResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="loading-failed.html">loadingFailed</a></h4>
+</td>
+<td>
+<p>Fired when HTTP request has failed to load.</p>
+<code><span class="keyword">fun </span><span class="identifier">loadingFailed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-loading-failed-event/index.html"><span class="identifier">LoadingFailedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="loading-finished.html">loadingFinished</a></h4>
+</td>
+<td>
+<p>Fired when HTTP request has finished loading.</p>
+<code><span class="keyword">fun </span><span class="identifier">loadingFinished</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-loading-finished-event/index.html"><span class="identifier">LoadingFinishedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="replay-x-h-r.html">replayXHR</a></h4>
+</td>
+<td>
+<p>This method sends a new XMLHttpRequest which is identical to the original one. The following
+parameters should be identical: method, url, async, request body, extra headers, withCredentials
+attribute, user, password.</p>
+<code><span class="keyword">fun </span><span class="identifier">replayXHR</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$replayXHR(pl.wendigo.chrome.api.network.ReplayXHRRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-replay-x-h-r-request/index.html"><span class="identifier">ReplayXHRRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-intercepted.html">requestIntercepted</a></h4>
+</td>
+<td>
+<p>Details of an intercepted HTTP request, which must be either allowed, blocked, modified or
+mocked.
+Deprecated, use Fetch.requestPaused instead.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestIntercepted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-request-intercepted-event/index.html"><span class="identifier">RequestInterceptedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-served-from-cache.html">requestServedFromCache</a></h4>
+</td>
+<td>
+<p>Fired if request ended up loading from cache.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestServedFromCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-request-served-from-cache-event/index.html"><span class="identifier">RequestServedFromCacheEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-will-be-sent.html">requestWillBeSent</a></h4>
+</td>
+<td>
+<p>Fired when page is about to send HTTP request.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestWillBeSent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-request-will-be-sent-event/index.html"><span class="identifier">RequestWillBeSentEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-will-be-sent-extra-info.html">requestWillBeSentExtraInfo</a></h4>
+</td>
+<td>
+<p>Fired when additional information about a requestWillBeSent event is available from the
+network stack. Not every requestWillBeSent event will have an additional
+requestWillBeSentExtraInfo fired for it, and there is no guarantee whether requestWillBeSent
+or requestWillBeSentExtraInfo will be fired first for the same request.</p>
+<code><span class="keyword">fun </span><span class="identifier">requestWillBeSentExtraInfo</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-request-will-be-sent-extra-info-event/index.html"><span class="identifier">RequestWillBeSentExtraInfoEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resource-changed-priority.html">resourceChangedPriority</a></h4>
+</td>
+<td>
+<p>Fired when resource loading priority is changed</p>
+<code><span class="keyword">fun </span><span class="identifier">resourceChangedPriority</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-resource-changed-priority-event/index.html"><span class="identifier">ResourceChangedPriorityEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="response-received.html">responseReceived</a></h4>
+</td>
+<td>
+<p>Fired when HTTP response is available.</p>
+<code><span class="keyword">fun </span><span class="identifier">responseReceived</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-response-received-event/index.html"><span class="identifier">ResponseReceivedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="response-received-extra-info.html">responseReceivedExtraInfo</a></h4>
+</td>
+<td>
+<p>Fired when additional information about a responseReceived event is available from the network
+stack. Not every responseReceived event will have an additional responseReceivedExtraInfo for
+it, and responseReceivedExtraInfo may be fired before or after responseReceived.</p>
+<code><span class="keyword">fun </span><span class="identifier">responseReceivedExtraInfo</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-response-received-extra-info-event/index.html"><span class="identifier">ResponseReceivedExtraInfoEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="search-in-response-body.html">searchInResponseBody</a></h4>
+</td>
+<td>
+<p>Searches for given string in response content.</p>
+<code><span class="keyword">fun </span><span class="identifier">searchInResponseBody</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$searchInResponseBody(pl.wendigo.chrome.api.network.SearchInResponseBodyRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-search-in-response-body-request/index.html"><span class="identifier">SearchInResponseBodyRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-search-in-response-body-response/index.html"><span class="identifier">SearchInResponseBodyResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-blocked-u-r-ls.html">setBlockedURLs</a></h4>
+</td>
+<td>
+<p>Blocks URLs from loading.</p>
+<code><span class="keyword">fun </span><span class="identifier">setBlockedURLs</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$setBlockedURLs(pl.wendigo.chrome.api.network.SetBlockedURLsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-blocked-u-r-ls-request/index.html"><span class="identifier">SetBlockedURLsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-bypass-service-worker.html">setBypassServiceWorker</a></h4>
+</td>
+<td>
+<p>Toggles ignoring of service worker for each request.</p>
+<code><span class="keyword">fun </span><span class="identifier">setBypassServiceWorker</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$setBypassServiceWorker(pl.wendigo.chrome.api.network.SetBypassServiceWorkerRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-bypass-service-worker-request/index.html"><span class="identifier">SetBypassServiceWorkerRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-cache-disabled.html">setCacheDisabled</a></h4>
+</td>
+<td>
+<p>Toggles ignoring cache for each request. If <code>true</code>, cache will not be used.</p>
+<code><span class="keyword">fun </span><span class="identifier">setCacheDisabled</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$setCacheDisabled(pl.wendigo.chrome.api.network.SetCacheDisabledRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-cache-disabled-request/index.html"><span class="identifier">SetCacheDisabledRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-cookie.html">setCookie</a></h4>
+</td>
+<td>
+<p>Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.</p>
+<code><span class="keyword">fun </span><span class="identifier">setCookie</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$setCookie(pl.wendigo.chrome.api.network.SetCookieRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-cookie-request/index.html"><span class="identifier">SetCookieRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-cookie-response/index.html"><span class="identifier">SetCookieResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-cookies.html">setCookies</a></h4>
+</td>
+<td>
+<p>Sets given cookies.</p>
+<code><span class="keyword">fun </span><span class="identifier">setCookies</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$setCookies(pl.wendigo.chrome.api.network.SetCookiesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-cookies-request/index.html"><span class="identifier">SetCookiesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-data-size-limits-for-test.html">setDataSizeLimitsForTest</a></h4>
+</td>
+<td>
+<p>For testing.</p>
+<code><span class="keyword">fun </span><span class="identifier">setDataSizeLimitsForTest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$setDataSizeLimitsForTest(pl.wendigo.chrome.api.network.SetDataSizeLimitsForTestRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-data-size-limits-for-test-request/index.html"><span class="identifier">SetDataSizeLimitsForTestRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-extra-h-t-t-p-headers.html">setExtraHTTPHeaders</a></h4>
+</td>
+<td>
+<p>Specifies whether to always send extra HTTP headers with the requests from this page.</p>
+<code><span class="keyword">fun </span><span class="identifier">setExtraHTTPHeaders</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$setExtraHTTPHeaders(pl.wendigo.chrome.api.network.SetExtraHTTPHeadersRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-extra-h-t-t-p-headers-request/index.html"><span class="identifier">SetExtraHTTPHeadersRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-request-interception.html">setRequestInterception</a></h4>
+</td>
+<td>
+<p>Sets the requests to intercept that match the provided patterns and optionally resource types.
+Deprecated, please use Fetch.enable instead.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">setRequestInterception</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$setRequestInterception(pl.wendigo.chrome.api.network.SetRequestInterceptionRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-request-interception-request/index.html"><span class="identifier">SetRequestInterceptionRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-user-agent-override.html">setUserAgentOverride</a></h4>
+</td>
+<td>
+<p>Allows overriding user agent with the given string.</p>
+<code><span class="keyword">fun </span><span class="identifier">setUserAgentOverride</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$setUserAgentOverride(pl.wendigo.chrome.api.network.SetUserAgentOverrideRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-user-agent-override-request/index.html"><span class="identifier">SetUserAgentOverrideRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="signed-exchange-received.html">signedExchangeReceived</a></h4>
+</td>
+<td>
+<p>Fired when a signed exchange was received over the network</p>
+<code><span class="keyword">fun </span><span class="identifier">signedExchangeReceived</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-signed-exchange-received-event/index.html"><span class="identifier">SignedExchangeReceivedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="take-response-body-for-interception-as-stream.html">takeResponseBodyForInterceptionAsStream</a></h4>
+</td>
+<td>
+<p>Returns a handle to the stream representing the response body. Note that after this command,
+the intercepted request can't be continued as is -- you either need to cancel it or to provide
+the response body. The stream only supports sequential read, IO.read will fail if the position
+is specified.</p>
+<code><span class="keyword">fun </span><span class="identifier">takeResponseBodyForInterceptionAsStream</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$takeResponseBodyForInterceptionAsStream(pl.wendigo.chrome.api.network.TakeResponseBodyForInterceptionAsStreamRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-take-response-body-for-interception-as-stream-request/index.html"><span class="identifier">TakeResponseBodyForInterceptionAsStreamRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-take-response-body-for-interception-as-stream-response/index.html"><span class="identifier">TakeResponseBodyForInterceptionAsStreamResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="web-socket-closed.html">webSocketClosed</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket is closed.</p>
+<code><span class="keyword">fun </span><span class="identifier">webSocketClosed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-web-socket-closed-event/index.html"><span class="identifier">WebSocketClosedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="web-socket-created.html">webSocketCreated</a></h4>
+</td>
+<td>
+<p>Fired upon WebSocket creation.</p>
+<code><span class="keyword">fun </span><span class="identifier">webSocketCreated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-web-socket-created-event/index.html"><span class="identifier">WebSocketCreatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="web-socket-frame-error.html">webSocketFrameError</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket message error occurs.</p>
+<code><span class="keyword">fun </span><span class="identifier">webSocketFrameError</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-web-socket-frame-error-event/index.html"><span class="identifier">WebSocketFrameErrorEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="web-socket-frame-received.html">webSocketFrameReceived</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket message is received.</p>
+<code><span class="keyword">fun </span><span class="identifier">webSocketFrameReceived</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-web-socket-frame-received-event/index.html"><span class="identifier">WebSocketFrameReceivedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="web-socket-frame-sent.html">webSocketFrameSent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket message is sent.</p>
+<code><span class="keyword">fun </span><span class="identifier">webSocketFrameSent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-web-socket-frame-sent-event/index.html"><span class="identifier">WebSocketFrameSentEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="web-socket-handshake-response-received.html">webSocketHandshakeResponseReceived</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket handshake response becomes available.</p>
+<code><span class="keyword">fun </span><span class="identifier">webSocketHandshakeResponseReceived</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-web-socket-handshake-response-received-event/index.html"><span class="identifier">WebSocketHandshakeResponseReceivedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="web-socket-will-send-handshake-request.html">webSocketWillSendHandshakeRequest</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket is about to initiate handshake.</p>
+<code><span class="keyword">fun </span><span class="identifier">webSocketWillSendHandshakeRequest</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-web-socket-will-send-handshake-request-event/index.html"><span class="identifier">WebSocketWillSendHandshakeRequestEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

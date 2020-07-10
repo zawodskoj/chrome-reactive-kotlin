@@ -1,0 +1,488 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.debugger - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.debugger</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.debugger</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger">Debugger</a> domain implementation accessible via <a href="-debugger-operations/index.html">DebuggerOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-break-location/index.html">BreakLocation</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BreakLocation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-breakpoint-id.html">BreakpointId</a></h4>
+</td>
+<td>
+<p>Breakpoint identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">BreakpointId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-breakpoint-resolved-event/index.html">BreakpointResolvedEvent</a></h4>
+</td>
+<td>
+<p>Fired when breakpoint is resolved to an actual script and location.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BreakpointResolvedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-call-frame/index.html">CallFrame</a></h4>
+</td>
+<td>
+<p>JavaScript call frame. Array of call frames form the call stack.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CallFrame</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-call-frame-id.html">CallFrameId</a></h4>
+</td>
+<td>
+<p>Call frame identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">CallFrameId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-continue-to-location-request/index.html">ContinueToLocationRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-continueToLocation">Debugger#continueToLocation</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContinueToLocationRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-debugger-operations/index.html">DebuggerOperations</a></h4>
+</td>
+<td>
+<p>Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing
+breakpoints, stepping through execution, exploring stack traces, etc.</p>
+<code><span class="keyword">class </span><span class="identifier">DebuggerOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-debug-symbols/index.html">DebugSymbols</a></h4>
+</td>
+<td>
+<p>Debug symbols available for a wasm script.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DebugSymbols</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-enable-request/index.html">EnableRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-enable">Debugger#enable</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EnableRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-enable-response/index.html">EnableResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-enable">Debugger#enable</a> operation call.
+Enables debugger for the given page. Clients should not assume that the debugging has been
+enabled until the result for this command is received.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EnableResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-evaluate-on-call-frame-request/index.html">EvaluateOnCallFrameRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-evaluateOnCallFrame">Debugger#evaluateOnCallFrame</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EvaluateOnCallFrameRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-evaluate-on-call-frame-response/index.html">EvaluateOnCallFrameResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-evaluateOnCallFrame">Debugger#evaluateOnCallFrame</a> operation call.
+Evaluates expression on a given call frame.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EvaluateOnCallFrameResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-execute-wasm-evaluator-request/index.html">ExecuteWasmEvaluatorRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-executeWasmEvaluator">Debugger#executeWasmEvaluator</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExecuteWasmEvaluatorRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-execute-wasm-evaluator-response/index.html">ExecuteWasmEvaluatorResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-executeWasmEvaluator">Debugger#executeWasmEvaluator</a> operation call.
+Execute a Wasm Evaluator module on a given call frame.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExecuteWasmEvaluatorResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-possible-breakpoints-request/index.html">GetPossibleBreakpointsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-getPossibleBreakpoints">Debugger#getPossibleBreakpoints</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetPossibleBreakpointsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-possible-breakpoints-response/index.html">GetPossibleBreakpointsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-getPossibleBreakpoints">Debugger#getPossibleBreakpoints</a> operation call.
+Returns possible locations for breakpoint. scriptId in start and end range locations should be
+the same.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetPossibleBreakpointsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-script-source-request/index.html">GetScriptSourceRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-getScriptSource">Debugger#getScriptSource</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetScriptSourceRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-script-source-response/index.html">GetScriptSourceResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-getScriptSource">Debugger#getScriptSource</a> operation call.
+Returns source for the script with given id.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetScriptSourceResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-stack-trace-request/index.html">GetStackTraceRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-getStackTrace">Debugger#getStackTrace</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetStackTraceRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-stack-trace-response/index.html">GetStackTraceResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-getStackTrace">Debugger#getStackTrace</a> operation call.
+Returns stack trace with given <code>stackTraceId</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetStackTraceResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-wasm-bytecode-request/index.html">GetWasmBytecodeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-getWasmBytecode">Debugger#getWasmBytecode</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetWasmBytecodeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-wasm-bytecode-response/index.html">GetWasmBytecodeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-getWasmBytecode">Debugger#getWasmBytecode</a> operation call.
+This command is deprecated. Use getScriptSource instead.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetWasmBytecodeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-location/index.html">Location</a></h4>
+</td>
+<td>
+<p>Location in the source code.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Location</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-paused-event/index.html">PausedEvent</a></h4>
+</td>
+<td>
+<p>Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PausedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-pause-on-async-call-request/index.html">PauseOnAsyncCallRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-pauseOnAsyncCall">Debugger#pauseOnAsyncCall</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PauseOnAsyncCallRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remove-breakpoint-request/index.html">RemoveBreakpointRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-removeBreakpoint">Debugger#removeBreakpoint</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoveBreakpointRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-restart-frame-request/index.html">RestartFrameRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-restartFrame">Debugger#restartFrame</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RestartFrameRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-restart-frame-response/index.html">RestartFrameResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-restartFrame">Debugger#restartFrame</a> operation call.
+Restarts particular call frame from the beginning.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RestartFrameResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-resume-request/index.html">ResumeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-resume">Debugger#resume</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResumeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-scope/index.html">Scope</a></h4>
+</td>
+<td>
+<p>Scope description.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Scope</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-script-failed-to-parse-event/index.html">ScriptFailedToParseEvent</a></h4>
+</td>
+<td>
+<p>Fired when virtual machine fails to parse the script.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScriptFailedToParseEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-script-language/index.html">ScriptLanguage</a></h4>
+</td>
+<td>
+<p>Enum of possible script languages.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ScriptLanguage</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-script-parsed-event/index.html">ScriptParsedEvent</a></h4>
+</td>
+<td>
+<p>Fired when virtual machine parses script. This event is also fired for all known and uncollected
+scripts upon enabling debugger.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScriptParsedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-script-position/index.html">ScriptPosition</a></h4>
+</td>
+<td>
+<p>Location in the source code.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScriptPosition</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-search-in-content-request/index.html">SearchInContentRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-searchInContent">Debugger#searchInContent</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SearchInContentRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-search-in-content-response/index.html">SearchInContentResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-searchInContent">Debugger#searchInContent</a> operation call.
+Searches for given string in script content.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SearchInContentResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-search-match/index.html">SearchMatch</a></h4>
+</td>
+<td>
+<p>Search match for resource.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SearchMatch</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-async-call-stack-depth-request/index.html">SetAsyncCallStackDepthRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setAsyncCallStackDepth">Debugger#setAsyncCallStackDepth</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetAsyncCallStackDepthRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-blackboxed-ranges-request/index.html">SetBlackboxedRangesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBlackboxedRanges">Debugger#setBlackboxedRanges</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBlackboxedRangesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-blackbox-patterns-request/index.html">SetBlackboxPatternsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBlackboxPatterns">Debugger#setBlackboxPatterns</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBlackboxPatternsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-breakpoint-by-url-request/index.html">SetBreakpointByUrlRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointByUrl">Debugger#setBreakpointByUrl</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBreakpointByUrlRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-breakpoint-by-url-response/index.html">SetBreakpointByUrlResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointByUrl">Debugger#setBreakpointByUrl</a> operation call.
+Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this
+command is issued, all existing parsed scripts will have breakpoints resolved and returned in
+<code>locations</code> property. Further matching script parsing will result in subsequent
+<code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBreakpointByUrlResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-breakpoint-on-function-call-request/index.html">SetBreakpointOnFunctionCallRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointOnFunctionCall">Debugger#setBreakpointOnFunctionCall</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBreakpointOnFunctionCallRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-breakpoint-on-function-call-response/index.html">SetBreakpointOnFunctionCallResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointOnFunctionCall">Debugger#setBreakpointOnFunctionCall</a> operation call.
+Sets JavaScript breakpoint before each call to the given function.
+If another function was created from the same source as a given one,
+calling it will also trigger the breakpoint.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBreakpointOnFunctionCallResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-breakpoint-request/index.html">SetBreakpointRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpoint">Debugger#setBreakpoint</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBreakpointRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-breakpoint-response/index.html">SetBreakpointResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpoint">Debugger#setBreakpoint</a> operation call.
+Sets JavaScript breakpoint at a given location.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBreakpointResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-breakpoints-active-request/index.html">SetBreakpointsActiveRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointsActive">Debugger#setBreakpointsActive</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBreakpointsActiveRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-instrumentation-breakpoint-request/index.html">SetInstrumentationBreakpointRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setInstrumentationBreakpoint">Debugger#setInstrumentationBreakpoint</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetInstrumentationBreakpointRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-instrumentation-breakpoint-response/index.html">SetInstrumentationBreakpointResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setInstrumentationBreakpoint">Debugger#setInstrumentationBreakpoint</a> operation call.
+Sets instrumentation breakpoint.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetInstrumentationBreakpointResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-pause-on-exceptions-request/index.html">SetPauseOnExceptionsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setPauseOnExceptions">Debugger#setPauseOnExceptions</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetPauseOnExceptionsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-return-value-request/index.html">SetReturnValueRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setReturnValue">Debugger#setReturnValue</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetReturnValueRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-script-source-request/index.html">SetScriptSourceRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setScriptSource">Debugger#setScriptSource</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetScriptSourceRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-script-source-response/index.html">SetScriptSourceResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setScriptSource">Debugger#setScriptSource</a> operation call.
+Edits JavaScript source live.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetScriptSourceResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-skip-all-pauses-request/index.html">SetSkipAllPausesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setSkipAllPauses">Debugger#setSkipAllPauses</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetSkipAllPausesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-variable-value-request/index.html">SetVariableValueRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setVariableValue">Debugger#setVariableValue</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetVariableValueRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-step-into-request/index.html">StepIntoRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-stepInto">Debugger#stepInto</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StepIntoRequest</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

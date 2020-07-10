@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PermissionDescriptor - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.browser</a>&nbsp;/&nbsp;<a href="./index.html">PermissionDescriptor</a><br/>
+<br/>
+<h1>PermissionDescriptor</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PermissionDescriptor</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/browser/Types.kt#L139">(source)</a>
+<p>Definition of PermissionDescriptor defined in the Permissions API:
+https://w3c.github.io/permissions/#dictdef-permissiondescriptor.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#type-PermissionDescriptor">Browser#PermissionDescriptor</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Definition of PermissionDescriptor defined in the Permissions API:
+https://w3c.github.io/permissions/#dictdef-permissiondescriptor.</p>
+<code><span class="identifier">PermissionDescriptor</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.PermissionDescriptor$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Boolean)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.browser.PermissionDescriptor$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Boolean)/sysex">sysex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.browser.PermissionDescriptor$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Boolean)/userVisibleOnly">userVisibleOnly</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.browser.PermissionDescriptor$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Boolean)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.browser.PermissionDescriptor$<init>(kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.String, kotlin.Boolean)/allowWithoutSanitization">allowWithoutSanitization</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="allow-without-sanitization.html">allowWithoutSanitization</a></h4>
+</td>
+<td>
+<p>For "clipboard" permission, may specify allowWithoutSanitization.</p>
+<code><span class="keyword">val </span><span class="identifier">allowWithoutSanitization</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="name.html">name</a></h4>
+</td>
+<td>
+<p>Name of permission.
+See https://cs.chromium.org/chromium/src/third_party/blink/renderer/modules/permissions/permission_descriptor.idl for valid permission names.</p>
+<code><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sysex.html">sysex</a></h4>
+</td>
+<td>
+<p>For "midi" permission, may also specify sysex control.</p>
+<code><span class="keyword">val </span><span class="identifier">sysex</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<p>For "wake-lock" permission, must specify type as either "screen" or "system".</p>
+<code><span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="user-visible-only.html">userVisibleOnly</a></h4>
+</td>
+<td>
+<p>For "push" permission, may specify userVisibleOnly.
+Note that userVisibleOnly = true is the only currently supported type.</p>
+<code><span class="keyword">val </span><span class="identifier">userVisibleOnly</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

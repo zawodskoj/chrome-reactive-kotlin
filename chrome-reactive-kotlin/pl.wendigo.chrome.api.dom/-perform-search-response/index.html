@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PerformSearchResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.dom</a>&nbsp;/&nbsp;<a href="./index.html">PerformSearchResponse</a><br/>
+<br/>
+<h1>PerformSearchResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PerformSearchResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/dom/Operations.kt#L1088">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-performSearch">DOM#performSearch</a> operation call.
+Searches for a given string in the DOM tree. Use <code>getSearchResults</code> to access search results or
+<code>cancelSearch</code> to end this search session.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-performSearch">DOM#performSearch</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-d-o-m-operations/perform-search.html">DOMOperations.performSearch</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-performSearch">DOM#performSearch</a> operation call.
+Searches for a given string in the DOM tree. Use <code>getSearchResults</code> to access search results or
+<code>cancelSearch</code> to end this search session.</p>
+<code><span class="identifier">PerformSearchResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.PerformSearchResponse$<init>(kotlin.String, kotlin.Int)/searchId">searchId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.dom.PerformSearchResponse$<init>(kotlin.String, kotlin.Int)/resultCount">resultCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="result-count.html">resultCount</a></h4>
+</td>
+<td>
+<p>Number of search results.</p>
+<code><span class="keyword">val </span><span class="identifier">resultCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="search-id.html">searchId</a></h4>
+</td>
+<td>
+<p>Unique search session identifier.</p>
+<code><span class="keyword">val </span><span class="identifier">searchId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

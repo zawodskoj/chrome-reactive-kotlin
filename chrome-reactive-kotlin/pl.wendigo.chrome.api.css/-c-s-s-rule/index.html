@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CSSRule - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.css</a>&nbsp;/&nbsp;<a href="./index.html">CSSRule</a><br/>
+<br/>
+<h1>CSSRule</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CSSRule</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/css/Types.kt#L217">(source)</a>
+<p>CSS rule representation.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS#type-CSSRule">CSS#CSSRule</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>CSS rule representation.</p>
+<code><span class="identifier">CSSRule</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSRule$<init>(kotlin.String, pl.wendigo.chrome.api.css.SelectorList, pl.wendigo.chrome.api.css.StyleSheetOrigin, pl.wendigo.chrome.api.css.CSSStyle, kotlin.collections.List((pl.wendigo.chrome.api.css.CSSMedia)))/styleSheetId">styleSheetId</span><span class="symbol">:</span>&nbsp;<a href="../-style-sheet-id.html"><span class="identifier">StyleSheetId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSRule$<init>(kotlin.String, pl.wendigo.chrome.api.css.SelectorList, pl.wendigo.chrome.api.css.StyleSheetOrigin, pl.wendigo.chrome.api.css.CSSStyle, kotlin.collections.List((pl.wendigo.chrome.api.css.CSSMedia)))/selectorList">selectorList</span><span class="symbol">:</span>&nbsp;<a href="../-selector-list/index.html"><span class="identifier">SelectorList</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSRule$<init>(kotlin.String, pl.wendigo.chrome.api.css.SelectorList, pl.wendigo.chrome.api.css.StyleSheetOrigin, pl.wendigo.chrome.api.css.CSSStyle, kotlin.collections.List((pl.wendigo.chrome.api.css.CSSMedia)))/origin">origin</span><span class="symbol">:</span>&nbsp;<a href="../-style-sheet-origin/index.html"><span class="identifier">StyleSheetOrigin</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSRule$<init>(kotlin.String, pl.wendigo.chrome.api.css.SelectorList, pl.wendigo.chrome.api.css.StyleSheetOrigin, pl.wendigo.chrome.api.css.CSSStyle, kotlin.collections.List((pl.wendigo.chrome.api.css.CSSMedia)))/style">style</span><span class="symbol">:</span>&nbsp;<a href="../-c-s-s-style/index.html"><span class="identifier">CSSStyle</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSRule$<init>(kotlin.String, pl.wendigo.chrome.api.css.SelectorList, pl.wendigo.chrome.api.css.StyleSheetOrigin, pl.wendigo.chrome.api.css.CSSStyle, kotlin.collections.List((pl.wendigo.chrome.api.css.CSSMedia)))/media">media</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-c-s-s-media/index.html"><span class="identifier">CSSMedia</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="media.html">media</a></h4>
+</td>
+<td>
+<p>Media list array (for rules involving media queries). The array enumerates media queries
+starting with the innermost one, going outwards.</p>
+<code><span class="keyword">val </span><span class="identifier">media</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-c-s-s-media/index.html"><span class="identifier">CSSMedia</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="origin.html">origin</a></h4>
+</td>
+<td>
+<p>Parent stylesheet's origin.</p>
+<code><span class="keyword">val </span><span class="identifier">origin</span><span class="symbol">: </span><a href="../-style-sheet-origin/index.html"><span class="identifier">StyleSheetOrigin</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="selector-list.html">selectorList</a></h4>
+</td>
+<td>
+<p>Rule selector data.</p>
+<code><span class="keyword">val </span><span class="identifier">selectorList</span><span class="symbol">: </span><a href="../-selector-list/index.html"><span class="identifier">SelectorList</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="style.html">style</a></h4>
+</td>
+<td>
+<p>Associated style declaration.</p>
+<code><span class="keyword">val </span><span class="identifier">style</span><span class="symbol">: </span><a href="../-c-s-s-style/index.html"><span class="identifier">CSSStyle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="style-sheet-id.html">styleSheetId</a></h4>
+</td>
+<td>
+<p>The css style sheet identifier (absent for user agent stylesheet and user-specified
+stylesheet rules) this rule came from.</p>
+<code><span class="keyword">val </span><span class="identifier">styleSheetId</span><span class="symbol">: </span><a href="../-style-sheet-id.html"><span class="identifier">StyleSheetId</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

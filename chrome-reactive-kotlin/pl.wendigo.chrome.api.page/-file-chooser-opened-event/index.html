@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FileChooserOpenedEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.page</a>&nbsp;/&nbsp;<a href="./index.html">FileChooserOpenedEvent</a><br/>
+<br/>
+<h1>FileChooserOpenedEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FileChooserOpenedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/page/Operations.kt#L1749">(source)</a>
+<p>Emitted only when <code>page.interceptFileChooser</code> is enabled.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#event-fileChooserOpened">Page#fileChooserOpened</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Emitted only when <code>page.interceptFileChooser</code> is enabled.</p>
+<code><span class="identifier">FileChooserOpenedEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.FileChooserOpenedEvent$<init>(kotlin.String, kotlin.Int, kotlin.String)/frameId">frameId</span><span class="symbol">:</span>&nbsp;<a href="../-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.FileChooserOpenedEvent$<init>(kotlin.String, kotlin.Int, kotlin.String)/backendNodeId">backendNodeId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.dom/-backend-node-id.html"><span class="identifier">BackendNodeId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.FileChooserOpenedEvent$<init>(kotlin.String, kotlin.Int, kotlin.String)/mode">mode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="backend-node-id.html">backendNodeId</a></h4>
+</td>
+<td>
+<p>Input node id.</p>
+<code><span class="keyword">val </span><span class="identifier">backendNodeId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.dom/-backend-node-id.html"><span class="identifier">BackendNodeId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-id.html">frameId</a></h4>
+</td>
+<td>
+<p>Id of the frame containing input node.</p>
+<code><span class="keyword">val </span><span class="identifier">frameId</span><span class="symbol">: </span><a href="../-frame-id.html"><span class="identifier">FrameId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="mode.html">mode</a></h4>
+</td>
+<td>
+<p>Input mode.</p>
+<code><span class="keyword">val </span><span class="identifier">mode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetDownloadBehaviorRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.browser</a>&nbsp;/&nbsp;<a href="./index.html">SetDownloadBehaviorRequest</a><br/>
+<br/>
+<h1>SetDownloadBehaviorRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetDownloadBehaviorRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/browser/Operations.kt#L227">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-setDownloadBehavior">Browser#setDownloadBehavior</a> operation call.</p>
+<p>Set the behavior when downloading a file.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-setDownloadBehavior">Browser#setDownloadBehavior</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-browser-operations/set-download-behavior.html">BrowserOperations.setDownloadBehavior</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-setDownloadBehavior">Browser#setDownloadBehavior</a> operation call.</p>
+<code><span class="identifier">SetDownloadBehaviorRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.SetDownloadBehaviorRequest$<init>(kotlin.String, kotlin.String, kotlin.String)/behavior">behavior</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.browser.SetDownloadBehaviorRequest$<init>(kotlin.String, kotlin.String, kotlin.String)/browserContextId">browserContextId</span><span class="symbol">:</span>&nbsp;<a href="../-browser-context-i-d.html"><span class="identifier">BrowserContextID</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.browser.SetDownloadBehaviorRequest$<init>(kotlin.String, kotlin.String, kotlin.String)/downloadPath">downloadPath</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="behavior.html">behavior</a></h4>
+</td>
+<td>
+<p>Whether to allow all or deny all download requests, or use default Chrome behavior if
+available (otherwise deny). |allowAndName| allows download and names files according to
+their dowmload guids.</p>
+<code><span class="keyword">val </span><span class="identifier">behavior</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="browser-context-id.html">browserContextId</a></h4>
+</td>
+<td>
+<p>BrowserContext to set download behavior. When omitted, default browser context is used.</p>
+<code><span class="keyword">val </span><span class="identifier">browserContextId</span><span class="symbol">: </span><a href="../-browser-context-i-d.html"><span class="identifier">BrowserContextID</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="download-path.html">downloadPath</a></h4>
+</td>
+<td>
+<p>The default path to save downloaded files to. This is requred if behavior is set to 'allow'
+or 'allowAndName'.</p>
+<code><span class="keyword">val </span><span class="identifier">downloadPath</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BindingCalledEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="./index.html">BindingCalledEvent</a><br/>
+<br/>
+<h1>BindingCalledEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BindingCalledEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Operations.kt#L902">(source)</a>
+<p>Notification is issued every time when binding is called.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#event-bindingCalled">Runtime#bindingCalled</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Notification is issued every time when binding is called.</p>
+<code><span class="identifier">BindingCalledEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.BindingCalledEvent$<init>(kotlin.String, kotlin.String, kotlin.Int)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.BindingCalledEvent$<init>(kotlin.String, kotlin.String, kotlin.Int)/payload">payload</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.BindingCalledEvent$<init>(kotlin.String, kotlin.String, kotlin.Int)/executionContextId">executionContextId</span><span class="symbol">:</span>&nbsp;<a href="../-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="execution-context-id.html">executionContextId</a></h4>
+</td>
+<td>
+<p>Identifier of the context where the call was made.</p>
+<code><span class="keyword">val </span><span class="identifier">executionContextId</span><span class="symbol">: </span><a href="../-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="name.html">name</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="payload.html">payload</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">payload</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

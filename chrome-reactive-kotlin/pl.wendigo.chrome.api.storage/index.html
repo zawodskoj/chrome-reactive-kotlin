@@ -1,0 +1,164 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.storage - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.storage</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.storage</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage">Storage</a> domain implementation accessible via <a href="-storage-operations/index.html">StorageOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-cache-storage-content-updated-event/index.html">CacheStorageContentUpdatedEvent</a></h4>
+</td>
+<td>
+<p>A cache's contents have been modified.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CacheStorageContentUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cache-storage-list-updated-event/index.html">CacheStorageListUpdatedEvent</a></h4>
+</td>
+<td>
+<p>A cache has been added/deleted.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CacheStorageListUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-clear-cookies-request/index.html">ClearCookiesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-clearCookies">Storage#clearCookies</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ClearCookiesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-clear-data-for-origin-request/index.html">ClearDataForOriginRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-clearDataForOrigin">Storage#clearDataForOrigin</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ClearDataForOriginRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-cookies-request/index.html">GetCookiesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-getCookies">Storage#getCookies</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetCookiesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-cookies-response/index.html">GetCookiesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-getCookies">Storage#getCookies</a> operation call.
+Returns all browser cookies.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetCookiesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-usage-and-quota-request/index.html">GetUsageAndQuotaRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-getUsageAndQuota">Storage#getUsageAndQuota</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetUsageAndQuotaRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-usage-and-quota-response/index.html">GetUsageAndQuotaResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-getUsageAndQuota">Storage#getUsageAndQuota</a> operation call.
+Returns usage and quota in bytes.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetUsageAndQuotaResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-indexed-d-b-content-updated-event/index.html">IndexedDBContentUpdatedEvent</a></h4>
+</td>
+<td>
+<p>The origin's IndexedDB object store has been modified.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">IndexedDBContentUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-indexed-d-b-list-updated-event/index.html">IndexedDBListUpdatedEvent</a></h4>
+</td>
+<td>
+<p>The origin's IndexedDB database list has been modified.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">IndexedDBListUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-cookies-request/index.html">SetCookiesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-setCookies">Storage#setCookies</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetCookiesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-storage-operations/index.html">StorageOperations</a></h4>
+</td>
+<td>
+<p>StorageOperations represents Storage protocol domain request/response operations and events that can be captured.</p>
+<code><span class="keyword">class </span><span class="identifier">StorageOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-storage-type/index.html">StorageType</a></h4>
+</td>
+<td>
+<p>Enum of possible storage types.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">StorageType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-track-cache-storage-for-origin-request/index.html">TrackCacheStorageForOriginRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-trackCacheStorageForOrigin">Storage#trackCacheStorageForOrigin</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TrackCacheStorageForOriginRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-track-indexed-d-b-for-origin-request/index.html">TrackIndexedDBForOriginRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-trackIndexedDBForOrigin">Storage#trackIndexedDBForOrigin</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TrackIndexedDBForOriginRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-untrack-cache-storage-for-origin-request/index.html">UntrackCacheStorageForOriginRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-untrackCacheStorageForOrigin">Storage#untrackCacheStorageForOrigin</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">UntrackCacheStorageForOriginRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-untrack-indexed-d-b-for-origin-request/index.html">UntrackIndexedDBForOriginRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-untrackIndexedDBForOrigin">Storage#untrackIndexedDBForOrigin</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">UntrackIndexedDBForOriginRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-usage-for-type/index.html">UsageForType</a></h4>
+</td>
+<td>
+<p>Usage for a storage type.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">UsageForType</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

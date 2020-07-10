@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>StartPreciseCoverageRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.profiler</a>&nbsp;/&nbsp;<a href="./index.html">StartPreciseCoverageRequest</a><br/>
+<br/>
+<h1>StartPreciseCoverageRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StartPreciseCoverageRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/profiler/Operations.kt#L200">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-startPreciseCoverage">Profiler#startPreciseCoverage</a> operation call.</p>
+<p>Enable precise code coverage. Coverage data for JavaScript executed before enabling precise code
+coverage may be incomplete. Enabling prevents running optimized code and resets execution
+counters.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-startPreciseCoverage">Profiler#startPreciseCoverage</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-profiler-operations/start-precise-coverage.html">ProfilerOperations.startPreciseCoverage</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-startPreciseCoverage">Profiler#startPreciseCoverage</a> operation call.</p>
+<code><span class="identifier">StartPreciseCoverageRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.profiler.StartPreciseCoverageRequest$<init>(kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/callCount">callCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.StartPreciseCoverageRequest$<init>(kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/detailed">detailed</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.profiler.StartPreciseCoverageRequest$<init>(kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/allowTriggeredUpdates">allowTriggeredUpdates</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="allow-triggered-updates.html">allowTriggeredUpdates</a></h4>
+</td>
+<td>
+<p>Allow the backend to send updates on its own initiative</p>
+<code><span class="keyword">val </span><span class="identifier">allowTriggeredUpdates</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="call-count.html">callCount</a></h4>
+</td>
+<td>
+<p>Collect accurate call counts beyond simple 'covered' or 'not covered'.</p>
+<code><span class="keyword">val </span><span class="identifier">callCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="detailed.html">detailed</a></h4>
+</td>
+<td>
+<p>Collect block-based coverage.</p>
+<code><span class="keyword">val </span><span class="identifier">detailed</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

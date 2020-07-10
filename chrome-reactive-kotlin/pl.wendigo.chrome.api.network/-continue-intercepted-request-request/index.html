@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ContinueInterceptedRequestRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">ContinueInterceptedRequestRequest</a><br/>
+<br/>
+<h1>ContinueInterceptedRequestRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContinueInterceptedRequestRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L414">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-continueInterceptedRequest">Network#continueInterceptedRequest</a> operation call.</p>
+<p>Response to Network.requestIntercepted which either modifies the request to continue with any
+modifications, or blocks it, or completes it with the provided response bytes. If a network
+fetch occurs as a result which encounters a redirect an additional Network.requestIntercepted
+event will be sent with the same InterceptionId.
+Deprecated, use Fetch.continueRequest, Fetch.fulfillRequest and Fetch.failRequest instead.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-continueInterceptedRequest">Network#continueInterceptedRequest</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-network-operations/continue-intercepted-request.html">NetworkOperations.continueInterceptedRequest</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-continueInterceptedRequest">Network#continueInterceptedRequest</a> operation call.</p>
+<code><span class="identifier">ContinueInterceptedRequestRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.ContinueInterceptedRequestRequest$<init>(kotlin.String, pl.wendigo.chrome.api.network.ErrorReason, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), pl.wendigo.chrome.api.network.AuthChallengeResponse)/interceptionId">interceptionId</span><span class="symbol">:</span>&nbsp;<a href="../-interception-id.html"><span class="identifier">InterceptionId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ContinueInterceptedRequestRequest$<init>(kotlin.String, pl.wendigo.chrome.api.network.ErrorReason, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), pl.wendigo.chrome.api.network.AuthChallengeResponse)/errorReason">errorReason</span><span class="symbol">:</span>&nbsp;<a href="../-error-reason/index.html"><span class="identifier">ErrorReason</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ContinueInterceptedRequestRequest$<init>(kotlin.String, pl.wendigo.chrome.api.network.ErrorReason, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), pl.wendigo.chrome.api.network.AuthChallengeResponse)/rawResponse">rawResponse</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ContinueInterceptedRequestRequest$<init>(kotlin.String, pl.wendigo.chrome.api.network.ErrorReason, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), pl.wendigo.chrome.api.network.AuthChallengeResponse)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ContinueInterceptedRequestRequest$<init>(kotlin.String, pl.wendigo.chrome.api.network.ErrorReason, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), pl.wendigo.chrome.api.network.AuthChallengeResponse)/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ContinueInterceptedRequestRequest$<init>(kotlin.String, pl.wendigo.chrome.api.network.ErrorReason, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), pl.wendigo.chrome.api.network.AuthChallengeResponse)/postData">postData</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ContinueInterceptedRequestRequest$<init>(kotlin.String, pl.wendigo.chrome.api.network.ErrorReason, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), pl.wendigo.chrome.api.network.AuthChallengeResponse)/headers">headers</span><span class="symbol">:</span>&nbsp;<a href="../-headers.html"><span class="identifier">Headers</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.ContinueInterceptedRequestRequest$<init>(kotlin.String, pl.wendigo.chrome.api.network.ErrorReason, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, kotlin.Any)), pl.wendigo.chrome.api.network.AuthChallengeResponse)/authChallengeResponse">authChallengeResponse</span><span class="symbol">:</span>&nbsp;<a href="../-auth-challenge-response/index.html"><span class="identifier">AuthChallengeResponse</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="auth-challenge-response.html">authChallengeResponse</a></h4>
+</td>
+<td>
+<p>Response to a requestIntercepted with an authChallenge. Must not be set otherwise.</p>
+<code><span class="keyword">val </span><span class="identifier">authChallengeResponse</span><span class="symbol">: </span><a href="../-auth-challenge-response/index.html"><span class="identifier">AuthChallengeResponse</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="error-reason.html">errorReason</a></h4>
+</td>
+<td>
+<p>If set this causes the request to fail with the given reason. Passing <code>Aborted</code> for requests
+marked with <code>isNavigationRequest</code> also cancels the navigation. Must not be set in response
+to an authChallenge.</p>
+<code><span class="keyword">val </span><span class="identifier">errorReason</span><span class="symbol">: </span><a href="../-error-reason/index.html"><span class="identifier">ErrorReason</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="headers.html">headers</a></h4>
+</td>
+<td>
+<p>If set this allows the request headers to be changed. Must not be set in response to an
+authChallenge.</p>
+<code><span class="keyword">val </span><span class="identifier">headers</span><span class="symbol">: </span><a href="../-headers.html"><span class="identifier">Headers</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="interception-id.html">interceptionId</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">interceptionId</span><span class="symbol">: </span><a href="../-interception-id.html"><span class="identifier">InterceptionId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="method.html">method</a></h4>
+</td>
+<td>
+<p>If set this allows the request method to be overridden. Must not be set in response to an
+authChallenge.</p>
+<code><span class="keyword">val </span><span class="identifier">method</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post-data.html">postData</a></h4>
+</td>
+<td>
+<p>If set this allows postData to be set. Must not be set in response to an authChallenge.</p>
+<code><span class="keyword">val </span><span class="identifier">postData</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="raw-response.html">rawResponse</a></h4>
+</td>
+<td>
+<p>If set the requests completes using with the provided base64 encoded raw response, including
+HTTP status line and headers etc... Must not be set in response to an authChallenge.</p>
+<code><span class="keyword">val </span><span class="identifier">rawResponse</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>If set the request url will be modified in a way that's not observable by page. Must not be
+set in response to an authChallenge.</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

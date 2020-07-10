@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChildNodeInsertedEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.dom</a>&nbsp;/&nbsp;<a href="./index.html">ChildNodeInsertedEvent</a><br/>
+<br/>
+<h1>ChildNodeInsertedEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChildNodeInsertedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/dom/Operations.kt#L1742">(source)</a>
+<p>Mirrors <code>DOMNodeInserted</code> event.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOM#event-childNodeInserted">DOM#childNodeInserted</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Mirrors <code>DOMNodeInserted</code> event.</p>
+<code><span class="identifier">ChildNodeInsertedEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.dom.ChildNodeInsertedEvent$<init>(kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.dom.Node)/parentNodeId">parentNodeId</span><span class="symbol">:</span>&nbsp;<a href="../-node-id.html"><span class="identifier">NodeId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.dom.ChildNodeInsertedEvent$<init>(kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.dom.Node)/previousNodeId">previousNodeId</span><span class="symbol">:</span>&nbsp;<a href="../-node-id.html"><span class="identifier">NodeId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.dom.ChildNodeInsertedEvent$<init>(kotlin.Int, kotlin.Int, pl.wendigo.chrome.api.dom.Node)/node">node</span><span class="symbol">:</span>&nbsp;<a href="../-node/index.html"><span class="identifier">Node</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="node.html">node</a></h4>
+</td>
+<td>
+<p>Inserted node data.</p>
+<code><span class="keyword">val </span><span class="identifier">node</span><span class="symbol">: </span><a href="../-node/index.html"><span class="identifier">Node</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="parent-node-id.html">parentNodeId</a></h4>
+</td>
+<td>
+<p>Id of the node that has changed.</p>
+<code><span class="keyword">val </span><span class="identifier">parentNodeId</span><span class="symbol">: </span><a href="../-node-id.html"><span class="identifier">NodeId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="previous-node-id.html">previousNodeId</a></h4>
+</td>
+<td>
+<p>If of the previous siblint.</p>
+<code><span class="keyword">val </span><span class="identifier">previousNodeId</span><span class="symbol">: </span><a href="../-node-id.html"><span class="identifier">NodeId</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

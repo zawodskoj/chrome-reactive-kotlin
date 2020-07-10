@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LifecycleEventEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.page</a>&nbsp;/&nbsp;<a href="./index.html">LifecycleEventEvent</a><br/>
+<br/>
+<h1>LifecycleEventEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LifecycleEventEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/page/Operations.kt#L2029">(source)</a>
+<p>Fired for top level page lifecycle events such as navigation, load, paint, etc.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#event-lifecycleEvent">Page#lifecycleEvent</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired for top level page lifecycle events such as navigation, load, paint, etc.</p>
+<code><span class="identifier">LifecycleEventEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.LifecycleEventEvent$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Double)/frameId">frameId</span><span class="symbol">:</span>&nbsp;<a href="../-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.LifecycleEventEvent$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Double)/loaderId">loaderId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.network/-loader-id.html"><span class="identifier">LoaderId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.LifecycleEventEvent$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Double)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.LifecycleEventEvent$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Double)/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.network/-monotonic-time.html"><span class="identifier">MonotonicTime</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="frame-id.html">frameId</a></h4>
+</td>
+<td>
+<p>Id of the frame.</p>
+<code><span class="keyword">val </span><span class="identifier">frameId</span><span class="symbol">: </span><a href="../-frame-id.html"><span class="identifier">FrameId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="loader-id.html">loaderId</a></h4>
+</td>
+<td>
+<p>Loader identifier. Empty string if the request is fetched from worker.</p>
+<code><span class="keyword">val </span><span class="identifier">loaderId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-loader-id.html"><span class="identifier">LoaderId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="name.html">name</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timestamp.html">timestamp</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">timestamp</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-monotonic-time.html"><span class="identifier">MonotonicTime</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

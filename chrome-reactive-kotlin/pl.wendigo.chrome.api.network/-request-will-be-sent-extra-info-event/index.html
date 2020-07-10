@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RequestWillBeSentExtraInfoEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">RequestWillBeSentExtraInfoEvent</a><br/>
+<br/>
+<h1>RequestWillBeSentExtraInfoEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestWillBeSentExtraInfoEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L1579">(source)</a>
+<p>Fired when additional information about a requestWillBeSent event is available from the
+network stack. Not every requestWillBeSent event will have an additional
+requestWillBeSentExtraInfo fired for it, and there is no guarantee whether requestWillBeSent
+or requestWillBeSentExtraInfo will be fired first for the same request.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#event-requestWillBeSentExtraInfo">Network#requestWillBeSentExtraInfo</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when additional information about a requestWillBeSent event is available from the
+network stack. Not every requestWillBeSent event will have an additional
+requestWillBeSentExtraInfo fired for it, and there is no guarantee whether requestWillBeSent
+or requestWillBeSentExtraInfo will be fired first for the same request.</p>
+<code><span class="identifier">RequestWillBeSentExtraInfoEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentExtraInfoEvent$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.network.BlockedCookieWithReason)), kotlin.collections.Map((kotlin.String, kotlin.Any)))/requestId">requestId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentExtraInfoEvent$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.network.BlockedCookieWithReason)), kotlin.collections.Map((kotlin.String, kotlin.Any)))/associatedCookies">associatedCookies</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-blocked-cookie-with-reason/index.html"><span class="identifier">BlockedCookieWithReason</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.RequestWillBeSentExtraInfoEvent$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.network.BlockedCookieWithReason)), kotlin.collections.Map((kotlin.String, kotlin.Any)))/headers">headers</span><span class="symbol">:</span>&nbsp;<a href="../-headers.html"><span class="identifier">Headers</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="associated-cookies.html">associatedCookies</a></h4>
+</td>
+<td>
+<p>A list of cookies potentially associated to the requested URL. This includes both cookies sent with
+the request and the ones not sent; the latter are distinguished by having blockedReason field set.</p>
+<code><span class="keyword">val </span><span class="identifier">associatedCookies</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-blocked-cookie-with-reason/index.html"><span class="identifier">BlockedCookieWithReason</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="headers.html">headers</a></h4>
+</td>
+<td>
+<p>Raw request headers as they will be sent over the wire.</p>
+<code><span class="keyword">val </span><span class="identifier">headers</span><span class="symbol">: </span><a href="../-headers.html"><span class="identifier">Headers</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<p>Request identifier. Used to match this information to an existing requestWillBeSent event.</p>
+<code><span class="keyword">val </span><span class="identifier">requestId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

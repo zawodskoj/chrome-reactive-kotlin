@@ -1,0 +1,67 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>HeadlessExperimentalOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.headlessexperimental</a>&nbsp;/&nbsp;<a href="./index.html">HeadlessExperimentalOperations</a><br/>
+<br/>
+<h1>HeadlessExperimentalOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">HeadlessExperimentalOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/headlessexperimental/Operations.kt#L10">(source)</a>
+<p>This domain provides experimental commands only supported in headless mode.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeadlessExperimental">HeadlessExperimental</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="begin-frame.html">beginFrame</a></h4>
+</td>
+<td>
+<p>Sends a BeginFrame to the target and returns when the frame was completed. Optionally captures a
+screenshot from the resulting frame. Requires that the target was created with enabled
+BeginFrameControl. Designed for use with --run-all-compositor-stages-before-draw, see also
+https://goo.gl/3zHXhB for more background.</p>
+<code><span class="keyword">fun </span><span class="identifier">beginFrame</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.headlessexperimental.HeadlessExperimentalOperations$beginFrame(pl.wendigo.chrome.api.headlessexperimental.BeginFrameRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-begin-frame-request/index.html"><span class="identifier">BeginFrameRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-begin-frame-response/index.html"><span class="identifier">BeginFrameResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables headless events for the target.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables headless events for the target.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all HeadlessExperimental domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="needs-begin-frames-changed.html">needsBeginFramesChanged</a></h4>
+</td>
+<td>
+<p>Issued when the target starts or stops needing BeginFrames.
+Deprecated. Issue beginFrame unconditionally instead and use result from
+beginFrame to detect whether the frames were suppressed.</p>
+<code><span class="keyword">fun </span><span class="identifier">needsBeginFramesChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-needs-begin-frames-changed-event/index.html"><span class="identifier">NeedsBeginFramesChangedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

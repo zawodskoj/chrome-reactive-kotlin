@@ -1,0 +1,130 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.accessibility - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.accessibility</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.accessibility</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Accessibility">Accessibility</a> domain implementation accessible via <a href="-accessibility-operations/index.html">AccessibilityOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-accessibility-operations/index.html">AccessibilityOperations</a></h4>
+</td>
+<td>
+<p>AccessibilityOperations represents Accessibility protocol domain request/response operations and events that can be captured.</p>
+<code><span class="keyword">class </span><span class="identifier">AccessibilityOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-x-node/index.html">AXNode</a></h4>
+</td>
+<td>
+<p>A node in the accessibility tree.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AXNode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-x-node-id.html">AXNodeId</a></h4>
+</td>
+<td>
+<p>Unique accessibility node identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">AXNodeId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-x-property/index.html">AXProperty</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AXProperty</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-x-property-name/index.html">AXPropertyName</a></h4>
+</td>
+<td>
+<p>Values of AXProperty name:</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">AXPropertyName</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-x-related-node/index.html">AXRelatedNode</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AXRelatedNode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-x-value/index.html">AXValue</a></h4>
+</td>
+<td>
+<p>A single computed AX property.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AXValue</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-x-value-native-source-type/index.html">AXValueNativeSourceType</a></h4>
+</td>
+<td>
+<p>Enum of possible native property sources (as a subtype of a particular AXValueSourceType).</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">AXValueNativeSourceType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-x-value-source/index.html">AXValueSource</a></h4>
+</td>
+<td>
+<p>A single source for a computed AX property.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AXValueSource</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-x-value-source-type/index.html">AXValueSourceType</a></h4>
+</td>
+<td>
+<p>Enum of possible property sources.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">AXValueSourceType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-x-value-type/index.html">AXValueType</a></h4>
+</td>
+<td>
+<p>Enum of possible property types.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">AXValueType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-full-a-x-tree-response/index.html">GetFullAXTreeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Accessibility#method-getFullAXTree">Accessibility#getFullAXTree</a> operation call.
+Fetches the entire accessibility tree</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetFullAXTreeResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-partial-a-x-tree-request/index.html">GetPartialAXTreeRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Accessibility#method-getPartialAXTree">Accessibility#getPartialAXTree</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetPartialAXTreeRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-partial-a-x-tree-response/index.html">GetPartialAXTreeResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Accessibility#method-getPartialAXTree">Accessibility#getPartialAXTree</a> operation call.
+Fetches the accessibility node and partial accessibility tree for this DOM node, if it exists.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetPartialAXTreeResponse</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FetchOperations.requestPaused - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.fetch</a>&nbsp;/&nbsp;<a href="index.html">FetchOperations</a>&nbsp;/&nbsp;<a href="./request-paused.html">requestPaused</a><br/>
+<br/>
+<h1>requestPaused</h1>
+<a name="pl.wendigo.chrome.api.fetch.FetchOperations$requestPaused()"></a>
+<code><span class="keyword">fun </span><span class="identifier">requestPaused</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-request-paused-event/index.html"><span class="identifier">RequestPausedEvent</span></a><span class="symbol">&gt;</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/fetch/Operations.kt#L90">(source)</a>
+<p>Issued when the domain is enabled and the request URL matches the
+specified filter. The request is paused until the client responds
+with one of continueRequest, failRequest or fulfillRequest.
+The stage of the request can be determined by presence of responseErrorReason
+and responseStatusCode -- the request is at the response stage if either
+of these fields is present and in the request stage otherwise.</p>
+</BODY>
+</HTML>

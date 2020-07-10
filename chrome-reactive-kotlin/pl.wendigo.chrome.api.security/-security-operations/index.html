@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SecurityOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.security</a>&nbsp;/&nbsp;<a href="./index.html">SecurityOperations</a><br/>
+<br/>
+<h1>SecurityOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">SecurityOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/security/Operations.kt#L8">(source)</a>
+<p>Security</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Security">Security</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="certificate-error.html">certificateError</a></h4>
+</td>
+<td>
+<p>There is a certificate error. If overriding certificate errors is enabled, then it should be
+handled with the <code>handleCertificateError</code> command. Note: this event does not fire if the
+certificate error has been allowed internally. Only one client per target should override
+certificate errors at the same time.</p>
+<code><span class="keyword">fun </span><span class="identifier">certificateError</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-certificate-error-event/index.html"><span class="identifier">CertificateErrorEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables tracking security state changes.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables tracking security state changes.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Security domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-certificate-error.html">handleCertificateError</a></h4>
+</td>
+<td>
+<p>Handles a certificate error that fired a certificateError event.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">handleCertificateError</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityOperations$handleCertificateError(pl.wendigo.chrome.api.security.HandleCertificateErrorRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-handle-certificate-error-request/index.html"><span class="identifier">HandleCertificateErrorRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="security-state-changed.html">securityStateChanged</a></h4>
+</td>
+<td>
+<p>The security state of the page changed.</p>
+<code><span class="keyword">fun </span><span class="identifier">securityStateChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-security-state-changed-event/index.html"><span class="identifier">SecurityStateChangedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-ignore-certificate-errors.html">setIgnoreCertificateErrors</a></h4>
+</td>
+<td>
+<p>Enable/disable whether all certificate errors should be ignored.</p>
+<code><span class="keyword">fun </span><span class="identifier">setIgnoreCertificateErrors</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityOperations$setIgnoreCertificateErrors(pl.wendigo.chrome.api.security.SetIgnoreCertificateErrorsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-ignore-certificate-errors-request/index.html"><span class="identifier">SetIgnoreCertificateErrorsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-override-certificate-errors.html">setOverrideCertificateErrors</a></h4>
+</td>
+<td>
+<p>Enable/disable overriding certificate errors. If enabled, all certificate error events need to
+be handled by the DevTools client and should be answered with <code>handleCertificateError</code> commands.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">setOverrideCertificateErrors</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityOperations$setOverrideCertificateErrors(pl.wendigo.chrome.api.security.SetOverrideCertificateErrorsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-override-certificate-errors-request/index.html"><span class="identifier">SetOverrideCertificateErrorsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="visible-security-state-changed.html">visibleSecurityStateChanged</a></h4>
+</td>
+<td>
+<p>The security state of the page changed.</p>
+<code><span class="keyword">fun </span><span class="identifier">visibleSecurityStateChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-visible-security-state-changed-event/index.html"><span class="identifier">VisibleSecurityStateChangedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

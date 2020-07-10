@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TakeResponseBodyForInterceptionAsStreamResponse.<init> - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="index.html">TakeResponseBodyForInterceptionAsStreamResponse</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="pl.wendigo.chrome.api.network.TakeResponseBodyForInterceptionAsStreamResponse$&lt;init&gt;(kotlin.String)"></a>
+<code><span class="identifier">TakeResponseBodyForInterceptionAsStreamResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.TakeResponseBodyForInterceptionAsStreamResponse$<init>(kotlin.String)/stream">stream</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.io/-stream-handle.html"><span class="identifier">StreamHandle</span></a><span class="symbol">)</span></code>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-takeResponseBodyForInterceptionAsStream">Network#takeResponseBodyForInterceptionAsStream</a> operation call.
+Returns a handle to the stream representing the response body. Note that after this command,
+the intercepted request can't be continued as is -- you either need to cancel it or to provide
+the response body. The stream only supports sequential read, IO.read will fail if the position
+is specified.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-takeResponseBodyForInterceptionAsStream">Network#takeResponseBodyForInterceptionAsStream</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-network-operations/take-response-body-for-interception-as-stream.html">NetworkOperations.takeResponseBodyForInterceptionAsStream</a></p>
+</p>
+</BODY>
+</HTML>

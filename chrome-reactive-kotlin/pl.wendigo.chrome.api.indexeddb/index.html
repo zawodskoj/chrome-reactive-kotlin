@@ -1,0 +1,174 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.indexeddb - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.indexeddb</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.indexeddb</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB">IndexedDB</a> domain implementation accessible via <a href="-indexed-d-b-operations/index.html">IndexedDBOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-clear-object-store-request/index.html">ClearObjectStoreRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-clearObjectStore">IndexedDB#clearObjectStore</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ClearObjectStoreRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-database-with-object-stores/index.html">DatabaseWithObjectStores</a></h4>
+</td>
+<td>
+<p>Database with an array of object stores.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DatabaseWithObjectStores</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-data-entry/index.html">DataEntry</a></h4>
+</td>
+<td>
+<p>Data entry.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DataEntry</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-delete-database-request/index.html">DeleteDatabaseRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-deleteDatabase">IndexedDB#deleteDatabase</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DeleteDatabaseRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-delete-object-store-entries-request/index.html">DeleteObjectStoreEntriesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-deleteObjectStoreEntries">IndexedDB#deleteObjectStoreEntries</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DeleteObjectStoreEntriesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-metadata-request/index.html">GetMetadataRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-getMetadata">IndexedDB#getMetadata</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetMetadataRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-metadata-response/index.html">GetMetadataResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-getMetadata">IndexedDB#getMetadata</a> operation call.
+Gets metadata of an object store</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetMetadataResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-indexed-d-b-operations/index.html">IndexedDBOperations</a></h4>
+</td>
+<td>
+<p>IndexedDBOperations represents IndexedDB protocol domain request/response operations and events that can be captured.</p>
+<code><span class="keyword">class </span><span class="identifier">IndexedDBOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-key/index.html">Key</a></h4>
+</td>
+<td>
+<p>Key.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Key</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-key-path/index.html">KeyPath</a></h4>
+</td>
+<td>
+<p>Key path.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">KeyPath</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-key-range/index.html">KeyRange</a></h4>
+</td>
+<td>
+<p>Key range.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">KeyRange</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-object-store/index.html">ObjectStore</a></h4>
+</td>
+<td>
+<p>Object store.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ObjectStore</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-object-store-index/index.html">ObjectStoreIndex</a></h4>
+</td>
+<td>
+<p>Object store index.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ObjectStoreIndex</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-database-names-request/index.html">RequestDatabaseNamesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-requestDatabaseNames">IndexedDB#requestDatabaseNames</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestDatabaseNamesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-database-names-response/index.html">RequestDatabaseNamesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-requestDatabaseNames">IndexedDB#requestDatabaseNames</a> operation call.
+Requests database names for given security origin.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestDatabaseNamesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-database-request/index.html">RequestDatabaseRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-requestDatabase">IndexedDB#requestDatabase</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestDatabaseRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-database-response/index.html">RequestDatabaseResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-requestDatabase">IndexedDB#requestDatabase</a> operation call.
+Requests database with given name in given frame.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestDatabaseResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-data-request/index.html">RequestDataRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-requestData">IndexedDB#requestData</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestDataRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-request-data-response/index.html">RequestDataResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-requestData">IndexedDB#requestData</a> operation call.
+Requests data from object store or index.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestDataResponse</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

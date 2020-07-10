@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ApplicationCacheOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.applicationcache</a>&nbsp;/&nbsp;<a href="./index.html">ApplicationCacheOperations</a><br/>
+<br/>
+<h1>ApplicationCacheOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">ApplicationCacheOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/applicationcache/Operations.kt#L10">(source)</a>
+<p>ApplicationCacheOperations represents ApplicationCache protocol domain request/response operations and events that can be captured.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache">ApplicationCache</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="application-cache-status-updated.html">applicationCacheStatusUpdated</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all ApplicationCache.applicationCacheStatusUpdated events.</p>
+<code><span class="keyword">fun </span><span class="identifier">applicationCacheStatusUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-application-cache-status-updated-event/index.html"><span class="identifier">ApplicationCacheStatusUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables application cache domain notifications.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all ApplicationCache domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-application-cache-for-frame.html">getApplicationCacheForFrame</a></h4>
+</td>
+<td>
+<p>Returns relevant application cache data for the document in given frame.</p>
+<code><span class="keyword">fun </span><span class="identifier">getApplicationCacheForFrame</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.applicationcache.ApplicationCacheOperations$getApplicationCacheForFrame(pl.wendigo.chrome.api.applicationcache.GetApplicationCacheForFrameRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-application-cache-for-frame-request/index.html"><span class="identifier">GetApplicationCacheForFrameRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-application-cache-for-frame-response/index.html"><span class="identifier">GetApplicationCacheForFrameResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-frames-with-manifests.html">getFramesWithManifests</a></h4>
+</td>
+<td>
+<p>Returns array of frame identifiers with manifest urls for each frame containing a document
+associated with some application cache.</p>
+<code><span class="keyword">fun </span><span class="identifier">getFramesWithManifests</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-frames-with-manifests-response/index.html"><span class="identifier">GetFramesWithManifestsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-manifest-for-frame.html">getManifestForFrame</a></h4>
+</td>
+<td>
+<p>Returns manifest URL for document in the given frame.</p>
+<code><span class="keyword">fun </span><span class="identifier">getManifestForFrame</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.applicationcache.ApplicationCacheOperations$getManifestForFrame(pl.wendigo.chrome.api.applicationcache.GetManifestForFrameRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-manifest-for-frame-request/index.html"><span class="identifier">GetManifestForFrameRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-manifest-for-frame-response/index.html"><span class="identifier">GetManifestForFrameResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="network-state-updated.html">networkStateUpdated</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all ApplicationCache.networkStateUpdated events.</p>
+<code><span class="keyword">fun </span><span class="identifier">networkStateUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-network-state-updated-event/index.html"><span class="identifier">NetworkStateUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

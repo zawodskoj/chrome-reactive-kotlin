@@ -1,0 +1,1200 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Event - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.protocol</a>&nbsp;/&nbsp;<a href="./index.html">Event</a><br/>
+<br/>
+<h1>Event</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Event</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/protocol/Event.kt#L7">(source)</a>
+<p>Debugger event represents generic protocol event consisting of domain and event names.
+This class is also supertype of all parameterized events.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Debugger event represents generic protocol event consisting of domain and event names.
+This class is also supertype of all parameterized events.</p>
+<code><span class="identifier">Event</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.Event$<init>(kotlin.String, kotlin.String)/domain">domain</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.Event$<init>(kotlin.String, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="protocol-domain.html">protocolDomain</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">protocolDomain</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.tethering/-accepted-event/index.html">AcceptedEvent</a></h4>
+</td>
+<td>
+<p>Informs that port was successfully bound and got a specified connection id.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AcceptedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.database/-add-database-event/index.html">AddDatabaseEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddDatabaseEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.heapprofiler/-add-heap-snapshot-chunk-event/index.html">AddHeapSnapshotChunkEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddHeapSnapshotChunkEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.animation/-animation-canceled-event/index.html">AnimationCanceledEvent</a></h4>
+</td>
+<td>
+<p>Event for when an animation has been cancelled.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AnimationCanceledEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.animation/-animation-created-event/index.html">AnimationCreatedEvent</a></h4>
+</td>
+<td>
+<p>Event for each animation that has been created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AnimationCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.animation/-animation-started-event/index.html">AnimationStartedEvent</a></h4>
+</td>
+<td>
+<p>Event for animation that has been started.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AnimationStartedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.applicationcache/-application-cache-status-updated-event/index.html">ApplicationCacheStatusUpdatedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ApplicationCacheStatusUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.target/-attached-to-target-event/index.html">AttachedToTargetEvent</a></h4>
+</td>
+<td>
+<p>Issued when attached to target because of auto-attach or <code>attachToTarget</code> command.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AttachedToTargetEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-attribute-modified-event/index.html">AttributeModifiedEvent</a></h4>
+</td>
+<td>
+<p>Fired when <code>Element</code>'s attribute is modified.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AttributeModifiedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-attribute-removed-event/index.html">AttributeRemovedEvent</a></h4>
+</td>
+<td>
+<p>Fired when <code>Element</code>'s attribute is removed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AttributeRemovedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-audio-listener-created-event/index.html">AudioListenerCreatedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that the construction of an AudioListener has finished.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioListenerCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-audio-listener-will-be-destroyed-event/index.html">AudioListenerWillBeDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that a new AudioListener has been created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioListenerWillBeDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-audio-node-created-event/index.html">AudioNodeCreatedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that a new AudioNode has been created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioNodeCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-audio-node-will-be-destroyed-event/index.html">AudioNodeWillBeDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that an existing AudioNode has been destroyed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioNodeWillBeDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-audio-param-created-event/index.html">AudioParamCreatedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that a new AudioParam has been created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioParamCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-audio-param-will-be-destroyed-event/index.html">AudioParamWillBeDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that an existing AudioParam has been destroyed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AudioParamWillBeDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.fetch/-auth-required-event/index.html">AuthRequiredEvent</a></h4>
+</td>
+<td>
+<p>Issued when the domain is enabled with handleAuthRequests set to true.
+The request is paused until client responds with continueWithAuth.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AuthRequiredEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.backgroundservice/-background-service-event-received-event/index.html">BackgroundServiceEventReceivedEvent</a></h4>
+</td>
+<td>
+<p>Called with all existing backgroundServiceEvents when enabled, and all new
+events afterwards if enabled and recording.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BackgroundServiceEventReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.runtime/-binding-called-event/index.html">BindingCalledEvent</a></h4>
+</td>
+<td>
+<p>Notification is issued every time when binding is called.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BindingCalledEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.debugger/-breakpoint-resolved-event/index.html">BreakpointResolvedEvent</a></h4>
+</td>
+<td>
+<p>Fired when breakpoint is resolved to an actual script and location.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BreakpointResolvedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.tracing/-buffer-usage-event/index.html">BufferUsageEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BufferUsageEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.storage/-cache-storage-content-updated-event/index.html">CacheStorageContentUpdatedEvent</a></h4>
+</td>
+<td>
+<p>A cache's contents have been modified.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CacheStorageContentUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.storage/-cache-storage-list-updated-event/index.html">CacheStorageListUpdatedEvent</a></h4>
+</td>
+<td>
+<p>A cache has been added/deleted.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CacheStorageListUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.security/-certificate-error-event/index.html">CertificateErrorEvent</a></h4>
+</td>
+<td>
+<p>There is a certificate error. If overriding certificate errors is enabled, then it should be
+handled with the <code>handleCertificateError</code> command. Note: this event does not fire if the
+certificate error has been allowed internally. Only one client per target should override
+certificate errors at the same time.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CertificateErrorEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-character-data-modified-event/index.html">CharacterDataModifiedEvent</a></h4>
+</td>
+<td>
+<p>Mirrors <code>DOMCharacterDataModified</code> event.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CharacterDataModifiedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-child-node-count-updated-event/index.html">ChildNodeCountUpdatedEvent</a></h4>
+</td>
+<td>
+<p>Fired when <code>Container</code>'s child node count has changed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChildNodeCountUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-child-node-inserted-event/index.html">ChildNodeInsertedEvent</a></h4>
+</td>
+<td>
+<p>Mirrors <code>DOMNodeInserted</code> event.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChildNodeInsertedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-child-node-removed-event/index.html">ChildNodeRemovedEvent</a></h4>
+</td>
+<td>
+<p>Mirrors <code>DOMNodeRemoved</code> event.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChildNodeRemovedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-compilation-cache-produced-event/index.html">CompilationCacheProducedEvent</a></h4>
+</td>
+<td>
+<p>Issued for every compilation cache generated. Is only available
+if Page.setGenerateCompilationCache is enabled.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CompilationCacheProducedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.runtime/-console-a-p-i-called-event/index.html">ConsoleAPICalledEvent</a></h4>
+</td>
+<td>
+<p>Issued when console API was called.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ConsoleAPICalledEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.profiler/-console-profile-finished-event/index.html">ConsoleProfileFinishedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ConsoleProfileFinishedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.profiler/-console-profile-started-event/index.html">ConsoleProfileStartedEvent</a></h4>
+</td>
+<td>
+<p>Sent when new profile recording is started using console.profile() call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ConsoleProfileStartedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-context-changed-event/index.html">ContextChangedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that existing BaseAudioContext has changed some properties (id stays the same)..</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContextChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-context-created-event/index.html">ContextCreatedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that a new BaseAudioContext has been created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContextCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-context-will-be-destroyed-event/index.html">ContextWillBeDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that an existing BaseAudioContext will be destroyed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ContextWillBeDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.tracing/-data-collected-event/index.html">DataCollectedEvent</a></h4>
+</td>
+<td>
+<p>Contains an bucket of collected trace events. When tracing is stopped collected events will be
+send as a sequence of dataCollected events followed by tracingComplete event.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DataCollectedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-data-received-event/index.html">DataReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when data chunk was received over the network.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DataReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.inspector/-detached-event/index.html">DetachedEvent</a></h4>
+</td>
+<td>
+<p>Fired when remote debugging connection is about to be terminated. Contains detach reason.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DetachedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.target/-detached-from-target-event/index.html">DetachedFromTargetEvent</a></h4>
+</td>
+<td>
+<p>Issued when detached from target for any reason (including <code>detachFromTarget</code> command). Can be
+issued multiple times per target if multiple sessions have been attached to it.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DetachedFromTargetEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-distributed-nodes-updated-event/index.html">DistributedNodesUpdatedEvent</a></h4>
+</td>
+<td>
+<p>Called when distrubution is changed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DistributedNodesUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-dom-content-event-fired-event/index.html">DomContentEventFiredEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DomContentEventFiredEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.domstorage/-dom-storage-item-added-event/index.html">DomStorageItemAddedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DomStorageItemAddedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.domstorage/-dom-storage-item-removed-event/index.html">DomStorageItemRemovedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DomStorageItemRemovedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.domstorage/-dom-storage-items-cleared-event/index.html">DomStorageItemsClearedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DomStorageItemsClearedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.domstorage/-dom-storage-item-updated-event/index.html">DomStorageItemUpdatedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DomStorageItemUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-download-progress-event/index.html">DownloadProgressEvent</a></h4>
+</td>
+<td>
+<p>Fired when download makes progress. Last call has |done| == true.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DownloadProgressEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-download-will-begin-event/index.html">DownloadWillBeginEvent</a></h4>
+</td>
+<td>
+<p>Fired when page is about to start a download.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DownloadWillBeginEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.log/-entry-added-event/index.html">EntryAddedEvent</a></h4>
+</td>
+<td>
+<p>Issued when new message was logged.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EntryAddedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-event-source-message-received-event/index.html">EventSourceMessageReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when EventSource message is received.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EventSourceMessageReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.runtime/-exception-revoked-event/index.html">ExceptionRevokedEvent</a></h4>
+</td>
+<td>
+<p>Issued when unhandled exception was revoked.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExceptionRevokedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.runtime/-exception-thrown-event/index.html">ExceptionThrownEvent</a></h4>
+</td>
+<td>
+<p>Issued when exception was thrown and unhandled.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExceptionThrownEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.runtime/-execution-context-created-event/index.html">ExecutionContextCreatedEvent</a></h4>
+</td>
+<td>
+<p>Issued when new execution context is created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExecutionContextCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.runtime/-execution-context-destroyed-event/index.html">ExecutionContextDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Issued when execution context is destroyed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExecutionContextDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-file-chooser-opened-event/index.html">FileChooserOpenedEvent</a></h4>
+</td>
+<td>
+<p>Emitted only when <code>page.interceptFileChooser</code> is enabled.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FileChooserOpenedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.css/-fonts-updated-event/index.html">FontsUpdatedEvent</a></h4>
+</td>
+<td>
+<p>Fires whenever a web font is updated.  A non-empty font parameter indicates a successfully loaded
+web font</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FontsUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-frame-attached-event/index.html">FrameAttachedEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame has been attached to its parent.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameAttachedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-frame-cleared-scheduled-navigation-event/index.html">FrameClearedScheduledNavigationEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame no longer has a scheduled navigation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameClearedScheduledNavigationEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-frame-detached-event/index.html">FrameDetachedEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame has been detached from its parent.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameDetachedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-frame-navigated-event/index.html">FrameNavigatedEvent</a></h4>
+</td>
+<td>
+<p>Fired once navigation of the frame has completed. Frame is now associated with the new loader.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameNavigatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-frame-requested-navigation-event/index.html">FrameRequestedNavigationEvent</a></h4>
+</td>
+<td>
+<p>Fired when a renderer-initiated navigation is requested.
+Navigation may still be cancelled after the event is issued.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameRequestedNavigationEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-frame-scheduled-navigation-event/index.html">FrameScheduledNavigationEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame schedules a potential navigation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameScheduledNavigationEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-frame-started-loading-event/index.html">FrameStartedLoadingEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame has started loading.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameStartedLoadingEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-frame-stopped-loading-event/index.html">FrameStoppedLoadingEvent</a></h4>
+</td>
+<td>
+<p>Fired when frame has stopped loading.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FrameStoppedLoadingEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.heapprofiler/-heap-stats-update-event/index.html">HeapStatsUpdateEvent</a></h4>
+</td>
+<td>
+<p>If heap objects tracking has been started then backend may send update for one or more fragments</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HeapStatsUpdateEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.storage/-indexed-d-b-content-updated-event/index.html">IndexedDBContentUpdatedEvent</a></h4>
+</td>
+<td>
+<p>The origin's IndexedDB object store has been modified.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">IndexedDBContentUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.storage/-indexed-d-b-list-updated-event/index.html">IndexedDBListUpdatedEvent</a></h4>
+</td>
+<td>
+<p>The origin's IndexedDB database list has been modified.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">IndexedDBListUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-inline-style-invalidated-event/index.html">InlineStyleInvalidatedEvent</a></h4>
+</td>
+<td>
+<p>Fired when <code>Element</code>'s inline style is modified via a CSS property modification.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InlineStyleInvalidatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.overlay/-inspect-node-requested-event/index.html">InspectNodeRequestedEvent</a></h4>
+</td>
+<td>
+<p>Fired when the node should be inspected. This happens after call to <code>setInspectMode</code> or when
+user manually inspects an element.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InspectNodeRequestedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.runtime/-inspect-requested-event/index.html">InspectRequestedEvent</a></h4>
+</td>
+<td>
+<p>Issued when object should be inspected (for example, as a result of inspect() command line API
+call).</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InspectRequestedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.audits/-issue-added-event/index.html">IssueAddedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">IssueAddedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.cast/-issue-updated-event/index.html">IssueUpdatedEvent</a></h4>
+</td>
+<td>
+<p>This is fired whenever the outstanding issue/error message changes.
+|issueMessage| is empty if there is no issue.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">IssueUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-javascript-dialog-closed-event/index.html">JavascriptDialogClosedEvent</a></h4>
+</td>
+<td>
+<p>Fired when a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload) has been
+closed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">JavascriptDialogClosedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-javascript-dialog-opening-event/index.html">JavascriptDialogOpeningEvent</a></h4>
+</td>
+<td>
+<p>Fired when a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload) is about to
+open.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">JavascriptDialogOpeningEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.heapprofiler/-last-seen-object-id-event/index.html">LastSeenObjectIdEvent</a></h4>
+</td>
+<td>
+<p>If heap objects tracking has been started then backend regularly sends a current value for last
+seen object id and corresponding timestamp. If the were changes in the heap since last event
+then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LastSeenObjectIdEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.layertree/-layer-painted-event/index.html">LayerPaintedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LayerPaintedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.layertree/-layer-tree-did-change-event/index.html">LayerTreeDidChangeEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LayerTreeDidChangeEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-lifecycle-event-event/index.html">LifecycleEventEvent</a></h4>
+</td>
+<td>
+<p>Fired for top level page lifecycle events such as navigation, load, paint, etc.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LifecycleEventEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-load-event-fired-event/index.html">LoadEventFiredEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LoadEventFiredEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-loading-failed-event/index.html">LoadingFailedEvent</a></h4>
+</td>
+<td>
+<p>Fired when HTTP request has failed to load.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LoadingFailedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-loading-finished-event/index.html">LoadingFinishedEvent</a></h4>
+</td>
+<td>
+<p>Fired when HTTP request has finished loading.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LoadingFinishedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.console/-message-added-event/index.html">MessageAddedEvent</a></h4>
+</td>
+<td>
+<p>Issued when new console message is added.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MessageAddedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.performance/-metrics-event/index.html">MetricsEvent</a></h4>
+</td>
+<td>
+<p>Current values of the metrics.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MetricsEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-navigated-within-document-event/index.html">NavigatedWithinDocumentEvent</a></h4>
+</td>
+<td>
+<p>Fired when same-document navigation happens, e.g. due to history API usage or anchor navigation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NavigatedWithinDocumentEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.headlessexperimental/-needs-begin-frames-changed-event/index.html">NeedsBeginFramesChangedEvent</a></h4>
+</td>
+<td>
+<p>Issued when the target starts or stops needing BeginFrames.
+Deprecated. Issue beginFrame unconditionally instead and use result from
+beginFrame to detect whether the frames were suppressed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NeedsBeginFramesChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.applicationcache/-network-state-updated-event/index.html">NetworkStateUpdatedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NetworkStateUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.overlay/-node-highlight-requested-event/index.html">NodeHighlightRequestedEvent</a></h4>
+</td>
+<td>
+<p>Fired when the node should be highlighted. This happens after call to <code>setInspectMode</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NodeHighlightRequestedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-node-param-connected-event/index.html">NodeParamConnectedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that an AudioNode is connected to an AudioParam.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NodeParamConnectedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-node-param-disconnected-event/index.html">NodeParamDisconnectedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that an AudioNode is disconnected to an AudioParam.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NodeParamDisconnectedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-nodes-connected-event/index.html">NodesConnectedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that two AudioNodes are connected.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NodesConnectedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.webaudio/-nodes-disconnected-event/index.html">NodesDisconnectedEvent</a></h4>
+</td>
+<td>
+<p>Notifies that AudioNodes are disconnected. The destination can be null, and it means all the outgoing connections from the source are disconnected.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NodesDisconnectedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.debugger/-paused-event/index.html">PausedEvent</a></h4>
+</td>
+<td>
+<p>Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PausedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.media/-player-errors-raised-event/index.html">PlayerErrorsRaisedEvent</a></h4>
+</td>
+<td>
+<p>Send a list of any errors that need to be delivered.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PlayerErrorsRaisedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.media/-player-events-added-event/index.html">PlayerEventsAddedEvent</a></h4>
+</td>
+<td>
+<p>Send events as a list, allowing them to be batched on the browser for less
+congestion. If batched, events must ALWAYS be in chronological order.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PlayerEventsAddedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.media/-player-messages-logged-event/index.html">PlayerMessagesLoggedEvent</a></h4>
+</td>
+<td>
+<p>Send a list of any messages that need to be delivered.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PlayerMessagesLoggedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.media/-player-properties-changed-event/index.html">PlayerPropertiesChangedEvent</a></h4>
+</td>
+<td>
+<p>This can be called multiple times, and can be used to set / override /
+remove player properties. A null propValue indicates removal.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PlayerPropertiesChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.media/-players-created-event/index.html">PlayersCreatedEvent</a></h4>
+</td>
+<td>
+<p>Called whenever a player is created, or when a new agent joins and recieves
+a list of active players. If an agent is restored, it will recieve the full
+list of player ids and all events again.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PlayersCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.profiler/-precise-coverage-delta-update-event/index.html">PreciseCoverageDeltaUpdateEvent</a></h4>
+</td>
+<td>
+<p>Reports coverage delta since the last poll (either from an event like this, or from
+<code>takePreciseCoverage</code> for the current isolate. May only be sent if precise code
+coverage has been started. This event can be trigged by the embedder to, for example,
+trigger collection of coverage data immediatelly at a certain point in time.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PreciseCoverageDeltaUpdateEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-pseudo-element-added-event/index.html">PseudoElementAddedEvent</a></h4>
+</td>
+<td>
+<p>Called when a pseudo element is added to an element.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PseudoElementAddedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-pseudo-element-removed-event/index.html">PseudoElementRemovedEvent</a></h4>
+</td>
+<td>
+<p>Called when a pseudo element is removed from an element.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PseudoElementRemovedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.target/-received-message-from-target-event/index.html">ReceivedMessageFromTargetEvent</a></h4>
+</td>
+<td>
+<p>Notifies about a new protocol message received from the session (as reported in
+<code>attachedToTarget</code> event).</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReceivedMessageFromTargetEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.backgroundservice/-recording-state-changed-event/index.html">RecordingStateChangedEvent</a></h4>
+</td>
+<td>
+<p>Called when the recording state for the service has been updated.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RecordingStateChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.heapprofiler/-report-heap-snapshot-progress-event/index.html">ReportHeapSnapshotProgressEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReportHeapSnapshotProgressEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-request-intercepted-event/index.html">RequestInterceptedEvent</a></h4>
+</td>
+<td>
+<p>Details of an intercepted HTTP request, which must be either allowed, blocked, modified or
+mocked.
+Deprecated, use Fetch.requestPaused instead.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestInterceptedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.fetch/-request-paused-event/index.html">RequestPausedEvent</a></h4>
+</td>
+<td>
+<p>Issued when the domain is enabled and the request URL matches the
+specified filter. The request is paused until the client responds
+with one of continueRequest, failRequest or fulfillRequest.
+The stage of the request can be determined by presence of responseErrorReason
+and responseStatusCode -- the request is at the response stage if either
+of these fields is present and in the request stage otherwise.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestPausedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-request-served-from-cache-event/index.html">RequestServedFromCacheEvent</a></h4>
+</td>
+<td>
+<p>Fired if request ended up loading from cache.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestServedFromCacheEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-request-will-be-sent-event/index.html">RequestWillBeSentEvent</a></h4>
+</td>
+<td>
+<p>Fired when page is about to send HTTP request.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestWillBeSentEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-request-will-be-sent-extra-info-event/index.html">RequestWillBeSentExtraInfoEvent</a></h4>
+</td>
+<td>
+<p>Fired when additional information about a requestWillBeSent event is available from the
+network stack. Not every requestWillBeSent event will have an additional
+requestWillBeSentExtraInfo fired for it, and there is no guarantee whether requestWillBeSent
+or requestWillBeSentExtraInfo will be fired first for the same request.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RequestWillBeSentExtraInfoEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-resource-changed-priority-event/index.html">ResourceChangedPriorityEvent</a></h4>
+</td>
+<td>
+<p>Fired when resource loading priority is changed</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResourceChangedPriorityEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-response-received-event/index.html">ResponseReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when HTTP response is available.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResponseReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-response-received-extra-info-event/index.html">ResponseReceivedExtraInfoEvent</a></h4>
+</td>
+<td>
+<p>Fired when additional information about a responseReceived event is available from the network
+stack. Not every responseReceived event will have an additional responseReceivedExtraInfo for
+it, and responseReceivedExtraInfo may be fired before or after responseReceived.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ResponseReceivedExtraInfoEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-screencast-frame-event/index.html">ScreencastFrameEvent</a></h4>
+</td>
+<td>
+<p>Compressed image data requested by the <code>startScreencast</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScreencastFrameEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-screencast-visibility-changed-event/index.html">ScreencastVisibilityChangedEvent</a></h4>
+</td>
+<td>
+<p>Fired when the page with currently enabled screencast was shown or hidden `.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScreencastVisibilityChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.overlay/-screenshot-requested-event/index.html">ScreenshotRequestedEvent</a></h4>
+</td>
+<td>
+<p>Fired when user asks to capture screenshot of some area on the page.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScreenshotRequestedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.debugger/-script-failed-to-parse-event/index.html">ScriptFailedToParseEvent</a></h4>
+</td>
+<td>
+<p>Fired when virtual machine fails to parse the script.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScriptFailedToParseEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.debugger/-script-parsed-event/index.html">ScriptParsedEvent</a></h4>
+</td>
+<td>
+<p>Fired when virtual machine parses script. This event is also fired for all known and uncollected
+scripts upon enabling debugger.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScriptParsedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.security/-security-state-changed-event/index.html">SecurityStateChangedEvent</a></h4>
+</td>
+<td>
+<p>The security state of the page changed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SecurityStateChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-set-child-nodes-event/index.html">SetChildNodesEvent</a></h4>
+</td>
+<td>
+<p>Fired when backend wants to provide client with the missing DOM structure. This happens upon
+most of the calls requesting node ids.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetChildNodesEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-shadow-root-popped-event/index.html">ShadowRootPoppedEvent</a></h4>
+</td>
+<td>
+<p>Called when shadow root is popped from the element.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ShadowRootPoppedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.dom/-shadow-root-pushed-event/index.html">ShadowRootPushedEvent</a></h4>
+</td>
+<td>
+<p>Called when shadow root is pushed into the element.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ShadowRootPushedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-signed-exchange-received-event/index.html">SignedExchangeReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when a signed exchange was received over the network</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SignedExchangeReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.cast/-sinks-updated-event/index.html">SinksUpdatedEvent</a></h4>
+</td>
+<td>
+<p>This is fired whenever the list of available sinks changes. A sink is a
+device or a software surface that you can cast to.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SinksUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.css/-style-sheet-added-event/index.html">StyleSheetAddedEvent</a></h4>
+</td>
+<td>
+<p>Fired whenever an active document stylesheet is added.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StyleSheetAddedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.css/-style-sheet-changed-event/index.html">StyleSheetChangedEvent</a></h4>
+</td>
+<td>
+<p>Fired whenever a stylesheet is changed as a result of the client operation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StyleSheetChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.css/-style-sheet-removed-event/index.html">StyleSheetRemovedEvent</a></h4>
+</td>
+<td>
+<p>Fired whenever an active document stylesheet is removed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StyleSheetRemovedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.target/-target-crashed-event/index.html">TargetCrashedEvent</a></h4>
+</td>
+<td>
+<p>Issued when a target has crashed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TargetCrashedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.target/-target-created-event/index.html">TargetCreatedEvent</a></h4>
+</td>
+<td>
+<p>Issued when a possible inspection target is created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TargetCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.target/-target-destroyed-event/index.html">TargetDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Issued when a target is destroyed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TargetDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.target/-target-info-changed-event/index.html">TargetInfoChangedEvent</a></h4>
+</td>
+<td>
+<p>Issued when some information about a target has changed. This only happens between
+<code>targetCreated</code> and <code>targetDestroyed</code>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TargetInfoChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.tracing/-tracing-complete-event/index.html">TracingCompleteEvent</a></h4>
+</td>
+<td>
+<p>Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+delivered via dataCollected events.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TracingCompleteEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.security/-visible-security-state-changed-event/index.html">VisibleSecurityStateChangedEvent</a></h4>
+</td>
+<td>
+<p>The security state of the page changed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">VisibleSecurityStateChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-web-socket-closed-event/index.html">WebSocketClosedEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket is closed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketClosedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-web-socket-created-event/index.html">WebSocketCreatedEvent</a></h4>
+</td>
+<td>
+<p>Fired upon WebSocket creation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-web-socket-frame-error-event/index.html">WebSocketFrameErrorEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket message error occurs.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketFrameErrorEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-web-socket-frame-received-event/index.html">WebSocketFrameReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket message is received.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketFrameReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-web-socket-frame-sent-event/index.html">WebSocketFrameSentEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket message is sent.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketFrameSentEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-web-socket-handshake-response-received-event/index.html">WebSocketHandshakeResponseReceivedEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket handshake response becomes available.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketHandshakeResponseReceivedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.network/-web-socket-will-send-handshake-request-event/index.html">WebSocketWillSendHandshakeRequestEvent</a></h4>
+</td>
+<td>
+<p>Fired when WebSocket is about to initiate handshake.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WebSocketWillSendHandshakeRequestEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.page/-window-open-event/index.html">WindowOpenEvent</a></h4>
+</td>
+<td>
+<p>Fired when a new window is going to be opened, via window.open(), link click, form submission,
+etc.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WindowOpenEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.serviceworker/-worker-error-reported-event/index.html">WorkerErrorReportedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WorkerErrorReportedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.serviceworker/-worker-registration-updated-event/index.html">WorkerRegistrationUpdatedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WorkerRegistrationUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../pl.wendigo.chrome.api.serviceworker/-worker-version-updated-event/index.html">WorkerVersionUpdatedEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WorkerVersionUpdatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

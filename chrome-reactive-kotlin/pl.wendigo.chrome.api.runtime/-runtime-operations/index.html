@@ -1,0 +1,285 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RuntimeOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="./index.html">RuntimeOperations</a><br/>
+<br/>
+<h1>RuntimeOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">RuntimeOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Operations.kt#L12">(source)</a>
+<p>Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects.
+Evaluation results are returned as mirror object that expose object type, string representation
+and unique identifier that can be used for further object reference. Original objects are
+maintained in memory unless they are either explicitly released or are released along with the
+other objects in their object group.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime">Runtime</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-binding.html">addBinding</a></h4>
+</td>
+<td>
+<p>If executionContextId is empty, adds binding with the given name on the
+global objects of all inspected contexts, including those created later,
+bindings survive reloads.
+If executionContextId is specified, adds binding only on global object of
+given execution context.
+Binding function takes exactly one argument, this argument should be string,
+in case of any other input, function throws an exception.
+Each binding function call produces Runtime.bindingCalled notification.</p>
+<code><span class="keyword">fun </span><span class="identifier">addBinding</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$addBinding(pl.wendigo.chrome.api.runtime.AddBindingRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-add-binding-request/index.html"><span class="identifier">AddBindingRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="await-promise.html">awaitPromise</a></h4>
+</td>
+<td>
+<p>Add handler to promise with given promise object id.</p>
+<code><span class="keyword">fun </span><span class="identifier">awaitPromise</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$awaitPromise(pl.wendigo.chrome.api.runtime.AwaitPromiseRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-await-promise-request/index.html"><span class="identifier">AwaitPromiseRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-await-promise-response/index.html"><span class="identifier">AwaitPromiseResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="binding-called.html">bindingCalled</a></h4>
+</td>
+<td>
+<p>Notification is issued every time when binding is called.</p>
+<code><span class="keyword">fun </span><span class="identifier">bindingCalled</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-binding-called-event/index.html"><span class="identifier">BindingCalledEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="call-function-on.html">callFunctionOn</a></h4>
+</td>
+<td>
+<p>Calls function with given declaration on the given object. Object group of the result is
+inherited from the target object.</p>
+<code><span class="keyword">fun </span><span class="identifier">callFunctionOn</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$callFunctionOn(pl.wendigo.chrome.api.runtime.CallFunctionOnRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-call-function-on-request/index.html"><span class="identifier">CallFunctionOnRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-call-function-on-response/index.html"><span class="identifier">CallFunctionOnResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="compile-script.html">compileScript</a></h4>
+</td>
+<td>
+<p>Compiles expression.</p>
+<code><span class="keyword">fun </span><span class="identifier">compileScript</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$compileScript(pl.wendigo.chrome.api.runtime.CompileScriptRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-compile-script-request/index.html"><span class="identifier">CompileScriptRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-compile-script-response/index.html"><span class="identifier">CompileScriptResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="console-a-p-i-called.html">consoleAPICalled</a></h4>
+</td>
+<td>
+<p>Issued when console API was called.</p>
+<code><span class="keyword">fun </span><span class="identifier">consoleAPICalled</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-console-a-p-i-called-event/index.html"><span class="identifier">ConsoleAPICalledEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables reporting of execution contexts creation.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="discard-console-entries.html">discardConsoleEntries</a></h4>
+</td>
+<td>
+<p>Discards collected exceptions and console API calls.</p>
+<code><span class="keyword">fun </span><span class="identifier">discardConsoleEntries</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables reporting of execution contexts creation by means of <code>executionContextCreated</code> event.
+When the reporting gets enabled the event will be sent immediately for each existing execution
+context.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="evaluate.html">evaluate</a></h4>
+</td>
+<td>
+<p>Evaluates expression on global object.</p>
+<code><span class="keyword">fun </span><span class="identifier">evaluate</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$evaluate(pl.wendigo.chrome.api.runtime.EvaluateRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-evaluate-request/index.html"><span class="identifier">EvaluateRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-evaluate-response/index.html"><span class="identifier">EvaluateResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Runtime domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="exception-revoked.html">exceptionRevoked</a></h4>
+</td>
+<td>
+<p>Issued when unhandled exception was revoked.</p>
+<code><span class="keyword">fun </span><span class="identifier">exceptionRevoked</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-exception-revoked-event/index.html"><span class="identifier">ExceptionRevokedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="exception-thrown.html">exceptionThrown</a></h4>
+</td>
+<td>
+<p>Issued when exception was thrown and unhandled.</p>
+<code><span class="keyword">fun </span><span class="identifier">exceptionThrown</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-exception-thrown-event/index.html"><span class="identifier">ExceptionThrownEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="execution-context-created.html">executionContextCreated</a></h4>
+</td>
+<td>
+<p>Issued when new execution context is created.</p>
+<code><span class="keyword">fun </span><span class="identifier">executionContextCreated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-execution-context-created-event/index.html"><span class="identifier">ExecutionContextCreatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="execution-context-destroyed.html">executionContextDestroyed</a></h4>
+</td>
+<td>
+<p>Issued when execution context is destroyed.</p>
+<code><span class="keyword">fun </span><span class="identifier">executionContextDestroyed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-execution-context-destroyed-event/index.html"><span class="identifier">ExecutionContextDestroyedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="execution-contexts-cleared.html">executionContextsCleared</a></h4>
+</td>
+<td>
+<p>Issued when all executionContexts were cleared in browser</p>
+<code><span class="keyword">fun </span><span class="identifier">executionContextsCleared</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-heap-usage.html">getHeapUsage</a></h4>
+</td>
+<td>
+<p>Returns the JavaScript heap usage.
+It is the total usage of the corresponding isolate not scoped to a particular Runtime.</p>
+<code><span class="keyword">fun </span><span class="identifier">getHeapUsage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-heap-usage-response/index.html"><span class="identifier">GetHeapUsageResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-isolate-id.html">getIsolateId</a></h4>
+</td>
+<td>
+<p>Returns the isolate id.</p>
+<code><span class="keyword">fun </span><span class="identifier">getIsolateId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-isolate-id-response/index.html"><span class="identifier">GetIsolateIdResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-properties.html">getProperties</a></h4>
+</td>
+<td>
+<p>Returns properties of a given object. Object group of the result is inherited from the target
+object.</p>
+<code><span class="keyword">fun </span><span class="identifier">getProperties</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$getProperties(pl.wendigo.chrome.api.runtime.GetPropertiesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-properties-request/index.html"><span class="identifier">GetPropertiesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-properties-response/index.html"><span class="identifier">GetPropertiesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="global-lexical-scope-names.html">globalLexicalScopeNames</a></h4>
+</td>
+<td>
+<p>Returns all let, const and class variables from global scope.</p>
+<code><span class="keyword">fun </span><span class="identifier">globalLexicalScopeNames</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$globalLexicalScopeNames(pl.wendigo.chrome.api.runtime.GlobalLexicalScopeNamesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-global-lexical-scope-names-request/index.html"><span class="identifier">GlobalLexicalScopeNamesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-global-lexical-scope-names-response/index.html"><span class="identifier">GlobalLexicalScopeNamesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="inspect-requested.html">inspectRequested</a></h4>
+</td>
+<td>
+<p>Issued when object should be inspected (for example, as a result of inspect() command line API
+call).</p>
+<code><span class="keyword">fun </span><span class="identifier">inspectRequested</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-inspect-requested-event/index.html"><span class="identifier">InspectRequestedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="query-objects.html">queryObjects</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queryObjects</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$queryObjects(pl.wendigo.chrome.api.runtime.QueryObjectsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-query-objects-request/index.html"><span class="identifier">QueryObjectsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-query-objects-response/index.html"><span class="identifier">QueryObjectsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="release-object.html">releaseObject</a></h4>
+</td>
+<td>
+<p>Releases remote object with given id.</p>
+<code><span class="keyword">fun </span><span class="identifier">releaseObject</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$releaseObject(pl.wendigo.chrome.api.runtime.ReleaseObjectRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-release-object-request/index.html"><span class="identifier">ReleaseObjectRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="release-object-group.html">releaseObjectGroup</a></h4>
+</td>
+<td>
+<p>Releases all remote objects that belong to a given group.</p>
+<code><span class="keyword">fun </span><span class="identifier">releaseObjectGroup</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$releaseObjectGroup(pl.wendigo.chrome.api.runtime.ReleaseObjectGroupRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-release-object-group-request/index.html"><span class="identifier">ReleaseObjectGroupRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-binding.html">removeBinding</a></h4>
+</td>
+<td>
+<p>This method does not remove binding function from global object but
+unsubscribes current runtime agent from Runtime.bindingCalled notifications.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeBinding</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$removeBinding(pl.wendigo.chrome.api.runtime.RemoveBindingRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-binding-request/index.html"><span class="identifier">RemoveBindingRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="run-if-waiting-for-debugger.html">runIfWaitingForDebugger</a></h4>
+</td>
+<td>
+<p>Tells inspected instance to run if it was waiting for debugger to attach.</p>
+<code><span class="keyword">fun </span><span class="identifier">runIfWaitingForDebugger</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="run-script.html">runScript</a></h4>
+</td>
+<td>
+<p>Runs script with given id in a given context.</p>
+<code><span class="keyword">fun </span><span class="identifier">runScript</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$runScript(pl.wendigo.chrome.api.runtime.RunScriptRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-run-script-request/index.html"><span class="identifier">RunScriptRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-run-script-response/index.html"><span class="identifier">RunScriptResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-async-call-stack-depth.html">setAsyncCallStackDepth</a></h4>
+</td>
+<td>
+<p>Enables or disables async call stacks tracking.</p>
+<code><span class="keyword">fun </span><span class="identifier">setAsyncCallStackDepth</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$setAsyncCallStackDepth(pl.wendigo.chrome.api.runtime.SetAsyncCallStackDepthRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-async-call-stack-depth-request/index.html"><span class="identifier">SetAsyncCallStackDepthRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-custom-object-formatter-enabled.html">setCustomObjectFormatterEnabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCustomObjectFormatterEnabled</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$setCustomObjectFormatterEnabled(pl.wendigo.chrome.api.runtime.SetCustomObjectFormatterEnabledRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-custom-object-formatter-enabled-request/index.html"><span class="identifier">SetCustomObjectFormatterEnabledRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-max-call-stack-size-to-capture.html">setMaxCallStackSizeToCapture</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setMaxCallStackSizeToCapture</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RuntimeOperations$setMaxCallStackSizeToCapture(pl.wendigo.chrome.api.runtime.SetMaxCallStackSizeToCaptureRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-max-call-stack-size-to-capture-request/index.html"><span class="identifier">SetMaxCallStackSizeToCaptureRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="terminate-execution.html">terminateExecution</a></h4>
+</td>
+<td>
+<p>Terminate current or next JavaScript execution.
+Will cancel the termination when the outer-most script execution ends.</p>
+<code><span class="keyword">fun </span><span class="identifier">terminateExecution</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

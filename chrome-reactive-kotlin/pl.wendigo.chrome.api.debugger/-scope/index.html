@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Scope - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">Scope</a><br/>
+<br/>
+<h1>Scope</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Scope</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Types.kt#L114">(source)</a>
+<p>Scope description.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#type-Scope">Debugger#Scope</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Scope description.</p>
+<code><span class="identifier">Scope</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.Scope$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.Scope$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location)/_object">_object</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-remote-object/index.html"><span class="identifier">RemoteObject</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.Scope$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.Scope$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location)/startLocation">startLocation</span><span class="symbol">:</span>&nbsp;<a href="../-location/index.html"><span class="identifier">Location</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.Scope$<init>(kotlin.String, pl.wendigo.chrome.api.runtime.RemoteObject, kotlin.String, pl.wendigo.chrome.api.debugger.Location, pl.wendigo.chrome.api.debugger.Location)/endLocation">endLocation</span><span class="symbol">:</span>&nbsp;<a href="../-location/index.html"><span class="identifier">Location</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="_object.html">_object</a></h4>
+</td>
+<td>
+<p>Object representing the scope. For <code>global</code> and <code>with</code> scopes it represents the actual
+object; for the rest of the scopes, it is artificial transient object enumerating scope
+variables as its properties.</p>
+<code><span class="keyword">val </span><span class="identifier">_object</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-remote-object/index.html"><span class="identifier">RemoteObject</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="end-location.html">endLocation</a></h4>
+</td>
+<td>
+<p>Location in the source code where scope ends</p>
+<code><span class="keyword">val </span><span class="identifier">endLocation</span><span class="symbol">: </span><a href="../-location/index.html"><span class="identifier">Location</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="name.html">name</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-location.html">startLocation</a></h4>
+</td>
+<td>
+<p>Location in the source code where scope starts</p>
+<code><span class="keyword">val </span><span class="identifier">startLocation</span><span class="symbol">: </span><a href="../-location/index.html"><span class="identifier">Location</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<p>Scope type.</p>
+<code><span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

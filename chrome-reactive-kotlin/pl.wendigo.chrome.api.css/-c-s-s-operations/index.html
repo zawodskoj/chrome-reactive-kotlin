@@ -1,0 +1,268 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CSSOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.css</a>&nbsp;/&nbsp;<a href="./index.html">CSSOperations</a><br/>
+<br/>
+<h1>CSSOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">CSSOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/css/Operations.kt#L15">(source)</a>
+<p>This domain exposes CSS read/write operations. All CSS objects (stylesheets, rules, and styles)
+have an associated <code>id</code> used in subsequent operations on the related object. Each object type has
+a specific <code>id</code> structure, and those are not interchangeable between objects of different kinds.
+CSS objects can be loaded using the <code>get*ForNode()</code> calls (which accept a DOM node id). A client
+can also keep track of stylesheets via the <code>styleSheetAdded</code>/<code>styleSheetRemoved</code> events and
+subsequently load the required stylesheet contents using the <code>getStyleSheet[Text]()</code> methods.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/CSS">CSS</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-rule.html">addRule</a></h4>
+</td>
+<td>
+<p>Inserts a new rule with the given <code>ruleText</code> in a stylesheet with given <code>styleSheetId</code>, at the
+position specified by <code>location</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">addRule</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$addRule(pl.wendigo.chrome.api.css.AddRuleRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-add-rule-request/index.html"><span class="identifier">AddRuleRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-add-rule-response/index.html"><span class="identifier">AddRuleResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="collect-class-names.html">collectClassNames</a></h4>
+</td>
+<td>
+<p>Returns all class names from specified stylesheet.</p>
+<code><span class="keyword">fun </span><span class="identifier">collectClassNames</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$collectClassNames(pl.wendigo.chrome.api.css.CollectClassNamesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-collect-class-names-request/index.html"><span class="identifier">CollectClassNamesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-collect-class-names-response/index.html"><span class="identifier">CollectClassNamesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="create-style-sheet.html">createStyleSheet</a></h4>
+</td>
+<td>
+<p>Creates a new special "via-inspector" stylesheet in the frame with given <code>frameId</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">createStyleSheet</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$createStyleSheet(pl.wendigo.chrome.api.css.CreateStyleSheetRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-create-style-sheet-request/index.html"><span class="identifier">CreateStyleSheetRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-create-style-sheet-response/index.html"><span class="identifier">CreateStyleSheetResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables the CSS agent for the given page.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables the CSS agent for the given page. Clients should not assume that the CSS agent has been
+enabled until the result of this command is received.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all CSS domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fonts-updated.html">fontsUpdated</a></h4>
+</td>
+<td>
+<p>Fires whenever a web font is updated.  A non-empty font parameter indicates a successfully loaded
+web font</p>
+<code><span class="keyword">fun </span><span class="identifier">fontsUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-fonts-updated-event/index.html"><span class="identifier">FontsUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="force-pseudo-state.html">forcePseudoState</a></h4>
+</td>
+<td>
+<p>Ensures that the given node will have specified pseudo-classes whenever its style is computed by
+the browser.</p>
+<code><span class="keyword">fun </span><span class="identifier">forcePseudoState</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$forcePseudoState(pl.wendigo.chrome.api.css.ForcePseudoStateRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-force-pseudo-state-request/index.html"><span class="identifier">ForcePseudoStateRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-background-colors.html">getBackgroundColors</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getBackgroundColors</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$getBackgroundColors(pl.wendigo.chrome.api.css.GetBackgroundColorsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-background-colors-request/index.html"><span class="identifier">GetBackgroundColorsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-background-colors-response/index.html"><span class="identifier">GetBackgroundColorsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-computed-style-for-node.html">getComputedStyleForNode</a></h4>
+</td>
+<td>
+<p>Returns the computed style for a DOM node identified by <code>nodeId</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">getComputedStyleForNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$getComputedStyleForNode(pl.wendigo.chrome.api.css.GetComputedStyleForNodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-computed-style-for-node-request/index.html"><span class="identifier">GetComputedStyleForNodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-computed-style-for-node-response/index.html"><span class="identifier">GetComputedStyleForNodeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-inline-styles-for-node.html">getInlineStylesForNode</a></h4>
+</td>
+<td>
+<p>Returns the styles defined inline (explicitly in the "style" attribute and implicitly, using DOM
+attributes) for a DOM node identified by <code>nodeId</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">getInlineStylesForNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$getInlineStylesForNode(pl.wendigo.chrome.api.css.GetInlineStylesForNodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-inline-styles-for-node-request/index.html"><span class="identifier">GetInlineStylesForNodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-inline-styles-for-node-response/index.html"><span class="identifier">GetInlineStylesForNodeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-matched-styles-for-node.html">getMatchedStylesForNode</a></h4>
+</td>
+<td>
+<p>Returns requested styles for a DOM node identified by <code>nodeId</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">getMatchedStylesForNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$getMatchedStylesForNode(pl.wendigo.chrome.api.css.GetMatchedStylesForNodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-matched-styles-for-node-request/index.html"><span class="identifier">GetMatchedStylesForNodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-matched-styles-for-node-response/index.html"><span class="identifier">GetMatchedStylesForNodeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-media-queries.html">getMediaQueries</a></h4>
+</td>
+<td>
+<p>Returns all media queries parsed by the rendering engine.</p>
+<code><span class="keyword">fun </span><span class="identifier">getMediaQueries</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-media-queries-response/index.html"><span class="identifier">GetMediaQueriesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-platform-fonts-for-node.html">getPlatformFontsForNode</a></h4>
+</td>
+<td>
+<p>Requests information about platform fonts which we used to render child TextNodes in the given
+node.</p>
+<code><span class="keyword">fun </span><span class="identifier">getPlatformFontsForNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$getPlatformFontsForNode(pl.wendigo.chrome.api.css.GetPlatformFontsForNodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-platform-fonts-for-node-request/index.html"><span class="identifier">GetPlatformFontsForNodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-platform-fonts-for-node-response/index.html"><span class="identifier">GetPlatformFontsForNodeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-style-sheet-text.html">getStyleSheetText</a></h4>
+</td>
+<td>
+<p>Returns the current textual content for a stylesheet.</p>
+<code><span class="keyword">fun </span><span class="identifier">getStyleSheetText</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$getStyleSheetText(pl.wendigo.chrome.api.css.GetStyleSheetTextRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-style-sheet-text-request/index.html"><span class="identifier">GetStyleSheetTextRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-style-sheet-text-response/index.html"><span class="identifier">GetStyleSheetTextResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="media-query-result-changed.html">mediaQueryResultChanged</a></h4>
+</td>
+<td>
+<p>Fires whenever a MediaQuery result changes (for example, after a browser window has been
+resized.) The current implementation considers only viewport-dependent media features.</p>
+<code><span class="keyword">fun </span><span class="identifier">mediaQueryResultChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-effective-property-value-for-node.html">setEffectivePropertyValueForNode</a></h4>
+</td>
+<td>
+<p>Find a rule with the given active property for the given node and set the new value for this
+property</p>
+<code><span class="keyword">fun </span><span class="identifier">setEffectivePropertyValueForNode</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$setEffectivePropertyValueForNode(pl.wendigo.chrome.api.css.SetEffectivePropertyValueForNodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-effective-property-value-for-node-request/index.html"><span class="identifier">SetEffectivePropertyValueForNodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-keyframe-key.html">setKeyframeKey</a></h4>
+</td>
+<td>
+<p>Modifies the keyframe rule key text.</p>
+<code><span class="keyword">fun </span><span class="identifier">setKeyframeKey</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$setKeyframeKey(pl.wendigo.chrome.api.css.SetKeyframeKeyRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-keyframe-key-request/index.html"><span class="identifier">SetKeyframeKeyRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-keyframe-key-response/index.html"><span class="identifier">SetKeyframeKeyResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-local-fonts-enabled.html">setLocalFontsEnabled</a></h4>
+</td>
+<td>
+<p>Enables/disables rendering of local CSS fonts (enabled by default).</p>
+<code><span class="keyword">fun </span><span class="identifier">setLocalFontsEnabled</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$setLocalFontsEnabled(pl.wendigo.chrome.api.css.SetLocalFontsEnabledRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-local-fonts-enabled-request/index.html"><span class="identifier">SetLocalFontsEnabledRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-media-text.html">setMediaText</a></h4>
+</td>
+<td>
+<p>Modifies the rule selector.</p>
+<code><span class="keyword">fun </span><span class="identifier">setMediaText</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$setMediaText(pl.wendigo.chrome.api.css.SetMediaTextRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-media-text-request/index.html"><span class="identifier">SetMediaTextRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-media-text-response/index.html"><span class="identifier">SetMediaTextResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-rule-selector.html">setRuleSelector</a></h4>
+</td>
+<td>
+<p>Modifies the rule selector.</p>
+<code><span class="keyword">fun </span><span class="identifier">setRuleSelector</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$setRuleSelector(pl.wendigo.chrome.api.css.SetRuleSelectorRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-rule-selector-request/index.html"><span class="identifier">SetRuleSelectorRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-rule-selector-response/index.html"><span class="identifier">SetRuleSelectorResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-style-sheet-text.html">setStyleSheetText</a></h4>
+</td>
+<td>
+<p>Sets the new stylesheet text.</p>
+<code><span class="keyword">fun </span><span class="identifier">setStyleSheetText</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$setStyleSheetText(pl.wendigo.chrome.api.css.SetStyleSheetTextRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-style-sheet-text-request/index.html"><span class="identifier">SetStyleSheetTextRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-style-sheet-text-response/index.html"><span class="identifier">SetStyleSheetTextResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-style-texts.html">setStyleTexts</a></h4>
+</td>
+<td>
+<p>Applies specified style edits one after another in the given order.</p>
+<code><span class="keyword">fun </span><span class="identifier">setStyleTexts</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.css.CSSOperations$setStyleTexts(pl.wendigo.chrome.api.css.SetStyleTextsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-style-texts-request/index.html"><span class="identifier">SetStyleTextsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-style-texts-response/index.html"><span class="identifier">SetStyleTextsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-rule-usage-tracking.html">startRuleUsageTracking</a></h4>
+</td>
+<td>
+<p>Enables the selector recording.</p>
+<code><span class="keyword">fun </span><span class="identifier">startRuleUsageTracking</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop-rule-usage-tracking.html">stopRuleUsageTracking</a></h4>
+</td>
+<td>
+<p>Stop tracking rule usage and return the list of rules that were used since last call to
+<code>takeCoverageDelta</code> (or since start of coverage instrumentation)</p>
+<code><span class="keyword">fun </span><span class="identifier">stopRuleUsageTracking</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-stop-rule-usage-tracking-response/index.html"><span class="identifier">StopRuleUsageTrackingResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="style-sheet-added.html">styleSheetAdded</a></h4>
+</td>
+<td>
+<p>Fired whenever an active document stylesheet is added.</p>
+<code><span class="keyword">fun </span><span class="identifier">styleSheetAdded</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-style-sheet-added-event/index.html"><span class="identifier">StyleSheetAddedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="style-sheet-changed.html">styleSheetChanged</a></h4>
+</td>
+<td>
+<p>Fired whenever a stylesheet is changed as a result of the client operation.</p>
+<code><span class="keyword">fun </span><span class="identifier">styleSheetChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-style-sheet-changed-event/index.html"><span class="identifier">StyleSheetChangedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="style-sheet-removed.html">styleSheetRemoved</a></h4>
+</td>
+<td>
+<p>Fired whenever an active document stylesheet is removed.</p>
+<code><span class="keyword">fun </span><span class="identifier">styleSheetRemoved</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-style-sheet-removed-event/index.html"><span class="identifier">StyleSheetRemovedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="take-coverage-delta.html">takeCoverageDelta</a></h4>
+</td>
+<td>
+<p>Obtain list of rules that became used since last call to this method (or since start of coverage
+instrumentation)</p>
+<code><span class="keyword">fun </span><span class="identifier">takeCoverageDelta</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-take-coverage-delta-response/index.html"><span class="identifier">TakeCoverageDeltaResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

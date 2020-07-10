@@ -1,0 +1,332 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DebuggerOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">DebuggerOperations</a><br/>
+<br/>
+<h1>DebuggerOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">DebuggerOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L9">(source)</a>
+<p>Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing
+breakpoints, stepping through execution, exploring stack traces, etc.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger">Debugger</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="breakpoint-resolved.html">breakpointResolved</a></h4>
+</td>
+<td>
+<p>Fired when breakpoint is resolved to an actual script and location.</p>
+<code><span class="keyword">fun </span><span class="identifier">breakpointResolved</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-breakpoint-resolved-event/index.html"><span class="identifier">BreakpointResolvedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="continue-to-location.html">continueToLocation</a></h4>
+</td>
+<td>
+<p>Continues execution until specific location is reached.</p>
+<code><span class="keyword">fun </span><span class="identifier">continueToLocation</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$continueToLocation(pl.wendigo.chrome.api.debugger.ContinueToLocationRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-continue-to-location-request/index.html"><span class="identifier">ContinueToLocationRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables debugger for given page.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables debugger for the given page. Clients should not assume that the debugging has been
+enabled until the result for this command is received.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$enable(pl.wendigo.chrome.api.debugger.EnableRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-enable-request/index.html"><span class="identifier">EnableRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-enable-response/index.html"><span class="identifier">EnableResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="evaluate-on-call-frame.html">evaluateOnCallFrame</a></h4>
+</td>
+<td>
+<p>Evaluates expression on a given call frame.</p>
+<code><span class="keyword">fun </span><span class="identifier">evaluateOnCallFrame</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$evaluateOnCallFrame(pl.wendigo.chrome.api.debugger.EvaluateOnCallFrameRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-evaluate-on-call-frame-request/index.html"><span class="identifier">EvaluateOnCallFrameRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-evaluate-on-call-frame-response/index.html"><span class="identifier">EvaluateOnCallFrameResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Debugger domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="execute-wasm-evaluator.html">executeWasmEvaluator</a></h4>
+</td>
+<td>
+<p>Execute a Wasm Evaluator module on a given call frame.</p>
+<code><span class="keyword">fun </span><span class="identifier">executeWasmEvaluator</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$executeWasmEvaluator(pl.wendigo.chrome.api.debugger.ExecuteWasmEvaluatorRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-execute-wasm-evaluator-request/index.html"><span class="identifier">ExecuteWasmEvaluatorRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-execute-wasm-evaluator-response/index.html"><span class="identifier">ExecuteWasmEvaluatorResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-possible-breakpoints.html">getPossibleBreakpoints</a></h4>
+</td>
+<td>
+<p>Returns possible locations for breakpoint. scriptId in start and end range locations should be
+the same.</p>
+<code><span class="keyword">fun </span><span class="identifier">getPossibleBreakpoints</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$getPossibleBreakpoints(pl.wendigo.chrome.api.debugger.GetPossibleBreakpointsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-possible-breakpoints-request/index.html"><span class="identifier">GetPossibleBreakpointsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-possible-breakpoints-response/index.html"><span class="identifier">GetPossibleBreakpointsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-script-source.html">getScriptSource</a></h4>
+</td>
+<td>
+<p>Returns source for the script with given id.</p>
+<code><span class="keyword">fun </span><span class="identifier">getScriptSource</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$getScriptSource(pl.wendigo.chrome.api.debugger.GetScriptSourceRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-script-source-request/index.html"><span class="identifier">GetScriptSourceRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-script-source-response/index.html"><span class="identifier">GetScriptSourceResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-stack-trace.html">getStackTrace</a></h4>
+</td>
+<td>
+<p>Returns stack trace with given <code>stackTraceId</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">getStackTrace</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$getStackTrace(pl.wendigo.chrome.api.debugger.GetStackTraceRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-stack-trace-request/index.html"><span class="identifier">GetStackTraceRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-stack-trace-response/index.html"><span class="identifier">GetStackTraceResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-wasm-bytecode.html">getWasmBytecode</a></h4>
+</td>
+<td>
+<p>This command is deprecated. Use getScriptSource instead.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">getWasmBytecode</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$getWasmBytecode(pl.wendigo.chrome.api.debugger.GetWasmBytecodeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-wasm-bytecode-request/index.html"><span class="identifier">GetWasmBytecodeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-wasm-bytecode-response/index.html"><span class="identifier">GetWasmBytecodeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pause.html">pause</a></h4>
+</td>
+<td>
+<p>Stops on the next JavaScript statement.</p>
+<code><span class="keyword">fun </span><span class="identifier">pause</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="paused.html">paused</a></h4>
+</td>
+<td>
+<p>Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.</p>
+<code><span class="keyword">fun </span><span class="identifier">paused</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-paused-event/index.html"><span class="identifier">PausedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pause-on-async-call.html">pauseOnAsyncCall</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><s><span class="identifier">pauseOnAsyncCall</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$pauseOnAsyncCall(pl.wendigo.chrome.api.debugger.PauseOnAsyncCallRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-pause-on-async-call-request/index.html"><span class="identifier">PauseOnAsyncCallRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-breakpoint.html">removeBreakpoint</a></h4>
+</td>
+<td>
+<p>Removes JavaScript breakpoint.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeBreakpoint</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$removeBreakpoint(pl.wendigo.chrome.api.debugger.RemoveBreakpointRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-breakpoint-request/index.html"><span class="identifier">RemoveBreakpointRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="restart-frame.html">restartFrame</a></h4>
+</td>
+<td>
+<p>Restarts particular call frame from the beginning.</p>
+<code><span class="keyword">fun </span><span class="identifier">restartFrame</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$restartFrame(pl.wendigo.chrome.api.debugger.RestartFrameRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-restart-frame-request/index.html"><span class="identifier">RestartFrameRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-restart-frame-response/index.html"><span class="identifier">RestartFrameResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resume.html">resume</a></h4>
+</td>
+<td>
+<p>Resumes JavaScript execution.</p>
+<code><span class="keyword">fun </span><span class="identifier">resume</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$resume(pl.wendigo.chrome.api.debugger.ResumeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-resume-request/index.html"><span class="identifier">ResumeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resumed.html">resumed</a></h4>
+</td>
+<td>
+<p>Fired when the virtual machine resumed execution.</p>
+<code><span class="keyword">fun </span><span class="identifier">resumed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="script-failed-to-parse.html">scriptFailedToParse</a></h4>
+</td>
+<td>
+<p>Fired when virtual machine fails to parse the script.</p>
+<code><span class="keyword">fun </span><span class="identifier">scriptFailedToParse</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-script-failed-to-parse-event/index.html"><span class="identifier">ScriptFailedToParseEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="script-parsed.html">scriptParsed</a></h4>
+</td>
+<td>
+<p>Fired when virtual machine parses script. This event is also fired for all known and uncollected
+scripts upon enabling debugger.</p>
+<code><span class="keyword">fun </span><span class="identifier">scriptParsed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-script-parsed-event/index.html"><span class="identifier">ScriptParsedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="search-in-content.html">searchInContent</a></h4>
+</td>
+<td>
+<p>Searches for given string in script content.</p>
+<code><span class="keyword">fun </span><span class="identifier">searchInContent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$searchInContent(pl.wendigo.chrome.api.debugger.SearchInContentRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-search-in-content-request/index.html"><span class="identifier">SearchInContentRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-search-in-content-response/index.html"><span class="identifier">SearchInContentResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-async-call-stack-depth.html">setAsyncCallStackDepth</a></h4>
+</td>
+<td>
+<p>Enables or disables async call stacks tracking.</p>
+<code><span class="keyword">fun </span><span class="identifier">setAsyncCallStackDepth</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setAsyncCallStackDepth(pl.wendigo.chrome.api.debugger.SetAsyncCallStackDepthRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-async-call-stack-depth-request/index.html"><span class="identifier">SetAsyncCallStackDepthRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-blackboxed-ranges.html">setBlackboxedRanges</a></h4>
+</td>
+<td>
+<p>Makes backend skip steps in the script in blackboxed ranges. VM will try leave blacklisted
+scripts by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
+Positions array contains positions where blackbox state is changed. First interval isn't
+blackboxed. Array should be sorted.</p>
+<code><span class="keyword">fun </span><span class="identifier">setBlackboxedRanges</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setBlackboxedRanges(pl.wendigo.chrome.api.debugger.SetBlackboxedRangesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-blackboxed-ranges-request/index.html"><span class="identifier">SetBlackboxedRangesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-blackbox-patterns.html">setBlackboxPatterns</a></h4>
+</td>
+<td>
+<p>Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in
+scripts with url matching one of the patterns. VM will try to leave blackboxed script by
+performing 'step in' several times, finally resorting to 'step out' if unsuccessful.</p>
+<code><span class="keyword">fun </span><span class="identifier">setBlackboxPatterns</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setBlackboxPatterns(pl.wendigo.chrome.api.debugger.SetBlackboxPatternsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-blackbox-patterns-request/index.html"><span class="identifier">SetBlackboxPatternsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-breakpoint.html">setBreakpoint</a></h4>
+</td>
+<td>
+<p>Sets JavaScript breakpoint at a given location.</p>
+<code><span class="keyword">fun </span><span class="identifier">setBreakpoint</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setBreakpoint(pl.wendigo.chrome.api.debugger.SetBreakpointRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-breakpoint-request/index.html"><span class="identifier">SetBreakpointRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-breakpoint-response/index.html"><span class="identifier">SetBreakpointResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-breakpoint-by-url.html">setBreakpointByUrl</a></h4>
+</td>
+<td>
+<p>Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this
+command is issued, all existing parsed scripts will have breakpoints resolved and returned in
+<code>locations</code> property. Further matching script parsing will result in subsequent
+<code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.</p>
+<code><span class="keyword">fun </span><span class="identifier">setBreakpointByUrl</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setBreakpointByUrl(pl.wendigo.chrome.api.debugger.SetBreakpointByUrlRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-breakpoint-by-url-request/index.html"><span class="identifier">SetBreakpointByUrlRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-breakpoint-by-url-response/index.html"><span class="identifier">SetBreakpointByUrlResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-breakpoint-on-function-call.html">setBreakpointOnFunctionCall</a></h4>
+</td>
+<td>
+<p>Sets JavaScript breakpoint before each call to the given function.
+If another function was created from the same source as a given one,
+calling it will also trigger the breakpoint.</p>
+<code><span class="keyword">fun </span><span class="identifier">setBreakpointOnFunctionCall</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setBreakpointOnFunctionCall(pl.wendigo.chrome.api.debugger.SetBreakpointOnFunctionCallRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-breakpoint-on-function-call-request/index.html"><span class="identifier">SetBreakpointOnFunctionCallRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-breakpoint-on-function-call-response/index.html"><span class="identifier">SetBreakpointOnFunctionCallResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-breakpoints-active.html">setBreakpointsActive</a></h4>
+</td>
+<td>
+<p>Activates / deactivates all breakpoints on the page.</p>
+<code><span class="keyword">fun </span><span class="identifier">setBreakpointsActive</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setBreakpointsActive(pl.wendigo.chrome.api.debugger.SetBreakpointsActiveRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-breakpoints-active-request/index.html"><span class="identifier">SetBreakpointsActiveRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-instrumentation-breakpoint.html">setInstrumentationBreakpoint</a></h4>
+</td>
+<td>
+<p>Sets instrumentation breakpoint.</p>
+<code><span class="keyword">fun </span><span class="identifier">setInstrumentationBreakpoint</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setInstrumentationBreakpoint(pl.wendigo.chrome.api.debugger.SetInstrumentationBreakpointRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-instrumentation-breakpoint-request/index.html"><span class="identifier">SetInstrumentationBreakpointRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-instrumentation-breakpoint-response/index.html"><span class="identifier">SetInstrumentationBreakpointResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-pause-on-exceptions.html">setPauseOnExceptions</a></h4>
+</td>
+<td>
+<p>Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or
+no exceptions. Initial pause on exceptions state is <code>none</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">setPauseOnExceptions</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setPauseOnExceptions(pl.wendigo.chrome.api.debugger.SetPauseOnExceptionsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-pause-on-exceptions-request/index.html"><span class="identifier">SetPauseOnExceptionsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-return-value.html">setReturnValue</a></h4>
+</td>
+<td>
+<p>Changes return value in top frame. Available only at return break position.</p>
+<code><span class="keyword">fun </span><span class="identifier">setReturnValue</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setReturnValue(pl.wendigo.chrome.api.debugger.SetReturnValueRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-return-value-request/index.html"><span class="identifier">SetReturnValueRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-script-source.html">setScriptSource</a></h4>
+</td>
+<td>
+<p>Edits JavaScript source live.</p>
+<code><span class="keyword">fun </span><span class="identifier">setScriptSource</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setScriptSource(pl.wendigo.chrome.api.debugger.SetScriptSourceRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-script-source-request/index.html"><span class="identifier">SetScriptSourceRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-set-script-source-response/index.html"><span class="identifier">SetScriptSourceResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-skip-all-pauses.html">setSkipAllPauses</a></h4>
+</td>
+<td>
+<p>Makes page not interrupt on any pauses (breakpoint, exception, dom exception etc).</p>
+<code><span class="keyword">fun </span><span class="identifier">setSkipAllPauses</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setSkipAllPauses(pl.wendigo.chrome.api.debugger.SetSkipAllPausesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-skip-all-pauses-request/index.html"><span class="identifier">SetSkipAllPausesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-variable-value.html">setVariableValue</a></h4>
+</td>
+<td>
+<p>Changes value of variable in a callframe. Object-based scopes are not supported and must be
+mutated manually.</p>
+<code><span class="keyword">fun </span><span class="identifier">setVariableValue</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$setVariableValue(pl.wendigo.chrome.api.debugger.SetVariableValueRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-variable-value-request/index.html"><span class="identifier">SetVariableValueRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="step-into.html">stepInto</a></h4>
+</td>
+<td>
+<p>Steps into the function call.</p>
+<code><span class="keyword">fun </span><span class="identifier">stepInto</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.DebuggerOperations$stepInto(pl.wendigo.chrome.api.debugger.StepIntoRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-step-into-request/index.html"><span class="identifier">StepIntoRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="step-out.html">stepOut</a></h4>
+</td>
+<td>
+<p>Steps out of the function call.</p>
+<code><span class="keyword">fun </span><span class="identifier">stepOut</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="step-over.html">stepOver</a></h4>
+</td>
+<td>
+<p>Steps over the statement.</p>
+<code><span class="keyword">fun </span><span class="identifier">stepOver</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>VirtualAuthenticatorOptions - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.webauthn</a>&nbsp;/&nbsp;<a href="./index.html">VirtualAuthenticatorOptions</a><br/>
+<br/>
+<h1>VirtualAuthenticatorOptions</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">VirtualAuthenticatorOptions</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/webauthn/Types.kt#L47">(source)</a>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/WebAuthn#type-VirtualAuthenticatorOptions">WebAuthn#VirtualAuthenticatorOptions</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">VirtualAuthenticatorOptions</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.VirtualAuthenticatorOptions$<init>(pl.wendigo.chrome.api.webauthn.AuthenticatorProtocol, pl.wendigo.chrome.api.webauthn.AuthenticatorTransport, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/protocol">protocol</span><span class="symbol">:</span>&nbsp;<a href="../-authenticator-protocol/index.html"><span class="identifier">AuthenticatorProtocol</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.VirtualAuthenticatorOptions$<init>(pl.wendigo.chrome.api.webauthn.AuthenticatorProtocol, pl.wendigo.chrome.api.webauthn.AuthenticatorTransport, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/transport">transport</span><span class="symbol">:</span>&nbsp;<a href="../-authenticator-transport/index.html"><span class="identifier">AuthenticatorTransport</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.VirtualAuthenticatorOptions$<init>(pl.wendigo.chrome.api.webauthn.AuthenticatorProtocol, pl.wendigo.chrome.api.webauthn.AuthenticatorTransport, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/hasResidentKey">hasResidentKey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.VirtualAuthenticatorOptions$<init>(pl.wendigo.chrome.api.webauthn.AuthenticatorProtocol, pl.wendigo.chrome.api.webauthn.AuthenticatorTransport, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/hasUserVerification">hasUserVerification</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.VirtualAuthenticatorOptions$<init>(pl.wendigo.chrome.api.webauthn.AuthenticatorProtocol, pl.wendigo.chrome.api.webauthn.AuthenticatorTransport, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/automaticPresenceSimulation">automaticPresenceSimulation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.webauthn.VirtualAuthenticatorOptions$<init>(pl.wendigo.chrome.api.webauthn.AuthenticatorProtocol, pl.wendigo.chrome.api.webauthn.AuthenticatorTransport, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/isUserVerified">isUserVerified</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="automatic-presence-simulation.html">automaticPresenceSimulation</a></h4>
+</td>
+<td>
+<p>If set to true, tests of user presence will succeed immediately.
+Otherwise, they will not be resolved. Defaults to true.</p>
+<code><span class="keyword">val </span><span class="identifier">automaticPresenceSimulation</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-resident-key.html">hasResidentKey</a></h4>
+</td>
+<td>
+<p>Defaults to false.</p>
+<code><span class="keyword">val </span><span class="identifier">hasResidentKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-user-verification.html">hasUserVerification</a></h4>
+</td>
+<td>
+<p>Defaults to false.</p>
+<code><span class="keyword">val </span><span class="identifier">hasUserVerification</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-user-verified.html">isUserVerified</a></h4>
+</td>
+<td>
+<p>Sets whether User Verification succeeds or fails for an authenticator.
+Defaults to false.</p>
+<code><span class="keyword">val </span><span class="identifier">isUserVerified</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="protocol.html">protocol</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">protocol</span><span class="symbol">: </span><a href="../-authenticator-protocol/index.html"><span class="identifier">AuthenticatorProtocol</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="transport.html">transport</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">transport</span><span class="symbol">: </span><a href="../-authenticator-transport/index.html"><span class="identifier">AuthenticatorTransport</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NavigateResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.page</a>&nbsp;/&nbsp;<a href="./index.html">NavigateResponse</a><br/>
+<br/>
+<h1>NavigateResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NavigateResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/page/Operations.kt#L1076">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-navigate">Page#navigate</a> operation call.
+Navigates current page to the given URL.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-navigate">Page#navigate</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-page-operations/navigate.html">PageOperations.navigate</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-navigate">Page#navigate</a> operation call.
+Navigates current page to the given URL.</p>
+<code><span class="identifier">NavigateResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.NavigateResponse$<init>(kotlin.String, kotlin.String, kotlin.String)/frameId">frameId</span><span class="symbol">:</span>&nbsp;<a href="../-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.NavigateResponse$<init>(kotlin.String, kotlin.String, kotlin.String)/loaderId">loaderId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.network/-loader-id.html"><span class="identifier">LoaderId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.page.NavigateResponse$<init>(kotlin.String, kotlin.String, kotlin.String)/errorText">errorText</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="error-text.html">errorText</a></h4>
+</td>
+<td>
+<p>User friendly error message, present if and only if navigation has failed.</p>
+<code><span class="keyword">val </span><span class="identifier">errorText</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-id.html">frameId</a></h4>
+</td>
+<td>
+<p>Frame id that has navigated (or failed to navigate)</p>
+<code><span class="keyword">val </span><span class="identifier">frameId</span><span class="symbol">: </span><a href="../-frame-id.html"><span class="identifier">FrameId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="loader-id.html">loaderId</a></h4>
+</td>
+<td>
+<p>Loader identifier.</p>
+<code><span class="keyword">val </span><span class="identifier">loaderId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-loader-id.html"><span class="identifier">LoaderId</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetBreakpointResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">SetBreakpointResponse</a><br/>
+<br/>
+<h1>SetBreakpointResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBreakpointResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L824">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpoint">Debugger#setBreakpoint</a> operation call.
+Sets JavaScript breakpoint at a given location.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpoint">Debugger#setBreakpoint</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-debugger-operations/set-breakpoint.html">DebuggerOperations.setBreakpoint</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpoint">Debugger#setBreakpoint</a> operation call.
+Sets JavaScript breakpoint at a given location.</p>
+<code><span class="identifier">SetBreakpointResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointResponse$<init>(kotlin.String, pl.wendigo.chrome.api.debugger.Location)/breakpointId">breakpointId</span><span class="symbol">:</span>&nbsp;<a href="../-breakpoint-id.html"><span class="identifier">BreakpointId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointResponse$<init>(kotlin.String, pl.wendigo.chrome.api.debugger.Location)/actualLocation">actualLocation</span><span class="symbol">:</span>&nbsp;<a href="../-location/index.html"><span class="identifier">Location</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="actual-location.html">actualLocation</a></h4>
+</td>
+<td>
+<p>Location this breakpoint resolved into.</p>
+<code><span class="keyword">val </span><span class="identifier">actualLocation</span><span class="symbol">: </span><a href="../-location/index.html"><span class="identifier">Location</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="breakpoint-id.html">breakpointId</a></h4>
+</td>
+<td>
+<p>Id of the created breakpoint for further reference.</p>
+<code><span class="keyword">val </span><span class="identifier">breakpointId</span><span class="symbol">: </span><a href="../-breakpoint-id.html"><span class="identifier">BreakpointId</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

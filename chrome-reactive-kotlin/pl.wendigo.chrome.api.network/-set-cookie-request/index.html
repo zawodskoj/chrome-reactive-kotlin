@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetCookieRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">SetCookieRequest</a><br/>
+<br/>
+<h1>SetCookieRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetCookieRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L883">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setCookie">Network#setCookie</a> operation call.</p>
+<p>Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setCookie">Network#setCookie</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-network-operations/set-cookie.html">NetworkOperations.setCookie</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setCookie">Network#setCookie</a> operation call.</p>
+<code><span class="identifier">SetCookieRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.SetCookieRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.network.CookieSameSite, kotlin.Double, pl.wendigo.chrome.api.network.CookiePriority)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SetCookieRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.network.CookieSameSite, kotlin.Double, pl.wendigo.chrome.api.network.CookiePriority)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SetCookieRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.network.CookieSameSite, kotlin.Double, pl.wendigo.chrome.api.network.CookiePriority)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SetCookieRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.network.CookieSameSite, kotlin.Double, pl.wendigo.chrome.api.network.CookiePriority)/domain">domain</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SetCookieRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.network.CookieSameSite, kotlin.Double, pl.wendigo.chrome.api.network.CookiePriority)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SetCookieRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.network.CookieSameSite, kotlin.Double, pl.wendigo.chrome.api.network.CookiePriority)/secure">secure</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SetCookieRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.network.CookieSameSite, kotlin.Double, pl.wendigo.chrome.api.network.CookiePriority)/httpOnly">httpOnly</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SetCookieRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.network.CookieSameSite, kotlin.Double, pl.wendigo.chrome.api.network.CookiePriority)/sameSite">sameSite</span><span class="symbol">:</span>&nbsp;<a href="../-cookie-same-site/index.html"><span class="identifier">CookieSameSite</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SetCookieRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.network.CookieSameSite, kotlin.Double, pl.wendigo.chrome.api.network.CookiePriority)/expires">expires</span><span class="symbol">:</span>&nbsp;<a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SetCookieRequest$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean, kotlin.Boolean, pl.wendigo.chrome.api.network.CookieSameSite, kotlin.Double, pl.wendigo.chrome.api.network.CookiePriority)/priority">priority</span><span class="symbol">:</span>&nbsp;<a href="../-cookie-priority/index.html"><span class="identifier">CookiePriority</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="domain.html">domain</a></h4>
+</td>
+<td>
+<p>Cookie domain.</p>
+<code><span class="keyword">val </span><span class="identifier">domain</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="expires.html">expires</a></h4>
+</td>
+<td>
+<p>Cookie expiration date, session cookie if not set</p>
+<code><span class="keyword">val </span><span class="identifier">expires</span><span class="symbol">: </span><a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="http-only.html">httpOnly</a></h4>
+</td>
+<td>
+<p>True if cookie is http-only.</p>
+<code><span class="keyword">val </span><span class="identifier">httpOnly</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="name.html">name</a></h4>
+</td>
+<td>
+<p>Cookie name.</p>
+<code><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="path.html">path</a></h4>
+</td>
+<td>
+<p>Cookie path.</p>
+<code><span class="keyword">val </span><span class="identifier">path</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="priority.html">priority</a></h4>
+</td>
+<td>
+<p>Cookie Priority type.</p>
+<code><span class="keyword">val </span><span class="identifier">priority</span><span class="symbol">: </span><a href="../-cookie-priority/index.html"><span class="identifier">CookiePriority</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="same-site.html">sameSite</a></h4>
+</td>
+<td>
+<p>Cookie SameSite type.</p>
+<code><span class="keyword">val </span><span class="identifier">sameSite</span><span class="symbol">: </span><a href="../-cookie-same-site/index.html"><span class="identifier">CookieSameSite</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="secure.html">secure</a></h4>
+</td>
+<td>
+<p>True if cookie is secure.</p>
+<code><span class="keyword">val </span><span class="identifier">secure</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>The request-URI to associate with the setting of the cookie. This value can affect the
+default domain and path values of the created cookie.</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="value.html">value</a></h4>
+</td>
+<td>
+<p>Cookie value.</p>
+<code><span class="keyword">val </span><span class="identifier">value</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EnableRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.cast</a>&nbsp;/&nbsp;<a href="./index.html">EnableRequest</a><br/>
+<br/>
+<h1>EnableRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EnableRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/cast/Operations.kt#L84">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Cast#method-enable">Cast#enable</a> operation call.</p>
+<p>Starts observing for sinks that can be used for tab mirroring, and if set,
+sinks compatible with |presentationUrl| as well. When sinks are found, a
+|sinksUpdated| event is fired.
+Also starts observing for issue messages. When an issue is added or removed,
+an |issueUpdated| event is fired.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Cast#method-enable">Cast#enable</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-cast-operations/enable.html">CastOperations.enable</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Cast#method-enable">Cast#enable</a> operation call.</p>
+<code><span class="identifier">EnableRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.cast.EnableRequest$<init>(kotlin.String)/presentationUrl">presentationUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="presentation-url.html">presentationUrl</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">presentationUrl</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.targets - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.targets</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.targets</h2>
+<p>Targets management related classes (<a href="-manager/index.html">Manager</a>, <a href="#">TargetSession</a>)</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-manager/index.html">Manager</a></h4>
+</td>
+<td>
+<p><a href="-manager/index.html">Manager</a> is responsible for querying, creating, closing, attaching to debuggable targets on the browser side.</p>
+<code><span class="keyword">class </span><span class="identifier">Manager</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-session-target/index.html">SessionTarget</a></h4>
+</td>
+<td>
+<p>SessionTarget represents session we are currently connected to.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SessionTarget</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-target/index.html">Target</a></h4>
+</td>
+<td>
+<p>Represents browser <a href="../pl.wendigo.chrome/-dev-tools-protocol/-target.html">Target</a> that can be controlled via DevTools Protocol API</p>
+<code><span class="keyword">class </span><span class="identifier">Target</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome/-dev-tools-protocol/index.html"><span class="identifier">DevToolsProtocol</span></a><span class="symbol">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html"><span class="identifier">AutoCloseable</span></a><span class="symbol">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="is-page.html">isPage</a></h4>
+</td>
+<td>
+<p>Returns true if <a href="../pl.wendigo.chrome.api.target/-target-info/index.html">TargetInfo</a> represents page.</p>
+<code><span class="keyword">fun </span><a href="../pl.wendigo.chrome.api.target/-target-info/index.html"><span class="identifier">TargetInfo</span></a><span class="symbol">.</span><span class="identifier">isPage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-target.html">toTarget</a></h4>
+</td>
+<td>
+<p>Converts <a href="../pl.wendigo.chrome.api.target/-target-info/index.html">TargetInfo</a> to <a href="-session-target/index.html">SessionTarget</a> for given sessionID</p>
+<code><span class="keyword">fun </span><a href="../pl.wendigo.chrome.api.target/-target-info/index.html"><span class="identifier">TargetInfo</span></a><span class="symbol">.</span><span class="identifier">toTarget</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.targets$toTarget(pl.wendigo.chrome.api.target.TargetInfo, kotlin.String)/sessionId">sessionId</span><span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.api.target/-session-i-d.html"><span class="identifier">SessionID</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-session-target/index.html"><span class="identifier">SessionTarget</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

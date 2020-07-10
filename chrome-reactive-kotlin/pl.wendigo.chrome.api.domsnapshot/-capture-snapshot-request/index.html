@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CaptureSnapshotRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.domsnapshot</a>&nbsp;/&nbsp;<a href="./index.html">CaptureSnapshotRequest</a><br/>
+<br/>
+<h1>CaptureSnapshotRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CaptureSnapshotRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/domsnapshot/Operations.kt#L127">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot#method-captureSnapshot">DOMSnapshot#captureSnapshot</a> operation call.</p>
+<p>Returns a document snapshot, including the full DOM tree of the root node (including iframes,
+template contents, and imported documents) in a flattened array, as well as layout and
+white-listed computed style information for the nodes. Shadow DOM in the returned DOM tree is
+flattened.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot#method-captureSnapshot">DOMSnapshot#captureSnapshot</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-d-o-m-snapshot-operations/capture-snapshot.html">DOMSnapshotOperations.captureSnapshot</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot#method-captureSnapshot">DOMSnapshot#captureSnapshot</a> operation call.</p>
+<code><span class="identifier">CaptureSnapshotRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.CaptureSnapshotRequest$<init>(kotlin.collections.List((kotlin.String)), kotlin.Boolean, kotlin.Boolean)/computedStyles">computedStyles</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.CaptureSnapshotRequest$<init>(kotlin.collections.List((kotlin.String)), kotlin.Boolean, kotlin.Boolean)/includePaintOrder">includePaintOrder</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.domsnapshot.CaptureSnapshotRequest$<init>(kotlin.collections.List((kotlin.String)), kotlin.Boolean, kotlin.Boolean)/includeDOMRects">includeDOMRects</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="computed-styles.html">computedStyles</a></h4>
+</td>
+<td>
+<p>Whitelist of computed styles to return.</p>
+<code><span class="keyword">val </span><span class="identifier">computedStyles</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="include-d-o-m-rects.html">includeDOMRects</a></h4>
+</td>
+<td>
+<p>Whether to include DOM rectangles (offsetRects, clientRects, scrollRects) into the snapshot</p>
+<code><span class="keyword">val </span><span class="identifier">includeDOMRects</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="include-paint-order.html">includePaintOrder</a></h4>
+</td>
+<td>
+<p>Whether to include layout object paint orders into the snapshot.</p>
+<code><span class="keyword">val </span><span class="identifier">includePaintOrder</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,665 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PageOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.page</a>&nbsp;/&nbsp;<a href="./index.html">PageOperations</a><br/>
+<br/>
+<h1>PageOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">PageOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/page/Operations.kt#L8">(source)</a>
+<p>Actions and events related to the inspected page belong to the page domain.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Page">Page</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-compilation-cache.html">addCompilationCache</a></h4>
+</td>
+<td>
+<p>Seeds compilation cache for given url. Compilation cache does not survive
+cross-process navigation.</p>
+<code><span class="keyword">fun </span><span class="identifier">addCompilationCache</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$addCompilationCache(pl.wendigo.chrome.api.page.AddCompilationCacheRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-add-compilation-cache-request/index.html"><span class="identifier">AddCompilationCacheRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-script-to-evaluate-on-load.html">addScriptToEvaluateOnLoad</a></h4>
+</td>
+<td>
+<p>Deprecated, please use addScriptToEvaluateOnNewDocument instead.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">addScriptToEvaluateOnLoad</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$addScriptToEvaluateOnLoad(pl.wendigo.chrome.api.page.AddScriptToEvaluateOnLoadRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-add-script-to-evaluate-on-load-request/index.html"><span class="identifier">AddScriptToEvaluateOnLoadRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-add-script-to-evaluate-on-load-response/index.html"><span class="identifier">AddScriptToEvaluateOnLoadResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-script-to-evaluate-on-new-document.html">addScriptToEvaluateOnNewDocument</a></h4>
+</td>
+<td>
+<p>Evaluates given script in every frame upon creation (before loading frame's scripts).</p>
+<code><span class="keyword">fun </span><span class="identifier">addScriptToEvaluateOnNewDocument</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$addScriptToEvaluateOnNewDocument(pl.wendigo.chrome.api.page.AddScriptToEvaluateOnNewDocumentRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-add-script-to-evaluate-on-new-document-request/index.html"><span class="identifier">AddScriptToEvaluateOnNewDocumentRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-add-script-to-evaluate-on-new-document-response/index.html"><span class="identifier">AddScriptToEvaluateOnNewDocumentResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="bring-to-front.html">bringToFront</a></h4>
+</td>
+<td>
+<p>Brings page to front (activates tab).</p>
+<code><span class="keyword">fun </span><span class="identifier">bringToFront</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="capture-screenshot.html">captureScreenshot</a></h4>
+</td>
+<td>
+<p>Capture page screenshot.</p>
+<code><span class="keyword">fun </span><span class="identifier">captureScreenshot</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$captureScreenshot(pl.wendigo.chrome.api.page.CaptureScreenshotRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-capture-screenshot-request/index.html"><span class="identifier">CaptureScreenshotRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-capture-screenshot-response/index.html"><span class="identifier">CaptureScreenshotResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="capture-snapshot.html">captureSnapshot</a></h4>
+</td>
+<td>
+<p>Returns a snapshot of the page as a string. For MHTML format, the serialization includes
+iframes, shadow DOM, external resources, and element-inline styles.</p>
+<code><span class="keyword">fun </span><span class="identifier">captureSnapshot</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$captureSnapshot(pl.wendigo.chrome.api.page.CaptureSnapshotRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-capture-snapshot-request/index.html"><span class="identifier">CaptureSnapshotRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-capture-snapshot-response/index.html"><span class="identifier">CaptureSnapshotResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-compilation-cache.html">clearCompilationCache</a></h4>
+</td>
+<td>
+<p>Clears seeded compilation cache.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearCompilationCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-device-metrics-override.html">clearDeviceMetricsOverride</a></h4>
+</td>
+<td>
+<p>Clears the overriden device metrics.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">clearDeviceMetricsOverride</span></s><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-device-orientation-override.html">clearDeviceOrientationOverride</a></h4>
+</td>
+<td>
+<p>Clears the overridden Device Orientation.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">clearDeviceOrientationOverride</span></s><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-geolocation-override.html">clearGeolocationOverride</a></h4>
+</td>
+<td>
+<p>Clears the overriden Geolocation Position and Error.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">clearGeolocationOverride</span></s><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="close.html">close</a></h4>
+</td>
+<td>
+<p>Tries to close page, running its beforeunload hooks, if any.</p>
+<code><span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="compilation-cache-produced.html">compilationCacheProduced</a></h4>
+</td>
+<td>
+<p>Issued for every compilation cache generated. Is only available
+if Page.setGenerateCompilationCache is enabled.</p>
+<code><span class="keyword">fun </span><span class="identifier">compilationCacheProduced</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-compilation-cache-produced-event/index.html"><span class="identifier">CompilationCacheProducedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="crash.html">crash</a></h4>
+</td>
+<td>
+<p>Crashes renderer on the IO thread, generates minidumps.</p>
+<code><span class="keyword">fun </span><span class="identifier">crash</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="create-isolated-world.html">createIsolatedWorld</a></h4>
+</td>
+<td>
+<p>Creates an isolated world for the given frame.</p>
+<code><span class="keyword">fun </span><span class="identifier">createIsolatedWorld</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$createIsolatedWorld(pl.wendigo.chrome.api.page.CreateIsolatedWorldRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-create-isolated-world-request/index.html"><span class="identifier">CreateIsolatedWorldRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-create-isolated-world-response/index.html"><span class="identifier">CreateIsolatedWorldResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="delete-cookie.html">deleteCookie</a></h4>
+</td>
+<td>
+<p>Deletes browser cookie with given name, domain and path.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">deleteCookie</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$deleteCookie(pl.wendigo.chrome.api.page.DeleteCookieRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-delete-cookie-request/index.html"><span class="identifier">DeleteCookieRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables page domain notifications.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dom-content-event-fired.html">domContentEventFired</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all Page.domContentEventFired events.</p>
+<code><span class="keyword">fun </span><span class="identifier">domContentEventFired</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-dom-content-event-fired-event/index.html"><span class="identifier">DomContentEventFiredEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="download-progress.html">downloadProgress</a></h4>
+</td>
+<td>
+<p>Fired when download makes progress. Last call has |done| == true.</p>
+<code><span class="keyword">fun </span><span class="identifier">downloadProgress</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-download-progress-event/index.html"><span class="identifier">DownloadProgressEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="download-will-begin.html">downloadWillBegin</a></h4>
+</td>
+<td>
+<p>Fired when page is about to start a download.</p>
+<code><span class="keyword">fun </span><span class="identifier">downloadWillBegin</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-download-will-begin-event/index.html"><span class="identifier">DownloadWillBeginEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables page domain notifications.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Page domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="file-chooser-opened.html">fileChooserOpened</a></h4>
+</td>
+<td>
+<p>Emitted only when <code>page.interceptFileChooser</code> is enabled.</p>
+<code><span class="keyword">fun </span><span class="identifier">fileChooserOpened</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-file-chooser-opened-event/index.html"><span class="identifier">FileChooserOpenedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-attached.html">frameAttached</a></h4>
+</td>
+<td>
+<p>Fired when frame has been attached to its parent.</p>
+<code><span class="keyword">fun </span><span class="identifier">frameAttached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-frame-attached-event/index.html"><span class="identifier">FrameAttachedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-cleared-scheduled-navigation.html">frameClearedScheduledNavigation</a></h4>
+</td>
+<td>
+<p>Fired when frame no longer has a scheduled navigation.</p>
+<code><span class="keyword">fun </span><span class="identifier">frameClearedScheduledNavigation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-frame-cleared-scheduled-navigation-event/index.html"><span class="identifier">FrameClearedScheduledNavigationEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-detached.html">frameDetached</a></h4>
+</td>
+<td>
+<p>Fired when frame has been detached from its parent.</p>
+<code><span class="keyword">fun </span><span class="identifier">frameDetached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-frame-detached-event/index.html"><span class="identifier">FrameDetachedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-navigated.html">frameNavigated</a></h4>
+</td>
+<td>
+<p>Fired once navigation of the frame has completed. Frame is now associated with the new loader.</p>
+<code><span class="keyword">fun </span><span class="identifier">frameNavigated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-frame-navigated-event/index.html"><span class="identifier">FrameNavigatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-requested-navigation.html">frameRequestedNavigation</a></h4>
+</td>
+<td>
+<p>Fired when a renderer-initiated navigation is requested.
+Navigation may still be cancelled after the event is issued.</p>
+<code><span class="keyword">fun </span><span class="identifier">frameRequestedNavigation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-frame-requested-navigation-event/index.html"><span class="identifier">FrameRequestedNavigationEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-resized.html">frameResized</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all Page.frameResized events.</p>
+<code><span class="keyword">fun </span><span class="identifier">frameResized</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-scheduled-navigation.html">frameScheduledNavigation</a></h4>
+</td>
+<td>
+<p>Fired when frame schedules a potential navigation.</p>
+<code><span class="keyword">fun </span><span class="identifier">frameScheduledNavigation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-frame-scheduled-navigation-event/index.html"><span class="identifier">FrameScheduledNavigationEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-started-loading.html">frameStartedLoading</a></h4>
+</td>
+<td>
+<p>Fired when frame has started loading.</p>
+<code><span class="keyword">fun </span><span class="identifier">frameStartedLoading</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-frame-started-loading-event/index.html"><span class="identifier">FrameStartedLoadingEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-stopped-loading.html">frameStoppedLoading</a></h4>
+</td>
+<td>
+<p>Fired when frame has stopped loading.</p>
+<code><span class="keyword">fun </span><span class="identifier">frameStoppedLoading</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-frame-stopped-loading-event/index.html"><span class="identifier">FrameStoppedLoadingEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="generate-test-report.html">generateTestReport</a></h4>
+</td>
+<td>
+<p>Generates a report for testing.</p>
+<code><span class="keyword">fun </span><span class="identifier">generateTestReport</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$generateTestReport(pl.wendigo.chrome.api.page.GenerateTestReportRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-generate-test-report-request/index.html"><span class="identifier">GenerateTestReportRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-app-manifest.html">getAppManifest</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAppManifest</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-app-manifest-response/index.html"><span class="identifier">GetAppManifestResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-cookies.html">getCookies</a></h4>
+</td>
+<td>
+<p>Returns all browser cookies. Depending on the backend support, will return detailed cookie
+information in the <code>cookies</code> field.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">getCookies</span></s><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-cookies-response/index.html"><span class="identifier">GetCookiesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-frame-tree.html">getFrameTree</a></h4>
+</td>
+<td>
+<p>Returns present frame tree structure.</p>
+<code><span class="keyword">fun </span><span class="identifier">getFrameTree</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-frame-tree-response/index.html"><span class="identifier">GetFrameTreeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-installability-errors.html">getInstallabilityErrors</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getInstallabilityErrors</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-installability-errors-response/index.html"><span class="identifier">GetInstallabilityErrorsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-layout-metrics.html">getLayoutMetrics</a></h4>
+</td>
+<td>
+<p>Returns metrics relating to the layouting of the page, such as viewport bounds/scale.</p>
+<code><span class="keyword">fun </span><span class="identifier">getLayoutMetrics</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-layout-metrics-response/index.html"><span class="identifier">GetLayoutMetricsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-manifest-icons.html">getManifestIcons</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getManifestIcons</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-manifest-icons-response/index.html"><span class="identifier">GetManifestIconsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-navigation-history.html">getNavigationHistory</a></h4>
+</td>
+<td>
+<p>Returns navigation history for the current page.</p>
+<code><span class="keyword">fun </span><span class="identifier">getNavigationHistory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-navigation-history-response/index.html"><span class="identifier">GetNavigationHistoryResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-resource-content.html">getResourceContent</a></h4>
+</td>
+<td>
+<p>Returns content of the given resource.</p>
+<code><span class="keyword">fun </span><span class="identifier">getResourceContent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$getResourceContent(pl.wendigo.chrome.api.page.GetResourceContentRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-resource-content-request/index.html"><span class="identifier">GetResourceContentRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-resource-content-response/index.html"><span class="identifier">GetResourceContentResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-resource-tree.html">getResourceTree</a></h4>
+</td>
+<td>
+<p>Returns present frame / resource tree structure.</p>
+<code><span class="keyword">fun </span><span class="identifier">getResourceTree</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-resource-tree-response/index.html"><span class="identifier">GetResourceTreeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-java-script-dialog.html">handleJavaScriptDialog</a></h4>
+</td>
+<td>
+<p>Accepts or dismisses a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload).</p>
+<code><span class="keyword">fun </span><span class="identifier">handleJavaScriptDialog</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$handleJavaScriptDialog(pl.wendigo.chrome.api.page.HandleJavaScriptDialogRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-handle-java-script-dialog-request/index.html"><span class="identifier">HandleJavaScriptDialogRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="interstitial-hidden.html">interstitialHidden</a></h4>
+</td>
+<td>
+<p>Fired when interstitial page was hidden</p>
+<code><span class="keyword">fun </span><span class="identifier">interstitialHidden</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="interstitial-shown.html">interstitialShown</a></h4>
+</td>
+<td>
+<p>Fired when interstitial page was shown</p>
+<code><span class="keyword">fun </span><span class="identifier">interstitialShown</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="javascript-dialog-closed.html">javascriptDialogClosed</a></h4>
+</td>
+<td>
+<p>Fired when a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload) has been
+closed.</p>
+<code><span class="keyword">fun </span><span class="identifier">javascriptDialogClosed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-javascript-dialog-closed-event/index.html"><span class="identifier">JavascriptDialogClosedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="javascript-dialog-opening.html">javascriptDialogOpening</a></h4>
+</td>
+<td>
+<p>Fired when a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload) is about to
+open.</p>
+<code><span class="keyword">fun </span><span class="identifier">javascriptDialogOpening</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-javascript-dialog-opening-event/index.html"><span class="identifier">JavascriptDialogOpeningEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="lifecycle-event.html">lifecycleEvent</a></h4>
+</td>
+<td>
+<p>Fired for top level page lifecycle events such as navigation, load, paint, etc.</p>
+<code><span class="keyword">fun </span><span class="identifier">lifecycleEvent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-lifecycle-event-event/index.html"><span class="identifier">LifecycleEventEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load-event-fired.html">loadEventFired</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all Page.loadEventFired events.</p>
+<code><span class="keyword">fun </span><span class="identifier">loadEventFired</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-load-event-fired-event/index.html"><span class="identifier">LoadEventFiredEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="navigate.html">navigate</a></h4>
+</td>
+<td>
+<p>Navigates current page to the given URL.</p>
+<code><span class="keyword">fun </span><span class="identifier">navigate</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$navigate(pl.wendigo.chrome.api.page.NavigateRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-navigate-request/index.html"><span class="identifier">NavigateRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-navigate-response/index.html"><span class="identifier">NavigateResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="navigated-within-document.html">navigatedWithinDocument</a></h4>
+</td>
+<td>
+<p>Fired when same-document navigation happens, e.g. due to history API usage or anchor navigation.</p>
+<code><span class="keyword">fun </span><span class="identifier">navigatedWithinDocument</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-navigated-within-document-event/index.html"><span class="identifier">NavigatedWithinDocumentEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="navigate-to-history-entry.html">navigateToHistoryEntry</a></h4>
+</td>
+<td>
+<p>Navigates current page to the given history entry.</p>
+<code><span class="keyword">fun </span><span class="identifier">navigateToHistoryEntry</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$navigateToHistoryEntry(pl.wendigo.chrome.api.page.NavigateToHistoryEntryRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-navigate-to-history-entry-request/index.html"><span class="identifier">NavigateToHistoryEntryRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="print-to-p-d-f.html">printToPDF</a></h4>
+</td>
+<td>
+<p>Print page as PDF.</p>
+<code><span class="keyword">fun </span><span class="identifier">printToPDF</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$printToPDF(pl.wendigo.chrome.api.page.PrintToPDFRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-print-to-p-d-f-request/index.html"><span class="identifier">PrintToPDFRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-print-to-p-d-f-response/index.html"><span class="identifier">PrintToPDFResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reload.html">reload</a></h4>
+</td>
+<td>
+<p>Reloads given page optionally ignoring the cache.</p>
+<code><span class="keyword">fun </span><span class="identifier">reload</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$reload(pl.wendigo.chrome.api.page.ReloadRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-reload-request/index.html"><span class="identifier">ReloadRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-script-to-evaluate-on-load.html">removeScriptToEvaluateOnLoad</a></h4>
+</td>
+<td>
+<p>Deprecated, please use removeScriptToEvaluateOnNewDocument instead.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">removeScriptToEvaluateOnLoad</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$removeScriptToEvaluateOnLoad(pl.wendigo.chrome.api.page.RemoveScriptToEvaluateOnLoadRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-script-to-evaluate-on-load-request/index.html"><span class="identifier">RemoveScriptToEvaluateOnLoadRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-script-to-evaluate-on-new-document.html">removeScriptToEvaluateOnNewDocument</a></h4>
+</td>
+<td>
+<p>Removes given script from the list.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeScriptToEvaluateOnNewDocument</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$removeScriptToEvaluateOnNewDocument(pl.wendigo.chrome.api.page.RemoveScriptToEvaluateOnNewDocumentRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-script-to-evaluate-on-new-document-request/index.html"><span class="identifier">RemoveScriptToEvaluateOnNewDocumentRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reset-navigation-history.html">resetNavigationHistory</a></h4>
+</td>
+<td>
+<p>Resets navigation history for the current page.</p>
+<code><span class="keyword">fun </span><span class="identifier">resetNavigationHistory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="screencast-frame.html">screencastFrame</a></h4>
+</td>
+<td>
+<p>Compressed image data requested by the <code>startScreencast</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">screencastFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-screencast-frame-event/index.html"><span class="identifier">ScreencastFrameEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="screencast-frame-ack.html">screencastFrameAck</a></h4>
+</td>
+<td>
+<p>Acknowledges that a screencast frame has been received by the frontend.</p>
+<code><span class="keyword">fun </span><span class="identifier">screencastFrameAck</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$screencastFrameAck(pl.wendigo.chrome.api.page.ScreencastFrameAckRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-screencast-frame-ack-request/index.html"><span class="identifier">ScreencastFrameAckRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="screencast-visibility-changed.html">screencastVisibilityChanged</a></h4>
+</td>
+<td>
+<p>Fired when the page with currently enabled screencast was shown or hidden `.</p>
+<code><span class="keyword">fun </span><span class="identifier">screencastVisibilityChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-screencast-visibility-changed-event/index.html"><span class="identifier">ScreencastVisibilityChangedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="search-in-resource.html">searchInResource</a></h4>
+</td>
+<td>
+<p>Searches for given string in resource content.</p>
+<code><span class="keyword">fun </span><span class="identifier">searchInResource</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$searchInResource(pl.wendigo.chrome.api.page.SearchInResourceRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-search-in-resource-request/index.html"><span class="identifier">SearchInResourceRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-search-in-resource-response/index.html"><span class="identifier">SearchInResourceResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-ad-blocking-enabled.html">setAdBlockingEnabled</a></h4>
+</td>
+<td>
+<p>Enable Chrome's experimental ad filter on all sites.</p>
+<code><span class="keyword">fun </span><span class="identifier">setAdBlockingEnabled</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setAdBlockingEnabled(pl.wendigo.chrome.api.page.SetAdBlockingEnabledRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-ad-blocking-enabled-request/index.html"><span class="identifier">SetAdBlockingEnabledRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-bypass-c-s-p.html">setBypassCSP</a></h4>
+</td>
+<td>
+<p>Enable page Content Security Policy by-passing.</p>
+<code><span class="keyword">fun </span><span class="identifier">setBypassCSP</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setBypassCSP(pl.wendigo.chrome.api.page.SetBypassCSPRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-bypass-c-s-p-request/index.html"><span class="identifier">SetBypassCSPRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-device-metrics-override.html">setDeviceMetricsOverride</a></h4>
+</td>
+<td>
+<p>Overrides the values of device screen dimensions (window.screen.width, window.screen.height,
+window.innerWidth, window.innerHeight, and "device-width"/"device-height"-related CSS media
+query results).</p>
+<code><span class="keyword">fun </span><s><span class="identifier">setDeviceMetricsOverride</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setDeviceMetricsOverride(pl.wendigo.chrome.api.page.SetDeviceMetricsOverrideRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-device-metrics-override-request/index.html"><span class="identifier">SetDeviceMetricsOverrideRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-device-orientation-override.html">setDeviceOrientationOverride</a></h4>
+</td>
+<td>
+<p>Overrides the Device Orientation.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">setDeviceOrientationOverride</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setDeviceOrientationOverride(pl.wendigo.chrome.api.page.SetDeviceOrientationOverrideRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-device-orientation-override-request/index.html"><span class="identifier">SetDeviceOrientationOverrideRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-document-content.html">setDocumentContent</a></h4>
+</td>
+<td>
+<p>Sets given markup as the document's HTML.</p>
+<code><span class="keyword">fun </span><span class="identifier">setDocumentContent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setDocumentContent(pl.wendigo.chrome.api.page.SetDocumentContentRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-document-content-request/index.html"><span class="identifier">SetDocumentContentRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-download-behavior.html">setDownloadBehavior</a></h4>
+</td>
+<td>
+<p>Set the behavior when downloading a file.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">setDownloadBehavior</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setDownloadBehavior(pl.wendigo.chrome.api.page.SetDownloadBehaviorRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-download-behavior-request/index.html"><span class="identifier">SetDownloadBehaviorRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-font-families.html">setFontFamilies</a></h4>
+</td>
+<td>
+<p>Set generic font families.</p>
+<code><span class="keyword">fun </span><span class="identifier">setFontFamilies</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setFontFamilies(pl.wendigo.chrome.api.page.SetFontFamiliesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-font-families-request/index.html"><span class="identifier">SetFontFamiliesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-font-sizes.html">setFontSizes</a></h4>
+</td>
+<td>
+<p>Set default font sizes.</p>
+<code><span class="keyword">fun </span><span class="identifier">setFontSizes</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setFontSizes(pl.wendigo.chrome.api.page.SetFontSizesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-font-sizes-request/index.html"><span class="identifier">SetFontSizesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-geolocation-override.html">setGeolocationOverride</a></h4>
+</td>
+<td>
+<p>Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position
+unavailable.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">setGeolocationOverride</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setGeolocationOverride(pl.wendigo.chrome.api.page.SetGeolocationOverrideRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-geolocation-override-request/index.html"><span class="identifier">SetGeolocationOverrideRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-intercept-file-chooser-dialog.html">setInterceptFileChooserDialog</a></h4>
+</td>
+<td>
+<p>Intercept file chooser requests and transfer control to protocol clients.
+When file chooser interception is enabled, native file chooser dialog is not shown.
+Instead, a protocol event <code>Page.fileChooserOpened</code> is emitted.</p>
+<code><span class="keyword">fun </span><span class="identifier">setInterceptFileChooserDialog</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setInterceptFileChooserDialog(pl.wendigo.chrome.api.page.SetInterceptFileChooserDialogRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-intercept-file-chooser-dialog-request/index.html"><span class="identifier">SetInterceptFileChooserDialogRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-lifecycle-events-enabled.html">setLifecycleEventsEnabled</a></h4>
+</td>
+<td>
+<p>Controls whether page will emit lifecycle events.</p>
+<code><span class="keyword">fun </span><span class="identifier">setLifecycleEventsEnabled</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setLifecycleEventsEnabled(pl.wendigo.chrome.api.page.SetLifecycleEventsEnabledRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-lifecycle-events-enabled-request/index.html"><span class="identifier">SetLifecycleEventsEnabledRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-produce-compilation-cache.html">setProduceCompilationCache</a></h4>
+</td>
+<td>
+<p>Forces compilation cache to be generated for every subresource script.</p>
+<code><span class="keyword">fun </span><span class="identifier">setProduceCompilationCache</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setProduceCompilationCache(pl.wendigo.chrome.api.page.SetProduceCompilationCacheRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-produce-compilation-cache-request/index.html"><span class="identifier">SetProduceCompilationCacheRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-touch-emulation-enabled.html">setTouchEmulationEnabled</a></h4>
+</td>
+<td>
+<p>Toggles mouse event-based touch event emulation.</p>
+<code><span class="keyword">fun </span><s><span class="identifier">setTouchEmulationEnabled</span></s><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setTouchEmulationEnabled(pl.wendigo.chrome.api.page.SetTouchEmulationEnabledRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-touch-emulation-enabled-request/index.html"><span class="identifier">SetTouchEmulationEnabledRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-web-lifecycle-state.html">setWebLifecycleState</a></h4>
+</td>
+<td>
+<p>Tries to update the web lifecycle state of the page.
+It will transition the page to the given state according to:
+https://github.com/WICG/web-lifecycle/</p>
+<code><span class="keyword">fun </span><span class="identifier">setWebLifecycleState</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$setWebLifecycleState(pl.wendigo.chrome.api.page.SetWebLifecycleStateRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-web-lifecycle-state-request/index.html"><span class="identifier">SetWebLifecycleStateRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-screencast.html">startScreencast</a></h4>
+</td>
+<td>
+<p>Starts sending each frame using the <code>screencastFrame</code> event.</p>
+<code><span class="keyword">fun </span><span class="identifier">startScreencast</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.page.PageOperations$startScreencast(pl.wendigo.chrome.api.page.StartScreencastRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-start-screencast-request/index.html"><span class="identifier">StartScreencastRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop-loading.html">stopLoading</a></h4>
+</td>
+<td>
+<p>Force the page stop all navigations and pending resource fetches.</p>
+<code><span class="keyword">fun </span><span class="identifier">stopLoading</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop-screencast.html">stopScreencast</a></h4>
+</td>
+<td>
+<p>Stops sending each frame in the <code>screencastFrame</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">stopScreencast</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="wait-for-debugger.html">waitForDebugger</a></h4>
+</td>
+<td>
+<p>Pauses page execution. Can be resumed using generic Runtime.runIfWaitingForDebugger.</p>
+<code><span class="keyword">fun </span><span class="identifier">waitForDebugger</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="window-open.html">windowOpen</a></h4>
+</td>
+<td>
+<p>Fired when a new window is going to be opened, via window.open(), link click, form submission,
+etc.</p>
+<code><span class="keyword">fun </span><span class="identifier">windowOpen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-window-open-event/index.html"><span class="identifier">WindowOpenEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

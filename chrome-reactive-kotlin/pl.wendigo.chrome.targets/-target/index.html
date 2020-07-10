@@ -1,0 +1,67 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Target - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.targets</a>&nbsp;/&nbsp;<a href="./index.html">Target</a><br/>
+<br/>
+<h1>Target</h1>
+<code><span class="keyword">class </span><span class="identifier">Target</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome/-dev-tools-protocol/index.html"><span class="identifier">DevToolsProtocol</span></a><span class="symbol">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html"><span class="identifier">AutoCloseable</span></a><span class="symbol">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/targets/Target.kt#L13">(source)</a>
+<p>Represents browser <a href="../../pl.wendigo.chrome/-dev-tools-protocol/-target.html">Target</a> that can be controlled via DevTools Protocol API</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents browser <a href="../../pl.wendigo.chrome/-dev-tools-protocol/-target.html">Target</a> that can be controlled via DevTools Protocol API</p>
+<code><span class="identifier">Target</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.targets.Target$<init>(pl.wendigo.chrome.targets.Manager, pl.wendigo.chrome.targets.SessionTarget, pl.wendigo.chrome.protocol.ChromeDebuggerConnection)/manager">manager</span><span class="symbol">:</span>&nbsp;<a href="../-manager/index.html"><span class="identifier">Manager</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.targets.Target$<init>(pl.wendigo.chrome.targets.Manager, pl.wendigo.chrome.targets.SessionTarget, pl.wendigo.chrome.protocol.ChromeDebuggerConnection)/session">session</span><span class="symbol">:</span>&nbsp;<a href="../-session-target/index.html"><span class="identifier">SessionTarget</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.targets.Target$<init>(pl.wendigo.chrome.targets.Manager, pl.wendigo.chrome.targets.SessionTarget, pl.wendigo.chrome.protocol.ChromeDebuggerConnection)/connection">connection</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-chrome-debugger-connection/index.html"><span class="identifier">ChromeDebuggerConnection</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="session.html">session</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">session</span><span class="symbol">: </span><a href="../-session-target/index.html"><span class="identifier">SessionTarget</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="close.html">close</a></h4>
+</td>
+<td>
+<p>Closes target releasing all resources on the browser side.</p>
+<code><span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="info.html">info</a></h4>
+</td>
+<td>
+<p>Returns <a href="../../pl.wendigo.chrome.api.target/-target-info/index.html">TargetInfo</a> for given target directly from inspector protocol.</p>
+<code><span class="keyword">fun </span><span class="identifier">info</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.target/-target-info/index.html"><span class="identifier">TargetInfo</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

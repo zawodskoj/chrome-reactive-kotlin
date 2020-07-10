@@ -1,0 +1,19 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PlayerError.errorCode - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.media</a>&nbsp;/&nbsp;<a href="index.html">PlayerError</a>&nbsp;/&nbsp;<a href="./error-code.html">errorCode</a><br/>
+<br/>
+<h1>errorCode</h1>
+<a name="pl.wendigo.chrome.api.media.PlayerError$errorCode"></a>
+<code><span class="keyword">val </span><span class="identifier">errorCode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/media/Types.kt#L101">(source)</a>
+<p>When this switches to using media::Status instead of PipelineStatus
+we can remove "errorCode" and replace it with the fields from
+a Status instance. This also seems like a duplicate of the error
+level enum - there is a todo bug to have that level removed and
+use this instead. (crbug.com/1068454)</p>
+</BODY>
+</HTML>

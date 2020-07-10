@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PrintToPDFRequest.headerTemplate - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.page</a>&nbsp;/&nbsp;<a href="index.html">PrintToPDFRequest</a>&nbsp;/&nbsp;<a href="./header-template.html">headerTemplate</a><br/>
+<br/>
+<h1>headerTemplate</h1>
+<a name="pl.wendigo.chrome.api.page.PrintToPDFRequest$headerTemplate"></a>
+<code><span class="keyword">val </span><span class="identifier">headerTemplate</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/page/Operations.kt#L1190">(source)</a>
+<p>HTML template for the print header. Should be valid HTML markup with following
+classes used to inject printing values into them:</p>
+<ul><li><code>date</code>: formatted print date</li>
+<li><code>title</code>: document title</li>
+<li><code>url</code>: document location</li>
+<li><code>pageNumber</code>: current page number</li>
+<li><code>totalPages</code>: total pages in the document</li>
+</ul>
+<p>For example, <code>&lt;span class=title&gt;&lt;/span&gt;</code> would generate span containing the title.</p>
+</BODY>
+</HTML>

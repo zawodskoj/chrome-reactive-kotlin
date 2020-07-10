@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AuthRequiredEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.fetch</a>&nbsp;/&nbsp;<a href="./index.html">AuthRequiredEvent</a><br/>
+<br/>
+<h1>AuthRequiredEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AuthRequiredEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/fetch/Operations.kt#L404">(source)</a>
+<p>Issued when the domain is enabled with handleAuthRequests set to true.
+The request is paused until client responds with continueWithAuth.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Fetch#event-authRequired">Fetch#authRequired</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Issued when the domain is enabled with handleAuthRequests set to true.
+The request is paused until client responds with continueWithAuth.</p>
+<code><span class="identifier">AuthRequiredEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.fetch.AuthRequiredEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.fetch.AuthChallenge)/requestId">requestId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.AuthRequiredEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.fetch.AuthChallenge)/request">request</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.network/-request/index.html"><span class="identifier">Request</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.AuthRequiredEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.fetch.AuthChallenge)/frameId">frameId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.page/-frame-id.html"><span class="identifier">FrameId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.AuthRequiredEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.fetch.AuthChallenge)/resourceType">resourceType</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.network/-resource-type/index.html"><span class="identifier">ResourceType</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.fetch.AuthRequiredEvent$<init>(kotlin.String, pl.wendigo.chrome.api.network.Request, kotlin.String, pl.wendigo.chrome.api.network.ResourceType, pl.wendigo.chrome.api.fetch.AuthChallenge)/authChallenge">authChallenge</span><span class="symbol">:</span>&nbsp;<a href="../-auth-challenge/index.html"><span class="identifier">AuthChallenge</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="auth-challenge.html">authChallenge</a></h4>
+</td>
+<td>
+<p>Details of the Authorization Challenge encountered.
+If this is set, client should respond with continueRequest that
+contains AuthChallengeResponse.</p>
+<code><span class="keyword">val </span><span class="identifier">authChallenge</span><span class="symbol">: </span><a href="../-auth-challenge/index.html"><span class="identifier">AuthChallenge</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="frame-id.html">frameId</a></h4>
+</td>
+<td>
+<p>The id of the frame that initiated the request.</p>
+<code><span class="keyword">val </span><span class="identifier">frameId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.page/-frame-id.html"><span class="identifier">FrameId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request.html">request</a></h4>
+</td>
+<td>
+<p>The details of the request.</p>
+<code><span class="keyword">val </span><span class="identifier">request</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-request/index.html"><span class="identifier">Request</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<p>Each request the page makes will have a unique id.</p>
+<code><span class="keyword">val </span><span class="identifier">requestId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resource-type.html">resourceType</a></h4>
+</td>
+<td>
+<p>How the requested resource will be used.</p>
+<code><span class="keyword">val </span><span class="identifier">resourceType</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.network/-resource-type/index.html"><span class="identifier">ResourceType</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

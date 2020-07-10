@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PausedEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">PausedEvent</a><br/>
+<br/>
+<h1>PausedEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PausedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L1168">(source)</a>
+<p>Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#event-paused">Debugger#paused</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.</p>
+<code><span class="identifier">PausedEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.PausedEvent$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.collections.List((kotlin.String)), pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.StackTraceId)/callFrames">callFrames</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-call-frame/index.html"><span class="identifier">CallFrame</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.PausedEvent$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.collections.List((kotlin.String)), pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.StackTraceId)/reason">reason</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.PausedEvent$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.collections.List((kotlin.String)), pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.StackTraceId)/data">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">JsonNode</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.PausedEvent$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.collections.List((kotlin.String)), pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.StackTraceId)/hitBreakpoints">hitBreakpoints</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.PausedEvent$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.collections.List((kotlin.String)), pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.StackTraceId)/asyncStackTrace">asyncStackTrace</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-stack-trace/index.html"><span class="identifier">StackTrace</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.PausedEvent$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.collections.List((kotlin.String)), pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.StackTraceId)/asyncStackTraceId">asyncStackTraceId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-stack-trace-id/index.html"><span class="identifier">StackTraceId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.PausedEvent$<init>(kotlin.collections.List((pl.wendigo.chrome.api.debugger.CallFrame)), kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.collections.List((kotlin.String)), pl.wendigo.chrome.api.runtime.StackTrace, pl.wendigo.chrome.api.runtime.StackTraceId, pl.wendigo.chrome.api.runtime.StackTraceId)/asyncCallStackTraceId">asyncCallStackTraceId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-stack-trace-id/index.html"><span class="identifier">StackTraceId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="async-call-stack-trace-id.html">asyncCallStackTraceId</a></h4>
+</td>
+<td>
+<p>Never present, will be removed.</p>
+<code><span class="keyword">val </span><span class="identifier">asyncCallStackTraceId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-stack-trace-id/index.html"><span class="identifier">StackTraceId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="async-stack-trace.html">asyncStackTrace</a></h4>
+</td>
+<td>
+<p>Async stack trace, if any.</p>
+<code><span class="keyword">val </span><span class="identifier">asyncStackTrace</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-stack-trace/index.html"><span class="identifier">StackTrace</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="async-stack-trace-id.html">asyncStackTraceId</a></h4>
+</td>
+<td>
+<p>Async stack trace, if any.</p>
+<code><span class="keyword">val </span><span class="identifier">asyncStackTraceId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-stack-trace-id/index.html"><span class="identifier">StackTraceId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="call-frames.html">callFrames</a></h4>
+</td>
+<td>
+<p>Call stack the virtual machine stopped on.</p>
+<code><span class="keyword">val </span><span class="identifier">callFrames</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-call-frame/index.html"><span class="identifier">CallFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="data.html">data</a></h4>
+</td>
+<td>
+<p>Object containing break-specific auxiliary properties.</p>
+<code><span class="keyword">val </span><span class="identifier">data</span><span class="symbol">: </span><span class="identifier">JsonNode</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hit-breakpoints.html">hitBreakpoints</a></h4>
+</td>
+<td>
+<p>Hit breakpoints IDs</p>
+<code><span class="keyword">val </span><span class="identifier">hitBreakpoints</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reason.html">reason</a></h4>
+</td>
+<td>
+<p>Pause reason.</p>
+<code><span class="keyword">val </span><span class="identifier">reason</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,150 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BrowserOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.browser</a>&nbsp;/&nbsp;<a href="./index.html">BrowserOperations</a><br/>
+<br/>
+<h1>BrowserOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">BrowserOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/browser/Operations.kt#L8">(source)</a>
+<p>The Browser domain defines methods and events for browser managing.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Browser">Browser</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="close.html">close</a></h4>
+</td>
+<td>
+<p>Close browser gracefully.</p>
+<code><span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="crash.html">crash</a></h4>
+</td>
+<td>
+<p>Crashes browser on the main thread.</p>
+<code><span class="keyword">fun </span><span class="identifier">crash</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="crash-gpu-process.html">crashGpuProcess</a></h4>
+</td>
+<td>
+<p>Crashes GPU process.</p>
+<code><span class="keyword">fun </span><span class="identifier">crashGpuProcess</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Browser domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-browser-command-line.html">getBrowserCommandLine</a></h4>
+</td>
+<td>
+<p>Returns the command line switches for the browser process if, and only if
+--enable-automation is on the commandline.</p>
+<code><span class="keyword">fun </span><span class="identifier">getBrowserCommandLine</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-browser-command-line-response/index.html"><span class="identifier">GetBrowserCommandLineResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-histogram.html">getHistogram</a></h4>
+</td>
+<td>
+<p>Get a Chrome histogram by name.</p>
+<code><span class="keyword">fun </span><span class="identifier">getHistogram</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.BrowserOperations$getHistogram(pl.wendigo.chrome.api.browser.GetHistogramRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-histogram-request/index.html"><span class="identifier">GetHistogramRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-histogram-response/index.html"><span class="identifier">GetHistogramResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-histograms.html">getHistograms</a></h4>
+</td>
+<td>
+<p>Get Chrome histograms.</p>
+<code><span class="keyword">fun </span><span class="identifier">getHistograms</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.BrowserOperations$getHistograms(pl.wendigo.chrome.api.browser.GetHistogramsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-histograms-request/index.html"><span class="identifier">GetHistogramsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-histograms-response/index.html"><span class="identifier">GetHistogramsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-version.html">getVersion</a></h4>
+</td>
+<td>
+<p>Returns version information.</p>
+<code><span class="keyword">fun </span><span class="identifier">getVersion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-version-response/index.html"><span class="identifier">GetVersionResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-window-bounds.html">getWindowBounds</a></h4>
+</td>
+<td>
+<p>Get position and size of the browser window.</p>
+<code><span class="keyword">fun </span><span class="identifier">getWindowBounds</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.BrowserOperations$getWindowBounds(pl.wendigo.chrome.api.browser.GetWindowBoundsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-window-bounds-request/index.html"><span class="identifier">GetWindowBoundsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-window-bounds-response/index.html"><span class="identifier">GetWindowBoundsResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-window-for-target.html">getWindowForTarget</a></h4>
+</td>
+<td>
+<p>Get the browser window that contains the devtools target.</p>
+<code><span class="keyword">fun </span><span class="identifier">getWindowForTarget</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.BrowserOperations$getWindowForTarget(pl.wendigo.chrome.api.browser.GetWindowForTargetRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-window-for-target-request/index.html"><span class="identifier">GetWindowForTargetRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-window-for-target-response/index.html"><span class="identifier">GetWindowForTargetResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="grant-permissions.html">grantPermissions</a></h4>
+</td>
+<td>
+<p>Grant specific permissions to the given origin and reject all others.</p>
+<code><span class="keyword">fun </span><span class="identifier">grantPermissions</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.BrowserOperations$grantPermissions(pl.wendigo.chrome.api.browser.GrantPermissionsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-grant-permissions-request/index.html"><span class="identifier">GrantPermissionsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reset-permissions.html">resetPermissions</a></h4>
+</td>
+<td>
+<p>Reset all permission management for all origins.</p>
+<code><span class="keyword">fun </span><span class="identifier">resetPermissions</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.BrowserOperations$resetPermissions(pl.wendigo.chrome.api.browser.ResetPermissionsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-reset-permissions-request/index.html"><span class="identifier">ResetPermissionsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-dock-tile.html">setDockTile</a></h4>
+</td>
+<td>
+<p>Set dock tile details, platform-specific.</p>
+<code><span class="keyword">fun </span><span class="identifier">setDockTile</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.BrowserOperations$setDockTile(pl.wendigo.chrome.api.browser.SetDockTileRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-dock-tile-request/index.html"><span class="identifier">SetDockTileRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-download-behavior.html">setDownloadBehavior</a></h4>
+</td>
+<td>
+<p>Set the behavior when downloading a file.</p>
+<code><span class="keyword">fun </span><span class="identifier">setDownloadBehavior</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.BrowserOperations$setDownloadBehavior(pl.wendigo.chrome.api.browser.SetDownloadBehaviorRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-download-behavior-request/index.html"><span class="identifier">SetDownloadBehaviorRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-permission.html">setPermission</a></h4>
+</td>
+<td>
+<p>Set permission settings for given origin.</p>
+<code><span class="keyword">fun </span><span class="identifier">setPermission</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.BrowserOperations$setPermission(pl.wendigo.chrome.api.browser.SetPermissionRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-permission-request/index.html"><span class="identifier">SetPermissionRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-window-bounds.html">setWindowBounds</a></h4>
+</td>
+<td>
+<p>Set position and/or size of the browser window.</p>
+<code><span class="keyword">fun </span><span class="identifier">setWindowBounds</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.browser.BrowserOperations$setWindowBounds(pl.wendigo.chrome.api.browser.SetWindowBoundsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-window-bounds-request/index.html"><span class="identifier">SetWindowBoundsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

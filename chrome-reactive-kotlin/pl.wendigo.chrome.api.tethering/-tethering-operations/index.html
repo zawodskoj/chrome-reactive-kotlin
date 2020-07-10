@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TetheringOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.tethering</a>&nbsp;/&nbsp;<a href="./index.html">TetheringOperations</a><br/>
+<br/>
+<h1>TetheringOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">TetheringOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/tethering/Operations.kt#L10">(source)</a>
+<p>The Tethering domain defines methods and events for browser port binding.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Tethering">Tethering</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="accepted.html">accepted</a></h4>
+</td>
+<td>
+<p>Informs that port was successfully bound and got a specified connection id.</p>
+<code><span class="keyword">fun </span><span class="identifier">accepted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-accepted-event/index.html"><span class="identifier">AcceptedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="bind.html">bind</a></h4>
+</td>
+<td>
+<p>Request browser port binding.</p>
+<code><span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.tethering.TetheringOperations$bind(pl.wendigo.chrome.api.tethering.BindRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-bind-request/index.html"><span class="identifier">BindRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Tethering domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unbind.html">unbind</a></h4>
+</td>
+<td>
+<p>Request browser port unbinding.</p>
+<code><span class="keyword">fun </span><span class="identifier">unbind</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.tethering.TetheringOperations$unbind(pl.wendigo.chrome.api.tethering.UnbindRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-unbind-request/index.html"><span class="identifier">UnbindRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

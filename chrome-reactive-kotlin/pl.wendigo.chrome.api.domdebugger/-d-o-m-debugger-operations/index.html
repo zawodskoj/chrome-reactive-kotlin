@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DOMDebuggerOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.domdebugger</a>&nbsp;/&nbsp;<a href="./index.html">DOMDebuggerOperations</a><br/>
+<br/>
+<h1>DOMDebuggerOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">DOMDebuggerOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/domdebugger/Operations.kt#L9">(source)</a>
+<p>DOM debugging allows setting breakpoints on particular DOM operations and events. JavaScript
+execution will stop on these operations as if there was a regular breakpoint set.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger">DOMDebugger</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all DOMDebugger domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-event-listeners.html">getEventListeners</a></h4>
+</td>
+<td>
+<p>Returns event listeners of the given object.</p>
+<code><span class="keyword">fun </span><span class="identifier">getEventListeners</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.DOMDebuggerOperations$getEventListeners(pl.wendigo.chrome.api.domdebugger.GetEventListenersRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-event-listeners-request/index.html"><span class="identifier">GetEventListenersRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-event-listeners-response/index.html"><span class="identifier">GetEventListenersResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-d-o-m-breakpoint.html">removeDOMBreakpoint</a></h4>
+</td>
+<td>
+<p>Removes DOM breakpoint that was set using <code>setDOMBreakpoint</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeDOMBreakpoint</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.DOMDebuggerOperations$removeDOMBreakpoint(pl.wendigo.chrome.api.domdebugger.RemoveDOMBreakpointRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-d-o-m-breakpoint-request/index.html"><span class="identifier">RemoveDOMBreakpointRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-event-listener-breakpoint.html">removeEventListenerBreakpoint</a></h4>
+</td>
+<td>
+<p>Removes breakpoint on particular DOM event.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeEventListenerBreakpoint</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.DOMDebuggerOperations$removeEventListenerBreakpoint(pl.wendigo.chrome.api.domdebugger.RemoveEventListenerBreakpointRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-event-listener-breakpoint-request/index.html"><span class="identifier">RemoveEventListenerBreakpointRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-instrumentation-breakpoint.html">removeInstrumentationBreakpoint</a></h4>
+</td>
+<td>
+<p>Removes breakpoint on particular native event.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeInstrumentationBreakpoint</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.DOMDebuggerOperations$removeInstrumentationBreakpoint(pl.wendigo.chrome.api.domdebugger.RemoveInstrumentationBreakpointRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-instrumentation-breakpoint-request/index.html"><span class="identifier">RemoveInstrumentationBreakpointRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-x-h-r-breakpoint.html">removeXHRBreakpoint</a></h4>
+</td>
+<td>
+<p>Removes breakpoint from XMLHttpRequest.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeXHRBreakpoint</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.DOMDebuggerOperations$removeXHRBreakpoint(pl.wendigo.chrome.api.domdebugger.RemoveXHRBreakpointRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-remove-x-h-r-breakpoint-request/index.html"><span class="identifier">RemoveXHRBreakpointRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-d-o-m-breakpoint.html">setDOMBreakpoint</a></h4>
+</td>
+<td>
+<p>Sets breakpoint on particular operation with DOM.</p>
+<code><span class="keyword">fun </span><span class="identifier">setDOMBreakpoint</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.DOMDebuggerOperations$setDOMBreakpoint(pl.wendigo.chrome.api.domdebugger.SetDOMBreakpointRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-d-o-m-breakpoint-request/index.html"><span class="identifier">SetDOMBreakpointRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-event-listener-breakpoint.html">setEventListenerBreakpoint</a></h4>
+</td>
+<td>
+<p>Sets breakpoint on particular DOM event.</p>
+<code><span class="keyword">fun </span><span class="identifier">setEventListenerBreakpoint</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.DOMDebuggerOperations$setEventListenerBreakpoint(pl.wendigo.chrome.api.domdebugger.SetEventListenerBreakpointRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-event-listener-breakpoint-request/index.html"><span class="identifier">SetEventListenerBreakpointRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-instrumentation-breakpoint.html">setInstrumentationBreakpoint</a></h4>
+</td>
+<td>
+<p>Sets breakpoint on particular native event.</p>
+<code><span class="keyword">fun </span><span class="identifier">setInstrumentationBreakpoint</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.DOMDebuggerOperations$setInstrumentationBreakpoint(pl.wendigo.chrome.api.domdebugger.SetInstrumentationBreakpointRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-instrumentation-breakpoint-request/index.html"><span class="identifier">SetInstrumentationBreakpointRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-x-h-r-breakpoint.html">setXHRBreakpoint</a></h4>
+</td>
+<td>
+<p>Sets breakpoint on XMLHttpRequest.</p>
+<code><span class="keyword">fun </span><span class="identifier">setXHRBreakpoint</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.domdebugger.DOMDebuggerOperations$setXHRBreakpoint(pl.wendigo.chrome.api.domdebugger.SetXHRBreakpointRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-x-h-r-breakpoint-request/index.html"><span class="identifier">SetXHRBreakpointRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

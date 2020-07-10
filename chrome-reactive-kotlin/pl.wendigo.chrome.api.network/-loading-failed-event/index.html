@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LoadingFailedEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">LoadingFailedEvent</a><br/>
+<br/>
+<h1>LoadingFailedEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LoadingFailedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L1115">(source)</a>
+<p>Fired when HTTP request has failed to load.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#event-loadingFailed">Network#loadingFailed</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when HTTP request has failed to load.</p>
+<code><span class="identifier">LoadingFailedEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.LoadingFailedEvent$<init>(kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.network.BlockedReason)/requestId">requestId</span><span class="symbol">:</span>&nbsp;<a href="../-request-id.html"><span class="identifier">RequestId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.LoadingFailedEvent$<init>(kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.network.BlockedReason)/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="../-monotonic-time.html"><span class="identifier">MonotonicTime</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.LoadingFailedEvent$<init>(kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.network.BlockedReason)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../-resource-type/index.html"><span class="identifier">ResourceType</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.LoadingFailedEvent$<init>(kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.network.BlockedReason)/errorText">errorText</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.LoadingFailedEvent$<init>(kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.network.BlockedReason)/canceled">canceled</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.LoadingFailedEvent$<init>(kotlin.String, kotlin.Double, pl.wendigo.chrome.api.network.ResourceType, kotlin.String, kotlin.Boolean, pl.wendigo.chrome.api.network.BlockedReason)/blockedReason">blockedReason</span><span class="symbol">:</span>&nbsp;<a href="../-blocked-reason/index.html"><span class="identifier">BlockedReason</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="blocked-reason.html">blockedReason</a></h4>
+</td>
+<td>
+<p>The reason why loading was blocked, if any.</p>
+<code><span class="keyword">val </span><span class="identifier">blockedReason</span><span class="symbol">: </span><a href="../-blocked-reason/index.html"><span class="identifier">BlockedReason</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="canceled.html">canceled</a></h4>
+</td>
+<td>
+<p>True if loading was canceled.</p>
+<code><span class="keyword">val </span><span class="identifier">canceled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="error-text.html">errorText</a></h4>
+</td>
+<td>
+<p>User friendly error message.</p>
+<code><span class="keyword">val </span><span class="identifier">errorText</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<p>Request identifier.</p>
+<code><span class="keyword">val </span><span class="identifier">requestId</span><span class="symbol">: </span><a href="../-request-id.html"><span class="identifier">RequestId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timestamp.html">timestamp</a></h4>
+</td>
+<td>
+<p>Timestamp.</p>
+<code><span class="keyword">val </span><span class="identifier">timestamp</span><span class="symbol">: </span><a href="../-monotonic-time.html"><span class="identifier">MonotonicTime</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<p>Resource type.</p>
+<code><span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="../-resource-type/index.html"><span class="identifier">ResourceType</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

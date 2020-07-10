@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GetEncodedResponseResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.audits</a>&nbsp;/&nbsp;<a href="./index.html">GetEncodedResponseResponse</a><br/>
+<br/>
+<h1>GetEncodedResponseResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetEncodedResponseResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/audits/Operations.kt#L87">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Audits#method-getEncodedResponse">Audits#getEncodedResponse</a> operation call.
+Returns the response body and size if it were re-encoded with the specified settings. Only
+applies to images.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Audits#method-getEncodedResponse">Audits#getEncodedResponse</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-audits-operations/get-encoded-response.html">AuditsOperations.getEncodedResponse</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Audits#method-getEncodedResponse">Audits#getEncodedResponse</a> operation call.
+Returns the response body and size if it were re-encoded with the specified settings. Only
+applies to images.</p>
+<code><span class="identifier">GetEncodedResponseResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.audits.GetEncodedResponseResponse$<init>(kotlin.String, kotlin.Int, kotlin.Int)/body">body</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.GetEncodedResponseResponse$<init>(kotlin.String, kotlin.Int, kotlin.Int)/originalSize">originalSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.audits.GetEncodedResponseResponse$<init>(kotlin.String, kotlin.Int, kotlin.Int)/encodedSize">encodedSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="body.html">body</a></h4>
+</td>
+<td>
+<p>The encoded body as a base64 string. Omitted if sizeOnly is true.</p>
+<code><span class="keyword">val </span><span class="identifier">body</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="encoded-size.html">encodedSize</a></h4>
+</td>
+<td>
+<p>Size after re-encoding.</p>
+<code><span class="keyword">val </span><span class="identifier">encodedSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="original-size.html">originalSize</a></h4>
+</td>
+<td>
+<p>Size before re-encoding.</p>
+<code><span class="keyword">val </span><span class="identifier">originalSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NetworkOperations.takeResponseBodyForInterceptionAsStream - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="index.html">NetworkOperations</a>&nbsp;/&nbsp;<a href="./take-response-body-for-interception-as-stream.html">takeResponseBodyForInterceptionAsStream</a><br/>
+<br/>
+<h1>takeResponseBodyForInterceptionAsStream</h1>
+<a name="pl.wendigo.chrome.api.network.NetworkOperations$takeResponseBodyForInterceptionAsStream(pl.wendigo.chrome.api.network.TakeResponseBodyForInterceptionAsStreamRequest)"></a>
+<code><span class="keyword">fun </span><span class="identifier">takeResponseBodyForInterceptionAsStream</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.NetworkOperations$takeResponseBodyForInterceptionAsStream(pl.wendigo.chrome.api.network.TakeResponseBodyForInterceptionAsStreamRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-take-response-body-for-interception-as-stream-request/index.html"><span class="identifier">TakeResponseBodyForInterceptionAsStreamRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-take-response-body-for-interception-as-stream-response/index.html"><span class="identifier">TakeResponseBodyForInterceptionAsStreamResponse</span></a><span class="symbol">&gt;</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Operations.kt#L148">(source)</a>
+<p>Returns a handle to the stream representing the response body. Note that after this command,
+the intercepted request can't be continued as is -- you either need to cancel it or to provide
+the response body. The stream only supports sequential read, IO.read will fail if the position
+is specified.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-takeResponseBodyForInterceptionAsStream">Network#takeResponseBodyForInterceptionAsStream</a> method documentation.</p>
+</BODY>
+</HTML>

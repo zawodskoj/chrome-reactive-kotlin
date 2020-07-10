@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EventMapper - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.protocol</a>&nbsp;/&nbsp;<a href="./index.html">EventMapper</a><br/>
+<br/>
+<h1>EventMapper</h1>
+<code><span class="keyword">class </span><span class="identifier">EventMapper</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/protocol/EventMapper.kt#L12">(source)</a>
+<p>EventMapper is responsible for mapping events carried by <a href="../-response-frame/index.html">ResponseFrame</a> to typed events representations.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>EventMapper is responsible for mapping events carried by <a href="../-response-frame/index.html">ResponseFrame</a> to typed events representations.</p>
+<code><span class="identifier">EventMapper</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.EventMapper$<init>(com.fasterxml.jackson.databind.ObjectMapper)/mapper">mapper</span><span class="symbol">:</span>&nbsp;<span class="identifier">ObjectMapper</span>&nbsp;<span class="symbol">=</span>&nbsp;EventMapper.DEFAULT_MAPPER<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-mapping.html">addMapping</a></h4>
+</td>
+<td>
+<p>Add mapping from event name to class.</p>
+<code><span class="keyword">fun </span><span class="identifier">addMapping</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.EventMapper$addMapping(kotlin.String, java.lang.Class((pl.wendigo.chrome.protocol.Event)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.EventMapper$addMapping(kotlin.String, java.lang.Class((pl.wendigo.chrome.protocol.Event)))/clazz">clazz</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="deserialize.html">deserialize</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span> <span class="identifier">deserialize</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.EventMapper$deserialize(pl.wendigo.chrome.protocol.ResponseFrame, java.lang.Class((pl.wendigo.chrome.protocol.EventMapper.deserialize.T)))/frame">frame</span><span class="symbol">:</span>&nbsp;<a href="../-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.protocol.EventMapper$deserialize(pl.wendigo.chrome.protocol.ResponseFrame, java.lang.Class((pl.wendigo.chrome.protocol.EventMapper.deserialize.T)))/outClazz">outClazz</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="deserialize-event.html">deserializeEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deserializeEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.protocol.EventMapper$deserializeEvent(pl.wendigo.chrome.protocol.ResponseFrame)/frame">frame</span><span class="symbol">:</span>&nbsp;<a href="../-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

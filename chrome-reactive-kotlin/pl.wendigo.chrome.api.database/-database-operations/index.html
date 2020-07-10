@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DatabaseOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.database</a>&nbsp;/&nbsp;<a href="./index.html">DatabaseOperations</a><br/>
+<br/>
+<h1>DatabaseOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">DatabaseOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/database/Operations.kt#L10">(source)</a>
+<p>DatabaseOperations represents Database protocol domain request/response operations and events that can be captured.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Database">Database</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-database.html">addDatabase</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all Database.addDatabase events.</p>
+<code><span class="keyword">fun </span><span class="identifier">addDatabase</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-add-database-event/index.html"><span class="identifier">AddDatabaseEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables database tracking, prevents database events from being sent to the client.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables database tracking, database events will now be delivered to the client.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Database domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="execute-s-q-l.html">executeSQL</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">executeSQL</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.database.DatabaseOperations$executeSQL(pl.wendigo.chrome.api.database.ExecuteSQLRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-execute-s-q-l-request/index.html"><span class="identifier">ExecuteSQLRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-execute-s-q-l-response/index.html"><span class="identifier">ExecuteSQLResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-database-table-names.html">getDatabaseTableNames</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDatabaseTableNames</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.database.DatabaseOperations$getDatabaseTableNames(pl.wendigo.chrome.api.database.GetDatabaseTableNamesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-database-table-names-request/index.html"><span class="identifier">GetDatabaseTableNamesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-database-table-names-response/index.html"><span class="identifier">GetDatabaseTableNamesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

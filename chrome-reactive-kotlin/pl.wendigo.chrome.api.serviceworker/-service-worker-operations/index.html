@@ -1,0 +1,145 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ServiceWorkerOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.serviceworker</a>&nbsp;/&nbsp;<a href="./index.html">ServiceWorkerOperations</a><br/>
+<br/>
+<h1>ServiceWorkerOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">ServiceWorkerOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/serviceworker/Operations.kt#L10">(source)</a>
+<p>ServiceWorkerOperations represents ServiceWorker protocol domain request/response operations and events that can be captured.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker">ServiceWorker</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="deliver-push-message.html">deliverPushMessage</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deliverPushMessage</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.serviceworker.ServiceWorkerOperations$deliverPushMessage(pl.wendigo.chrome.api.serviceworker.DeliverPushMessageRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-deliver-push-message-request/index.html"><span class="identifier">DeliverPushMessageRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dispatch-periodic-sync-event.html">dispatchPeriodicSyncEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">dispatchPeriodicSyncEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.serviceworker.ServiceWorkerOperations$dispatchPeriodicSyncEvent(pl.wendigo.chrome.api.serviceworker.DispatchPeriodicSyncEventRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-dispatch-periodic-sync-event-request/index.html"><span class="identifier">DispatchPeriodicSyncEventRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dispatch-sync-event.html">dispatchSyncEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">dispatchSyncEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.serviceworker.ServiceWorkerOperations$dispatchSyncEvent(pl.wendigo.chrome.api.serviceworker.DispatchSyncEventRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-dispatch-sync-event-request/index.html"><span class="identifier">DispatchSyncEventRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all ServiceWorker domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="inspect-worker.html">inspectWorker</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">inspectWorker</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.serviceworker.ServiceWorkerOperations$inspectWorker(pl.wendigo.chrome.api.serviceworker.InspectWorkerRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-inspect-worker-request/index.html"><span class="identifier">InspectWorkerRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-force-update-on-page-load.html">setForceUpdateOnPageLoad</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setForceUpdateOnPageLoad</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.serviceworker.ServiceWorkerOperations$setForceUpdateOnPageLoad(pl.wendigo.chrome.api.serviceworker.SetForceUpdateOnPageLoadRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-force-update-on-page-load-request/index.html"><span class="identifier">SetForceUpdateOnPageLoadRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="skip-waiting.html">skipWaiting</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">skipWaiting</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.serviceworker.ServiceWorkerOperations$skipWaiting(pl.wendigo.chrome.api.serviceworker.SkipWaitingRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-skip-waiting-request/index.html"><span class="identifier">SkipWaitingRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-worker.html">startWorker</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">startWorker</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.serviceworker.ServiceWorkerOperations$startWorker(pl.wendigo.chrome.api.serviceworker.StartWorkerRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-start-worker-request/index.html"><span class="identifier">StartWorkerRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop-all-workers.html">stopAllWorkers</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">stopAllWorkers</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop-worker.html">stopWorker</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">stopWorker</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.serviceworker.ServiceWorkerOperations$stopWorker(pl.wendigo.chrome.api.serviceworker.StopWorkerRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-stop-worker-request/index.html"><span class="identifier">StopWorkerRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unregister.html">unregister</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">unregister</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.serviceworker.ServiceWorkerOperations$unregister(pl.wendigo.chrome.api.serviceworker.UnregisterRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-unregister-request/index.html"><span class="identifier">UnregisterRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="update-registration.html">updateRegistration</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateRegistration</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.serviceworker.ServiceWorkerOperations$updateRegistration(pl.wendigo.chrome.api.serviceworker.UpdateRegistrationRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-update-registration-request/index.html"><span class="identifier">UpdateRegistrationRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="worker-error-reported.html">workerErrorReported</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all ServiceWorker.workerErrorReported events.</p>
+<code><span class="keyword">fun </span><span class="identifier">workerErrorReported</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-worker-error-reported-event/index.html"><span class="identifier">WorkerErrorReportedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="worker-registration-updated.html">workerRegistrationUpdated</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all ServiceWorker.workerRegistrationUpdated events.</p>
+<code><span class="keyword">fun </span><span class="identifier">workerRegistrationUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-worker-registration-updated-event/index.html"><span class="identifier">WorkerRegistrationUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="worker-version-updated.html">workerVersionUpdated</a></h4>
+</td>
+<td>
+<p>Returns observable capturing all ServiceWorker.workerVersionUpdated events.</p>
+<code><span class="keyword">fun </span><span class="identifier">workerVersionUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-worker-version-updated-event/index.html"><span class="identifier">WorkerVersionUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

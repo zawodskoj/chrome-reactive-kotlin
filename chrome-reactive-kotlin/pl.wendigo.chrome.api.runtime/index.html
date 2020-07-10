@@ -1,0 +1,468 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.runtime - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.runtime</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.runtime</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime">Runtime</a> domain implementation accessible via <a href="-runtime-operations/index.html">RuntimeOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-add-binding-request/index.html">AddBindingRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-addBinding">Runtime#addBinding</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddBindingRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-await-promise-request/index.html">AwaitPromiseRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-awaitPromise">Runtime#awaitPromise</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AwaitPromiseRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-await-promise-response/index.html">AwaitPromiseResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-awaitPromise">Runtime#awaitPromise</a> operation call.
+Add handler to promise with given promise object id.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AwaitPromiseResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-binding-called-event/index.html">BindingCalledEvent</a></h4>
+</td>
+<td>
+<p>Notification is issued every time when binding is called.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BindingCalledEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-call-argument/index.html">CallArgument</a></h4>
+</td>
+<td>
+<p>Represents function call argument. Either remote object id <code>objectId</code>, primitive <code>value</code>,
+unserializable primitive value or neither of (for undefined) them should be specified.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CallArgument</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-call-frame/index.html">CallFrame</a></h4>
+</td>
+<td>
+<p>Stack entry for runtime errors and assertions.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CallFrame</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-call-function-on-request/index.html">CallFunctionOnRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-callFunctionOn">Runtime#callFunctionOn</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CallFunctionOnRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-call-function-on-response/index.html">CallFunctionOnResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-callFunctionOn">Runtime#callFunctionOn</a> operation call.
+Calls function with given declaration on the given object. Object group of the result is
+inherited from the target object.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CallFunctionOnResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-compile-script-request/index.html">CompileScriptRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-compileScript">Runtime#compileScript</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CompileScriptRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-compile-script-response/index.html">CompileScriptResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-compileScript">Runtime#compileScript</a> operation call.
+Compiles expression.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CompileScriptResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-console-a-p-i-called-event/index.html">ConsoleAPICalledEvent</a></h4>
+</td>
+<td>
+<p>Issued when console API was called.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ConsoleAPICalledEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-custom-preview/index.html">CustomPreview</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CustomPreview</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-entry-preview/index.html">EntryPreview</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EntryPreview</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-evaluate-request/index.html">EvaluateRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-evaluate">Runtime#evaluate</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EvaluateRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-evaluate-response/index.html">EvaluateResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-evaluate">Runtime#evaluate</a> operation call.
+Evaluates expression on global object.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EvaluateResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-exception-details/index.html">ExceptionDetails</a></h4>
+</td>
+<td>
+<p>Detailed information about exception (or error) that was thrown during script compilation or
+execution.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExceptionDetails</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-exception-revoked-event/index.html">ExceptionRevokedEvent</a></h4>
+</td>
+<td>
+<p>Issued when unhandled exception was revoked.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExceptionRevokedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-exception-thrown-event/index.html">ExceptionThrownEvent</a></h4>
+</td>
+<td>
+<p>Issued when exception was thrown and unhandled.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExceptionThrownEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-execution-context-created-event/index.html">ExecutionContextCreatedEvent</a></h4>
+</td>
+<td>
+<p>Issued when new execution context is created.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExecutionContextCreatedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-execution-context-description/index.html">ExecutionContextDescription</a></h4>
+</td>
+<td>
+<p>Description of an isolated world.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExecutionContextDescription</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-execution-context-destroyed-event/index.html">ExecutionContextDestroyedEvent</a></h4>
+</td>
+<td>
+<p>Issued when execution context is destroyed.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExecutionContextDestroyedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-execution-context-id.html">ExecutionContextId</a></h4>
+</td>
+<td>
+<p>Id of an execution context.</p>
+<code><span class="keyword">typealias </span><span class="identifier">ExecutionContextId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-heap-usage-response/index.html">GetHeapUsageResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-getHeapUsage">Runtime#getHeapUsage</a> operation call.
+Returns the JavaScript heap usage.
+It is the total usage of the corresponding isolate not scoped to a particular Runtime.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetHeapUsageResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-isolate-id-response/index.html">GetIsolateIdResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-getIsolateId">Runtime#getIsolateId</a> operation call.
+Returns the isolate id.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetIsolateIdResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-properties-request/index.html">GetPropertiesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-getProperties">Runtime#getProperties</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetPropertiesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-properties-response/index.html">GetPropertiesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-getProperties">Runtime#getProperties</a> operation call.
+Returns properties of a given object. Object group of the result is inherited from the target
+object.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetPropertiesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-global-lexical-scope-names-request/index.html">GlobalLexicalScopeNamesRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-globalLexicalScopeNames">Runtime#globalLexicalScopeNames</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GlobalLexicalScopeNamesRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-global-lexical-scope-names-response/index.html">GlobalLexicalScopeNamesResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-globalLexicalScopeNames">Runtime#globalLexicalScopeNames</a> operation call.
+Returns all let, const and class variables from global scope.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GlobalLexicalScopeNamesResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-inspect-requested-event/index.html">InspectRequestedEvent</a></h4>
+</td>
+<td>
+<p>Issued when object should be inspected (for example, as a result of inspect() command line API
+call).</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InspectRequestedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-internal-property-descriptor/index.html">InternalPropertyDescriptor</a></h4>
+</td>
+<td>
+<p>Object internal property descriptor. This property isn&apos;t normally visible in JavaScript code.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InternalPropertyDescriptor</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-object-preview/index.html">ObjectPreview</a></h4>
+</td>
+<td>
+<p>Object containing abbreviated remote object value.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ObjectPreview</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-private-property-descriptor/index.html">PrivatePropertyDescriptor</a></h4>
+</td>
+<td>
+<p>Object private field descriptor.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PrivatePropertyDescriptor</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-property-descriptor/index.html">PropertyDescriptor</a></h4>
+</td>
+<td>
+<p>Object property descriptor.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PropertyDescriptor</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-property-preview/index.html">PropertyPreview</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PropertyPreview</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-query-objects-request/index.html">QueryObjectsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-queryObjects">Runtime#queryObjects</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">QueryObjectsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-query-objects-response/index.html">QueryObjectsResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-queryObjects">Runtime#queryObjects</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">QueryObjectsResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-release-object-group-request/index.html">ReleaseObjectGroupRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-releaseObjectGroup">Runtime#releaseObjectGroup</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReleaseObjectGroupRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-release-object-request/index.html">ReleaseObjectRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-releaseObject">Runtime#releaseObject</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReleaseObjectRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remote-object/index.html">RemoteObject</a></h4>
+</td>
+<td>
+<p>Mirror object referencing original JavaScript object.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoteObject</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remote-object-id.html">RemoteObjectId</a></h4>
+</td>
+<td>
+<p>Unique object identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">RemoteObjectId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-remove-binding-request/index.html">RemoveBindingRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-removeBinding">Runtime#removeBinding</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RemoveBindingRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-run-script-request/index.html">RunScriptRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-runScript">Runtime#runScript</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RunScriptRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-run-script-response/index.html">RunScriptResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-runScript">Runtime#runScript</a> operation call.
+Runs script with given id in a given context.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RunScriptResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-runtime-operations/index.html">RuntimeOperations</a></h4>
+</td>
+<td>
+<p>Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects.
+Evaluation results are returned as mirror object that expose object type, string representation
+and unique identifier that can be used for further object reference. Original objects are
+maintained in memory unless they are either explicitly released or are released along with the
+other objects in their object group.</p>
+<code><span class="keyword">class </span><span class="identifier">RuntimeOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-script-id.html">ScriptId</a></h4>
+</td>
+<td>
+<p>Unique script identifier.</p>
+<code><span class="keyword">typealias </span><span class="identifier">ScriptId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-async-call-stack-depth-request/index.html">SetAsyncCallStackDepthRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-setAsyncCallStackDepth">Runtime#setAsyncCallStackDepth</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetAsyncCallStackDepthRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-custom-object-formatter-enabled-request/index.html">SetCustomObjectFormatterEnabledRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-setCustomObjectFormatterEnabled">Runtime#setCustomObjectFormatterEnabled</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetCustomObjectFormatterEnabledRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-set-max-call-stack-size-to-capture-request/index.html">SetMaxCallStackSizeToCaptureRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-setMaxCallStackSizeToCapture">Runtime#setMaxCallStackSizeToCapture</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetMaxCallStackSizeToCaptureRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-stack-trace/index.html">StackTrace</a></h4>
+</td>
+<td>
+<p>Call frames for assertions or error messages.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StackTrace</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-stack-trace-id/index.html">StackTraceId</a></h4>
+</td>
+<td>
+<p>If <code>debuggerId</code> is set stack trace comes from another debugger and can be resolved there. This
+allows to track cross-debugger calls. See <code>Runtime.StackTrace</code> and <code>Debugger.paused</code> for usages.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StackTraceId</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-time-delta.html">TimeDelta</a></h4>
+</td>
+<td>
+<p>Number of milliseconds.</p>
+<code><span class="keyword">typealias </span><span class="identifier">TimeDelta</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-timestamp.html">Timestamp</a></h4>
+</td>
+<td>
+<p>Number of milliseconds since epoch.</p>
+<code><span class="keyword">typealias </span><span class="identifier">Timestamp</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-unique-debugger-id.html">UniqueDebuggerId</a></h4>
+</td>
+<td>
+<p>Unique identifier of current debugger.</p>
+<code><span class="keyword">typealias </span><span class="identifier">UniqueDebuggerId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-unserializable-value.html">UnserializableValue</a></h4>
+</td>
+<td>
+<p>Primitive value which cannot be JSON-stringified. Includes values <code>-0</code>, <code>NaN</code>, <code>Infinity</code>,
+<code>-Infinity</code>, and bigint literals.</p>
+<code><span class="keyword">typealias </span><span class="identifier">UnserializableValue</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

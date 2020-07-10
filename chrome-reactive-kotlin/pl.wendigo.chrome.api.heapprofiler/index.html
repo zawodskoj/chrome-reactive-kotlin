@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pl.wendigo.chrome.api.heapprofiler - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="./index.html">pl.wendigo.chrome.api.heapprofiler</a><br/>
+<br/>
+<h2>Package pl.wendigo.chrome.api.heapprofiler</h2>
+<p>Contains DevTools Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler">HeapProfiler</a> domain implementation accessible via <a href="-heap-profiler-operations/index.html">HeapProfilerOperations</a> class.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-add-heap-snapshot-chunk-event/index.html">AddHeapSnapshotChunkEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddHeapSnapshotChunkEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-add-inspected-heap-object-request/index.html">AddInspectedHeapObjectRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-addInspectedHeapObject">HeapProfiler#addInspectedHeapObject</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddInspectedHeapObjectRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-heap-object-id-request/index.html">GetHeapObjectIdRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-getHeapObjectId">HeapProfiler#getHeapObjectId</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetHeapObjectIdRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-heap-object-id-response/index.html">GetHeapObjectIdResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-getHeapObjectId">HeapProfiler#getHeapObjectId</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetHeapObjectIdResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-object-by-heap-object-id-request/index.html">GetObjectByHeapObjectIdRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-getObjectByHeapObjectId">HeapProfiler#getObjectByHeapObjectId</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetObjectByHeapObjectIdRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-object-by-heap-object-id-response/index.html">GetObjectByHeapObjectIdResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-getObjectByHeapObjectId">HeapProfiler#getObjectByHeapObjectId</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetObjectByHeapObjectIdResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-get-sampling-profile-response/index.html">GetSamplingProfileResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-getSamplingProfile">HeapProfiler#getSamplingProfile</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GetSamplingProfileResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-heap-profiler-operations/index.html">HeapProfilerOperations</a></h4>
+</td>
+<td>
+<p>HeapProfilerOperations represents HeapProfiler protocol domain request/response operations and events that can be captured.</p>
+<code><span class="keyword">class </span><span class="identifier">HeapProfilerOperations</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-heap-snapshot-object-id.html">HeapSnapshotObjectId</a></h4>
+</td>
+<td>
+<p>Heap snapshot object id.</p>
+<code><span class="keyword">typealias </span><span class="identifier">HeapSnapshotObjectId</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-heap-stats-update-event/index.html">HeapStatsUpdateEvent</a></h4>
+</td>
+<td>
+<p>If heap objects tracking has been started then backend may send update for one or more fragments</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">HeapStatsUpdateEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-last-seen-object-id-event/index.html">LastSeenObjectIdEvent</a></h4>
+</td>
+<td>
+<p>If heap objects tracking has been started then backend regularly sends a current value for last
+seen object id and corresponding timestamp. If the were changes in the heap since last event
+then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">LastSeenObjectIdEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-report-heap-snapshot-progress-event/index.html">ReportHeapSnapshotProgressEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReportHeapSnapshotProgressEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-sampling-heap-profile/index.html">SamplingHeapProfile</a></h4>
+</td>
+<td>
+<p>Sampling profile.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SamplingHeapProfile</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-sampling-heap-profile-node/index.html">SamplingHeapProfileNode</a></h4>
+</td>
+<td>
+<p>Sampling Heap Profile node. Holds callsite information, allocation statistics and child nodes.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SamplingHeapProfileNode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-sampling-heap-profile-sample/index.html">SamplingHeapProfileSample</a></h4>
+</td>
+<td>
+<p>A single sample from a sampling profile.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SamplingHeapProfileSample</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-start-sampling-request/index.html">StartSamplingRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-startSampling">HeapProfiler#startSampling</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StartSamplingRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-start-tracking-heap-objects-request/index.html">StartTrackingHeapObjectsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-startTrackingHeapObjects">HeapProfiler#startTrackingHeapObjects</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StartTrackingHeapObjectsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-stop-sampling-response/index.html">StopSamplingResponse</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-stopSampling">HeapProfiler#stopSampling</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StopSamplingResponse</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-stop-tracking-heap-objects-request/index.html">StopTrackingHeapObjectsRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-stopTrackingHeapObjects">HeapProfiler#stopTrackingHeapObjects</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StopTrackingHeapObjectsRequest</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-take-heap-snapshot-request/index.html">TakeHeapSnapshotRequest</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-takeHeapSnapshot">HeapProfiler#takeHeapSnapshot</a> operation call.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TakeHeapSnapshotRequest</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

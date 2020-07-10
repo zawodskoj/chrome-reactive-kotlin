@@ -1,0 +1,162 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ScriptFailedToParseEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">ScriptFailedToParseEvent</a><br/>
+<br/>
+<h1>ScriptFailedToParseEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScriptFailedToParseEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L1211">(source)</a>
+<p>Fired when virtual machine fails to parse the script.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#event-scriptFailedToParse">Debugger#scriptFailedToParse</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Fired when virtual machine fails to parse the script.</p>
+<code><span class="identifier">ScriptFailedToParseEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/scriptId">scriptId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-script-id.html"><span class="identifier">ScriptId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/startLine">startLine</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/startColumn">startColumn</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/endLine">endLine</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/endColumn">endColumn</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/executionContextId">executionContextId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/hash">hash</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/executionContextAuxData">executionContextAuxData</span><span class="symbol">:</span>&nbsp;<span class="identifier">JsonNode</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/sourceMapURL">sourceMapURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/hasSourceURL">hasSourceURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/isModule">isModule</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/length">length</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/stackTrace">stackTrace</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.runtime/-stack-trace/index.html"><span class="identifier">StackTrace</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/codeOffset">codeOffset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.ScriptFailedToParseEvent$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, com.fasterxml.jackson.databind.JsonNode, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Int, pl.wendigo.chrome.api.runtime.StackTrace, kotlin.Int, pl.wendigo.chrome.api.debugger.ScriptLanguage)/scriptLanguage">scriptLanguage</span><span class="symbol">:</span>&nbsp;<a href="../-script-language/index.html"><span class="identifier">ScriptLanguage</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="code-offset.html">codeOffset</a></h4>
+</td>
+<td>
+<p>If the scriptLanguage is WebAssembly, the code section offset in the module.</p>
+<code><span class="keyword">val </span><span class="identifier">codeOffset</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="end-column.html">endColumn</a></h4>
+</td>
+<td>
+<p>Length of the last line of the script.</p>
+<code><span class="keyword">val </span><span class="identifier">endColumn</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="end-line.html">endLine</a></h4>
+</td>
+<td>
+<p>Last line of the script.</p>
+<code><span class="keyword">val </span><span class="identifier">endLine</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="execution-context-aux-data.html">executionContextAuxData</a></h4>
+</td>
+<td>
+<p>Embedder-specific auxiliary data.</p>
+<code><span class="keyword">val </span><span class="identifier">executionContextAuxData</span><span class="symbol">: </span><span class="identifier">JsonNode</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="execution-context-id.html">executionContextId</a></h4>
+</td>
+<td>
+<p>Specifies script creation context.</p>
+<code><span class="keyword">val </span><span class="identifier">executionContextId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hash.html">hash</a></h4>
+</td>
+<td>
+<p>Content hash of the script.</p>
+<code><span class="keyword">val </span><span class="identifier">hash</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-source-u-r-l.html">hasSourceURL</a></h4>
+</td>
+<td>
+<p>True, if this script has sourceURL.</p>
+<code><span class="keyword">val </span><span class="identifier">hasSourceURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-module.html">isModule</a></h4>
+</td>
+<td>
+<p>True, if this script is ES6 module.</p>
+<code><span class="keyword">val </span><span class="identifier">isModule</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="length.html">length</a></h4>
+</td>
+<td>
+<p>This script length.</p>
+<code><span class="keyword">val </span><span class="identifier">length</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="script-id.html">scriptId</a></h4>
+</td>
+<td>
+<p>Identifier of the script parsed.</p>
+<code><span class="keyword">val </span><span class="identifier">scriptId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-script-id.html"><span class="identifier">ScriptId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="script-language.html">scriptLanguage</a></h4>
+</td>
+<td>
+<p>The language of the script.</p>
+<code><span class="keyword">val </span><span class="identifier">scriptLanguage</span><span class="symbol">: </span><a href="../-script-language/index.html"><span class="identifier">ScriptLanguage</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="source-map-u-r-l.html">sourceMapURL</a></h4>
+</td>
+<td>
+<p>URL of source map associated with script (if any).</p>
+<code><span class="keyword">val </span><span class="identifier">sourceMapURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stack-trace.html">stackTrace</a></h4>
+</td>
+<td>
+<p>JavaScript top stack frame of where the script parsed event was triggered if available.</p>
+<code><span class="keyword">val </span><span class="identifier">stackTrace</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.runtime/-stack-trace/index.html"><span class="identifier">StackTrace</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-column.html">startColumn</a></h4>
+</td>
+<td>
+<p>Column offset of the script within the resource with given URL.</p>
+<code><span class="keyword">val </span><span class="identifier">startColumn</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-line.html">startLine</a></h4>
+</td>
+<td>
+<p>Line offset of the script within the resource with given URL (for script tags).</p>
+<code><span class="keyword">val </span><span class="identifier">startLine</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>URL or name of the script parsed (if any).</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

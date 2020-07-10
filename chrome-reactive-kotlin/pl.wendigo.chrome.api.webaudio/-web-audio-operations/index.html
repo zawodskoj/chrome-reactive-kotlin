@@ -1,0 +1,159 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>WebAudioOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.webaudio</a>&nbsp;/&nbsp;<a href="./index.html">WebAudioOperations</a><br/>
+<br/>
+<h1>WebAudioOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">WebAudioOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/webaudio/Operations.kt#L11">(source)</a>
+<p>This domain allows inspection of Web Audio API.
+https://webaudio.github.io/web-audio-api/</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/WebAudio">WebAudio</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="audio-listener-created.html">audioListenerCreated</a></h4>
+</td>
+<td>
+<p>Notifies that the construction of an AudioListener has finished.</p>
+<code><span class="keyword">fun </span><span class="identifier">audioListenerCreated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-audio-listener-created-event/index.html"><span class="identifier">AudioListenerCreatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="audio-listener-will-be-destroyed.html">audioListenerWillBeDestroyed</a></h4>
+</td>
+<td>
+<p>Notifies that a new AudioListener has been created.</p>
+<code><span class="keyword">fun </span><span class="identifier">audioListenerWillBeDestroyed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-audio-listener-will-be-destroyed-event/index.html"><span class="identifier">AudioListenerWillBeDestroyedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="audio-node-created.html">audioNodeCreated</a></h4>
+</td>
+<td>
+<p>Notifies that a new AudioNode has been created.</p>
+<code><span class="keyword">fun </span><span class="identifier">audioNodeCreated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-audio-node-created-event/index.html"><span class="identifier">AudioNodeCreatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="audio-node-will-be-destroyed.html">audioNodeWillBeDestroyed</a></h4>
+</td>
+<td>
+<p>Notifies that an existing AudioNode has been destroyed.</p>
+<code><span class="keyword">fun </span><span class="identifier">audioNodeWillBeDestroyed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-audio-node-will-be-destroyed-event/index.html"><span class="identifier">AudioNodeWillBeDestroyedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="audio-param-created.html">audioParamCreated</a></h4>
+</td>
+<td>
+<p>Notifies that a new AudioParam has been created.</p>
+<code><span class="keyword">fun </span><span class="identifier">audioParamCreated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-audio-param-created-event/index.html"><span class="identifier">AudioParamCreatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="audio-param-will-be-destroyed.html">audioParamWillBeDestroyed</a></h4>
+</td>
+<td>
+<p>Notifies that an existing AudioParam has been destroyed.</p>
+<code><span class="keyword">fun </span><span class="identifier">audioParamWillBeDestroyed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-audio-param-will-be-destroyed-event/index.html"><span class="identifier">AudioParamWillBeDestroyedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="context-changed.html">contextChanged</a></h4>
+</td>
+<td>
+<p>Notifies that existing BaseAudioContext has changed some properties (id stays the same)..</p>
+<code><span class="keyword">fun </span><span class="identifier">contextChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-context-changed-event/index.html"><span class="identifier">ContextChangedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="context-created.html">contextCreated</a></h4>
+</td>
+<td>
+<p>Notifies that a new BaseAudioContext has been created.</p>
+<code><span class="keyword">fun </span><span class="identifier">contextCreated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-context-created-event/index.html"><span class="identifier">ContextCreatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="context-will-be-destroyed.html">contextWillBeDestroyed</a></h4>
+</td>
+<td>
+<p>Notifies that an existing BaseAudioContext will be destroyed.</p>
+<code><span class="keyword">fun </span><span class="identifier">contextWillBeDestroyed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-context-will-be-destroyed-event/index.html"><span class="identifier">ContextWillBeDestroyedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables the WebAudio domain.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables the WebAudio domain and starts sending context lifetime events.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all WebAudio domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-realtime-data.html">getRealtimeData</a></h4>
+</td>
+<td>
+<p>Fetch the realtime data from the registered contexts.</p>
+<code><span class="keyword">fun </span><span class="identifier">getRealtimeData</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.webaudio.WebAudioOperations$getRealtimeData(pl.wendigo.chrome.api.webaudio.GetRealtimeDataRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-realtime-data-request/index.html"><span class="identifier">GetRealtimeDataRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-realtime-data-response/index.html"><span class="identifier">GetRealtimeDataResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="node-param-connected.html">nodeParamConnected</a></h4>
+</td>
+<td>
+<p>Notifies that an AudioNode is connected to an AudioParam.</p>
+<code><span class="keyword">fun </span><span class="identifier">nodeParamConnected</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-node-param-connected-event/index.html"><span class="identifier">NodeParamConnectedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="node-param-disconnected.html">nodeParamDisconnected</a></h4>
+</td>
+<td>
+<p>Notifies that an AudioNode is disconnected to an AudioParam.</p>
+<code><span class="keyword">fun </span><span class="identifier">nodeParamDisconnected</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-node-param-disconnected-event/index.html"><span class="identifier">NodeParamDisconnectedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="nodes-connected.html">nodesConnected</a></h4>
+</td>
+<td>
+<p>Notifies that two AudioNodes are connected.</p>
+<code><span class="keyword">fun </span><span class="identifier">nodesConnected</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-nodes-connected-event/index.html"><span class="identifier">NodesConnectedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="nodes-disconnected.html">nodesDisconnected</a></h4>
+</td>
+<td>
+<p>Notifies that AudioNodes are disconnected. The destination can be null, and it means all the outgoing connections from the source are disconnected.</p>
+<code><span class="keyword">fun </span><span class="identifier">nodesDisconnected</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-nodes-disconnected-event/index.html"><span class="identifier">NodesDisconnectedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

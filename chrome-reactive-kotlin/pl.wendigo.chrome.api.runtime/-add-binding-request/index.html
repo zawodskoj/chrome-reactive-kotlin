@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AddBindingRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="./index.html">AddBindingRequest</a><br/>
+<br/>
+<h1>AddBindingRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AddBindingRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Operations.kt#L868">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-addBinding">Runtime#addBinding</a> operation call.</p>
+<p>If executionContextId is empty, adds binding with the given name on the
+global objects of all inspected contexts, including those created later,
+bindings survive reloads.
+If executionContextId is specified, adds binding only on global object of
+given execution context.
+Binding function takes exactly one argument, this argument should be string,
+in case of any other input, function throws an exception.
+Each binding function call produces Runtime.bindingCalled notification.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-addBinding">Runtime#addBinding</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-runtime-operations/add-binding.html">RuntimeOperations.addBinding</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-addBinding">Runtime#addBinding</a> operation call.</p>
+<code><span class="identifier">AddBindingRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.AddBindingRequest$<init>(kotlin.String, kotlin.Int)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.AddBindingRequest$<init>(kotlin.String, kotlin.Int)/executionContextId">executionContextId</span><span class="symbol">:</span>&nbsp;<a href="../-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="execution-context-id.html">executionContextId</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">executionContextId</span><span class="symbol">: </span><a href="../-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="name.html">name</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

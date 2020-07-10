@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetBreakpointByUrlResponse - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.debugger</a>&nbsp;/&nbsp;<a href="./index.html">SetBreakpointByUrlResponse</a><br/>
+<br/>
+<h1>SetBreakpointByUrlResponse</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetBreakpointByUrlResponse</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/debugger/Operations.kt#L922">(source)</a>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointByUrl">Debugger#setBreakpointByUrl</a> operation call.
+Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this
+command is issued, all existing parsed scripts will have breakpoints resolved and returned in
+<code>locations</code> property. Further matching script parsing will result in subsequent
+<code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointByUrl">Debugger#setBreakpointByUrl</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-debugger-operations/set-breakpoint-by-url.html">DebuggerOperations.setBreakpointByUrl</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents response frame that is returned from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointByUrl">Debugger#setBreakpointByUrl</a> operation call.
+Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this
+command is issued, all existing parsed scripts will have breakpoints resolved and returned in
+<code>locations</code> property. Further matching script parsing will result in subsequent
+<code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.</p>
+<code><span class="identifier">SetBreakpointByUrlResponse</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointByUrlResponse$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.Location)))/breakpointId">breakpointId</span><span class="symbol">:</span>&nbsp;<a href="../-breakpoint-id.html"><span class="identifier">BreakpointId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.debugger.SetBreakpointByUrlResponse$<init>(kotlin.String, kotlin.collections.List((pl.wendigo.chrome.api.debugger.Location)))/locations">locations</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-location/index.html"><span class="identifier">Location</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="breakpoint-id.html">breakpointId</a></h4>
+</td>
+<td>
+<p>Id of the created breakpoint for further reference.</p>
+<code><span class="keyword">val </span><span class="identifier">breakpointId</span><span class="symbol">: </span><a href="../-breakpoint-id.html"><span class="identifier">BreakpointId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="locations.html">locations</a></h4>
+</td>
+<td>
+<p>List of the locations this breakpoint resolved into upon addition.</p>
+<code><span class="keyword">val </span><span class="identifier">locations</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-location/index.html"><span class="identifier">Location</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

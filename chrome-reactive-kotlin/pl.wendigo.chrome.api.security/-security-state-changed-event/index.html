@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SecurityStateChangedEvent - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.security</a>&nbsp;/&nbsp;<a href="./index.html">SecurityStateChangedEvent</a><br/>
+<br/>
+<h1>SecurityStateChangedEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SecurityStateChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/security/Operations.kt#L172">(source)</a>
+<p>The security state of the page changed.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Security#event-securityStateChanged">Security#securityStateChanged</a> event documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>The security state of the page changed.</p>
+<code><span class="identifier">SecurityStateChangedEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateChangedEvent$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.security.SecurityStateExplanation)), pl.wendigo.chrome.api.security.InsecureContentStatus, kotlin.String)/securityState">securityState</span><span class="symbol">:</span>&nbsp;<a href="../-security-state/index.html"><span class="identifier">SecurityState</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateChangedEvent$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.security.SecurityStateExplanation)), pl.wendigo.chrome.api.security.InsecureContentStatus, kotlin.String)/schemeIsCryptographic">schemeIsCryptographic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateChangedEvent$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.security.SecurityStateExplanation)), pl.wendigo.chrome.api.security.InsecureContentStatus, kotlin.String)/explanations">explanations</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-security-state-explanation/index.html"><span class="identifier">SecurityStateExplanation</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateChangedEvent$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.security.SecurityStateExplanation)), pl.wendigo.chrome.api.security.InsecureContentStatus, kotlin.String)/insecureContentStatus">insecureContentStatus</span><span class="symbol">:</span>&nbsp;<a href="../-insecure-content-status/index.html"><span class="identifier">InsecureContentStatus</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.security.SecurityStateChangedEvent$<init>(pl.wendigo.chrome.api.security.SecurityState, kotlin.Boolean, kotlin.collections.List((pl.wendigo.chrome.api.security.SecurityStateExplanation)), pl.wendigo.chrome.api.security.InsecureContentStatus, kotlin.String)/summary">summary</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="explanations.html">explanations</a></h4>
+</td>
+<td>
+<p>List of explanations for the security state. If the overall security state is <code>insecure</code> or
+<code>warning</code>, at least one corresponding explanation should be included.</p>
+<code><span class="keyword">val </span><span class="identifier">explanations</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-security-state-explanation/index.html"><span class="identifier">SecurityStateExplanation</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="insecure-content-status.html">insecureContentStatus</a></h4>
+</td>
+<td>
+<p>Information about insecure content on the page.</p>
+<code><span class="keyword">val </span><span class="identifier">insecureContentStatus</span><span class="symbol">: </span><a href="../-insecure-content-status/index.html"><span class="identifier">InsecureContentStatus</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scheme-is-cryptographic.html">schemeIsCryptographic</a></h4>
+</td>
+<td>
+<p>True if the page was loaded over cryptographic transport such as HTTPS.</p>
+<code><span class="keyword">val </span><span class="identifier">schemeIsCryptographic</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="security-state.html">securityState</a></h4>
+</td>
+<td>
+<p>Security state.</p>
+<code><span class="keyword">val </span><span class="identifier">securityState</span><span class="symbol">: </span><a href="../-security-state/index.html"><span class="identifier">SecurityState</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="summary.html">summary</a></h4>
+</td>
+<td>
+<p>Overrides user-visible description of the state.</p>
+<code><span class="keyword">val </span><span class="identifier">summary</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

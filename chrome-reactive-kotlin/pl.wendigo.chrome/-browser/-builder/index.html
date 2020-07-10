@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Browser.Builder - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../../index.html">pl.wendigo.chrome</a>&nbsp;/&nbsp;<a href="../index.html">Browser</a>&nbsp;/&nbsp;<a href="./index.html">Builder</a><br/>
+<br/>
+<h1>Builder</h1>
+<code><span class="keyword">class </span><span class="identifier">Builder</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/Browser.kt#L112">(source)</a>
+<p><a href="./index.html">Builder</a> is responsible for setting options and defaults while creating new instance of <a href="../index.html">Browser</a>.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p><a href="./index.html">Builder</a> is responsible for setting options and defaults while creating new instance of <a href="../index.html">Browser</a>.</p>
+<code><span class="identifier">Builder</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="build.html">build</a></h4>
+</td>
+<td>
+<p>Creates new instance of <a href="../index.html">Browser</a> with configuration passed to builder</p>
+<code><span class="keyword">fun </span><span class="identifier">build</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../index.html"><span class="identifier">Browser</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="incognito.html">incognito</a></h4>
+</td>
+<td>
+<p>Enables incognito mode by default while creating sessions (default: false)</p>
+<code><span class="keyword">fun </span><span class="identifier">incognito</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.Browser.Builder$incognito(kotlin.Boolean)/enabled">enabled</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="multiplex-connections.html">multiplexConnections</a></h4>
+</td>
+<td>
+<p>Enables <a href="../../../pl.wendigo.chrome.targets/-manager/index.html">Manager</a> to share single, underlying connection to debugger with multiple sessions (default: false)</p>
+<code><span class="keyword">fun </span><span class="identifier">multiplexConnections</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.Browser.Builder$multiplexConnections(kotlin.Boolean)/enabled">enabled</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="with-address.html">withAddress</a></h4>
+</td>
+<td>
+<p>Sets browser debugger address (default: localhost:8222)</p>
+<code><span class="keyword">fun </span><span class="identifier">withAddress</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.Browser.Builder$withAddress(kotlin.String)/address">address</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="with-blank-page.html">withBlankPage</a></h4>
+</td>
+<td>
+<p>Sets default blank page location (default: about:blank)</p>
+<code><span class="keyword">fun </span><span class="identifier">withBlankPage</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.Browser.Builder$withBlankPage(kotlin.String)/address">address</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="with-events-buffer-size.html">withEventsBufferSize</a></h4>
+</td>
+<td>
+<p>Sets frames buffer size for underlying <a href="#">DebuggerFramesStream</a>'s reactive replaying subject (default: 128)</p>
+<code><span class="keyword">fun </span><span class="identifier">withEventsBufferSize</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.Browser.Builder$withEventsBufferSize(kotlin.Int)/size">size</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="with-viewport-height.html">withViewportHeight</a></h4>
+</td>
+<td>
+<p>Sets default viewport height while creating sessions (default; 768, min: 100)</p>
+<code><span class="keyword">fun </span><span class="identifier">withViewportHeight</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.Browser.Builder$withViewportHeight(kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="with-viewport-width.html">withViewportWidth</a></h4>
+</td>
+<td>
+<p>Sets default viewport width while creating sessions (default: 1024, min: 100)</p>
+<code><span class="keyword">fun </span><span class="identifier">withViewportWidth</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.Browser.Builder$withViewportWidth(kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

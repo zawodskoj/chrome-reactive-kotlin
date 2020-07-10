@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AnimationOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.animation</a>&nbsp;/&nbsp;<a href="./index.html">AnimationOperations</a><br/>
+<br/>
+<h1>AnimationOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">AnimationOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/animation/Operations.kt#L10">(source)</a>
+<p>AnimationOperations represents Animation protocol domain request/response operations and events that can be captured.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Animation">Animation</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="animation-canceled.html">animationCanceled</a></h4>
+</td>
+<td>
+<p>Event for when an animation has been cancelled.</p>
+<code><span class="keyword">fun </span><span class="identifier">animationCanceled</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-animation-canceled-event/index.html"><span class="identifier">AnimationCanceledEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="animation-created.html">animationCreated</a></h4>
+</td>
+<td>
+<p>Event for each animation that has been created.</p>
+<code><span class="keyword">fun </span><span class="identifier">animationCreated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-animation-created-event/index.html"><span class="identifier">AnimationCreatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="animation-started.html">animationStarted</a></h4>
+</td>
+<td>
+<p>Event for animation that has been started.</p>
+<code><span class="keyword">fun </span><span class="identifier">animationStarted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-animation-started-event/index.html"><span class="identifier">AnimationStartedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disable.html">disable</a></h4>
+</td>
+<td>
+<p>Disables animation domain notifications.</p>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="enable.html">enable</a></h4>
+</td>
+<td>
+<p>Enables animation domain notifications.</p>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Animation domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-current-time.html">getCurrentTime</a></h4>
+</td>
+<td>
+<p>Returns the current time of the an animation.</p>
+<code><span class="keyword">fun </span><span class="identifier">getCurrentTime</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.animation.AnimationOperations$getCurrentTime(pl.wendigo.chrome.api.animation.GetCurrentTimeRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-current-time-request/index.html"><span class="identifier">GetCurrentTimeRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-current-time-response/index.html"><span class="identifier">GetCurrentTimeResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-playback-rate.html">getPlaybackRate</a></h4>
+</td>
+<td>
+<p>Gets the playback rate of the document timeline.</p>
+<code><span class="keyword">fun </span><span class="identifier">getPlaybackRate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-playback-rate-response/index.html"><span class="identifier">GetPlaybackRateResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="release-animations.html">releaseAnimations</a></h4>
+</td>
+<td>
+<p>Releases a set of animations to no longer be manipulated.</p>
+<code><span class="keyword">fun </span><span class="identifier">releaseAnimations</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.animation.AnimationOperations$releaseAnimations(pl.wendigo.chrome.api.animation.ReleaseAnimationsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-release-animations-request/index.html"><span class="identifier">ReleaseAnimationsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resolve-animation.html">resolveAnimation</a></h4>
+</td>
+<td>
+<p>Gets the remote object of the Animation.</p>
+<code><span class="keyword">fun </span><span class="identifier">resolveAnimation</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.animation.AnimationOperations$resolveAnimation(pl.wendigo.chrome.api.animation.ResolveAnimationRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-resolve-animation-request/index.html"><span class="identifier">ResolveAnimationRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-resolve-animation-response/index.html"><span class="identifier">ResolveAnimationResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="seek-animations.html">seekAnimations</a></h4>
+</td>
+<td>
+<p>Seek a set of animations to a particular time within each animation.</p>
+<code><span class="keyword">fun </span><span class="identifier">seekAnimations</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.animation.AnimationOperations$seekAnimations(pl.wendigo.chrome.api.animation.SeekAnimationsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-seek-animations-request/index.html"><span class="identifier">SeekAnimationsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-paused.html">setPaused</a></h4>
+</td>
+<td>
+<p>Sets the paused state of a set of animations.</p>
+<code><span class="keyword">fun </span><span class="identifier">setPaused</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.animation.AnimationOperations$setPaused(pl.wendigo.chrome.api.animation.SetPausedRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-paused-request/index.html"><span class="identifier">SetPausedRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-playback-rate.html">setPlaybackRate</a></h4>
+</td>
+<td>
+<p>Sets the playback rate of the document timeline.</p>
+<code><span class="keyword">fun </span><span class="identifier">setPlaybackRate</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.animation.AnimationOperations$setPlaybackRate(pl.wendigo.chrome.api.animation.SetPlaybackRateRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-playback-rate-request/index.html"><span class="identifier">SetPlaybackRateRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-timing.html">setTiming</a></h4>
+</td>
+<td>
+<p>Sets the timing of an animation node.</p>
+<code><span class="keyword">fun </span><span class="identifier">setTiming</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.animation.AnimationOperations$setTiming(pl.wendigo.chrome.api.animation.SetTimingRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-timing-request/index.html"><span class="identifier">SetTimingRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

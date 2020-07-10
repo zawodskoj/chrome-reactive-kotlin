@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>StorageOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.storage</a>&nbsp;/&nbsp;<a href="./index.html">StorageOperations</a><br/>
+<br/>
+<h1>StorageOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">StorageOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/storage/Operations.kt#L10">(source)</a>
+<p>StorageOperations represents Storage protocol domain request/response operations and events that can be captured.</p>
+<p>This API is marked as experimental in protocol definition and can change in the future.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Storage">Storage</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="cache-storage-content-updated.html">cacheStorageContentUpdated</a></h4>
+</td>
+<td>
+<p>A cache's contents have been modified.</p>
+<code><span class="keyword">fun </span><span class="identifier">cacheStorageContentUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-cache-storage-content-updated-event/index.html"><span class="identifier">CacheStorageContentUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cache-storage-list-updated.html">cacheStorageListUpdated</a></h4>
+</td>
+<td>
+<p>A cache has been added/deleted.</p>
+<code><span class="keyword">fun </span><span class="identifier">cacheStorageListUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-cache-storage-list-updated-event/index.html"><span class="identifier">CacheStorageListUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-cookies.html">clearCookies</a></h4>
+</td>
+<td>
+<p>Clears cookies.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearCookies</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.storage.StorageOperations$clearCookies(pl.wendigo.chrome.api.storage.ClearCookiesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-clear-cookies-request/index.html"><span class="identifier">ClearCookiesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-data-for-origin.html">clearDataForOrigin</a></h4>
+</td>
+<td>
+<p>Clears storage for origin.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearDataForOrigin</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.storage.StorageOperations$clearDataForOrigin(pl.wendigo.chrome.api.storage.ClearDataForOriginRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-clear-data-for-origin-request/index.html"><span class="identifier">ClearDataForOriginRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Storage domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-cookies.html">getCookies</a></h4>
+</td>
+<td>
+<p>Returns all browser cookies.</p>
+<code><span class="keyword">fun </span><span class="identifier">getCookies</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.storage.StorageOperations$getCookies(pl.wendigo.chrome.api.storage.GetCookiesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-cookies-request/index.html"><span class="identifier">GetCookiesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-cookies-response/index.html"><span class="identifier">GetCookiesResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-usage-and-quota.html">getUsageAndQuota</a></h4>
+</td>
+<td>
+<p>Returns usage and quota in bytes.</p>
+<code><span class="keyword">fun </span><span class="identifier">getUsageAndQuota</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.storage.StorageOperations$getUsageAndQuota(pl.wendigo.chrome.api.storage.GetUsageAndQuotaRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-get-usage-and-quota-request/index.html"><span class="identifier">GetUsageAndQuotaRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../-get-usage-and-quota-response/index.html"><span class="identifier">GetUsageAndQuotaResponse</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="indexed-d-b-content-updated.html">indexedDBContentUpdated</a></h4>
+</td>
+<td>
+<p>The origin's IndexedDB object store has been modified.</p>
+<code><span class="keyword">fun </span><span class="identifier">indexedDBContentUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-indexed-d-b-content-updated-event/index.html"><span class="identifier">IndexedDBContentUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="indexed-d-b-list-updated.html">indexedDBListUpdated</a></h4>
+</td>
+<td>
+<p>The origin's IndexedDB database list has been modified.</p>
+<code><span class="keyword">fun </span><span class="identifier">indexedDBListUpdated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../-indexed-d-b-list-updated-event/index.html"><span class="identifier">IndexedDBListUpdatedEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-cookies.html">setCookies</a></h4>
+</td>
+<td>
+<p>Sets given cookies.</p>
+<code><span class="keyword">fun </span><span class="identifier">setCookies</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.storage.StorageOperations$setCookies(pl.wendigo.chrome.api.storage.SetCookiesRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-cookies-request/index.html"><span class="identifier">SetCookiesRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="track-cache-storage-for-origin.html">trackCacheStorageForOrigin</a></h4>
+</td>
+<td>
+<p>Registers origin to be notified when an update occurs to its cache storage list.</p>
+<code><span class="keyword">fun </span><span class="identifier">trackCacheStorageForOrigin</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.storage.StorageOperations$trackCacheStorageForOrigin(pl.wendigo.chrome.api.storage.TrackCacheStorageForOriginRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-track-cache-storage-for-origin-request/index.html"><span class="identifier">TrackCacheStorageForOriginRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="track-indexed-d-b-for-origin.html">trackIndexedDBForOrigin</a></h4>
+</td>
+<td>
+<p>Registers origin to be notified when an update occurs to its IndexedDB.</p>
+<code><span class="keyword">fun </span><span class="identifier">trackIndexedDBForOrigin</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.storage.StorageOperations$trackIndexedDBForOrigin(pl.wendigo.chrome.api.storage.TrackIndexedDBForOriginRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-track-indexed-d-b-for-origin-request/index.html"><span class="identifier">TrackIndexedDBForOriginRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="untrack-cache-storage-for-origin.html">untrackCacheStorageForOrigin</a></h4>
+</td>
+<td>
+<p>Unregisters origin from receiving notifications for cache storage.</p>
+<code><span class="keyword">fun </span><span class="identifier">untrackCacheStorageForOrigin</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.storage.StorageOperations$untrackCacheStorageForOrigin(pl.wendigo.chrome.api.storage.UntrackCacheStorageForOriginRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-untrack-cache-storage-for-origin-request/index.html"><span class="identifier">UntrackCacheStorageForOriginRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="untrack-indexed-d-b-for-origin.html">untrackIndexedDBForOrigin</a></h4>
+</td>
+<td>
+<p>Unregisters origin from receiving notifications for IndexedDB.</p>
+<code><span class="keyword">fun </span><span class="identifier">untrackIndexedDBForOrigin</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.storage.StorageOperations$untrackIndexedDBForOrigin(pl.wendigo.chrome.api.storage.UntrackIndexedDBForOriginRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-untrack-indexed-d-b-for-origin-request/index.html"><span class="identifier">UntrackIndexedDBForOriginRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

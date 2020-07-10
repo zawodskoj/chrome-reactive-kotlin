@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RunScriptRequest - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.runtime</a>&nbsp;/&nbsp;<a href="./index.html">RunScriptRequest</a><br/>
+<br/>
+<h1>RunScriptRequest</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">RunScriptRequest</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/runtime/Operations.kt#L742">(source)</a>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-runScript">Runtime#runScript</a> operation call.</p>
+<p>Runs script with given id in a given context.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-runScript">Runtime#runScript</a> method documentation.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-runtime-operations/run-script.html">RuntimeOperations.runScript</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents request frame that can be used with <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-runScript">Runtime#runScript</a> operation call.</p>
+<code><span class="identifier">RunScriptRequest</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RunScriptRequest$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/scriptId">scriptId</span><span class="symbol">:</span>&nbsp;<a href="../-script-id.html"><span class="identifier">ScriptId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RunScriptRequest$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/executionContextId">executionContextId</span><span class="symbol">:</span>&nbsp;<a href="../-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RunScriptRequest$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/objectGroup">objectGroup</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RunScriptRequest$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/silent">silent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RunScriptRequest$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/includeCommandLineAPI">includeCommandLineAPI</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RunScriptRequest$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/returnByValue">returnByValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RunScriptRequest$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/generatePreview">generatePreview</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.runtime.RunScriptRequest$<init>(kotlin.String, kotlin.Int, kotlin.String, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean, kotlin.Boolean)/awaitPromise">awaitPromise</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="await-promise.html">awaitPromise</a></h4>
+</td>
+<td>
+<p>Whether execution should <code>await</code> for resulting value and return once awaited promise is
+resolved.</p>
+<code><span class="keyword">val </span><span class="identifier">awaitPromise</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="execution-context-id.html">executionContextId</a></h4>
+</td>
+<td>
+<p>Specifies in which execution context to perform script run. If the parameter is omitted the
+evaluation will be performed in the context of the inspected page.</p>
+<code><span class="keyword">val </span><span class="identifier">executionContextId</span><span class="symbol">: </span><a href="../-execution-context-id.html"><span class="identifier">ExecutionContextId</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="generate-preview.html">generatePreview</a></h4>
+</td>
+<td>
+<p>Whether preview should be generated for the result.</p>
+<code><span class="keyword">val </span><span class="identifier">generatePreview</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="include-command-line-a-p-i.html">includeCommandLineAPI</a></h4>
+</td>
+<td>
+<p>Determines whether Command Line API should be available during the evaluation.</p>
+<code><span class="keyword">val </span><span class="identifier">includeCommandLineAPI</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="object-group.html">objectGroup</a></h4>
+</td>
+<td>
+<p>Symbolic group name that can be used to release multiple objects.</p>
+<code><span class="keyword">val </span><span class="identifier">objectGroup</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="return-by-value.html">returnByValue</a></h4>
+</td>
+<td>
+<p>Whether the result is expected to be a JSON object which should be sent by value.</p>
+<code><span class="keyword">val </span><span class="identifier">returnByValue</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="script-id.html">scriptId</a></h4>
+</td>
+<td>
+<p>Id of the script to run.</p>
+<code><span class="keyword">val </span><span class="identifier">scriptId</span><span class="symbol">: </span><a href="../-script-id.html"><span class="identifier">ScriptId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="silent.html">silent</a></h4>
+</td>
+<td>
+<p>In silent mode exceptions thrown during evaluation are not reported and do not pause
+execution. Overrides <code>setPauseOnException</code> state.</p>
+<code><span class="keyword">val </span><span class="identifier">silent</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

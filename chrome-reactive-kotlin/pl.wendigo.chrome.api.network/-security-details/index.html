@@ -1,0 +1,138 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SecurityDetails - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.network</a>&nbsp;/&nbsp;<a href="./index.html">SecurityDetails</a><br/>
+<br/>
+<h1>SecurityDetails</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SecurityDetails</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/network/Types.kt#L412">(source)</a>
+<p>Security details about a request.</p>
+<p><strong>Link</strong><br/>
+<a href="https://chromedevtools.github.io/devtools-protocol/tot/Network#type-SecurityDetails">Network#SecurityDetails</a> type documentation.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Security details about a request.</p>
+<code><span class="identifier">SecurityDetails</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/protocol">protocol</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/keyExchange">keyExchange</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/keyExchangeGroup">keyExchangeGroup</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/cipher">cipher</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/mac">mac</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/certificateId">certificateId</span><span class="symbol">:</span>&nbsp;<a href="../../pl.wendigo.chrome.api.security/-certificate-id.html"><span class="identifier">CertificateId</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/subjectName">subjectName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/sanList">sanList</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/issuer">issuer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/validFrom">validFrom</span><span class="symbol">:</span>&nbsp;<a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/validTo">validTo</span><span class="symbol">:</span>&nbsp;<a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/signedCertificateTimestampList">signedCertificateTimestampList</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-signed-certificate-timestamp/index.html"><span class="identifier">SignedCertificateTimestamp</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="pl.wendigo.chrome.api.network.SecurityDetails$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.collections.List((kotlin.String)), kotlin.String, kotlin.Double, kotlin.Double, kotlin.collections.List((pl.wendigo.chrome.api.network.SignedCertificateTimestamp)), pl.wendigo.chrome.api.network.CertificateTransparencyCompliance)/certificateTransparencyCompliance">certificateTransparencyCompliance</span><span class="symbol">:</span>&nbsp;<a href="../-certificate-transparency-compliance/index.html"><span class="identifier">CertificateTransparencyCompliance</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="certificate-id.html">certificateId</a></h4>
+</td>
+<td>
+<p>Certificate ID value.</p>
+<code><span class="keyword">val </span><span class="identifier">certificateId</span><span class="symbol">: </span><a href="../../pl.wendigo.chrome.api.security/-certificate-id.html"><span class="identifier">CertificateId</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="certificate-transparency-compliance.html">certificateTransparencyCompliance</a></h4>
+</td>
+<td>
+<p>Whether the request complied with Certificate Transparency policy</p>
+<code><span class="keyword">val </span><span class="identifier">certificateTransparencyCompliance</span><span class="symbol">: </span><a href="../-certificate-transparency-compliance/index.html"><span class="identifier">CertificateTransparencyCompliance</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cipher.html">cipher</a></h4>
+</td>
+<td>
+<p>Cipher name.</p>
+<code><span class="keyword">val </span><span class="identifier">cipher</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="issuer.html">issuer</a></h4>
+</td>
+<td>
+<p>Name of the issuing CA.</p>
+<code><span class="keyword">val </span><span class="identifier">issuer</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="key-exchange.html">keyExchange</a></h4>
+</td>
+<td>
+<p>Key Exchange used by the connection, or the empty string if not applicable.</p>
+<code><span class="keyword">val </span><span class="identifier">keyExchange</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="key-exchange-group.html">keyExchangeGroup</a></h4>
+</td>
+<td>
+<p>(EC)DH group used by the connection, if applicable.</p>
+<code><span class="keyword">val </span><span class="identifier">keyExchangeGroup</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="mac.html">mac</a></h4>
+</td>
+<td>
+<p>TLS MAC. Note that AEAD ciphers do not have separate MACs.</p>
+<code><span class="keyword">val </span><span class="identifier">mac</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="protocol.html">protocol</a></h4>
+</td>
+<td>
+<p>Protocol name (e.g. "TLS 1.2" or "QUIC").</p>
+<code><span class="keyword">val </span><span class="identifier">protocol</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="san-list.html">sanList</a></h4>
+</td>
+<td>
+<p>Subject Alternative Name (SAN) DNS names and IP addresses.</p>
+<code><span class="keyword">val </span><span class="identifier">sanList</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="signed-certificate-timestamp-list.html">signedCertificateTimestampList</a></h4>
+</td>
+<td>
+<p>List of signed certificate timestamps (SCTs).</p>
+<code><span class="keyword">val </span><span class="identifier">signedCertificateTimestampList</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-signed-certificate-timestamp/index.html"><span class="identifier">SignedCertificateTimestamp</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subject-name.html">subjectName</a></h4>
+</td>
+<td>
+<p>Certificate subject name.</p>
+<code><span class="keyword">val </span><span class="identifier">subjectName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="valid-from.html">validFrom</a></h4>
+</td>
+<td>
+<p>Certificate valid from date.</p>
+<code><span class="keyword">val </span><span class="identifier">validFrom</span><span class="symbol">: </span><a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="valid-to.html">validTo</a></h4>
+</td>
+<td>
+<p>Certificate valid to (expiration) date</p>
+<code><span class="keyword">val </span><span class="identifier">validTo</span><span class="symbol">: </span><a href="../-time-since-epoch.html"><span class="identifier">TimeSinceEpoch</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

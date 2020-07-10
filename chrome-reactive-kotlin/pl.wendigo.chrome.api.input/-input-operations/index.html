@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>InputOperations - chrome-reactive-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chrome-reactive-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">pl.wendigo.chrome.api.input</a>&nbsp;/&nbsp;<a href="./index.html">InputOperations</a><br/>
+<br/>
+<h1>InputOperations</h1>
+<code><span class="keyword">class </span><span class="identifier">InputOperations</span></code> <a href="https://github.com/wendigo/chrome-reactive-kotlin/tree/master/src/main/kotlin/pl/wendigo/chrome/api/input/Operations.kt#L8">(source)</a>
+<p>InputOperations represents Input protocol domain request/response operations and events that can be captured.</p>
+<p><strong>Link</strong><br/>
+Protocol <a href="https://chromedevtools.github.io/devtools-protocol/tot/Input">Input</a> domain documentation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="dispatch-key-event.html">dispatchKeyEvent</a></h4>
+</td>
+<td>
+<p>Dispatches a key event to the page.</p>
+<code><span class="keyword">fun </span><span class="identifier">dispatchKeyEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.input.InputOperations$dispatchKeyEvent(pl.wendigo.chrome.api.input.DispatchKeyEventRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-dispatch-key-event-request/index.html"><span class="identifier">DispatchKeyEventRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dispatch-mouse-event.html">dispatchMouseEvent</a></h4>
+</td>
+<td>
+<p>Dispatches a mouse event to the page.</p>
+<code><span class="keyword">fun </span><span class="identifier">dispatchMouseEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.input.InputOperations$dispatchMouseEvent(pl.wendigo.chrome.api.input.DispatchMouseEventRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-dispatch-mouse-event-request/index.html"><span class="identifier">DispatchMouseEventRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dispatch-touch-event.html">dispatchTouchEvent</a></h4>
+</td>
+<td>
+<p>Dispatches a touch event to the page.</p>
+<code><span class="keyword">fun </span><span class="identifier">dispatchTouchEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.input.InputOperations$dispatchTouchEvent(pl.wendigo.chrome.api.input.DispatchTouchEventRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-dispatch-touch-event-request/index.html"><span class="identifier">DispatchTouchEventRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="emulate-touch-from-mouse-event.html">emulateTouchFromMouseEvent</a></h4>
+</td>
+<td>
+<p>Emulates touch event from the mouse event parameters.</p>
+<code><span class="keyword">fun </span><span class="identifier">emulateTouchFromMouseEvent</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.input.InputOperations$emulateTouchFromMouseEvent(pl.wendigo.chrome.api.input.EmulateTouchFromMouseEventRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-emulate-touch-from-mouse-event-request/index.html"><span class="identifier">EmulateTouchFromMouseEventRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<p>Returns flowable capturing all Input domains events.</p>
+<code><span class="keyword">fun </span><span class="identifier">events</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flowable</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="insert-text.html">insertText</a></h4>
+</td>
+<td>
+<p>This method emulates inserting text that doesn't come from a key press,
+for example an emoji keyboard or an IME.</p>
+<code><span class="keyword">fun </span><span class="identifier">insertText</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.input.InputOperations$insertText(pl.wendigo.chrome.api.input.InsertTextRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-insert-text-request/index.html"><span class="identifier">InsertTextRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-ignore-input-events.html">setIgnoreInputEvents</a></h4>
+</td>
+<td>
+<p>Ignores input events (useful while auditing page).</p>
+<code><span class="keyword">fun </span><span class="identifier">setIgnoreInputEvents</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.input.InputOperations$setIgnoreInputEvents(pl.wendigo.chrome.api.input.SetIgnoreInputEventsRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-set-ignore-input-events-request/index.html"><span class="identifier">SetIgnoreInputEventsRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="synthesize-pinch-gesture.html">synthesizePinchGesture</a></h4>
+</td>
+<td>
+<p>Synthesizes a pinch gesture over a time period by issuing appropriate touch events.</p>
+<code><span class="keyword">fun </span><span class="identifier">synthesizePinchGesture</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.input.InputOperations$synthesizePinchGesture(pl.wendigo.chrome.api.input.SynthesizePinchGestureRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-synthesize-pinch-gesture-request/index.html"><span class="identifier">SynthesizePinchGestureRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="synthesize-scroll-gesture.html">synthesizeScrollGesture</a></h4>
+</td>
+<td>
+<p>Synthesizes a scroll gesture over a time period by issuing appropriate touch events.</p>
+<code><span class="keyword">fun </span><span class="identifier">synthesizeScrollGesture</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.input.InputOperations$synthesizeScrollGesture(pl.wendigo.chrome.api.input.SynthesizeScrollGestureRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-synthesize-scroll-gesture-request/index.html"><span class="identifier">SynthesizeScrollGestureRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="synthesize-tap-gesture.html">synthesizeTapGesture</a></h4>
+</td>
+<td>
+<p>Synthesizes a tap gesture over a time period by issuing appropriate touch events.</p>
+<code><span class="keyword">fun </span><span class="identifier">synthesizeTapGesture</span><span class="symbol">(</span><span class="identifier" id="pl.wendigo.chrome.api.input.InputOperations$synthesizeTapGesture(pl.wendigo.chrome.api.input.SynthesizeTapGestureRequest)/input">input</span><span class="symbol">:</span>&nbsp;<a href="../-synthesize-tap-gesture-request/index.html"><span class="identifier">SynthesizeTapGestureRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Single</span><span class="symbol">&lt;</span><a href="../../pl.wendigo.chrome.protocol/-response-frame/index.html"><span class="identifier">ResponseFrame</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
