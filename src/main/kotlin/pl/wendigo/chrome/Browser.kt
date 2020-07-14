@@ -19,7 +19,7 @@ import pl.wendigo.chrome.targets.Target
  */
 class Browser private constructor(
     private val options: Options,
-    private val info: Info,
+    private val info: DebuggingPortInfo,
     private val manager: Manager
 ) : AutoCloseable, Closeable {
     /**
@@ -71,7 +71,7 @@ class Browser private constructor(
          * Creates new Browser instance by connecting to remote chrome debugger.
          */
         private fun connect(chromeAddress: String = "localhost:9222", options: Options): Browser {
-            val info = fetchInfo(chromeAddress)
+            val info = fetchInfo(chromeAddress, OkHttpClient.Builder().build())
 
             return Browser(
                 options,
@@ -87,12 +87,11 @@ class Browser private constructor(
         /**
          * Fetches browser info.
          */
-        private fun fetchInfo(chromeAddress: String): Info {
-            val client = OkHttpClient.Builder().build()
+        fun fetchInfo(chromeAddress: String, client: OkHttpClient): DebuggingPortInfo {
             val info = client.newCall(Request.Builder().url("http://$chromeAddress/json/version").build()).execute()
 
             return when (info.isSuccessful) {
-                true -> DEFAULT_MAPPER.readValue(info.body?.string(), Info::class.java)
+                true -> DEFAULT_MAPPER.readValue(info.body?.string(), DebuggingPortInfo::class.java)
                 false -> throw BrowserInfoDiscoveryFailedException("Could not query browser info - reponse code was ${info.code}")
             }
         }
@@ -187,7 +186,7 @@ class Browser private constructor(
         )
     }
 
-    private data class Info(
+    data class DebuggingPortInfo(
         @get:JsonProperty("Browser")
         val browser: String,
 
