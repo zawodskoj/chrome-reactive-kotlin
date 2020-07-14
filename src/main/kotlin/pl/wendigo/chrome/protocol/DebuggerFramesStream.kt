@@ -31,9 +31,10 @@ class DebuggerFramesStream : WebSocketListener {
      * @param framesBufferSize frames buffer size (how many frames will be replayed prior to subscribing to stream)
      * @param mapper mapper that will serialize/deserialize frames understand by protocol
      * @param webSocketClient client for making websocket connection.
+     * @param limitFrames chooses whether frames be stored forever or limited with framesBufferSize value
      */
-    constructor(webSocketUri: String, framesBufferSize: Int, mapper: FrameMapper, webSocketClient: OkHttpClient) : super() {
-        this.messages = ReplaySubject.create(framesBufferSize)
+    constructor(webSocketUri: String, framesBufferSize: Int, mapper: FrameMapper, webSocketClient: OkHttpClient, limitFrames: Boolean = false) : super() {
+        this.messages = if (limitFrames) ReplaySubject.createWithSize(framesBufferSize) else ReplaySubject.create(framesBufferSize)
         this.mapper = mapper
         this.client = webSocketClient
         this.connection = webSocketClient.newWebSocket(Request.Builder().url(webSocketUri).build(), this)
